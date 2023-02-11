@@ -4,3 +4,22 @@
     right: 50%;
     transform: translateX(50%);
 }
+
+.u-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.u-blockElm-h-center {
+    text-align: center;
+}
+
+.u-hide {
+    display: none;
+}
+
+.u-show {
+    display: block;
+}
