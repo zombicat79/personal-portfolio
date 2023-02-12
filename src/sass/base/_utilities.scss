@@ -16,10 +16,48 @@
     text-align: center;
 }
 
+.u-flex {
+    display: flex;
+    align-items: center;
+
+    &--center {
+        justify-content: center;
+    }
+}
+
 .u-hide {
     display: none;
 }
 
 .u-show {
     display: block;
+}
+
+.u-goneAway {
+    opacity: 0;
+    
+    &--down {
+        transform: translateY(50vh);
+    }
+
+    &--left {
+        transform: translateX(-50vw);
+    }
+
+    &--right {
+        transform: translateX(30vw);
+    }
+}
+
+.u-comeBack {
+    opacity: 1;
+
+    &--down {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+
+    &--right {
+        transform: translateX(-50%);
+    }
 }

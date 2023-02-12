@@ -1,3 +1,28 @@
+.welcomeSeal {
+    overflow: hidden;
+    min-height: 65%;
+    transition: all 1s;
+}
+
+.welcomeSeal--shrunk {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    min-height: unset;
+
+    .welcomeSeal__heading--shrunk img {
+        width: 5rem;
+    }
+
+    .welcomeSeal__heading--shrunk h1,
+    .welcomeSeal__heading--shrunk .welcomeSeal__touchPoint,  
+    .welcomeSeal__subtitle--shrunk, 
+    .welcomeSeal__cta--shrunk, 
+    .languageSelector--shrunk {
+        display: none;
+    }
+}
+
 .welcomeSeal__heading {
     display: flex;
     flex-direction: column;
@@ -8,6 +33,7 @@
 
 .welcomeSeal__heading img {
     width: 50%;
+    transition: all 2.5s;
 }
 
 .welcomeSeal__heading h1 {
@@ -48,4 +74,15 @@
 
 .welcomeSeal__subtitle {
     margin-top: .2rem;
+}
+
+.welcomeSeal__cta {
+   position: relative;
+   transition: transform 2s, opacity .5s;
+}
+
+@media screen and (max-width: 768px) {
+    .welcomeSeal {
+        width: 100%;
+    }
 }

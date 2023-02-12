@@ -1,0 +1,30 @@
+.languageSelector {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50);
+    transition: transform 2s 1s, opacity 2s 1s;
+}
+
+.languageSelector:hover {
+    font-size: 1.2rem;
+
+    .languageSelector__unit:hover {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+}
+
+.languageSelector__unit {
+    transition: all .5s;
+    font-size: 1.2rem;
+}
+
+.languageSelector__unit:not(:last-child) {
+    margin-right: 0;
+}
+
+.languageSelector__unit img {
+    width: 50%;
+    max-width: 8rem;
+}

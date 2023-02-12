@@ -1,6 +1,7 @@
 import './App.scss';
 
-import logo from './images/zombiecat-trans-logo.png'
+import logo from './images/zombiecat-trans-logo.png';
+import logoHover from './images/zombiecat-hover-logo.png';
 
 import WelcomeSeal from './components/WelcomeSeal';
 import Header from './components/Header';
@@ -13,11 +14,11 @@ function App() {
   return (
     <main className="App">
       <WelcomeSeal 
-        logoSrc={logo} 
+        logoImages={[logo, logoHover]} 
         logoAlt={"Cartoon-like logo depicting a cat"} 
         tradeName={"ZombieCat"}
         role={"Full Stack Developer"}
-        actionTexts={["Activate cat-enhanced view", "Go see cat stuff", "Choose your language"]}
+        actionTexts={["Activate cat-enhanced view", "Go see (zombie)cat stuff", "Choose your cat dialect"]}
         viewport={viewport}
       />
       {/* <Header
