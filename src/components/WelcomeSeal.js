@@ -73,15 +73,8 @@ function WelcomeSeal(props) {
         })
     }
 
-    const [componentIsShrunk, setComponentIsShrunk] = useState(false);
-    const handleComponentSize = () => {
-        setComponentIsShrunk((prevState) => {
-            return !prevState;
-        })
-    }
-
     let shrinkModifier = {};
-    if (componentIsShrunk) {
+    if (props.initSealIsShrunk) {
         shrinkModifier = {
             sealParent: "welcomeSeal--shrunk",
             sealHeading: "welcomeSeal__heading--shrunk",
@@ -130,7 +123,7 @@ function WelcomeSeal(props) {
             <div className={"welcomeSeal__cta" + " " + "u-blockElm-h-center" + " " + ctaPosition + " " + shrinkModifier.sealCta}>
                 {actionText === props.actionTexts[0] && fullScreen && <button className="btn-primary" onClick={(e) => handleView()}>{actionText}</button>}
                 {actionText === props.actionTexts[0] && !fullScreen && <button className="btn-primary" onClick={(e) => handleView()}>Deactivate cat-enhanced view</button>}
-                {actionText === props.actionTexts[1] && <button className="btn-primary" onClick={(e) => handleComponentSize()}>{actionText}</button>}
+                {actionText === props.actionTexts[1] && <button className="btn-primary" onClick={(e) => props.handleSealState()}>{actionText}</button>}
                 {actionText === props.actionTexts[2] && <button className="btn-primary" onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
             </div>
             <LanguageSelector 
