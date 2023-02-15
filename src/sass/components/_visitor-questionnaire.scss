@@ -1,0 +1,68 @@
+.questionnaire {
+    width: 50%;
+    font-size: 24px;
+    transform: translate(-100%, -50%);
+    transition: transform 1s 2s;
+
+    .questionnaire__hint {
+        margin-bottom: 50px;
+        font-family: "Source-Bold";
+    }
+
+    .questionnaire__inputWrapper {
+        width: 50%;
+        margin: 0 auto 50px;
+
+        .questionnaire__inputLabel, 
+        .questionnaire__input {
+            display: block;
+        }
+
+        .questionnaire__input {
+            width: 100%;
+            background-color: transparent;
+            color: white;
+            font-size: 14px;
+            font-style: italic;
+            font-family: "Source-Medium";
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 20px 0;
+        }
+
+        .questionnaire__input:-webkit-autofill, 
+        .questionnaire__input:-webkit-autofill:hover, 
+        .questionnaire__input:-webkit-autofill:focus {
+            border: none;
+            border-bottom: 1px solid white;
+            -webkit-text-fill-color: white;
+            -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    .questionnaire__submitBtn {
+        background-color: transparent;
+        border: none;
+        pointer-events: none;
+
+        img {
+            width: 100px;
+            transition: all .5s;
+        }
+        .btn-enabled {
+            pointer-events: initial;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .btn-pressed {
+            width: 65px;
+        }
+    }
+}
+
+.questionnaire--centered {
+    transform: translate(50%, -50%);
+}
