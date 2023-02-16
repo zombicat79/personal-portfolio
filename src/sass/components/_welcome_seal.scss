@@ -2,6 +2,70 @@
     overflow: hidden;
     min-height: 65%;
     transition: all 1s;
+
+    .welcomeSeal__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 50%;
+            transition: all 2.5s;
+        }
+
+        h1 {
+            font-family: "Russo-Regular";
+            font-style: italic;
+            font-size: 3rem;
+            text-shadow: 
+                3rem 1rem 4rem rgba(darkgrey, .5),
+                -3rem 1rem 4rem rgba(darkgrey, .5),
+                0 -.25rem 4rem rgba(darkgrey, .5);
+        }
+    }
+
+    .welcomeSeal__touchPoint {
+        position: absolute;
+        height: 10%;
+        width: 6%;
+        background-color: transparent;
+    
+        &--p1 {
+            top: 40%;
+            left: 40%;
+        }
+    
+        &--p2 {
+            top: 40%;
+            right: 40%;
+        }
+    
+        &--p3 {
+            top: 60%;
+            left: 47%;
+        }
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .welcomeSeal__subtitle {
+        margin-top: .2rem;
+    }
+
+    .welcomeSeal__cta {
+        position: relative;
+        transition: transform 2s, opacity .5s;
+     
+        .btn-shine {
+             animation-name: btn-shine;
+             animation-duration: 1s;
+             animation-timing-function: linear;
+        }
+     }
 }
 
 .welcomeSeal--shrunk {
@@ -21,64 +85,6 @@
     .languageSelector--shrunk {
         display: none;
     }
-}
-
-.welcomeSeal__heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.welcomeSeal__heading img {
-    width: 50%;
-    transition: all 2.5s;
-}
-
-.welcomeSeal__heading h1 {
-    font-family: "Russo-Regular";
-    font-style: italic;
-    font-size: 3rem;
-    text-shadow: 
-        3rem 1rem 4rem rgba(darkgrey, .5),
-        -3rem 1rem 4rem rgba(darkgrey, .5),
-        0 -.25rem 4rem rgba(darkgrey, .5);
-}
-
-.welcomeSeal__touchPoint {
-    position: absolute;
-    height: 10%;
-    width: 6%;
-    background-color: transparent;
-
-    &--p1 {
-        top: 40%;
-        left: 40%;
-    }
-
-    &--p2 {
-        top: 40%;
-        right: 40%;
-    }
-
-    &--p3 {
-        top: 60%;
-        left: 47%;
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.welcomeSeal__subtitle {
-    margin-top: .2rem;
-}
-
-.welcomeSeal__cta {
-   position: relative;
-   transition: transform 2s, opacity .5s;
 }
 
 @media screen and (max-width: 768px) {

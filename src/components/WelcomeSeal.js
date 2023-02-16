@@ -41,6 +41,15 @@ function WelcomeSeal(props) {
     const handleTouchpoint = (index) => {
         setActionText(availableTexts[index]);
         handleCtaPosition("appear");
+        handleCtaBrightness(); 
+    }
+
+    const [ctaBrightnessClass, setCtaBrightnessClass] = useState("");
+    const handleCtaBrightness = () => {
+        setCtaBrightnessClass("btn-shine");
+        setTimeout(() => {
+            setCtaBrightnessClass("");
+        }, 1000);
     }
 
     const [ctaPosition, setCtaPosition] = useState("u-goneAway u-goneAway--down");
@@ -92,39 +101,45 @@ function WelcomeSeal(props) {
         }
     }
 
+    console.log(langPosition)
     return (
         <section className={"welcomeSeal" + " " + "u-absolute-center" + " " + shrinkModifier.sealParent}>
             <div className={"welcomeSeal__heading" + " " + shrinkModifier.sealHeading}>
                 <img src={activeLogo} alt={props.logoAlt}></img>
                 <h1>{props.tradeName}</h1>
 
-                <div 
-                    className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p1" 
-                    onClick={(e) => handleTouchpoint(0)}
-                    onMouseOver={(e) => handleLogo(1)}
-                    onMouseLeave={(e) => handleLogo(0)}
-                ></div>
-                <div 
-                    className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p2" 
-                    onClick={(e) => handleTouchpoint(1)}
-                    onMouseOver={(e) => handleLogo(1)}
-                    onMouseLeave={(e) => handleLogo(0)}
-                ></div>
-                <div 
-                    className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p3"
-                    onClick={(e) => handleTouchpoint(2)}
-                    onMouseOver={(e) => handleLogo(1)}
-                    onMouseLeave={(e) => handleLogo(0)}
-                ></div>
+                {
+                    langPosition !== "u-comeBack u-comeBack--right" &&
+                    <div>
+                        <div 
+                            className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p1" 
+                            onClick={(e) => handleTouchpoint(0)}
+                            onMouseOver={(e) => handleLogo(1)}
+                            onMouseLeave={(e) => handleLogo(0)}
+                        ></div>
+                        <div 
+                            className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p2" 
+                            onClick={(e) => handleTouchpoint(1)}
+                            onMouseOver={(e) => handleLogo(1)}
+                            onMouseLeave={(e) => handleLogo(0)}
+                        ></div>
+                        <div 
+                            className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p3"
+                            onClick={(e) => handleTouchpoint(2)}
+                            onMouseOver={(e) => handleLogo(1)}
+                            onMouseLeave={(e) => handleLogo(0)}
+                        ></div>
+                    </div>
+                }
             </div>
             <div className={"welcomeSeal__subtitle" + " " + "u-blockElm-h-center" + " " + shrinkModifier.sealSubtitle}>
                 <h2>{props.role}</h2>
             </div>
             <div className={"welcomeSeal__cta" + " " + "u-blockElm-h-center" + " " + ctaPosition + " " + shrinkModifier.sealCta}>
-                {actionText === props.actionTexts[0] && fullScreen && <button className="btn-primary" onClick={(e) => handleView()}>{actionText}</button>}
-                {actionText === props.actionTexts[0] && !fullScreen && <button className="btn-primary" onClick={(e) => handleView()}>Deactivate cat-enhanced view</button>}
-                {actionText === props.actionTexts[1] && <button className="btn-primary" onClick={(e) => props.handleSealState()}>{actionText}</button>}
-                {actionText === props.actionTexts[2] && <button className="btn-primary" onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
+                {actionText === props.actionTexts[0] && fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>{actionText}</button>}
+                {actionText === props.actionTexts[0] && !fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>Deactivate cat-enhanced view</button>}
+                {actionText === props.actionTexts[1] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => props.handleSealState()}>{actionText}</button>}
+                {actionText === props.actionTexts[2] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
             </div>
             <LanguageSelector 
                 availableLanguages={availableLanguages}
