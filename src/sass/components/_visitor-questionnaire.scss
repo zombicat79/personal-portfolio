@@ -52,9 +52,14 @@
         }
         .btn-enabled {
             pointer-events: initial;
+            animation-name: catbtn-blip;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
 
             &:hover {
                 cursor: pointer;
+                animation: none;
             }
         }
         .btn-pressed {

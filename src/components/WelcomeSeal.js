@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import { LangContext } from './../App';
 
 import LanguageSelector from './LanguageSelector';
 
@@ -9,18 +10,21 @@ import engIcon from "./../images/icos/lang-english.png";
 const availableLanguages = [
     {
         id: 1,
+        name: "cat",
         icon: catIcon,
         alt: "round language flag",
         description: "Meu!"
     },
     {
         id: 2,
+        name: "esp",
         icon: espIcon,
         alt: "round language flag",
         description: "¡Miau!"
     },
     {
         id: 3,
+        name: "eng",
         icon: engIcon,
         alt: "round language flag",
         description: "Meow!"
@@ -28,6 +32,8 @@ const availableLanguages = [
 ];
 
 function WelcomeSeal(props) {
+    const langContext = useContext(LangContext);
+    
     const logoImages = props.logoImages;
     const [activeLogo, setActiveLogo] = useState(logoImages[0]);
 
@@ -101,6 +107,7 @@ function WelcomeSeal(props) {
         }
     }
 
+    console.log(langContext)
     console.log(langPosition)
     return (
         <section className={"welcomeSeal" + " " + "u-absolute-center" + " " + shrinkModifier.sealParent}>
@@ -119,13 +126,13 @@ function WelcomeSeal(props) {
                         ></div>
                         <div 
                             className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p2" 
-                            onClick={(e) => handleTouchpoint(1)}
+                            onClick={(e) => handleTouchpoint(2)}
                             onMouseOver={(e) => handleLogo(1)}
                             onMouseLeave={(e) => handleLogo(0)}
                         ></div>
                         <div 
                             className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p3"
-                            onClick={(e) => handleTouchpoint(2)}
+                            onClick={(e) => handleTouchpoint(3)}
                             onMouseOver={(e) => handleLogo(1)}
                             onMouseLeave={(e) => handleLogo(0)}
                         ></div>
@@ -137,15 +144,16 @@ function WelcomeSeal(props) {
             </div>
             <div className={"welcomeSeal__cta" + " " + "u-blockElm-h-center" + " " + ctaPosition + " " + shrinkModifier.sealCta}>
                 {actionText === props.actionTexts[0] && fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>{actionText}</button>}
-                {actionText === props.actionTexts[0] && !fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>Deactivate cat-enhanced view</button>}
-                {actionText === props.actionTexts[1] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => props.handleSealState()}>{actionText}</button>}
-                {actionText === props.actionTexts[2] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
+                {actionText === props.actionTexts[0] && !fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>{availableTexts[1]}</button>}
+                {actionText === props.actionTexts[2] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => props.handleSealState()}>{actionText}</button>}
+                {actionText === props.actionTexts[3] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
             </div>
             <LanguageSelector 
                 availableLanguages={availableLanguages}
                 langPosition={langPosition}
                 handleLangPosition={handleLangPosition}
                 shrinkModifier={shrinkModifier.langSelector}
+                handleLanguage={props.handleLanguage}
             />
         </section>
     )

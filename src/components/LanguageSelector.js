@@ -8,7 +8,7 @@ function LanguageSelector(props) {
                 <div 
                     key={el.id} 
                     className="languageSelector__unit u-blockElm-h-center" 
-                    onClick={(e) => props.handleLangPosition("disappear")}
+                    onClick={(e) => {props.handleLanguage(el.name); props.handleLangPosition("disappear")}}
                 >
                     <img src={el.icon} alt={el.alt}/>
                     <p>{el.description}</p>

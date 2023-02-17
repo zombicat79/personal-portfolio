@@ -1,5 +1,15 @@
+/* WelcomeSeal Component */
 @keyframes btn-shine {
     0% {box-shadow: none}
     50% {box-shadow: 20px 0 15px white, -20px 0 15px white;}
     100% {box-shadow: none}
+}
+
+/* VisitorQuestionnaire Component */
+@keyframes catbtn-blip {
+    0% {opacity: 1}
+    25% {opacity: 0}
+    50% {opacity: 1}
+    75% {opacity: 0}
+    100% {opacity: 1}
 }

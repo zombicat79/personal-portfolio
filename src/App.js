@@ -14,14 +14,22 @@ import Header from './components/Header';
 import FeatureSection from './components/FeatureSection';
 import RangeSlider from './components/RangeSlider';
 
+import wSealTexts from './texts/welcomeSeal_texts';
+export const LangContext = React.createContext(null);
+
 const viewport = document.getElementById("root");
 
 function App() {
+  const [language, setLanguage] = useState("eng");
+  const handleLanguage = (lang) => {
+    setLanguage(lang);
+  }
+  
   const [initSealIsShrunk, setInitSealIsShrunk] = useState(false);
   const handleSealState = () => {
-      setInitSealIsShrunk((prevState) => {
-          return !prevState;
-      })
+    setInitSealIsShrunk((prevState) => {
+        return !prevState;
+    })
   }
 
   const [hasVisitorInfo, setHasVisitorInfo] = useState(false);
@@ -30,54 +38,57 @@ function App() {
   console.log(visitorInfo);
 
   return (
-    <main className="App">
-      {
-        !hasVisitorInfo &&
-        <WelcomeSeal 
-          logoImages={[logo, logoHover]} 
-          logoAlt={"Cartoon-like logo depicting a cat"} 
-          tradeName={"ZombieCat"}
-          role={"Full Stack Developer"}
-          actionTexts={["Activate cat-enhanced view", "Go see (zombie)cat stuff", "Choose your cat dialect"]}
-          viewport={viewport}
-          initSealIsShrunk={initSealIsShrunk}
-          handleSealState={handleSealState}
-        />
-      }
-      {
-        initSealIsShrunk &&
-        !hasVisitorInfo &&
-        <VisitorQuestionnaire 
-          btnSubmitIcons={[submitBtn, submitBtnPressed]} 
-          submitBtnAlt={"Cat paw"}
-          setHasVisitorInfo={setHasVisitorInfo}
-          setVisitorInfo={setVisitorInfo}
-        />
-      }
-      
-      {
-        initSealIsShrunk &&
-        hasVisitorInfo &&
-        <div>
-          <Header
-            logoSrc={logo}
-            logoSize={50}
-            logoAlt={"Cartoon-like logo depicting a cat"}
-            burgerSize={40} 
-            burgerColor={"#fff"}
+    <LangContext.Provider value={language}>
+      <main className="App">
+        {
+          !hasVisitorInfo &&
+          <WelcomeSeal 
+            logoImages={[logo, logoHover]} 
+            logoAlt={"Cartoon-like logo depicting a cat"} 
+            tradeName={"ZombieCat"}
+            role={wSealTexts.role[language]}
+            actionTexts={wSealTexts.actionTexts[language]}
+            viewport={viewport}
+            initSealIsShrunk={initSealIsShrunk}
+            handleSealState={handleSealState}
+            handleLanguage={handleLanguage}
           />
-          <FeatureSection />
-          <RangeSlider 
-            min={1}
-            max={3} 
-            size={"big"}
-            name={"time"} 
-            stepOptions={["Past", "Present", "Future"]}
-            initialStep={1}
+        }
+        {
+          initSealIsShrunk &&
+          !hasVisitorInfo &&
+          <VisitorQuestionnaire 
+            btnSubmitIcons={[submitBtn, submitBtnPressed]} 
+            submitBtnAlt={"Cat paw"}
+            setHasVisitorInfo={setHasVisitorInfo}
+            setVisitorInfo={setVisitorInfo}
           />
-        </div>
-      }
-    </main>
+        }
+        
+        {
+          initSealIsShrunk &&
+          hasVisitorInfo &&
+          <div>
+            <Header
+              logoSrc={logo}
+              logoSize={50}
+              logoAlt={"Cartoon-like logo depicting a cat"}
+              burgerSize={40} 
+              burgerColor={"#fff"}
+            />
+            <FeatureSection />
+            <RangeSlider 
+              min={1}
+              max={3} 
+              size={"big"}
+              name={"time"} 
+              stepOptions={["Past", "Present", "Future"]}
+              initialStep={1}
+            />
+          </div>
+        }
+      </main>
+    </LangContext.Provider>
   );
 }
 
