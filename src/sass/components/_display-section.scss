@@ -1,0 +1,33 @@
+.display-section {
+    background-color: #fff;
+    height: 60vh;
+    width: 100%;
+    max-width: 160rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    .display-section__body {
+        height: inherit;
+        width: inherit;
+        display: flex;
+
+        .display-section__half {
+            height: inherit;
+            width: 50%;
+            padding: 2rem 0;
+            color: black;
+        }
+
+        .display-section__left {
+            padding-left: 2rem;
+            background-color: red;
+            clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+        }
+
+        .display-section__right {
+            padding: 5rem;
+            font-size: 1.5rem;
+        }
+    }
+}

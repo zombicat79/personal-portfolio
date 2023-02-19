@@ -12,6 +12,7 @@ import WelcomeSeal from './components/WelcomeSeal';
 import VisitorQuestionnaire from './components/VisitorQuestionnaire';
 import Header from './components/Header';
 import FeatureSection from './components/FeatureSection';
+import DisplaySection from './components/DisplaySection';
 import RangeSlider from './components/RangeSlider';
 
 import wSealTexts from './texts/welcomeSeal_texts';
@@ -69,14 +70,16 @@ function App() {
           initSealIsShrunk &&
           hasVisitorInfo &&
           <div>
-            <Header
+            { /*<Header
               logoSrc={logo}
               logoSize={50}
               logoAlt={"Cartoon-like logo depicting a cat"}
               burgerSize={40} 
               burgerColor={"#fff"}
+            /> */}
+            <DisplaySection 
+              visitorInfo={visitorInfo}
             />
-            <FeatureSection />
             <RangeSlider 
               min={1}
               max={3} 
@@ -84,6 +87,10 @@ function App() {
               name={"time"} 
               stepOptions={["Past", "Present", "Future"]}
               initialStep={1}
+            />
+            <FeatureSection 
+              burgerSize={40} 
+              burgerColor={"#000"}
             />
           </div>
         }

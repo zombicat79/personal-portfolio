@@ -1,3 +1,15 @@
-.slider--big {
-    min-width: 114rem;
+.slider-section {
+    max-width: 160rem;
+    height: 10vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    input, output {
+        display: block;
+    }
+
+    .slider--big {
+    
+    }
 }

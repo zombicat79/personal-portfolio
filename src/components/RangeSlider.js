@@ -11,7 +11,7 @@ function RangeSlider(props) {
     }
     
     return (
-        <div className="u-viewport-center">
+        <section className="slider-section">
             <output id={props.name + "-slider-output"} className="slider__output">{output}</output>
             <input 
                 type="range" 
@@ -21,7 +21,7 @@ function RangeSlider(props) {
                 value={inputValue}
                 onChange={(e) => handleChange(e)}
             />
-        </div>
+        </section>
     )
 }
 
