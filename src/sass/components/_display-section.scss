@@ -2,10 +2,20 @@
     background-color: #fff;
     height: 60vh;
     width: 100%;
+    border-radius: 2rem;
     max-width: 160rem;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
+    transition: opacity 4s;
+
+    &--appearing {
+        opacity: 1;
+    }
+
+    &--disappearing {
+        opacity: 0;
+    }
 
     .display-section__body {
         height: inherit;
@@ -15,14 +25,18 @@
         .display-section__half {
             height: inherit;
             width: 50%;
-            padding: 2rem 0;
             color: black;
         }
 
         .display-section__left {
-            padding-left: 2rem;
-            background-color: red;
+            height: 95%;
+            border-radius: 2rem;
+            background-image: url("./../../images/dubai.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+            margin: 10px;
         }
 
         .display-section__right {

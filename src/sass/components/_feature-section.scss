@@ -1,4 +1,13 @@
 .feature-section {
     background-color: blue;
     height: 25vh;
+    transition: opacity 4s;
+
+    &--appearing {
+        opacity: 1;
+    }
+
+    &--disappearing {
+        opacity: 0;
+    }
 }
