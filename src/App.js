@@ -36,7 +36,20 @@ function App() {
   const [hasVisitorInfo, setHasVisitorInfo] = useState(false);
   const [visitorInfo, setVisitorInfo] = useState({name: "", org: ""});
 
-  console.log(visitorInfo);
+  const [moment, setMoment] = useState("present");
+  const handleTimeline = (value) => {
+    console.log(value)
+    switch(value) {
+      case "1":
+        setMoment("past");
+        break;
+      case "2":
+        setMoment("present")
+        break;
+      default:
+        setMoment("future")
+    }
+  }
 
   return (
     <LangContext.Provider value={language}>
@@ -78,15 +91,20 @@ function App() {
               burgerColor={"#fff"}
             /> */}
             <DisplaySection 
+              logoSrc={logo}
+              logoAlt={"Cartoon-like logo depicting a cat"}
               visitorInfo={visitorInfo}
+              subsection="location"
+              moment={moment}
             />
             <RangeSlider 
               min={1}
               max={3} 
               size={"big"}
               name={"time"} 
-              stepOptions={["Past", "Present", "Future"]}
+              stepOptions={["past", "present", "future"]}
               initialStep={1}
+              handleTimeline={handleTimeline}
             />
             <FeatureSection 
               burgerSize={40} 

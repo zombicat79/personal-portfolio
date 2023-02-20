@@ -18,19 +18,22 @@ function RangeSlider(props) {
         const {value} = event.target;
         setInputValue(value);
         setOutput(props.stepOptions[value - 1])
+        props.handleTimeline(value)
     }
     
     return (
         <section className={"slider-section" + " " + "slider-section--"+componentVisibility}>
-            <output id={props.name + "-slider-output"} className="slider__output">{output}</output>
-            <input 
-                type="range" 
-                min={props.min} 
-                max={props.max}
-                className={"slider--" + props.size}
-                value={inputValue}
-                onChange={(e) => handleChange(e)}
-            />
+            <div className="slider__wrapper u-relative-center">
+                <input 
+                    type="range" 
+                    min={props.min} 
+                    max={props.max}
+                    className={"slider__input--" + props.size}
+                    value={inputValue}
+                    onChange={(e) => handleChange(e)}
+                />
+                <output id={props.name + "-slider-output"} className="slider__output">{output}</output>
+            </div>
         </section>
     )
 }

@@ -1,9 +1,11 @@
 .display-section {
     background-color: #fff;
-    height: 60vh;
-    width: 100%;
+    height: 65vh;
+    max-height: 50rem;
     border-radius: 2rem;
-    max-width: 160rem;
+    box-shadow: 0 1rem 2rem white,  0 -1rem 2rem white,  1rem 0 2rem white,  -1rem 0 2rem white;
+    width: 100%;
+    max-width: 114rem;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
@@ -19,6 +21,7 @@
 
     .display-section__body {
         height: inherit;
+        max-height: inherit;
         width: inherit;
         display: flex;
 
@@ -30,18 +33,96 @@
 
         .display-section__left {
             height: 95%;
+            max-height: inherit;
             border-radius: 2rem;
-            background-image: url("./../../images/dubai.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
             margin: 10px;
+            transition: all 2s;
+
+            &--location--past {
+                background-image: url("./../../images/barcelona.jpg");
+            }
+    
+            &--location--present {
+                background-image: url("./../../images/dubai.jpg");
+            }
+    
+            &--location--future {
+                background-image: url("./../../images/world.jpg");
+            }
         }
 
         .display-section__right {
+            position: relative;
+            max-height: inherit;
             padding: 5rem;
             font-size: 1.5rem;
+
+            .display-section__iconMenu {
+                position: absolute;
+                display: grid;
+                grid-template-columns: 6rem 6rem 6rem;
+                grid-template-rows: 6rem 6rem 6rem;
+                grid-template-areas: 
+                    ". . overview"
+                    ". education work"
+                    "home projects location"
+                ;
+                grid-gap: 1rem;
+                left: -40%;
+                bottom: 1.5rem;
+                text-align: center;
+
+                .menuElement:not(img) {
+                    padding-top: .3rem;
+                    font-size: 4rem;
+                    background: linear-gradient(to bottom right, black, skyblue);
+                    background-clip: text;
+                    color: transparent;
+                    opacity: .2;
+                    transition: font-size .3s, opacity 1s;
+
+
+                    &:hover {
+                        opacity: 1;
+                        font-size: 5.25rem;
+                        cursor: pointer;
+                    }
+                }
+
+                img {
+                    width: 5rem;
+                    transition: width .3s;
+
+                    &:hover {
+                        width: 6.25rem;
+                        cursor: pointer;
+                    }
+                }
+
+                #icon-overview {
+                    grid-area: overview;
+                }
+                #icon-education {
+                    grid-area: education;
+                }
+                #icon-work {
+                    grid-area: work;
+                }
+                #icon-home {
+                    grid-area: home;
+                    margin: 0 auto;
+                }
+                #icon-projects {
+                    grid-area: projects;
+                }
+                #icon-location {
+                    grid-area: location;
+                }
+            }
         }
     }
 }
