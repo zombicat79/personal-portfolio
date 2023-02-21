@@ -33,6 +33,13 @@ function App() {
     })
   }
 
+  const [headerIsUnfolded, setHeaderIsUnfolded] = useState(false);
+  const handleHeaderState = () => {
+    setHeaderIsUnfolded((prevState) => {
+        return !prevState;
+    })
+  }
+
   const [hasVisitorInfo, setHasVisitorInfo] = useState(false);
   const [visitorInfo, setVisitorInfo] = useState({name: "", org: ""});
 
@@ -55,7 +62,7 @@ function App() {
     <LangContext.Provider value={language}>
       <main className="App">
         {
-          !hasVisitorInfo &&
+          !initSealIsShrunk &&
           <WelcomeSeal 
             logoImages={[logo, logoHover]} 
             logoAlt={"Cartoon-like logo depicting a cat"} 
@@ -83,19 +90,23 @@ function App() {
           initSealIsShrunk &&
           hasVisitorInfo &&
           <div>
-            { /*<Header
+            <Header
+              headerIsUnfolded={headerIsUnfolded}
               logoSrc={logo}
               logoSize={50}
               logoAlt={"Cartoon-like logo depicting a cat"}
               burgerSize={40} 
               burgerColor={"#fff"}
-            /> */}
+              handleHeaderState={handleHeaderState}
+              handleSealState={handleSealState}
+            />
             <DisplaySection 
               logoSrc={logo}
               logoAlt={"Cartoon-like logo depicting a cat"}
               visitorInfo={visitorInfo}
               subsection="location"
               moment={moment}
+              handleHeaderState={handleHeaderState}
             />
             <RangeSlider 
               min={1}

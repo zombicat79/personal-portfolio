@@ -24,10 +24,10 @@ function DisplaySection(props) {
                     
                 <div className="display-section__right display-section__half">
                     <div className="display-section__iconMenu">
-                        <i id="icon-overview" className="menuElement icon-basic-magnifier"></i>
+                        <i id="icon-overview" className="menuElement icon-basic-home"></i>
                         <i id="icon-education" className="menuElement icon-basic-book-pen"></i>
                         <i id="icon-work" className="menuElement icon-basic-gear"></i>
-                        <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} />
+                        <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} onClick={(e) => props.handleHeaderState()} />
                         <i id="icon-projects" className="menuElement icon-basic-lightbulb"></i>
                         <i id="icon-location" className="menuElement icon-basic-geolocalize-01"></i>
                     </div>
