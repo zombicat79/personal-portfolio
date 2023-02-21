@@ -42,6 +42,16 @@
             margin: 10px;
             transition: all 2s;
 
+            &--home--past {
+                background-image: url("./../../images/david.JPG");
+            }
+            &--home--present {
+                background-image: url("./../../images/david.JPG");
+            }
+            &--home--future {
+                background-image: url("./../../images/david.JPG");
+            }
+
             &--location--past {
                 background-image: url("./../../images/barcelona.jpg");
             }

@@ -58,6 +58,11 @@ function App() {
     }
   }
 
+  const [activeSubsection, setActiveSubsection] = useState("home");
+  const handleActiveSubsection = (section) => {
+    setActiveSubsection(section)
+  }
+
   return (
     <LangContext.Provider value={language}>
       <main className="App">
@@ -104,8 +109,9 @@ function App() {
               logoSrc={logo}
               logoAlt={"Cartoon-like logo depicting a cat"}
               visitorInfo={visitorInfo}
-              subsection="location"
               moment={moment}
+              activeSubsection={activeSubsection}
+              handleActiveSubsection={handleActiveSubsection}
               handleHeaderState={handleHeaderState}
             />
             <RangeSlider 
