@@ -26,18 +26,32 @@ function App() {
     setLanguage(lang);
   }
   
+  const [initSealIsShrinking, setInitSealIsShrinking] = useState(false);
   const [initSealIsShrunk, setInitSealIsShrunk] = useState(false);
-  const handleSealState = () => {
-    setInitSealIsShrunk((prevState) => {
+  const handleSealState = (state) => {
+    if (state === "shrinking") {
+      setTimeout(() => {
+        setInitSealIsShrunk((prevState) => {
+          return !prevState;
+        })
+      }, 2000);
+      
+      setInitSealIsShrinking((prevState) => {
         return !prevState;
-    })
-  }
+      });
+    }
 
-  const [headerIsUnfolded, setHeaderIsUnfolded] = useState(false);
-  const handleHeaderState = () => {
-    setHeaderIsUnfolded((prevState) => {
+    if (state === "shrunk") {
+      setTimeout(() => {
+        setInitSealIsShrinking((prevState) => {
+          return !prevState;
+        })
+      }, 1000);
+      
+      setInitSealIsShrunk((prevState) => {
         return !prevState;
-    })
+      });
+    }
   }
 
   const [hasVisitorInfo, setHasVisitorInfo] = useState(false);
@@ -63,6 +77,42 @@ function App() {
     setActiveSubsection(section)
   }
 
+  /* const [mainComponentsVisibility, setMainComponentsVisibilty] = useState({
+    display: "disappearing",
+    slider: "disappearing",
+    feature: "disappearing"
+  });
+  const handleMainComponentsVisibility = (component) => {
+    if (mainComponentsVisibility[component] === "disappearing") {
+      setMainComponentsVisibilty(() => {
+        for (let mainComponent in mainComponentsVisibility) {
+          if (mainComponent === component) {
+            mainComponentsVisibility[mainComponent] = "appearing";
+          }
+        }
+        return mainComponentsVisibility;
+      })
+    }
+
+    if (mainComponentsVisibility[component] === "appearing") {
+      setMainComponentsVisibilty(() => {
+        for (let mainComponent in mainComponentsVisibility) {
+          if (mainComponent === component) {
+            mainComponentsVisibility[mainComponent] = "disappearing";
+          }
+        }
+        return mainComponentsVisibility;
+      })
+    }
+  } */
+
+  const [headerIsUnfolded, setHeaderIsUnfolded] = useState(false);
+  const handleHeaderState = () => {
+    setHeaderIsUnfolded((prevState) => {
+        return !prevState;
+    })
+  }
+
   return (
     <LangContext.Provider value={language}>
       <main className="App">
@@ -75,6 +125,7 @@ function App() {
             role={wSealTexts.role[language]}
             actionTexts={wSealTexts.actionTexts[language]}
             viewport={viewport}
+            initSealIsShrinking={initSealIsShrinking}
             initSealIsShrunk={initSealIsShrunk}
             handleSealState={handleSealState}
             handleLanguage={handleLanguage}
@@ -104,6 +155,7 @@ function App() {
               burgerColor={"#fff"}
               handleHeaderState={handleHeaderState}
               handleSealState={handleSealState}
+              /* handleMainComponentsVisibility={handleMainComponentsVisibility} */
             />
             <DisplaySection 
               logoSrc={logo}
@@ -113,6 +165,8 @@ function App() {
               activeSubsection={activeSubsection}
               handleActiveSubsection={handleActiveSubsection}
               handleHeaderState={handleHeaderState}
+              /* mainComponentsVisibility={mainComponentsVisibility}
+              handleMainComponentsVisibility={handleMainComponentsVisibility} */
             />
             <RangeSlider 
               min={1}

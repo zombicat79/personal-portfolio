@@ -10,9 +10,15 @@ function Header(props) {
                         width={props.logoSize} height={props.logoSize}
                         onClick={(e) => {
                                 props.handleHeaderState();
-                                setTimeout(() => {
-                                    props.handleSealState()
+                                /* props.handleMainComponentsVisibility("display"); */
+                                
+                                /* setTimeout(() => {
+                                    props.handleSealState("shrunk");
                                 }, 1500);
+                                setTimeout(() => {
+                                    props.handleSealState("shrinking");
+                                }, 2000); */
+                                props.handleSealState("shrunk");
                             }
                         }
                     />

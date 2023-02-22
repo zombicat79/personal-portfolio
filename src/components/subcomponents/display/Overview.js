@@ -7,8 +7,8 @@ function Overview(props) {
     const language = useContext(LangContext)
 
     return (
-        <div>
-            <p>{displayTexts.salute[language]} {props.visitorInfo.name}</p>
+        <div className="display-section__textBox">
+            <p className="display-section__title">{displayTexts.salute[language]} {props.visitorInfo.name},</p>
             <br></br>
             <p>{displayTexts.intro[language].paragraph1}</p>
             <br></br>

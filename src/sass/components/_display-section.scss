@@ -2,6 +2,7 @@
     background-color: #fff;
     height: 65vh;
     max-height: 50rem;
+    margin-top: 2.5rem;
     border-radius: 2rem;
     box-shadow: 0 1rem 2rem white,  0 -1rem 2rem white,  1rem 0 2rem white,  -1rem 0 2rem white;
     width: 100%;
@@ -9,7 +10,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-    transition: opacity 4s;
+    transition: opacity 2s;
 
     &--appearing {
         opacity: 1;
@@ -43,13 +44,13 @@
             transition: all 2s;
 
             &--home--past {
-                background-image: url("./../../images/david.JPG");
+                background-image: url("./../../images/david.jpg");
             }
             &--home--present {
-                background-image: url("./../../images/david.JPG");
+                background-image: url("./../../images/david.jpg");
             }
             &--home--future {
-                background-image: url("./../../images/david.JPG");
+                background-image: url("./../../images/david.jpg");
             }
 
             &--location--past {
@@ -94,12 +95,24 @@
                     color: transparent;
                     opacity: .2;
                     transition: font-size .3s, opacity 1s;
+                }
 
+                .menuElement:not(.active):hover {
+                    opacity: 1;
+                    font-size: 5.25rem;
+                    cursor: pointer;
+                }
 
-                    &:hover {
-                        opacity: 1;
-                        font-size: 5.25rem;
-                        cursor: pointer;
+                .active {
+                    border-radius: 5rem;
+                    font-size: 3.25rem !important;
+                    opacity: 1 !important;
+                    background-clip: unset !important;
+
+                    &::before {
+                        color: white;
+                        position: relative;
+                        top: 18%;
                     }
                 }
 
@@ -131,6 +144,16 @@
                 }
                 #icon-location {
                     grid-area: location;
+                }
+            }
+
+            .display-section__textBox {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+                .display-section__title {
+                    font-size: 2.5rem;
                 }
             }
         }

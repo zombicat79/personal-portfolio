@@ -32,7 +32,7 @@ function VisitorQuestionnaire(props) {
         setTimeout(() => {
             props.setHasVisitorInfo(true)
             props.setVisitorInfo({name: name, org: org})
-        }, 4000);
+        }, 2000);
     }
 
     useEffect(() => {
