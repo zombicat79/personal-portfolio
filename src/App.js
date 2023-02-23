@@ -14,6 +14,7 @@ import Header from './components/Header';
 import FeatureSection from './components/FeatureSection';
 import DisplaySection from './components/DisplaySection';
 import RangeSlider from './components/RangeSlider';
+import Footer from './components/Footer';
 
 import wSealTexts from './texts/welcomeSeal_texts';
 export const LangContext = React.createContext(null);
@@ -145,7 +146,7 @@ function App() {
         {
           initSealIsShrunk &&
           hasVisitorInfo &&
-          <div>
+          <div id="main-page">
             <Header
               headerIsUnfolded={headerIsUnfolded}
               logoSrc={logo}
@@ -177,10 +178,13 @@ function App() {
               initialStep={1}
               handleTimeline={handleTimeline}
             />
-            <FeatureSection 
-              burgerSize={40} 
-              burgerColor={"#000"}
-            />
+            { activeSubsection !== "home" &&
+              <FeatureSection 
+                burgerSize={40} 
+                burgerColor={"#000"}
+              />
+            }
+            <Footer footerBrandImg={submitBtnPressed} footerBrandImgAlt={"Cat paw"} />
           </div>
         }
       </main>

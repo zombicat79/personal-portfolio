@@ -12,3 +12,13 @@
     font-family: "Source-Bold";
     src: url("./../../fonts/SourceCodePro-Bold.ttf");
 }
+
+.branding-heading {
+    font-family: "Russo-Regular";
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 
+        3rem 1rem 4rem rgba(darkgrey, .5),
+        -3rem 1rem 4rem rgba(darkgrey, .5),
+        0 -.25rem 4rem rgba(darkgrey, .5);
+}

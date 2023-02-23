@@ -141,7 +141,7 @@ function WelcomeSeal(props) {
         <section className={"welcomeSeal" + " " + "u-absolute-center" + " " + shrinkModifier.sealParent}>
             <div className={"welcomeSeal__heading" + " " + shrinkModifier.sealHeading}>
                 <img src={activeLogo} alt={props.logoAlt}></img>
-                <h1>{props.tradeName}</h1>
+                <h1 class="branding-heading">{props.tradeName}</h1>
 
                 {
                     // Do NOT render any touch point while Language Selector is activated (focus on language selection)

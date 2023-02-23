@@ -1,11 +1,15 @@
 .feature-section {
-    background-color: blue;
+    background-color: #000;
     height: 25vh;
-    max-width: 114rem;
+    max-height: 25rem;
+    max-width: $max-component-width;
+    box-shadow: $standard-box-shadow;
+    border-radius: 3rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    transition: opacity 4s;
+    transition: opacity 2s;
+    margin-bottom: 7rem;
 
     &--appearing {
         opacity: 1;

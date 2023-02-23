@@ -48,7 +48,7 @@ function DisplaySection(props) {
             console.log(item.nodeName)
             item.style.height = "initial";
             if (item.nodeName === "HTML") {
-                item.style.padding = "5rem 2.5rem";
+                item.style.padding = "0 2.5rem";
             }
             if (item.className === "App") {
                 item.style.overflow = "auto";
