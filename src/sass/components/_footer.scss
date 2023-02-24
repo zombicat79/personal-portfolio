@@ -1,11 +1,10 @@
 .footer {
 
-    h1 {
-       
-    }
-
     img {
-        width: 5rem;
         margin-top: .5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

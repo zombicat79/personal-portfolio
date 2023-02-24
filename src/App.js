@@ -184,7 +184,7 @@ function App() {
                 burgerColor={"#000"}
               />
             }
-            <Footer footerBrandImg={submitBtnPressed} footerBrandImgAlt={"Cat paw"} />
+            <Footer footerBrandImages={[logo, logoHover]} footerBrandImgAlt={"Cartoon-like logo depicting a cat"} logoSize={100} />
           </div>
         }
       </main>

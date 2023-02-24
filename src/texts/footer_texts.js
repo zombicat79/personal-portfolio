@@ -1,5 +1,4 @@
 const currentYear = new Date().getFullYear();
-console.log(currentYear)
 
 const footerTexts = {
     rights: {

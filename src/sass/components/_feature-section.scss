@@ -1,6 +1,6 @@
 .feature-section {
     background-color: #000;
-    height: 25vh;
+    height: 19rem;
     max-height: 25rem;
     max-width: $max-component-width;
     box-shadow: $standard-box-shadow;
@@ -9,7 +9,8 @@
     left: 50%;
     transform: translateX(-50%);
     transition: opacity 2s;
-    margin-bottom: 7rem;
+    padding: 0 2rem;
+    margin-bottom: 15rem;
 
     &--appearing {
         opacity: 1;
@@ -17,5 +18,94 @@
 
     &--disappearing {
         opacity: 0;
+    }
+
+    /* SLIDER SPECIFIC STYLES */
+    .slick-slider {
+        top: 50%;
+        height: 15rem;
+        transform: translateY(-50%);
+
+        .slick-list {
+            height: inherit;
+
+            .slick-track {
+                height: inherit;
+
+                .slick-slide div {
+                    height: inherit;
+                    width: inherit;
+                    margin-right: 2rem;
+                    overflow: visible;
+
+                    .slider-item {
+                        display: flex !important;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: all 2s;
+
+                        .slider-clickableElement {
+                            display: block;
+                            overflow: visible;
+                            position: relative;
+                            height: 80%;
+                            width: 70%;
+                            margin: 0 auto;
+                            transition: all .5s;
+                            background-image: url("./../../images/dubai.jpg");
+                            background-size: cover;
+                            background-position: center;
+
+                            &:hover {
+                                transform: scale(1.2, 1.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-prev {
+            left: -8.5rem;
+            
+            &::before {
+                content: url("./../../images/icos/cat-paw-full-small.png");
+                display: inline-block;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .slick-next {
+            right: -7.5rem;
+
+            &::before {
+                content: url("./../../images/icos/cat-paw-full-small.png");
+                display: inline-block;
+                transform: rotate(90deg);
+            }
+        }
+
+        .slick-disabled::before {
+            content: url("./../../images/icos/cat-paw-hollow-small.png");
+            opacity: 1;
+        }
+
+        .slick-dots {
+            bottom: -8rem;
+
+            button::before{
+                border: 2px solid white;
+                border-radius: 1rem;
+                height: 1rem;
+                width: 1rem;
+            }
+
+            .slick-active button::before{
+                background-color: white;;
+            }
+        }
     }
 }
