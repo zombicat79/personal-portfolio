@@ -4,7 +4,9 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function milestoneSlider() {
+import infoItems from './../../../data/info-items';
+
+function milestoneSlider(props) {
     const settings = {
         appendArrows: document.querySelector(".feature-section"),
         dots: true,
@@ -16,30 +18,21 @@ function milestoneSlider() {
     
     return (
         <Slider {...settings}>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
-            <div className="slider-item">
-                <a href="#" className="slider-clickableElement"></a>
-            </div>
+            {
+                infoItems[props.activeSubsection].map((el) => {
+                    if (el.moment === props.moment) {
+                        return (
+                            <div key={el.id} className="slider-item">
+                                <div 
+                                    className={"slider-clickableElement" + " " + "slider-clickableElement--"+el.name}
+                                    onClick={(e) => props.handleActiveInfoItem(el.name)}>
+                                    <p className="item-name">{el.name}</p>
+                                </div>
+                            </div>
+                        )
+                    }
+                })
+            }
         </Slider>
     )
 }

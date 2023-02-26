@@ -75,8 +75,14 @@ function App() {
 
   const [activeSubsection, setActiveSubsection] = useState("home");
   const handleActiveSubsection = (section) => {
-    setActiveSubsection(section)
+    setActiveSubsection(section);
   }
+
+  const [activeInfoItem, setActiveInfoItem] = useState("");
+  const handleActiveInfoItem = (item) => {
+    setActiveInfoItem(item);
+  }
+
 
   /* const [mainComponentsVisibility, setMainComponentsVisibilty] = useState({
     display: "disappearing",
@@ -179,9 +185,11 @@ function App() {
               handleTimeline={handleTimeline}
             />
             { activeSubsection !== "home" &&
-              <FeatureSection 
-                burgerSize={40} 
-                burgerColor={"#000"}
+              <FeatureSection
+                moment={moment}
+                activeSubsection={activeSubsection}
+                activeInfoItem={activeInfoItem}
+                handleActiveInfoItem={handleActiveInfoItem}
               />
             }
             <Footer footerBrandImages={[logo, logoHover]} footerBrandImgAlt={"Cartoon-like logo depicting a cat"} logoSize={100} />

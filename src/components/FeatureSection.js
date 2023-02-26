@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import MilestoneSlider from './subcomponents/feature/milestoneSlider';
 
-function FeatureSection() {
+function FeatureSection(props) {
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
     const handleVisibility = (action) => {
         setComponentVisibility(action);
@@ -15,7 +15,12 @@ function FeatureSection() {
 
     return (
         <section className={"feature-section" + " " + "feature-section--"+componentVisibility}>
-            <MilestoneSlider />
+            <MilestoneSlider
+                moment={props.moment}
+                activeSubsection={props.activeSubsection}
+                activeInfoItem={props.activeInfoItem} 
+                handleActiveInfoItem={props.handleActiveInfoItem}
+            />
         </section>
     )
 }

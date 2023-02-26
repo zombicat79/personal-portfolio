@@ -31,6 +31,8 @@
 
             .slick-track {
                 height: inherit;
+                margin-left: 0;
+                margin-right: 0;
 
                 .slick-slide div {
                     height: inherit;
@@ -44,8 +46,17 @@
                         justify-content: center;
                         position: relative;
                         top: 50%;
+                        text-align: center;
                         transform: translateY(-50%);
                         transition: all 2s;
+
+                        .item-name {
+                            font-size: 1.2rem;
+                            font-style: italic;
+                            text-transform: uppercase;
+                            position: relative;
+                            top: 80%;
+                        }
 
                         .slider-clickableElement {
                             display: block;
@@ -55,12 +66,24 @@
                             width: 70%;
                             margin: 0 auto;
                             transition: all .5s;
-                            background-image: url("./../../images/dubai.jpg");
                             background-size: cover;
                             background-position: center;
 
                             &:hover {
                                 transform: scale(1.2, 1.5);
+                                cursor: pointer;
+                            }
+
+                            &--barcelona {
+                                background-image: url("./../../images/icos/infoItems/barcelona.png");
+                            }
+
+                            &--manchester {
+                                background-image: url("./../../images/icos/infoItems/manchester.png");
+                            }
+
+                            &--dubai {
+                                background-image: url("./../../images/icos/infoItems/dubai.png");
                             }
                         }
                     }
