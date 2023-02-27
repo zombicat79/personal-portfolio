@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import Overview from './subcomponents/display/Overview';
-import LocationPast from './subcomponents/display/LocationPast';
-import LocationPresent from './subcomponents/display/LocationPresent';
+import LocationBarcelona from './subcomponents/display/LocationBarcelona';
+import LocationDubai from './subcomponents/display/LocationDubai';
 import LocationFuture from './subcomponents/display/LocationFuture';
 
 function DisplaySection(props) {
@@ -29,6 +29,11 @@ function DisplaySection(props) {
             }
             return menuStatus;
         })
+    }
+
+    // Function used to include the visitor's name in selected content paragraphs
+    const personalizeParagraph = (searchTerm, paragraph) => {
+        return paragraph.replace(searchTerm, `${searchTerm}, ${props.visitorInfo.name},`)
     }
 
     useEffect(() => {
@@ -82,14 +87,28 @@ function DisplaySection(props) {
                         </i>
                         <i 
                             id="icon-location" className={"menuElement" + " " + "icon-basic-geolocalize-01" + " " + menuStatus.location} 
-                            onClick={(e) => {handleMenuStatus("location"); props.handleActiveSubsection("location")}}>
+                            onClick={(e) => {
+                                handleMenuStatus("location"); 
+                                props.handleActiveSubsection("location");
+                                switch(props.moment) {
+                                    case "past":
+                                        props.handleActiveInfoItem("barcelona");
+                                        break;
+                                    case "present":
+                                        props.handleActiveInfoItem("dubai");
+                                        break;
+                                    default:
+                                        props.handleActiveInfoItem("world");
+                                }
+                            }}>
                         </i>
                     </div>
 
                     {props.activeSubsection === "home" && <Overview visitorInfo={props.visitorInfo}/>}
-                    {props.activeSubsection === "location" && props.moment === "past" && <LocationPast />}
-                    {props.activeSubsection === "location" && props.moment === "present" && <LocationPresent />}
-                    {props.activeSubsection === "location" && props.moment === "future" && <LocationFuture />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
+                    {/* props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationPast /> */}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai visitorInfo={props.visitorInfo} personalizeParagraph={personalizeParagraph}/>}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationFuture />}
                 </div>
             </div>
         </section>

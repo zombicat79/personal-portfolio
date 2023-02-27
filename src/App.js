@@ -170,8 +170,10 @@ function App() {
               visitorInfo={visitorInfo}
               moment={moment}
               activeSubsection={activeSubsection}
+              activeInfoItem={activeInfoItem}
               handleActiveSubsection={handleActiveSubsection}
               handleHeaderState={handleHeaderState}
+              handleActiveInfoItem={handleActiveInfoItem}
               /* mainComponentsVisibility={mainComponentsVisibility}
               handleMainComponentsVisibility={handleMainComponentsVisibility} */
             />

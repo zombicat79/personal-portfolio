@@ -58,6 +58,10 @@
                             top: 80%;
                         }
 
+                        .inactive {
+                            opacity: .3;
+                        }
+
                         .slider-clickableElement {
                             display: block;
                             overflow: visible;

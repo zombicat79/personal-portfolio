@@ -21,12 +21,14 @@ function milestoneSlider(props) {
             {
                 infoItems[props.activeSubsection].map((el) => {
                     if (el.moment === props.moment) {
+                        let itemState = el.name === props.activeInfoItem ? "active" : "inactive";
+
                         return (
                             <div key={el.id} className="slider-item">
                                 <div 
-                                    className={"slider-clickableElement" + " " + "slider-clickableElement--"+el.name}
+                                    className={"slider-clickableElement" + " " + "slider-clickableElement--"+el.name + " " + itemState}
                                     onClick={(e) => props.handleActiveInfoItem(el.name)}>
-                                    <p className="item-name">{el.name}</p>
+                                        <p className="item-name">{el.name}</p>
                                 </div>
                             </div>
                         )
