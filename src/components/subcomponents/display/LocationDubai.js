@@ -9,13 +9,13 @@ function LocationDubai(props) {
     let personalizedP3 = "";
     switch(language) {
         case "cat":
-            personalizedP3 = props.personalizeParagraph("Si us plau", locationDUB.intro[language].paragraph3);
+            personalizedP3 = props.personalizeParagraph("name", "Si us plau", locationDUB.intro[language].paragraph3);
             break;
         case "esp":
-            personalizedP3 = props.personalizeParagraph("Por favor", locationDUB.intro[language].paragraph3);
+            personalizedP3 = props.personalizeParagraph("name", "Por favor", locationDUB.intro[language].paragraph3);
             break;
         default:
-            personalizedP3 = props.personalizeParagraph("Please", locationDUB.intro[language].paragraph3);
+            personalizedP3 = props.personalizeParagraph("name", "Please", locationDUB.intro[language].paragraph3);
     }
 
     return (

@@ -23,10 +23,6 @@ function LocationBarcelona(props) {
                 <img className="display-section__langIcon" src={catIcon} alt="round catalan flag" />
                 <img className="display-section__langIcon" src={espIcon} alt="round spanish flag"/>
             </div>
-            <br></br>
-            <p>{locationBCN.intro[language].paragraph2}</p>
-            <br></br>
-            <p>{locationBCN.intro[language].paragraph2}</p>
         </div>
     )
 }

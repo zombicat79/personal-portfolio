@@ -25,6 +25,81 @@
         width: inherit;
         display: flex;
 
+        .display-section__iconMenu {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 6rem 6rem 6rem;
+            grid-template-rows: 6rem 6rem 6rem;
+            grid-template-areas: 
+                ". . overview"
+                ". education work"
+                "home projects location"
+            ;
+            grid-gap: 1rem;
+            right: 50%;
+            bottom: 1.5rem;
+            text-align: center;
+
+            .menuElement:not(img) {
+                padding-top: .3rem;
+                font-size: 4rem;
+                background: linear-gradient(to bottom right, black, skyblue);
+                background-clip: text;
+                color: transparent;
+                opacity: .2;
+                transition: font-size .3s, opacity 1s;
+            }
+
+            .menuElement:not(.active):hover {
+                opacity: 1;
+                font-size: 5.25rem;
+                cursor: pointer;
+            }
+
+            .active {
+                border-radius: 5rem;
+                font-size: 3.25rem !important;
+                opacity: 1 !important;
+                background-clip: unset !important;
+
+                &::before {
+                    color: white;
+                    position: relative;
+                    top: 18%;
+                }
+            }
+
+            img {
+                width: 5rem;
+                transition: width .3s;
+
+                &:hover {
+                    width: 6.25rem;
+                    cursor: pointer;
+                }
+            }
+
+            #icon-overview {
+                grid-area: overview;
+            }
+            #icon-education {
+                grid-area: education;
+            }
+            #icon-work {
+                grid-area: work;
+            }
+            #icon-home {
+                grid-area: home;
+                margin: 0 auto;
+            }
+            #icon-projects {
+                grid-area: projects;
+            }
+            #icon-location {
+                grid-area: location;
+            }
+        }
+
         .display-section__half {
             height: inherit;
             width: 50%;
@@ -42,25 +117,23 @@
             margin: 10px;
             transition: all 2s;
 
-            &--home--past {
-                background-image: url("./../../images/david.jpg");
-            }
-            &--home--present {
-                background-image: url("./../../images/david.jpg");
-            }
-            &--home--future {
+            &--home--home {
                 background-image: url("./../../images/david.jpg");
             }
 
-            &--location--past {
+            &--location--barcelona {
                 background-image: url("./../../images/barcelona.jpg");
             }
+
+            &--location--manchester {
+                background-image: url("./../../images/manchester.jpg");
+            }
     
-            &--location--present {
+            &--location--dubai {
                 background-image: url("./../../images/dubai.jpg");
             }
     
-            &--location--future {
+            &--location--world {
                 background-image: url("./../../images/world.jpg");
             }
         }
@@ -70,6 +143,21 @@
             max-height: inherit;
             padding: 5rem;
             font-size: 1.5rem;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                background-color: transparent;
+                width: .7rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: linear-gradient(to bottom, transparent, white, black, skyblue, white, transparent);
+                border-radius: 1rem;
+            }
 
             .display-section__iconMenu {
                 position: absolute;
@@ -148,8 +236,6 @@
 
             .display-section__textBox {
                 position: relative;
-                // top: 50%;
-                // transform: translateY(-50%);
 
                 .display-section__title {
                     font-size: 2.5rem;
@@ -169,6 +255,10 @@
                     .display-section__langIcon {
                         width: 5rem;
                     }
+                }
+
+                .display-section__langBox--manchester {
+                    justify-content: center;
                 }
             }
         }

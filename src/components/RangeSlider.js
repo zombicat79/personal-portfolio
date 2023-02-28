@@ -1,6 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+
+import { LangContext } from './../App';
+import rangesliderTexts from './../texts/rangeSlider_texts';
 
 function RangeSlider(props) {
+    const language = useContext(LangContext);
+
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
     const handleVisibility = (action) => {
         setComponentVisibility(action);
@@ -17,8 +22,20 @@ function RangeSlider(props) {
     const handleChange = (event) => {
         const {value} = event.target;
         setInputValue(value);
-        setOutput(props.stepOptions[value - 1])
-        props.handleTimeline(value)
+        setOutput(props.stepOptions[value - 1]);
+        props.handleTimeline(value);
+        switch(props.activeSubsection) {
+            case "location":
+                if (value === "1") {
+                    props.handleActiveInfoItem("barcelona");
+                } else if (value === "2") {
+                    props.handleActiveInfoItem("dubai");
+                } else {
+                    props.handleActiveInfoItem("world");
+                }
+                break;
+            default:
+        }
     }
     
     return (
@@ -32,7 +49,7 @@ function RangeSlider(props) {
                     value={inputValue}
                     onChange={(e) => handleChange(e)}
                 />
-                <output id={props.name + "-slider-output"} className="slider__output">{output}</output>
+                <output id={props.name + "-slider-output"} className="slider__output">{rangesliderTexts[inputValue-1][language]}</output>
             </div>
         </section>
     )

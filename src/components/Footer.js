@@ -21,8 +21,8 @@ function Footer(props) {
     }
 
     return (
-        <section class="footer u-blockElm-h-center">
-            <h1 class="branding-heading">ZombieCat</h1>
+        <section className="footer u-blockElm-h-center">
+            <h1 className="branding-heading">ZombieCat</h1>
             <p>{footerTexts.rights[language]}</p>
             <img 
                 src={activeLogo} alt={props.footerBrandImgAlt} width={props.logoSize} 

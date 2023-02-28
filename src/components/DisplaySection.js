@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import Overview from './subcomponents/display/Overview';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
+import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
-import LocationFuture from './subcomponents/display/LocationFuture';
+import LocationWorld from './subcomponents/display/LocationWorld';
 
 function DisplaySection(props) {
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
@@ -32,8 +33,12 @@ function DisplaySection(props) {
     }
 
     // Function used to include the visitor's name in selected content paragraphs
-    const personalizeParagraph = (searchTerm, paragraph) => {
-        return paragraph.replace(searchTerm, `${searchTerm}, ${props.visitorInfo.name},`)
+    const personalizeParagraph = (insertInfo, searchTerm, paragraph) => {
+        if (insertInfo === "name") {
+            return paragraph.replace(searchTerm, `${searchTerm}, ${props.visitorInfo.name},`);
+        } else {
+            return paragraph.replace(searchTerm, `${searchTerm} ${props.visitorInfo.org}`);
+        }
     }
 
     useEffect(() => {
@@ -45,6 +50,10 @@ function DisplaySection(props) {
             handleVisibility("appearing");
         }, 1000);
     });
+
+    useEffect(() => {
+        props.handleActiveInfoItem("home");
+    }, [])
     
     useEffect(() => {
         const layers = Array.from(document.querySelectorAll("html, body, #root, .App"));
@@ -64,51 +73,51 @@ function DisplaySection(props) {
     return (
         <section className={"display-section" + " " + "display-section--"+componentVisibility}>
             <div className="display-section__body">
-                <div className={"display-section__left" + " " + "display-section__half" + " " + "display-section__left--"+props.activeSubsection+"--"+props.moment}></div>
+                <div className="display-section__iconMenu">
+                    <i 
+                        id="icon-overview" className={"menuElement" + " " + "icon-basic-home" + " " + menuStatus.overview}
+                        onClick={(e) => {handleMenuStatus("overview"); props.handleActiveSubsection("home"); props.handleActiveInfoItem("home")}}>
+                    </i>
+                    <i 
+                        id="icon-education" className={"menuElement" + " " + "icon-basic-book-pen" + " " + menuStatus.education} 
+                        onClick={(e) => {handleMenuStatus("education"); props.handleActiveSubsection("education")}}>
+                    </i>
+                    <i 
+                        id="icon-work" className={"menuElement" + " " + "icon-basic-gear" + " " + menuStatus.work} 
+                        onClick={(e) => {handleMenuStatus("work"); props.handleActiveSubsection("work")}}> 
+                    </i>
+                    <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} onClick={(e) => props.handleHeaderState()} />
+                    <i 
+                        id="icon-projects" className={"menuElement" + " " + "icon-basic-lightbulb" + " " + menuStatus.projects} 
+                        onClick={(e) => {handleMenuStatus("projects"); props.handleActiveSubsection("projects")}}> 
+                    </i>
+                    <i 
+                        id="icon-location" className={"menuElement" + " " + "icon-basic-geolocalize-01" + " " + menuStatus.location} 
+                        onClick={(e) => {
+                            handleMenuStatus("location"); 
+                            props.handleActiveSubsection("location");
+                            switch(props.moment) {
+                                case "past":
+                                    props.handleActiveInfoItem("barcelona");
+                                    break;
+                                case "present":
+                                    props.handleActiveInfoItem("dubai");
+                                    break;
+                                default:
+                                    props.handleActiveInfoItem("world");
+                            }
+                        }}>
+                    </i>
+                </div>
+
+                <div className={"display-section__left" + " " + "display-section__half" + " " + "display-section__left--"+props.activeSubsection+"--"+props.activeInfoItem}></div>
                     
                 <div className="display-section__right display-section__half">
-                    <div className="display-section__iconMenu">
-                        <i 
-                            id="icon-overview" className={"menuElement" + " " + "icon-basic-home" + " " + menuStatus.overview}
-                            onClick={(e) => {handleMenuStatus("overview"); props.handleActiveSubsection("home")}}>
-                        </i>
-                        <i 
-                            id="icon-education" className={"menuElement" + " " + "icon-basic-book-pen" + " " + menuStatus.education} 
-                            onClick={(e) => {handleMenuStatus("education"); props.handleActiveSubsection("education")}}>
-                        </i>
-                        <i 
-                            id="icon-work" className={"menuElement" + " " + "icon-basic-gear" + " " + menuStatus.work} 
-                            onClick={(e) => {handleMenuStatus("work"); props.handleActiveSubsection("work")}}> 
-                        </i>
-                        <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} onClick={(e) => props.handleHeaderState()} />
-                        <i 
-                            id="icon-projects" className={"menuElement" + " " + "icon-basic-lightbulb" + " " + menuStatus.projects} 
-                            onClick={(e) => {handleMenuStatus("projects"); props.handleActiveSubsection("projects")}}> 
-                        </i>
-                        <i 
-                            id="icon-location" className={"menuElement" + " " + "icon-basic-geolocalize-01" + " " + menuStatus.location} 
-                            onClick={(e) => {
-                                handleMenuStatus("location"); 
-                                props.handleActiveSubsection("location");
-                                switch(props.moment) {
-                                    case "past":
-                                        props.handleActiveInfoItem("barcelona");
-                                        break;
-                                    case "present":
-                                        props.handleActiveInfoItem("dubai");
-                                        break;
-                                    default:
-                                        props.handleActiveInfoItem("world");
-                                }
-                            }}>
-                        </i>
-                    </div>
-
                     {props.activeSubsection === "home" && <Overview visitorInfo={props.visitorInfo}/>}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
-                    {/* props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationPast /> */}
-                    {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai visitorInfo={props.visitorInfo} personalizeParagraph={personalizeParagraph}/>}
-                    {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationFuture />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationWorld personalizeParagraph={personalizeParagraph} />}
                 </div>
             </div>
         </section>

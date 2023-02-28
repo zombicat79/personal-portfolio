@@ -23,6 +23,55 @@
         width: 80%;
         text-align: center;
 
+        input[type=range] {
+            -webkit-appearance: none;
+            height: .5rem;
+            border-radius: 1rem;
+            background: linear-gradient(to right, black, darkred, red, darkred, black);
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                background: #000;
+                background-image: url("./../../images/icos/cat-paw-full-small.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 30px;
+                width: 30px;
+                padding: 1.5rem;
+                border: 1px solid #fff;
+                border-radius: 3rem;
+            }
+
+            &::-moz-range-thumb {
+                -webkit-appearance: none;
+                background: #000;
+                background-image: url("./../../images/icos/cat-paw-full-small.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 30px;
+                width: 30px;
+                padding: 1.5rem;
+                border: 1px solid #fff;
+                border-radius: 3rem;
+            }
+
+            &::-ms-thumb {
+                -webkit-appearance: none;
+                background: #000;
+                background-image: url("./../../images/icos/cat-paw-full-small.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 30px;
+                width: 30px;
+                padding: 1.5rem;
+                border: 1px solid #fff;
+                border-radius: 3rem;
+            }
+        } 
+
         .slider__input--big {
             width: 100%;
         }

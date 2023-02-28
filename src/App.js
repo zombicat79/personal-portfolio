@@ -184,7 +184,9 @@ function App() {
               name={"time"} 
               stepOptions={["past", "present", "future"]}
               initialStep={1}
+              activeSubsection={activeSubsection}
               handleTimeline={handleTimeline}
+              handleActiveInfoItem={handleActiveInfoItem}
             />
             { activeSubsection !== "home" &&
               <FeatureSection
