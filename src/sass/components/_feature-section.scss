@@ -50,14 +50,6 @@
                         transform: translateY(-50%);
                         transition: all 2s;
 
-                        .item-name {
-                            font-size: 1.2rem;
-                            font-style: italic;
-                            text-transform: uppercase;
-                            position: relative;
-                            top: 80%;
-                        }
-
                         .inactive {
                             opacity: .3;
                         }
@@ -88,6 +80,42 @@
 
                             &--dubai {
                                 background-image: url("./../../images/icos/infoItems/dubai.png");
+                            }
+
+                            .item-name {
+                                font-size: 1.2rem;
+                                font-style: italic;
+                                text-transform: uppercase;
+                                position: relative;
+                                top: 80%;
+                            }
+                        }
+
+                        .slider-clickableElement--imgWrapper {
+                            display: block;
+                            overflow: visible;
+                            position: relative;
+                            height: 80%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all .5s;
+
+                            &:hover {
+                                transform: scale(1.5);
+                                cursor: pointer;
+                            }
+
+                            img {
+                                height: 5rem;
+                            }
+
+                            .item-name {
+                                font-size: 1.2rem;
+                                font-style: italic;
+                                text-transform: uppercase;
+                                position: relative;
                             }
                         }
                     }

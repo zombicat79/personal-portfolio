@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 import Overview from './subcomponents/display/Overview';
+import EducationUB from './subcomponents/display/EducationUB';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
 import LocationWorld from './subcomponents/display/LocationWorld';
+import LocationSpace from './subcomponents/display/LocationSpace';
 
 function DisplaySection(props) {
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
@@ -80,7 +82,20 @@ function DisplaySection(props) {
                     </i>
                     <i 
                         id="icon-education" className={"menuElement" + " " + "icon-basic-book-pen" + " " + menuStatus.education} 
-                        onClick={(e) => {handleMenuStatus("education"); props.handleActiveSubsection("education")}}>
+                        onClick={(e) => {
+                            handleMenuStatus("education"); 
+                            props.handleActiveSubsection("education")
+                            switch(props.moment) {
+                                case "past":
+                                    props.handleActiveInfoItem("criminology");
+                                    break;
+                                case "present":
+                                    props.handleActiveInfoItem("coding");
+                                    break;
+                                default:
+                                    props.handleActiveInfoItem("coding");
+                            }
+                        }}>
                     </i>
                     <i 
                         id="icon-work" className={"menuElement" + " " + "icon-basic-gear" + " " + menuStatus.work} 
@@ -114,10 +129,12 @@ function DisplaySection(props) {
                     
                 <div className="display-section__right display-section__half">
                     {props.activeSubsection === "home" && <Overview visitorInfo={props.visitorInfo}/>}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "criminology" && <EducationUB personalizeParagraph={personalizeParagraph} />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={personalizeParagraph} />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationWorld personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "space" && <LocationSpace />}
                 </div>
             </div>
         </section>

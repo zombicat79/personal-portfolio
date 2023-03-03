@@ -121,6 +121,26 @@
                 background-image: url("./../../images/david.jpg");
             }
 
+            &--education--criminology {
+                background-image: url("./../../images/criminology.jpg");
+            }
+
+            &--education--tourism {
+                background-image: url("./../../images/tourism.jpg");
+            }
+
+            &--education--social-media {
+                background-image: url("./../../images/social-media.jpg");
+            }
+
+            &--education--coding {
+                background-image: url("./../../images/coding.jpg");
+            }
+
+            &--education--future-coding {
+                background-image: url("./../../images/future-coding.jpg");
+            }
+
             &--location--barcelona {
                 background-image: url("./../../images/barcelona.jpg");
             }
@@ -135,6 +155,10 @@
     
             &--location--world {
                 background-image: url("./../../images/world.jpg");
+            }
+
+            &--location--space {
+                background-image: url("./../../images/mars.jpg");
             }
         }
 
@@ -239,6 +263,11 @@
 
                 .display-section__title {
                     font-size: 2.5rem;
+                }
+
+                .display-section__subtitle {
+                    font-size: 1.5rem;
+                    font-style: italic;
                 }
 
                 .display-section__bulletList {

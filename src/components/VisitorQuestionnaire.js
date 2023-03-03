@@ -27,12 +27,14 @@ function VisitorQuestionnaire(props) {
     const [btnStatus, setBtnStatus] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
-        setBtnStatus("btn-pressed");
-        setQuestionnairePosition("");
-        setTimeout(() => {
-            props.setHasVisitorInfo(true)
-            props.setVisitorInfo({name: name, org: org})
-        }, 2000);
+        if (name && org) {
+            setBtnStatus("btn-pressed");
+            setQuestionnairePosition("");
+            setTimeout(() => {
+                props.setHasVisitorInfo(true)
+                props.setVisitorInfo({name: name, org: org})
+            }, 2000);
+        }
     }
 
     useEffect(() => {
@@ -40,7 +42,7 @@ function VisitorQuestionnaire(props) {
     }, [])
     
     return (
-        <div className={"questionnaire" + " " + questionnairePosition + " " + "u-viewport-center" + " " + "u-blockElm-h-center"}>
+        <div className={`questionnaire ${questionnairePosition} u-viewport-center u-blockElm-h-center`}>
             <h3 className="questionnaire__hint">{questionnaireTexts.hint[language]}</h3>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <div className="questionnaire__inputWrapper">

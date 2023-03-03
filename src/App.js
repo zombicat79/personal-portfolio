@@ -60,7 +60,6 @@ function App() {
 
   const [moment, setMoment] = useState("present");
   const handleTimeline = (value) => {
-    console.log(value)
     switch(value) {
       case "1":
         setMoment("past");
@@ -155,11 +154,9 @@ function App() {
           <div id="main-page">
             <Header
               headerIsUnfolded={headerIsUnfolded}
-              logoSrc={logo}
+              headerBrandImages={[logo, logoHover]}
+              headerBrandImgAlt={"Cartoon-like logo depicting a cat"} 
               logoSize={50}
-              logoAlt={"Cartoon-like logo depicting a cat"}
-              burgerSize={40} 
-              burgerColor={"#fff"}
               handleHeaderState={handleHeaderState}
               handleSealState={handleSealState}
               /* handleMainComponentsVisibility={handleMainComponentsVisibility} */
@@ -182,7 +179,6 @@ function App() {
               max={3} 
               size={"big"}
               name={"time"} 
-              stepOptions={["past", "present", "future"]}
               initialStep={1}
               activeSubsection={activeSubsection}
               handleTimeline={handleTimeline}

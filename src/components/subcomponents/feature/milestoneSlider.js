@@ -25,14 +25,26 @@ function milestoneSlider(props) {
 
                         return (
                             <div key={el.id} className="slider-item">
-                                <div 
-                                    className={"slider-clickableElement" + " " + "slider-clickableElement--"+el.name + " " + itemState}
-                                    onClick={(e) => props.handleActiveInfoItem(el.name)}>
-                                        <p className="item-name">{el.name}</p>
-                                </div>
+                                {   
+                                    el.imgType === "background" &&
+                                    <div 
+                                        className={`slider-clickableElement slider-clickableElement--${el.name} ${itemState}`}
+                                        onClick={(e) => props.handleActiveInfoItem(el.name)}>
+                                            <p className="item-name">{el.name}</p>
+                                    </div>
+                                }
+                                {   
+                                    el.imgType === "element" &&
+                                    <div 
+                                        className={`slider-clickableElement--imgWrapper ${itemState}`}
+                                        onClick={(e) => props.handleActiveInfoItem(el.name)}>
+                                            <img src={el.src} alt={el.name}/>
+                                    </div>
+                                }
                             </div>
                         )
                     }
+                    return null;
                 })
             }
         </Slider>

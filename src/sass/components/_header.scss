@@ -23,6 +23,10 @@
 
         .header__logo {
             margin-right: 5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .header__linkList {
@@ -33,6 +37,19 @@
             .header__link {
                 margin-right: 5rem;
                 list-style-type: none;
+                transition: all 1s;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.5);
+                    color: darkred;
+                }
+            }
+
+            .true {
+                cursor: pointer;
+                transform: scale(1.5);
+                color: darkred;
             }
         }
     }

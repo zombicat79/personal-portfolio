@@ -26,6 +26,62 @@ export const overview = {
     }
 }
 
+export const educationUB = {
+    degreeName: {
+        cat: "Criminologia",
+        esp: "Criminología",
+        eng: "Criminology"
+    },
+    institution: "Universitat de Barcelona (UB)",
+    intro: {
+        cat: {
+            paragraph1: "Ara podrà semblar estrany (d'acord, també aleshores), però aquest va ser el primer grau universitari que vaig emprendre després d'acabar l'institut.",
+            paragraph2: "He de confessar que no tenia gaire idea de què fer en aquell moment, així que vaig triar la primera cosa que em va sonar interessant i amb flaire d'aventura (una altra opció era arqueologia), sense donar la pensada més mínima al seu futur potencial en el mercat laboral. Talment com un 'Magnum, P.I.' de pa sucat amb oli, vaig pensar que resoldre crims en camisa hawaiana tot conduint un Ferrari podria ser un estil de vida bastant guai.",
+            paragraph3: "Si us plau no em jutgis amb massa duresa. Tenia menys de 20 anys.",
+            paragraph4: "En qualsevol cas, després de 4 anys de picar pedra a la universitat, vaig obtenir el meu grau: 'Criminologia i Política Criminal' 🎉",
+            paragraph5: "Per descomptat, mai vaig aconseguir una feina en el sector (les opcions eren bastant horribles i molt allunyades del glamour que es pintava a les pel·lícules), però les moltes coses interessants que vaig aprendre durant aquell temps em van fer créixer com a persona i entendre millor com funcionen la societat i el seu 'sistema' que tot ho controla.",
+            paragraph6: "Entre d'altres, vaig tocar les disciplines següents:",
+            discipline1: "Dret",
+            discipline2: "Ciència Política",
+            discipline3: "Sociologia",
+            discipline4: "Antropologia",
+            discipline5: "Psicologia",
+            discipline6: "Medicina Forense",
+            discipline7: "Estadística"
+        },
+        esp: {
+            paragraph1: "Ahora puede que parezca raro (vale, también en aquel entonces), pero este fue el primer grado universitario que emprendí después de terminar el instituto.",
+            paragraph2: "Tengo que confesar que no tenía mucha idea sobre qué hacer en aquel momento, así que escogí la primera cosa que me sonó interesante y con aires de aventura (otra opción era arqueología), sin pensar lo más mínimo en su potencial futuro en el mercado laboral. Como si fuera un 'Magnum, P.I.' de pacotilla, pensé que resolver crímenes en camisa hawaiana yendo de un lado a otro en un Ferrari podría ser un estilo de vida bastante guay.",
+            paragraph3: "Por favor no me juzgues con demasiada dureza. Tenía menos de 20 años.",
+            paragraph4: "En cualquier caso, después de 4 años picando piedra en la universidad, obtuve mi grado: 'Criminología y Política Criminal' 🎉",
+            paragraph5: "Por supuesto, jamás conseguí un trabajo en el sector (las opciones eran bastante horribles y muy alejadas del glamour que se pintaba en las películas), pero las muchas cosas interesantes que aprendí durante aquel tiempo me hicieron crecer como persona y entender mejor cómo funcionan la sociedad y su 'sistema' que todo lo controla.",
+            paragraph6: "Entre algunas otras, toqué las disciplinas siguientes:",
+            discipline1: "Derecho",
+            discipline2: "Ciencia Política",
+            discipline3: "Sociología",
+            discipline4: "Antropología",
+            discipline5: "Psicología",
+            discipline6: "Medicina Forense",
+            discipline7: "Estadística"
+        },
+        eng: {
+            paragraph1: "It may now seem weird (ok, also back then), but this was the first university degree I took after finishing school.",
+            paragraph2: "I must confess I didn't have much idea as to what to do at the moment, so I settled with the first thing that sounded appealing and adventurous to me (another option was archeology), without any regard whatsoever to future employability. Just as some copycat 'Magnum, P.I.', I thought solving crimes while wearing Hawaiian shirts and driving around in a Ferrari could be a cool way of life.",
+            paragraph3: "Please don't judge me too hard. I was under 20.",
+            paragraph4: "Anyway, after 4 years of hard work at the university I got my degree: 'Criminology & Crime Politics' 🎉",
+            paragraph5: "Of course, I never got a job in the field (options were dire and far from the glamour depicted in movies), but the many interesting things I learned during that time made me grow as a person and better understand how society and its all-encompassing 'system' work.",
+            paragraph6: "Among others, I was exposed to the following disciplines:",
+            discipline1: "Law",
+            discipline2: "Politics",
+            discipline3: "Sociology",
+            discipline4: "Anthropology",
+            discipline5: "Psychology",
+            discipline6: "Forensics",
+            discipline7: "Statistics"
+        }
+    }
+}
+
 export const locationBCN = {
     cityCountry: {
         cat: "Barcelona",
@@ -112,9 +168,9 @@ export const locationDUB = {
 
 export const locationWLD = {
     cityCountry: {
-        cat: "El món",
-        esp: "El mundo",
-        eng: "The world"
+        cat: "El món...",
+        esp: "El mundo...",
+        eng: "The world..."
     }, 
     intro: {
         cat: {
@@ -137,6 +193,31 @@ export const locationWLD = {
             location1: "Stockholm, SWE",
             location2: "Southeast Asia",
             paragraph3: "Who knows? Perhaps that next opportunity on the wait lies within."
+        }
+    }
+}
+
+export const locationSPC = {
+    cityCountry: {
+        cat: "...i més enllà",
+        esp: "...y más allá",
+        eng: "...and beyond"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "A les profunditats de l'espai exterior. Desenvolupant solucions de software per a la gran expansió de la civilització humana.",
+            paragraph2: "No, és broma.",
+            paragraph3: "Tant de bo, ja m'agradaria, però això haurà d'esperar. Potser en la meva propera vida."
+        },
+        esp: {
+            paragraph1: "En las profundidades del espacio exterior. Desarrollando soluciones de software para la gran expansión de la civilización humana.",
+            paragraph2: "No, es broma.",
+            paragraph3: "Ojalá, ya me gustaría, pero eso tendrá que esperar. Quizás en mi próxima vida."
+        },
+        eng: {
+            paragraph1: "Deep into outer space. Developing software solutions for the great expanse of human civilization.",
+            paragraph2: "No, just kidding.",
+            paragraph3: "I wish, but that will have to wait. Maybe in my next life."
         }
     }
 }
