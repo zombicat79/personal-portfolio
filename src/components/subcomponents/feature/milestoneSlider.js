@@ -36,7 +36,7 @@ function milestoneSlider(props) {
                                 {   
                                     el.imgType === "element" &&
                                     <div 
-                                        className={`slider-clickableElement--imgWrapper ${itemState}`}
+                                        className={`slider-clickableElement--imgWrapper slider-clickableElement--${props.activeSubsection} ${itemState}`}
                                         onClick={(e) => props.handleActiveInfoItem(el.name)}>
                                             <img src={el.src} alt={el.name}/>
                                     </div>

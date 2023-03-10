@@ -9,7 +9,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: relative;
-    transition: opacity 2s;
+    transition: all 2s;
 
     &--appearing {
         opacity: 1;
@@ -17,6 +17,17 @@
 
     &--disappearing {
         opacity: 0;
+    }
+
+    &--past {
+        filter: grayscale(.5);
+        box-shadow: $past-box-shadow;
+        background-color: rgb(230, 230, 230);
+    }
+
+    &--future {
+        filter: blur(.8px);
+        box-shadow: $future-box-shadow;
     }
 
     .display-section__body {
@@ -46,7 +57,7 @@
                 background: linear-gradient(to bottom right, black, skyblue);
                 background-clip: text;
                 color: transparent;
-                opacity: .2;
+                opacity: .4;
                 transition: font-size .3s, opacity 1s;
             }
 
@@ -117,6 +128,13 @@
             margin: 10px;
             transition: all 2s;
 
+            &--past {
+                filter: grayscale(.9); 
+            }
+            &--future {
+                filter: blur(2px); 
+            }
+
             &--home--home {
                 background-image: url("./../../images/david.jpg");
             }
@@ -139,6 +157,38 @@
 
             &--education--future-coding {
                 background-image: url("./../../images/future-coding.jpg");
+            }
+
+            &--work--supermarket {
+                background-image: url("./../../images/supermarket.jpg");
+            }
+
+            &--work--lifeguard {
+                background-image: url("./../../images/lifeguard.jpg");
+            }
+
+            &--work--kitchen {
+                background-image: url("./../../images/kitchen.jpg");
+            }
+
+            &--work--waiter {
+                background-image: url("./../../images/waiter.jpg");
+            }
+
+            &--work--handling {
+                background-image: url("./../../images/handling.jpg");
+            }
+
+            &--work--call-center {
+                background-image: url("./../../images/call-center.jpg");
+            }
+
+            &--work--hotel {
+                background-image: url("./../../images/hotel.jpg");
+            }
+
+            &--work--control {
+                background-image: url("./../../images/control.jpg");
             }
 
             &--location--barcelona {
@@ -183,81 +233,6 @@
                 border-radius: 1rem;
             }
 
-            .display-section__iconMenu {
-                position: absolute;
-                display: grid;
-                grid-template-columns: 6rem 6rem 6rem;
-                grid-template-rows: 6rem 6rem 6rem;
-                grid-template-areas: 
-                    ". . overview"
-                    ". education work"
-                    "home projects location"
-                ;
-                grid-gap: 1rem;
-                left: -40%;
-                bottom: 1.5rem;
-                text-align: center;
-
-                .menuElement:not(img) {
-                    padding-top: .3rem;
-                    font-size: 4rem;
-                    background: linear-gradient(to bottom right, black, skyblue);
-                    background-clip: text;
-                    color: transparent;
-                    opacity: .2;
-                    transition: font-size .3s, opacity 1s;
-                }
-
-                .menuElement:not(.active):hover {
-                    opacity: 1;
-                    font-size: 5.25rem;
-                    cursor: pointer;
-                }
-
-                .active {
-                    border-radius: 5rem;
-                    font-size: 3.25rem !important;
-                    opacity: 1 !important;
-                    background-clip: unset !important;
-
-                    &::before {
-                        color: white;
-                        position: relative;
-                        top: 18%;
-                    }
-                }
-
-                img {
-                    width: 5rem;
-                    transition: width .3s;
-
-                    &:hover {
-                        width: 6.25rem;
-                        cursor: pointer;
-                    }
-                }
-
-                #icon-overview {
-                    grid-area: overview;
-                }
-                #icon-education {
-                    grid-area: education;
-                }
-                #icon-work {
-                    grid-area: work;
-                }
-                #icon-home {
-                    grid-area: home;
-                    margin: 0 auto;
-                }
-                #icon-projects {
-                    grid-area: projects;
-                }
-                #icon-location {
-                    grid-area: location;
-                }
-            }
-
             .display-section__textBox {
                 position: relative;
 
@@ -270,8 +245,19 @@
                     font-style: italic;
                 }
 
+                .display-section__link {
+                    text-decoration: none;
+                }
+
                 .display-section__bulletList {
                     padding-left: 4rem;
+
+                    &--blip {
+                        animation-name: elm-blip;
+                        animation-duration: 5s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
                 }
 
                 .display-section__langBox {
@@ -283,6 +269,15 @@
 
                     .display-section__langIcon {
                         width: 5rem;
+                    }
+
+                    &--wide {
+                        width: 80%;
+                        margin-top: 2rem;
+
+                        .display-section__langIcon {
+                            width: 7rem;
+                        }
                     }
                 }
 

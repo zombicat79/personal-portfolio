@@ -30,3 +30,12 @@
     75% {opacity: 0}
     100% {opacity: 1}
 }
+
+/* DisplaySection Component */
+@keyframes elm-blip {
+    0% {opacity: 1; color: orangered}
+    25% {opacity: .2; color: black}
+    50% {opacity: 1; color: orangered}
+    75% {opacity: .2; color: black}
+    100% {opacity: 1; color: orangered}
+}

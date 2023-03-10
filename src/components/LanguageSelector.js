@@ -2,7 +2,7 @@ import React from 'react';
 
 function LanguageSelector(props) {
     return (
-        <div className={"languageSelector" + " " + "u-flex" + " " + "u-flex--center" + " " + "u-goneAway" + " " + "u-goneAway--right" + " " + props.langPosition + props.shrinkModifier}>
+        <div className={`languageSelector u-flex u-flex--center u-goneAway u-goneAway--right ${props.langPosition} ${props.shrinkModifier}`}>
         {props.availableLanguages.map((el) => {
             return (
                 <div 

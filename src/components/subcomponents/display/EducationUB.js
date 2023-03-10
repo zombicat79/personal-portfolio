@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { LangContext } from "../../../App";
 import { educationUB } from "../../../texts/displaySection_texts";
 
-function LocationDubai(props) {
+function EducationUB(props) {
     const language = useContext(LangContext)
 
     let personalizedP3 = "";
@@ -48,4 +48,4 @@ function LocationDubai(props) {
     )
 }
 
-export default LocationDubai;
+export default EducationUB;

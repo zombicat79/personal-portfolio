@@ -14,7 +14,7 @@ function FeatureSection(props) {
     })
 
     return (
-        <section className={`feature-section feature-section--${componentVisibility}`}>
+        <section className={`feature-section feature-section--${props.moment} feature-section--${componentVisibility}`}>
             <MilestoneSlider
                 moment={props.moment}
                 activeSubsection={props.activeSubsection}

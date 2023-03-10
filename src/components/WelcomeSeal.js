@@ -138,8 +138,8 @@ function WelcomeSeal(props) {
     })
 
     return (
-        <section className={"welcomeSeal" + " " + "u-absolute-center" + " " + shrinkModifier.sealParent}>
-            <div className={"welcomeSeal__heading" + " " + shrinkModifier.sealHeading}>
+        <section className={`welcomeSeal u-absolute-center ${shrinkModifier.sealParent}`}>
+            <div className={`welcomeSeal__heading ${shrinkModifier.sealHeading}`}>
                 <img src={activeLogo} alt={props.logoAlt}></img>
                 <h1 className="branding-heading">{props.tradeName}</h1>
 
@@ -171,14 +171,14 @@ function WelcomeSeal(props) {
                     </div>
                 }
             </div>
-            <div className={"welcomeSeal__subtitle" + " " + "u-blockElm-h-center" + " " + shrinkModifier.sealSubtitle}>
+            <div className={`welcomeSeal__subtitle u-blockElm-h-center ${shrinkModifier.sealSubtitle}`}>
                 <h2>{props.role}</h2>
             </div>
-            <div className={"welcomeSeal__cta" + " " + "u-blockElm-h-center" + " " + ctaPosition + " " + shrinkModifier.sealCta}>
-                {actionText === props.actionTexts[0] && fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>{actionText}</button>}
-                {actionText === props.actionTexts[0] && !fullScreen && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => handleView()}>{availableTexts[1]}</button>}
-                {actionText === props.actionTexts[2] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => props.handleSealState("shrinking")}>{actionText}</button>}
-                {actionText === props.actionTexts[3] && <button className={"btn-primary" + " " + ctaBrightnessClass} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
+            <div className={`welcomeSeal__cta u-blockElm-h-center ${ctaPosition} ${shrinkModifier.sealCta}`}>
+                {actionText === props.actionTexts[0] && fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{actionText}</button>}
+                {actionText === props.actionTexts[0] && !fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{availableTexts[1]}</button>}
+                {actionText === props.actionTexts[2] && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => props.handleSealState("shrinking")}>{actionText}</button>}
+                {actionText === props.actionTexts[3] && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
             </div>
             <LanguageSelector 
                 availableLanguages={availableLanguages}
