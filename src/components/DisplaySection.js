@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import Overview from './subcomponents/display/Overview';
+import OverviewPast from "./subcomponents/display/OverviewPast";
+import OverviewFuture from './subcomponents/display/OverviewFuture';
 import EducationUB from './subcomponents/display/EducationUB';
 import EducationUOC from './subcomponents/display/EducationUOC';
 import EducationSalle from './subcomponents/display/EducationSalle';
@@ -45,6 +47,19 @@ function DisplaySection(props) {
             return paragraph.replace(searchTerm, `${searchTerm} ${props.visitorInfo.org}`);
         }
     }
+
+    // Adds hover event listeners to display menu icons
+    useEffect(() => {
+        const menuIcons = Array.from(document.querySelectorAll(".menuElement:not(#icon-overview)"));
+        menuIcons.forEach((icon) => {
+            icon.addEventListener("mouseover", function() {
+                props.handleHoverSubsection(icon.id.substring(icon.id.indexOf("-") + 1));
+            });
+            icon.addEventListener("mouseout", function() {
+                props.handleHoverSubsection("");
+            })
+        })
+    }, [])
 
     // Adjust component styling on render (correct styles from WelcomeSeal component)
     useEffect(() => {
@@ -152,7 +167,9 @@ function DisplaySection(props) {
                 <div className={`display-section__left display-section__half display-section__left--${props.moment} display-section__left--${props.activeSubsection}--${props.activeInfoItem}`}></div>
                     
                 <div className="display-section__right display-section__half">
-                    {props.activeSubsection === "home" && <Overview visitorInfo={props.visitorInfo}/>}
+                    {props.activeSubsection === "home" && props.moment === "present" && <Overview visitorInfo={props.visitorInfo} hoverSubsection={props.hoverSubsection} />}
+                    {props.activeSubsection === "home" && props.moment === "past" && <OverviewPast hoverSubsection={props.hoverSubsection} />}
+                    {props.activeSubsection === "home" && props.moment === "future" && <OverviewFuture personalizeParagraph={personalizeParagraph} hoverSubsection={props.hoverSubsection} />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "criminology" && <EducationUB personalizeParagraph={personalizeParagraph} />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "tourism" && <EducationUOC />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}

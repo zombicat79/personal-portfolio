@@ -17,6 +17,14 @@ function Overview(props) {
             <p>{overview.intro[language].paragraph3}</p>
             <br></br>
             <p>{overview.intro[language].paragraph4}</p>
+            {   
+                !props.hoverSubsection &&
+                <p className="display-section__prompt display-section__prompt--big">{'\u2190'}</p>
+            }
+            {   
+                props.hoverSubsection &&
+                <p className="display-section__prompt">{overview.prompt[language][props.hoverSubsection]}</p>
+            }
         </div>
     )
 }

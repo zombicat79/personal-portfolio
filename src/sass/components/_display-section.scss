@@ -245,6 +245,22 @@
                     font-style: italic;
                 }
 
+                .display-section__prompt {
+                    margin: 2rem auto 0;
+                    font-size: 2rem;
+                    font-style: italic;
+                    color: rgb(72, 118, 137);
+                    text-transform: uppercase;
+                    animation-name: prompt-blip;
+                    animation-duration: 1.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+
+                    &--big {
+                        font-size: 3rem;
+                    }
+                }
+
                 .display-section__link {
                     text-decoration: none;
                 }

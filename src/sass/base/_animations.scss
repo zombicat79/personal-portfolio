@@ -39,3 +39,8 @@
     75% {opacity: .2; color: black}
     100% {opacity: 1; color: orangered}
 }
+
+@keyframes prompt-blip {
+    0% {opacity: 0}
+    100% {border: 1}
+}

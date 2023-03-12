@@ -1,3 +1,48 @@
+export const overviewPast = {
+    title: {
+        cat: "Un viatge al meu passat",
+        esp: "Un viaje a mi pasado",
+        eng: "A voyage into my past"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Els records del passat fan olor a roses mortes i són en blanc i negre. Tothom ho sap, això.",
+            paragraph2: "Qualsevol peça informativa que puguis trobar sota aquest filtre de remembrança fa referència a alguna experiència meva de ja fa temps.",
+            paragraph3: "Em converteix en el que soc i explica un bocí de la història que m'ha dut fins al punt on em trobo ara."
+        },
+        esp: {
+            paragraph1: "Los recuerdos del pasado huelen a rosas muertas y son en blanco y negro. Eso todo el mundo lo sabe.",
+            paragraph2: "Cualquier pieza informativa que puedas encontrar bajo este filtro de nostalgia hace referencia a alguna experiencia mía de ya hace tiempo.",
+            paragraph3: "Me convierte en lo que soy y explica un pedacito de la historia que me ha traído hasta el punto en el que estoy ahora."
+        },
+        eng: {
+            paragraph1: "Memories of the past smell like dead roses and are black and white. Everyone knows that.",
+            paragraph2: "Any piece of information you may encounter under such filter of remembrance refers to some experience of mine long left behind.",
+            paragraph3: "It makes me who I am and tells a chunk of the story leading right where I am now."
+        }
+    },
+    prompt: {
+        cat: {
+            education: "Veure formació",
+            work: "Veure feina",
+            projects: "Veure projectes",
+            location: "Veure ubicació"
+        },
+        esp: {
+            education: "Ver formación",
+            work: "Ver trabajo",
+            projects: "Ver proyectos",
+            location: "Ver ubicación"
+        },
+        eng: {
+            education: "See education",
+            work: "See work",
+            projects: "See projects",
+            location: "See location"
+        }
+    }
+}
+
 export const overview = {
     salute: {
         cat: "Hola",
@@ -22,6 +67,71 @@ export const overview = {
             paragraph2: "It is an absolute pleasure to welcome you on my portfolio.",
             paragraph3: "On this webpage you will find all things related to my professional career as well as some insights into my personal life and background.",
             paragraph4: "Please feel free to navigate around and have a peek into my work."
+        }
+    },
+    prompt: {
+        cat: {
+            education: "Veure formació",
+            work: "Veure feina",
+            projects: "Veure projectes",
+            location: "Veure ubicació"
+        },
+        esp: {
+            education: "Ver formación",
+            work: "Ver trabajo",
+            projects: "Ver proyectos",
+            location: "Ver ubicación"
+        },
+        eng: {
+            education: "See education",
+            work: "See work",
+            projects: "See projects",
+            location: "See location"
+        }
+    }
+}
+
+export const overviewFuture = {
+    title: {
+        cat: "El futur",
+        esp: "El futuro",
+        eng: "A look into my future"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Les expectatives sobre el futur són com les partícules quàntiques, formen part de la realitat però no del tot.",
+            paragraph2: "Qualsevol peça informativa que vegis així com borrosa, igual que si t'haguessis oblidat de posar-te les ulleres de llegir, és un pla de futur a l'espera de compliment o descart.",
+            paragraph3: "Depèn de mi materialitzar-lo. I qui sap... en certa mesura potser també de tu"
+        },
+        esp: {
+            paragraph1: "Las expectativas sobre el futuro son como las partícules cuánticas, están allí pero no del todo.",
+            paragraph2: "Cualquier pieza informativa que veas así como borrosa, igual que si te hubieras olvidado de ponerte las gafas de leer, es un plan de futuro en espera de cumplimiento o descarte.",
+            paragraph3: "Depende de mí el materializarlo. Y quién sabe... en cierta medidad tal vez también de ti"
+        },
+        eng: {
+            paragraph1: "Expectations of the future are like quantum particles, they're there but not quite.",
+            paragraph2: "Any piece of information you see kind of blurred, as if you had forgotten to wear your reading glasses, is a plan for the future awaiting to be fulfilled or discarded.",
+            paragraph3: "It depends on me to materialize it. And who knows... to some extent perhaps also on you"
+        }
+    },
+    prompt: {
+        cat: {
+            education: "Veure formació",
+            work: "Veure feina",
+            projects: "Veure projectes",
+            location: "Veure ubicació"
+        },
+        esp: {
+            education: "Ver formación",
+            work: "Ver trabajo",
+            projects: "Ver proyectos",
+            location: "Ver ubicación"
+        },
+        eng: {
+            education: "See education",
+            work: "See work",
+            projects: "See projects",
+            location: "See location"
         }
     }
 }

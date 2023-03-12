@@ -77,6 +77,11 @@ function App() {
     setActiveSubsection(section);
   }
 
+  const [hoverSubsection, setHoverSubsection] = useState("");
+  const handleHoverSubsection = (section) => {
+    setHoverSubsection(section);
+  }
+
   const [activeInfoItem, setActiveInfoItem] = useState("");
   const handleActiveInfoItem = (item) => {
     setActiveInfoItem(item);
@@ -167,8 +172,10 @@ function App() {
               visitorInfo={visitorInfo}
               moment={moment}
               activeSubsection={activeSubsection}
+              hoverSubsection={hoverSubsection}
               activeInfoItem={activeInfoItem}
               handleActiveSubsection={handleActiveSubsection}
+              handleHoverSubsection={handleHoverSubsection}
               handleHeaderState={handleHeaderState}
               handleActiveInfoItem={handleActiveInfoItem}
               /* mainComponentsVisibility={mainComponentsVisibility}
