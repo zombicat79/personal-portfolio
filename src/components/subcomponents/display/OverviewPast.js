@@ -15,6 +15,8 @@ function OverviewPast(props) {
             <p>{overviewPast.intro[language].paragraph2}</p>
             <br></br>
             <p>{overviewPast.intro[language].paragraph3}</p>
+            <br></br>
+            <p>{overviewPast.intro[language].paragraph4}</p>
             {   
                 !props.hoverSubsection &&
                 <p className="display-section__prompt display-section__prompt--big">{'\u2190'}</p>

@@ -8,17 +8,20 @@ export const overviewPast = {
         cat: {
             paragraph1: "Els records del passat fan olor a roses mortes i són en blanc i negre. Tothom ho sap, això.",
             paragraph2: "Qualsevol peça informativa que puguis trobar sota aquest filtre de remembrança fa referència a alguna experiència meva de ja fa temps.",
-            paragraph3: "Em converteix en el que soc i explica un bocí de la història que m'ha dut fins al punt on em trobo ara."
+            paragraph3: "Em converteix en el que soc i explica un bocí de la història que m'ha dut fins al punt on em trobo ara.",
+            paragraph4: "Si us plau, sente't lliure de viatjar enrere en el temps i fer un cop d'ull a les meves FITES PASSADES."
         },
         esp: {
             paragraph1: "Los recuerdos del pasado huelen a rosas muertas y son en blanco y negro. Eso todo el mundo lo sabe.",
-            paragraph2: "Cualquier pieza informativa que puedas encontrar bajo este filtro de nostalgia hace referencia a alguna experiencia mía de ya hace tiempo.",
-            paragraph3: "Me convierte en lo que soy y explica un pedacito de la historia que me ha traído hasta el punto en el que estoy ahora."
+            paragraph2: "Cualquier pieza informativa que puedas encontrar bajo este filtro de nostalgia hace referencia a alguna experiencia mía de hace ya tiempo.",
+            paragraph3: "Me convierte en lo que soy y explica un pedacito de la historia que me ha traído hasta el punto en el que estoy ahora.",
+            paragraph4: "Por favor, siéntete libre de viajar atrás en el tiempo y echar un vistazo a mis LOGROS PASADOS."
         },
         eng: {
             paragraph1: "Memories of the past smell like dead roses and are black and white. Everyone knows that.",
             paragraph2: "Any piece of information you may encounter under such filter of remembrance refers to some experience of mine long left behind.",
-            paragraph3: "It makes me who I am and tells a chunk of the story leading right where I am now."
+            paragraph3: "It makes me who I am and tells a chunk of the story leading right where I am now.",
+            paragraph4: "Please feel free to go back in time and have a peek into my PAST DEEDS."
         }
     },
     prompt: {
@@ -54,19 +57,19 @@ export const overview = {
             paragraph1: "Em dic David Castejón i soc Desenvolupador Full Stack. ZombieCat és el meu àlies i marca professional.",
             paragraph2: "És tot un plaer donar-te la benvinguda al meu portfolio.",
             paragraph3: "En aquesta pàgina web trobaràs tot allò relacionat amb la meva carrera professional i també alguna coseta sobre la meva vida i el meu rerefons personal.",
-            paragraph4: "Si us plau, sente't lliure de navegar-hi una estona i fer un cop d'ull a la meva feina."
+            paragraph4: "Si us plau, sente't lliure de navegar-hi una estona i fer un cop d'ull a l'ESTAT ACTUAL dels meus assumptes."
         },
         esp: {
             paragraph1: "Mi nombre es David Castejón y soy Desarrollador Full Stack. ZombieCat es mi alias y marca profesional",
             paragraph2: "Es un verdadero placer darte la bienvenida a mi portfolio.",
             paragraph3: "En esta página web encontrarás todo lo relacionado con mi carrera profesional y también alguna cosita sobre mi vida y trasfondo personal.",
-            paragraph4: "Por favor, siéntete libre de dar una vuelta y echar un vistazo a mi trabajo."
+            paragraph4: "Por favor, siéntete libre de dar una vuelta y echar un vistazo al ESTADO ACTUAL de mis asuntos."
         },
         eng: {
             paragraph1: "My name is David Castejón and I'm a Full Stack Developer. ZombieCat is my professional trademark and nickname.",
             paragraph2: "It is an absolute pleasure to welcome you on my portfolio.",
             paragraph3: "On this webpage you will find all things related to my professional career as well as some insights into my personal life and background.",
-            paragraph4: "Please feel free to navigate around and have a peek into my work."
+            paragraph4: "Please feel free to navigate around and have a peek into the CURRENT STATE of my endeavours."
         }
     },
     prompt: {
@@ -100,18 +103,21 @@ export const overviewFuture = {
     intro: {
         cat: {
             paragraph1: "Les expectatives sobre el futur són com les partícules quàntiques, formen part de la realitat però no del tot.",
-            paragraph2: "Qualsevol peça informativa que vegis així com borrosa, igual que si t'haguessis oblidat de posar-te les ulleres de llegir, és un pla de futur a l'espera de compliment o descart.",
-            paragraph3: "Depèn de mi materialitzar-lo. I qui sap... en certa mesura potser també de tu"
+            paragraph2: "Qualsevol peça informativa que vegis així com borrosa, igual que si t'haguessis oblidat les ulleres de llegir, és un pla de futur a l'espera de compliment o descart.",
+            paragraph3: "Depèn de mi materialitzar-lo. I qui sap... en certa mesura potser també de tu",
+            paragraph4: "Si us plau, sente't lliure de fer un cop d'ull a les meves INTENCIONS."
         },
         esp: {
             paragraph1: "Las expectativas sobre el futuro son como las partícules cuánticas, están allí pero no del todo.",
-            paragraph2: "Cualquier pieza informativa que veas así como borrosa, igual que si te hubieras olvidado de ponerte las gafas de leer, es un plan de futuro en espera de cumplimiento o descarte.",
-            paragraph3: "Depende de mí el materializarlo. Y quién sabe... en cierta medidad tal vez también de ti"
+            paragraph2: "Cualquier pieza informativa que veas así como borrosa, igual que si te hubieras olvidado las gafas de leer, es un plan de futuro en espera de cumplimiento o descarte.",
+            paragraph3: "Depende de mí el materializarlo. Y quién sabe... en cierta medidad tal vez también de ti",
+            paragraph4: "Por favor, siéntete libre de echar un vistazo a mis INTENCIONES."
         },
         eng: {
             paragraph1: "Expectations of the future are like quantum particles, they're there but not quite.",
             paragraph2: "Any piece of information you see kind of blurred, as if you had forgotten to wear your reading glasses, is a plan for the future awaiting to be fulfilled or discarded.",
-            paragraph3: "It depends on me to materialize it. And who knows... to some extent perhaps also on you"
+            paragraph3: "It depends on me to materialize it. And who knows... to some extent perhaps also on you",
+            paragraph4: "Please feel free to get a glimpse of my INTENTIONS."
         }
     },
     prompt: {
@@ -346,19 +352,274 @@ export const educationIronhack = {
             discipline7: "Estadística"
         },
         eng: {
-            paragraph1: "I bet this is the part you are really interested in. Let's get to it, then.",
-            paragraph2: "So, how did I end up coding?",
-            paragraph3: "It is a long story you can get a glimpse of by moving along the timeline below. But I will spare that for you and sum everything up by saying it had long been a growing interest of mine.",
-            paragraph4: "As a result, when circumstances were right, I enrolled in a Web Development Bootcamp. After 9 weeks of highly demanding intensive and exhausting work I got my reward: I was certified as a 'Full Stack Developer' 🎉 🎉 🎉 🎉",
-            paragraph5: "Of course, I never got a job in the field (options were dire and far from the glamour depicted in movies), but the many interesting things I learned during that time made me grow as a person and better understand how society and its all-encompassing 'system' work.",
-            paragraph6: "Among others, I was exposed to the following disciplines:",
-            discipline1: "Law",
-            discipline2: "Politics",
-            discipline3: "Sociology",
-            discipline4: "Anthropology",
-            discipline5: "Psychology",
-            discipline6: "Forensics",
-            discipline7: "Statistics"
+            paragraph1: "So, how did I end up coding?",
+            paragraph2: "It is a long story you can get a glimpse of by moving along the timeline below. But I will spare that for you and sum everything up by saying it had long been a growing interest of mine, born out of the habit of blogging.",
+            paragraph3: "As a result, when the circumstances were right (pandemic hit and got me lots of extra time), I enrolled in a Web Development Bootcamp. After 9 weeks of highly demanding intensive and exhausting work I got my reward: I was certified as a 'Full Stack Developer' 🎉 🎉 🎉 🎉",
+            paragraph4: "The experience —during which I completed 1 solo and 2 pair-programming full stack projects—, was instrumental in paving my way into a field that was new and quite challenging to me. It allowed me to firmly set foot on it and also gave me the tools to further widen my knowledge and capabilities.",
+            paragraph5: "Among others, I acquired the following development languages, skills and technologies:",
+            discipline1: "Javascript ES6",
+            discipline1$1: "DOM Manipulation",
+            discipline1$2: "Asyncronous code / JS Promises",
+            discipline2: "HTML5",
+            discipline2$1: "Canvas API",
+            discipline3: "CSS3",
+            discipline3$1: "CSS Flex",
+            discipline3$2: "Transitions & Animations",
+            discipline4: "Node.js",
+            discipline5: "MongoDB",
+            discipline6: "REST API",
+            discipline7: "React",
+            discipline8: "Git / Github"
+        }
+    }
+}
+
+export const workDPS = {
+    workplace: {
+        cat: "Els grans magatzems",
+        esp: "Los grandes almacenes",
+        eng: "The Department Store"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Em van agafar per treballar en una gran superfície. Aquesta va ser la meva primera feina de la història, amb 18 anys.",
+            paragraph2: "La meva tasca principal era reposar els aparadors i les lleixes buides, així com mantenir tot bonic i ordenat malgrat el caos provocat per totes les hordes de compradors zombificats pel capitalisme.",
+            paragraph3: "Més endavant en la meva vida vaig tenir una altra feina similar, aquesta vegada com a venedor especialitzat en una gran superfície de materials per al bricolatge i la construcció.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "Les penes del pas a l'edat adulta: tot allò que és bo mai no és gratuït, i cal treballar per obtenir-ho.",
+            learning2: "Qui mana? Sempre hi ha algú per damunt teu. La seva voluntat acostuma a convertir-se en una ordre per a tu.",
+            learning3: "A Capitalistalàndia el temps són diners: s'espera de tu que facis les coses amb rapidesa. Si pot ser bé, però sobretot ràpid."
+        },
+        esp: {
+            paragraph1: "Me cogieron para trabajar en una gran superfície. Este fue mi primer trabajo de la historia, con 18 años.",
+            paragraph2: "Mi tarea principal era reponer los mostradores y estantes vacíos, así como mantenerlo todo presentable y ordenado a pesar del caos provocado por todas las hordas de compradores zombificados por el capitalismo.",
+            paragraph3: "Más adelante en mi vida tuve otro trabajo similar, esta vez como vendedor especializado en una gran superfície de materiales para el bricolaje y la construcción.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Las penas del paso a la edad adulta: lo que es bueno nunca es gratis, y hay que trabajar para conseguirlo.",
+            learning2: "¿Quién es el jefe? Siempre hay alguien por encima de ti. Su voluntad suele convertirse en órdenes.",
+            learning3: "En Capitalistalandia el tiempo es dinero: se espera de ti que hagas las cosas con rapidez. Si es posible bien, pero sobre todo rápido."
+        },
+        eng: {
+            paragraph1: "I got hired as a department store clerk. This was my first job ever, at the age of 18.",
+            paragraph2: "My main task was to refill empty racks and empty shelves, keeping everything nice and tidy on the wake of chaos and destruction caused by capitalism-zombified raging customers.",
+            paragraph3: "Later on in my life I got some other similar job, this time around as a specialized sales advisor in a construction and DIY store.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "The pains of adulthood: cool things are not free and you have to work for them.",
+            learning2: "Who's the boss? There is always someone above you. Their will is your command.",
+            learning3: "In Capitalist World time is money: you are expected to do things fast. If it is possible do them well, but mainly fast."
+        }
+    }
+}
+
+export const workLFG = {
+    workplace: {
+        cat: "La platja",
+        esp: "La playa",
+        eng: "The Beach"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Amb vint-i-pocs anys em van agafar com a socorrista. En aquells temps ja portava uns anys fent de voluntari a la Creu Roja, i m'havia format en Primers Auxilis i RCP (Reanimació Cardiopulmonar). Aleshores em vaig apuntar a un curs especialitzat en Socorrisme Aquàtic.",
+            paragraph2: "La meva tasca (per sort) consistia en romandre alerta i vigilar que ningú prengués mal. De vegades, però, això era inevitable i en més d'una ocasió vaig haver de practicar cures lleus i fins i tot participar en alguna operació de rescat.",
+            paragraph3: "La platja va ser el meu lloc de treball durant 3 temporades d'estiu senceres. Després d'això també vaig treballar en un seguit de piscines públiques.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "La responsabilitat cap a les persones és el més important.",
+            learning2: "Atenció als detalls: els petits canvis provoquen grans diferències.",
+            learning3: "La paciència és una virtut."
+        },
+        esp: {
+            paragraph1: "Con veintipocos años me cogieron como socorrista. En aquellos tiempos ya llevaba unos años como voluntario en la Cruz Roja, y me había formado en Primeros Auxilios y RCP (Reanimación Cardiopulmonar). Entonces me apunté en un curso especializado en Socorrismo Acuático.",
+            paragraph2: "Mi tarea (per suerte) consistía en permanecer alerta y vigilar que nadie se pusiera en peligro. Sin embargo, a veces eso era inevitable y en más de una ocasión tuve que practicar curas leves e incluso participar en alguna operación de rescate.",
+            paragraph3: "La playa fue mi lugar de trabajo durante 3 temporadas de verano enteras. Después de eso también trabajé en una serie de piscinas públicas.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "La responsabilidad hacia las personas es lo más importante.",
+            learning2: "Atención a los detalles: los pequeños cambios provocan grandes diferencias.",
+            learning3: "La paciencia es una virtud."
+        },
+        eng: {
+            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workFFD = {
+    workplace: {
+        cat: "El restaurant de menjar brossa",
+        esp: "El restaurante de comida basura",
+        eng: "The Fast Food Restaurant"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workBAR = {
+    workplace: {
+        cat: "El bar",
+        esp: "El bar",
+        eng: "The Bar"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workAIR = {
+    workplace: {
+        cat: "L'aeroport",
+        esp: "El aeropuerto",
+        eng: "The Airport"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workCCR = {
+    workplace: {
+        cat: "La centraleta",
+        esp: "La centralita",
+        eng: "The Call Center"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workHTL = {
+    workplace: {
+        cat: "L'hotel",
+        esp: "El hotel",
+        eng: "The Hotel"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "This was the first job I got, at the age of 18. As a department store clerk of refilling empty racks and shelves and keeping nice.",
+            paragraph2: "Here I got my education, obtained the vast majority of my qualifications, abilities and life experiences. Also it is the location where almost the entirety of my professional career has taken place so far.",
+            paragraph3: "Amongst many other skills, life in the city has provided me with my 2 native languages:"
+        }
+    }
+}
+
+export const workOCC = {
+    workplace: {
+        cat: "El centre de control d'operacions",
+        esp: "El centro de control de operaciones",
+        eng: "The Operations Control Center"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "This was the first job I got, at the age of 18. As a department store clerk of refilling empty racks and shelves and keeping nice.",
+            paragraph2: "Here I got my education, obtained the vast majority of my qualifications, abilities and life experiences. Also it is the location where almost the entirety of my professional career has taken place so far.",
+            paragraph3: "Amongst many other skills, life in the city has provided me with my 2 native languages:"
         }
     }
 }

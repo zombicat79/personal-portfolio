@@ -300,6 +300,26 @@
                 .display-section__langBox--manchester {
                     justify-content: center;
                 }
+
+                .display-section__logoBox {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    margin: 3rem auto 0;
+
+                    .display-section__logoItem {
+                        width: 10rem;
+
+                        &--big {
+                            width: 13rem;
+                        }
+
+                        &--extra-big {
+                            width: 20rem;
+                        }
+                    }
+                }
             }
         }
     }

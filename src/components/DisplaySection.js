@@ -7,6 +7,11 @@ import EducationUB from './subcomponents/display/EducationUB';
 import EducationUOC from './subcomponents/display/EducationUOC';
 import EducationSalle from './subcomponents/display/EducationSalle';
 import EducationIronhack from './subcomponents/display/EducationIronhack';
+import WorkDStore from './subcomponents/display/WorkDStore';
+import WorkBeach from './subcomponents/display/WorkBeach';
+import WorkKitchen from './subcomponents/display/WorkKitchen';
+import WorkBar from './subcomponents/display/WorkBar';
+import WorkAirport from './subcomponents/display/WorkAirport';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -59,13 +64,22 @@ function DisplaySection(props) {
                 props.handleHoverSubsection("");
             })
         })
+        return () => {
+            menuIcons.forEach((icon) => {
+                icon.removeEventListener("mouseover", function() {
+                    props.handleHoverSubsection(icon.id.substring(icon.id.indexOf("-") + 1));
+                });
+                icon.removeEventListener("mouseout", function() {
+                    props.handleHoverSubsection("");
+                })
+            })
+        }
     }, [])
 
     // Adjust component styling on render (correct styles from WelcomeSeal component)
     useEffect(() => {
         const layers = Array.from(document.querySelectorAll("html, body, #root, .App"));
         layers.forEach((item, index) => {
-            console.log(item.nodeName)
             item.style.height = "initial";
             if (item.nodeName === "HTML") {
                 item.style.padding = "0 2.5rem";
@@ -88,7 +102,7 @@ function DisplaySection(props) {
         props.handleActiveInfoItem("home");
     }, [])
 
-    // Scroll displayed text to the top on every render
+    // Scroll displayed text to the top on moment, subsection or infoitem change
     useEffect(() => {
         const textBox = document.querySelector(".display-section__right");
         textBox.scrollTo({
@@ -96,7 +110,7 @@ function DisplaySection(props) {
             left: 0,
             behavior: 'smooth'
         });
-    })
+    }, [props.moment, props.activeSubsection, props.activeInfoItem])
 
     return (
         <section className={`display-section display-section--${componentVisibility} display-section--${props.moment}`}>
@@ -174,6 +188,11 @@ function DisplaySection(props) {
                     {props.activeSubsection === "education" && props.activeInfoItem === "tourism" && <EducationUOC />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "supermarket" && <WorkDStore />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "lifeguard" && <WorkBeach />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "waiter" && <WorkBar />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "handling" && <WorkAirport />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={personalizeParagraph} />}

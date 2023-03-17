@@ -27,6 +27,8 @@ function OverviewFuture(props) {
             <p>{overviewFuture.intro[language].paragraph2}</p>
             <br></br>
             <p>{personalizedP3}.</p>
+            <br></br>
+            <p>{overviewFuture.intro[language].paragraph4}</p>
             {   
                 !props.hoverSubsection &&
                 <p className="display-section__prompt display-section__prompt--big">{'\u2190'}</p>
