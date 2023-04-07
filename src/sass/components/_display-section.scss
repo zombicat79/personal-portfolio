@@ -274,6 +274,11 @@
                         animation-timing-function: linear;
                         animation-iteration-count: infinite;
                     }
+
+                    &--proscons {
+                        padding-left: 2rem;
+                        margin-top: 2rem;
+                    }
                 }
 
                 .display-section__langBox {
@@ -317,6 +322,10 @@
 
                         &--extra-big {
                             width: 20rem;
+                        }
+
+                        &--huge {
+                            width: 30rem;
                         }
                     }
                 }

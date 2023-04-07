@@ -36,7 +36,7 @@ function WorkBeach(props) {
                 }
                 {
                     (language === "cat" || language === "esp") &&
-                    <a href="https://www.icrc.org/en" target="_blank" rel="noreferrer">
+                    <a href="https://www2.cruzroja.es/" target="_blank" rel="noreferrer">
                         <img className="display-section__logoItem" src={redcrossLogo} alt="Red Cross" />
                     </a>
                 }

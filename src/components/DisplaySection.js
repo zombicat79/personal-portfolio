@@ -12,6 +12,9 @@ import WorkBeach from './subcomponents/display/WorkBeach';
 import WorkKitchen from './subcomponents/display/WorkKitchen';
 import WorkBar from './subcomponents/display/WorkBar';
 import WorkAirport from './subcomponents/display/WorkAirport';
+import WorkCallcenter from './subcomponents/display/WorkCallcenter';
+import WorkHotel from './subcomponents/display/WorkHotel';
+import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -193,6 +196,9 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "waiter" && <WorkBar />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "handling" && <WorkAirport />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "call-center" && <WorkCallcenter />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={personalizeParagraph} />}

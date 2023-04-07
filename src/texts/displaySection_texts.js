@@ -433,8 +433,8 @@ export const workLFG = {
         },
         esp: {
             paragraph1: "Con veintipocos años me cogieron como socorrista. En aquellos tiempos ya llevaba unos años como voluntario en la Cruz Roja, y me había formado en Primeros Auxilios y RCP (Reanimación Cardiopulmonar). Entonces me apunté en un curso especializado en Socorrismo Acuático.",
-            paragraph2: "Mi tarea (per suerte) consistía en permanecer alerta y vigilar que nadie se pusiera en peligro. Sin embargo, a veces eso era inevitable y en más de una ocasión tuve que practicar curas leves e incluso participar en alguna operación de rescate.",
-            paragraph3: "La playa fue mi lugar de trabajo durante 3 temporadas de verano enteras. Después de eso también trabajé en una serie de piscinas públicas.",
+            paragraph2: "Mi tarea (por suerte) consistía en permanecer alerta y vigilar que nadie se pusiera en peligro. Sin embargo, a veces eso era inevitable y en más de una ocasión tuve que practicar curas leves e incluso participar en alguna operación de rescate.",
+            paragraph3: "La playa fue mi lugar de trabajo durante 3 temporadas de verano enteras. Después de eso también trabajé en varias piscinas públicas.",
             paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
             paragraph5: "Algunos de los lugares donde trabajé:",
             learning1: "La responsabilidad hacia las personas es lo más importante.",
@@ -456,30 +456,40 @@ export const workLFG = {
 
 export const workFFD = {
     workplace: {
-        cat: "El restaurant de menjar brossa",
-        esp: "El restaurante de comida basura",
+        cat: "El restaurant de menjar ràpid",
+        esp: "El restaurante de comida rápida",
         eng: "The Fast Food Restaurant"
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "Al llarg dels meus primers anys a la universitat, vaig combinar els meus estudis amb una feina a temps parcial en una franquícia d'una cadena de menjar ràpid (menjar porqueria) ben coneguda.",
+            paragraph2: "Depenent del dia em podien assignar al comptador o al menjador, directament de cara al client. No obstant això, la majoria de les vegades em posaven a la cuina, on la meva tasca consistia principalment en muntar les comandes de menjar i mantenir l'equip i els aparells de cuina en bon estat.",
+            paragraph3: "Més endavant, en una etapa diferent de la meva vida en què em vaig traslladar a l'estranger, vaig desenvolupar una feina similar en una altra cadena. La naturalesa altament mecànica de les tasques a realitzar va compensar la meva manca de desimboltura amb l'idioma aleshores.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "Tinc tendència a rendir millor sota pressió (tot i que només si percebo aquesta pressió com a justificada).",
+            learning2: "Milloro de manera natural el meu rendiment quan detecto que cal cobrir o donar suport als meus companys.",
+            learning3: "El treball físic pot ser esgotador. Sí, d'acord... també et pot estalviar haver de pagar la quota del gimnàs, però definitivament no és gens recomanable per quan et fas gran."
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "A lo largo de mis primeros años en la universidad, combiné mis estudios con un trabajo a tiempo parcial en una franquicia de una conocidísima cadena de comida rápida (comida basura).",
+            paragraph2: "Dependiendo del día me podían asignar al mostrador de cobros o al comedor, directamente de cara al cliente. No obstante, la mayoríaa de las veces me ponían en la cocina, donde mi labor consistía principalmente en montar los pedidos de comida y mantener el equipo y utensilios de cocina en buen estado.",
+            paragraph3: "Más adelante, en una etapa diferente de mi vida en la que me trasladé al extranjero, desempeñé un trabajo similar en otra cadena. La naturaleza altamente mecánica de las tareas a realizar compensó mi falta de desenvoltura con el idioma en aquel entonces.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Tengo tendencia a rendir mejor bajo presión (aunque solo si percibo tal presión como justificada).",
+            learning2: "Mejoro de manera natural mi rendimiento cuando detecto que es necesario cubrir o dar soporte a mis compañeros.",
+            learning3: "El trabajo físico puede ser agotador. Sí, vale... también te puede ahorrar el tener que pagar la cuota del gimnasio, pero definitivamente no es nada recomendable para cuando te haces mayor."
         },
         eng: {
-            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph1: "During my early years at the university, I combined my studies with a part-time job at a franchised establishment of a well-known fast-food (junk food) chain.",
+            paragraph2: "Depending on the day I could get allocated at the counter or at the food court, directly facing customers. However the majority of times I used to get posted at the kitchen, where my role mainly consisted of putting together food orders and maintaining the cooking equipment in good shape.",
+            paragraph3: "Later on, at a different stage in my life where I moved abroad, I performed a similar role at a different restaurant chain. The highly mechanical nature of the tasks at hand compensated for my lack of language prowess at the time.",
             paragraph4: "Some things I learnt during those experiences:",
             paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            learning1: "I tend to perform better when put under pressure (though only if I perceive that pressure as justified).",
+            learning2: "I naturally step up my performance to cover for or support my peers.",
+            learning3: "Physical work can be extenuating. It can spare you the need to pay your gym membership fee, but definitely it is not something you should wish for when you get old."
         }
     }
 }
@@ -492,24 +502,34 @@ export const workBAR = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "Més d'una vegada a la meva vida he agafat feines en bars i restaurants, bé servint directament a les taules o bé preparant begudes rere el taulell.",
+            paragraph2: "En la majoria d'aquestes ocasions ho he fet com una feina extra, alhora que perseguia objectius més elevats, com per exemple acabar uns estudis o complementar alguna altra feina a temps complet entre setmana. Això sovint implicava haver de treballar els caps de setmana, moltes vegades fins i tot de nit.",
+            paragraph3: "Encara que la restauració pugui ser un sector estressant durant les hores punta i exigent a nivell físic, he trobat que les feines com a cambrer poden arribar a ser força agradoses, especialment si et sents a gust relacionant-te amb la gent i/o observar-la al natural.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "És prou fàcil fer contents els clients només donant-los una miqueta més del que esperen.",
+            learning2: "Cal complaure i interactuar únicament amb aquells que ho mereixen: no es pot cedir de cap manera davant de clients maleducats, poc curosos o buscaraons. En el benefici general de la societat, cal que aquest tipus de consumidors siguin educats a través d'un servei pla, aspre i fins i tot antipàtic.",
+            learning3: "Es necessita un xic de resiliència mental per veure els altres gaudir mentre a tu et toca treballar."
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "Más de una vez en mi vida he aceptado trabajos en bares y restaurantes, bien sirviendo directamente en las mesas o bien preparando bebidas detrás de la barra.",
+            paragraph2: "En la mayoría de esas ocasiones lo he hecho como un trabajo extra, mientras perseguía objetivos más elevados, como por ejemplo finalizar mis estudios o complementar algún otro trabajo a tiempo completo entre semana. Muchas veces esto implicaba tener que trabajar en fines de semana, incluso de noche.",
+            paragraph3: "Aunque la restauración pueda ser un sector estresante durante las horas punta y exigente a nivel físico, he llegado a la conclusión de que los trabajos como camarero pueden llegar a ser bastante disfrutables, especialmente si te gusta relacionarte con la gente y/o observarla al natural.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Resulta fácil contentar a los clientes solo con darles un poquito más de lo que esperan.",
+            learning2: "Únicamente hay que complacer e interactuar con aquellos que se lo merecen: no se debe ceder de ninguna manera ante clientes maleducados, poco cuidadosos o deliberadamente problemáticos. En el beneficio general de la sociedad, es imperativo que este tipo de consumidores sean educados a través de un servicio plano, áspero e incluso antipático.",
+            learning3: "Se necesita algo de resiliencia mental para ver a los demás disfrutar mientras a ti te toca trabajar."
         },
         eng: {
-            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph1: "More than once in my life I've taken jobs at bars and restaurants, either serving at the tables or preparing beverages behind the bar.",
+            paragraph2: "On the majority of those occasions I've done it as a side job, while I was pursuing higher objectives, such as some degree or some other full-time daily job. This implied having to work on weekends and even on weekend nights.",
+            paragraph3: "Though stressful during peak hours and physically demanding, I've found this kind of jobs to be quite enjoyable, especially if you like to liaise with people and/or observe them in the wild.",
             paragraph4: "Some things I learnt during those experiences:",
             paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            learning1: "It is easy to make customers happy by giving them a little bit more than expected.",
+            learning2: "Only interact with and indulge those that deserve it: do not yield in any way to messy, rude or rowdy customers. For the general benefit of society, those must be educated through plain dull even unsympathetic service.",
+            learning3: "It takes some sort of mental resilience to watch others enjoy while you toil."
         }
     }
 }
@@ -522,24 +542,37 @@ export const workAIR = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "Probablement perquè el meu esperit sempre s'ha sentit inclinat cap als viatges i l'aventura, una de les feines que vaig gaudir més va ser la que vaig tenir a l'aeroport, en una proximitat molt estreta amb els avions que s'hi enlairaven i els passatgers que marxaven en direcció a indrets llunyans.",
+            paragraph2: "La meva tasca aleshores consistia en assistir els avions durant la seva escala a l'aeroport, ja fos descarregant les seves bodegues o carregant-les de nou amb l'equipatge dels passatgers que partien.",
+            paragraph3: "Mentre portava a terme les meves obligacions vaig tenir l'oportunitat de rondar lliurement per la plataforma aeroportuària (l'àrea restringida per on es mouen els avions i s'esdevé tot allò interessant), i també d'operar maquinària molt especialitzada com ara escales mòbils o carregadors de contenidors (una espècie d'enormes muntacàrregues mòbils emprats per carregar contenidors de maletes dins de l'avió).",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "Fer una feina que té un propòsit clar i simple és quelcom d'allò més positiu. T'atorga una tranquil·litat mental incomparable.",
+            learning2: "Treballar en una companyia gegantina que ni tan sols sap el teu nom té els seus beneficis i també els seus desavantatges:",
+            pros: "+ No passa res si la cagues amb alguna cosa (tret que la caguis molt fort).",
+            cons: "- És gairebé impossible destacar."
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "Probablemente debido a que mi espíritu siempre se ha sentido inclinado hacia los viajes y la aventura, uno de los trabajos que más disfruté fue el que tuve en el aeropuerto, en una proximidad muy estrecha con los aviones que despegaban y los pasajeros que partían en dirección a destinos lejanos.",
+            paragraph2: "Mis labores en aquel entonces consistían en asistir a los aviones durante su escala en el aeropuerto, ya fuera descargando sus bodegas o cargándolas de nuevo con el equipaje de los pasajeros en vuelos de salida.",
+            paragraph3: "Mientras llevaba a cabo mis obligaciones tuve la oportunidad de deambular libremente por la plataforma aeroportuaria (la zona restringida por donde se mueven los aviones y ocurre todo lo interesante), y también de operar maquinaria muy especializada como por ejemplo escaleras móviles o cargadores de contenedores (una especie de enormes montacargas móviles empleados para subir contenedores de maletas al avión).",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Desempeñar un trabajo que tiene un propósito claro y simple es algo sumamente positivo. Te ofrece una tranquilidad mental incomparable.",
+            learning2: "Trabajar en una empresa gigantesca que ni siquiera conoce tu nombre tiene sus beneficios y también sus desventajas:",
+            pros: "+ No pasa nada si la cagas con algo (excepto si la cagada es muy fuerte).",
+            cons: "- Es prácticamente imposible destacar."
         },
         eng: {
-            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph1: "Probably because my spirit has always been bent on travel and adventure, one of the jobs I enjoyed the most was the one I got at the airport, in close proximity with the airplanes taking off from there and all their passengers going places far away.",
+            paragraph2: "My designated task back then was to assist airliners during their stopover at the airport, be it by unloading their cargo holds or by loading them back with the luggage of departing passengers.",
+            paragraph3: "While accomplishing such chores I got to freely roam the airport platform (restricted area where all the aircraft move around and all action takes place) and operate very specialized equipment such as flight ladders and ULD loaders (a huge machine used to load bulk containers onto the plane).",
             paragraph4: "Some things I learnt during those experiences:",
             paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            learning1: "It is good to carry out a job that has a clear and simple purpose. It provides you with uncomparable peace of mind.",
+            learning2: "Working in a huge company that doesn't even know your name has its pros and cons:",
+            pros: "+ Nothing happens if you screw something up (unless you do it in style).",
+            cons: "- It is near impossible to stand out."
         }
     }
 }
@@ -552,24 +585,34 @@ export const workCCR = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "Hi va haver una fase de la meva vida en què vaig tenir una sèrie de feines contestant trucades, a les centraletes d'atenció al client de diverses companyies. El punt d'inflexió de tota aquesta etapa es va donar quan vaig aconseguir una feina al 112 - Telèfon d'Emergències de Catalunya.",
+            paragraph2: "A partir d'aquell moment es va desfermar un diluvi constant de trucades majoritàriament absurdes i/o insòlites, que representaven a la perfecció el ventall de misèries de la societat moderna, i que exigien resposta en qüestió de segons. La missió era obtenir les dades rellevants, i tot seguit passar-les a la policia o a qui se suposés que havia de resoldre el desastre o la situació problemàtica de torn.",
+            paragraph3: "Sorprenentment, vaig empescar-me-les força bé per aguantar la naturalesa enervant de la feina (gent incomprensible o poc col·laboradora a l'altra banda del telèfon, presses, mala qualitat del so), i m'hi vaig mantenir durant prop de 4 anys.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "Cal plantar cara a l'estrès de seguida que apareix, altrament t'arruinarà la vida. És importantíssim adquirir la capacitat de formatejar la ment en blanc tan bon punt poses els peus a casa.",
+            learning2: "Mai pots sentir-te plenament preparat, pel que fa a tractar amb persones. Sempre acabarà sorgint alguna reacció o resposta totalment fora de l'equació.",
+            learning3: "Entre el 60% i el 75% de la gent té la mala costum d'abusar o emprar malament els serveis públics gratuïts (basat en les meves pròpies estimacions)."
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "Hubo una fase de mi vida en la que tuve una serie de trabajos contestando llamadas, en las centralitas de atención al cliente de varias compañías. El punto de inflexión de toda esta etapa se dio cuando conseguí un trabajo en el 112 - Teléfono de Emergencias (Cataluña).",
+            paragraph2: "A partir de ese momento se desató un diluvio constante de llamadas mayoritariamente absurdas y/o insólitas, que representaban a la perfección el abanico de miserias de la sociedad moderna, y que exigían respuesta en cuestión de segundos. La misión era obtener los datos relevantes, y a continuación pasarlos a la policía o a quién se suponiera que debía resolver el desastre o la situación problemática de turno.",
+            paragraph3: "Sorprendentemente, me las apañé bastante bien para aguantar la naturaleza enervante del trabajo (gente incomprensible o poco colaboradora al otro lado del teléfono, prisas, mala calidad de sonido), y lo mantuve durante cerca de 4 años.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Es necesario plantarle cara al estrés enseguida que aparece, de lo contrario te arruinará la vida. Es importantísimo adquirir la capacidad de formatear la mente en blanco tan pronto como pones los pies en tu casa.",
+            learning2: "Jamás puedes sentirte plenamente preparado, en lo referente al trato con personas. Siempre acabará surgiendo alguna reacción o respuesta absolutamente fuera de la ecuación.",
+            learning3: "Entre el 60% y el 75% de la gente tiene la mala costumbre de abusar o utilizar mal los servicios públicos gratuitos (basado en mis propias estimaciones)."
         },
         eng: {
-            paragraph1: "Sometime around my early twenties I got hired as a lifeguard. I had already been volunteering at the Spanish Red Cross for some time, and had acquired some training in First Aid and CPR (Cardiopulmonary Resuscitation). Then I took a specialized course on Water Rescue.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph1: "At certain stage of my life I got a series of jobs answering calls, at the customer care call centers of a variety of companies. The turning point of the whole lot was when I got a job at the 112 - Emergency Call Center of my region (equivalent to what most of you might know as 911).",
+            paragraph2: "From that moment on there came the constant deluge of crazy calls depicting the whole array of miseries of modern society, which had to be dealt with in split seconds. The mission was to get the relevant data, and then pass it on to the police or whoever was supposed to solve some troublesome situation or disaster.",
+            paragraph3: "Surprisingly enough, I managed to put up with the nerve-racking nature of the job (uncollaborating or incomprehensible people on the other phone end, haste, bad sound quality) and kept it for approximately 4 years.",
             paragraph4: "Some things I learnt during those experiences:",
             paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            learning1: "Stress must be promptly dealt with or else it will ruin your life. Resetting your mind blank upon entering home is paramount.",
+            learning2: "You can never be fully prepared, in terms of dealing with people. There will always come up some reaction or response that's totally out of the equation.",
+            learning3: "Between 60% and 75% of people have the bad habit of misusing free community services (based on my own estimations)."
         }
     }
 }
@@ -582,19 +625,34 @@ export const workHTL = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "Tal com correspondria a algú que ha estudiat Turisme (entre un grapat de coses més), també vaig tenir una feina a la recepció d'un edifici d'apartaments turístics de luxe situat al cor de Barcelona.",
+            paragraph2: "El tipus de tasques que comportava la posició no hauria de sorprendre ningú: gestionar les reserves dels hostes, donar-los la benvinguda i acomiadar-los en el moment de marxar, assegurar que la seva estada era sempre plaent i que cadascuna de les seves necessitats es veia coberta. La responsabilitat de que aquests objectius s'assolissin diàriament era meva, i per això la meva tasca més important era coordinar la resta de l'equip.",
+            paragraph3: "El fet de ser el primer i l'últim punt de contacte amb què podien comptar els clients em va agradar de manera especial. Aquest atribut, combinat amb la grata funció de donar-los consell i guiatge sobre les necessitats pràctiques que els sorgien i les diferents opcions d'oci a la ciutat, em va permetre construir relacions efímeres però molt agradables amb la majoria dels hostes.",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
+            paragraph5: "Alguns dels llocs on vaig treballar:",
+            learning1: "Coordinar un grup humà amb la finalitat de produir una experiència memorable per al client que paga no és sempre fàcil. La qualitat de l'equip que t'envolta és fonamental per marcar la diferència.",
+            learning2: "En el sector del turisme un client content equival a una propina generosa.",
+            learning3: "Haver de vestir sempre elegant per treballar és una mica emprenyador. Les feines que no contemplen normes de vestimenta són or."
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "Tal y como le correspondería a alguien que ha estudiado Turismo (entre un puñado de cosas más), también tuve un trabajo en la recepción de un edificio de apartamentos turísticos de lujo situado en el corazón de Barcelona.",
+            paragraph2: "El tipo de labores que conllevaba la posición no debería de sorprender a nadie: gestionar las reservas de los huéspedes, darles la bienvenida y despedirlos cuando se iban, asegurar que su estancia era placentera en todo momento y que todas y cada una de sus necesidades se veían cubiertas. La responsabilidad de que estos objetivos se lograran diariamente era mía, y por eso mi tarea más importante era coordinar al resto del equipo.",
+            paragraph3: "El hecho de ser el primero y el último punto de contacto con el que podían contar los clientes me gustó de manera especial. Este atributo, combinado con la grata tarea de ofrecerles consejo sobre las necesidades prácticas que les surgían y las diferentes opciones de ocio en la ciudad, me permitió construir relaciones efímeras pero muy agradables con la mayoría de los huéspedes.",
+            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
+            paragraph5: "Algunos de los lugares donde trabajé:",
+            learning1: "Coordinar un grupo humano con la finalidad de producir una experiencia memorable para el cliente que paga no es siempre fácil. La calidad del equipo que te rodea es fundamental para marcar la diferencia.",
+            learning2: "En el sector del turismo un cliente contento equivale a una propina generosa.",
+            learning3: "Tener que vestir siempre elegante para trabajar es un poco engorroso. Los trabajos que no contemplan normas de vestimenta son oro."
         },
         eng: {
-            paragraph1: "This was the first job I got, at the age of 18. As a department store clerk of refilling empty racks and shelves and keeping nice.",
-            paragraph2: "Here I got my education, obtained the vast majority of my qualifications, abilities and life experiences. Also it is the location where almost the entirety of my professional career has taken place so far.",
-            paragraph3: "Amongst many other skills, life in the city has provided me with my 2 native languages:"
+            paragraph1: "As it seems fit for someone who studied Tourism (among quite a bunch of things), I also had a job at the reception desk of a luxury apartment building located in the very heart of Barcelona (widely known as one of the most visited cities in the world).",
+            paragraph2: "The kind of chores assigned to the role shouldn't come in as surprising: managing guests reservations, checking them in and out, making sure their stay was always pleasant and their every need was promptly satisfied. The responsibility of those goals being achieved in a daily basis was all mine, so my most important task was to coordinate the rest of the team.",
+            paragraph3: "I especially liked the fact of being the first and last point of contact for all customers. This attribute, combined with the agreeable task of giving them advice about their practical needs and leisure options while in the city, allowed me to build short-lived but nice rapports with the majority of visiting guests.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Coordinating a human group to produce a memorable experience for the paying customer isn't always a simple thing. The quality of the team is fundamental in making a difference.",
+            learning2: "In the tourism business happy customers reward with generous tips.",
+            learning3: "Having to dress smart to work is a bit of a pain in the ass. Jobs without a dress code are gold."
         }
     }
 }
@@ -617,9 +675,14 @@ export const workOCC = {
             paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
         },
         eng: {
-            paragraph1: "This was the first job I got, at the age of 18. As a department store clerk of refilling empty racks and shelves and keeping nice.",
-            paragraph2: "Here I got my education, obtained the vast majority of my qualifications, abilities and life experiences. Also it is the location where almost the entirety of my professional career has taken place so far.",
-            paragraph3: "Amongst many other skills, life in the city has provided me with my 2 native languages:"
+            paragraph1: "My last job before entering the world of coding was at the headquarters of an airline, contributing to the daily operation that makes all scheduled flights possible.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
         }
     }
 }
