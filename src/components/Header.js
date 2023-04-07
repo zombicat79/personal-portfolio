@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 import { LangContext } from './../App';
 
@@ -21,26 +22,19 @@ function Header(props) {
     }
 
     return (
-        <section className={`header header--${props.headerIsUnfolded}`}>
+        <section className={`header header--${props.headerIsUnfolded}`}>            
             <div className="header__upper">
-                <div>
+                <Link to="/">
                     <img 
                         className="header__logo" src={activeLogo} alt={props.headerBrandImgAlt} 
                         width={props.logoSize} height={props.logoSize}
-                        onClick={(e) => {
-                                props.handleHeaderState();
-                                props.handleSealState("shrunk");
-                            }
-                        }
-                        onMouseOver={(e) => {handleLogo(1); handleSettingsAppearance()}}
-                        onMouseLeave={(e) => {handleLogo(0); handleSettingsAppearance()}}
+                        onMouseOver={(e) => {handleLogo(1)}}
+                        onMouseLeave={(e) => {handleLogo(0)}}
                     />
-                </div>
+                </Link>
                 <nav>
                     <ul className="header__linkList">
                         <li className={`header__link ${settingsOn}`} 
-                            onMouseOver={(e) => handleLogo(1)} 
-                            onMouseLeave={(e) => handleLogo(0)}
                             onClick={(e) => {
                                 props.handleHeaderState();
                                 props.handleSealState("shrunk");
@@ -48,11 +42,34 @@ function Header(props) {
                         }>
                             {headerTexts.nav1[language]}
                         </li>
-                        <li className="header__link">{headerTexts.nav2[language]}</li>
+
+                        <NavLink 
+                            to="/about/thispage" 
+                            className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
+                            {headerTexts.nav2[language]}
+                        </NavLink>
+                        <NavLink 
+                            to="/about/myself" 
+                            className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
+                            {headerTexts.nav3[language]}
+                        </NavLink>
+                        <NavLink 
+                            to="/about/zombiecat" 
+                            className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
+                            {headerTexts.nav4[language]}
+                        </NavLink>
+                        <NavLink 
+                            to="/contact" 
+                            className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
+                            {headerTexts.nav5[language]}
+                        </NavLink>
+                        <li className="header__link">{headerTexts.nav6[language]}</li>
+
+                        {/*<li className="header__link">{headerTexts.nav2[language]}</li>
                         <li className="header__link">{headerTexts.nav3[language]}</li>
                         <li className="header__link">{headerTexts.nav4[language]}</li>
                         <li className="header__link">{headerTexts.nav5[language]}</li>
-                        <li className="header__link">{headerTexts.nav6[language]}</li>
+                        <li className="header__link">{headerTexts.nav6[language]}</li> */}
                     </ul>
                 </nav>
             </div>

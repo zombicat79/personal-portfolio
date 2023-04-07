@@ -35,6 +35,8 @@
             align-items: center;
 
             .header__link {
+                color: white;
+                text-decoration: none;
                 margin-right: 5rem;
                 list-style-type: none;
                 transition: all 1s;
@@ -42,6 +44,11 @@
                 &:hover {
                     cursor: pointer;
                     transform: scale(1.5);
+                    color: red;
+                }
+
+                &--active {
+                    transform: scale(1.25);
                     color: darkred;
                 }
             }

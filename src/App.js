@@ -1,6 +1,15 @@
 import React, {useState} from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.scss';
+
+import Layout from './components/layout/Layout';
+
+import Home from './pages/Home';
+import ThePage from './pages/ThePage';
+import Myself from './pages/Myself';
+import Contact from './pages/Contact';
+import ZombieCat from './pages/ZombieCat';
 
 import logo from './images/zombiecat-trans-logo.png';
 import logoHover from './images/zombiecat-hover-logo.png';
@@ -22,6 +31,7 @@ export const LangContext = React.createContext(null);
 const viewport = document.getElementById("root");
 
 function App() {
+  // *** General state + methods ***
   const [language, setLanguage] = useState("eng");
   const handleLanguage = (lang) => {
     setLanguage(lang);
@@ -124,9 +134,57 @@ function App() {
     })
   }
 
+  // *** Props packages to be passed down to the different routes ***
+  const state = {
+    language: language,
+    initSealIsShrinking: initSealIsShrinking,
+    initSealIsShrunk: initSealIsShrunk,
+    hasVisitorInfo: hasVisitorInfo,
+    visitorInfo: visitorInfo,
+    moment: moment,
+    activeSubsection: activeSubsection,
+    hoverSubsection: hoverSubsection,
+    activeInfoItem: activeInfoItem,
+    headerIsUnfolded: headerIsUnfolded
+  }
+
+  const methods = {
+    handleSealState: handleSealState,
+    handleLanguage: handleLanguage,
+    setHasVisitorInfo: setHasVisitorInfo,
+    setVisitorInfo: setVisitorInfo,
+    handleHeaderState: handleHeaderState,
+    handleActiveSubsection: handleActiveSubsection,
+    handleHoverSubsection: handleHoverSubsection,
+    handleActiveInfoItem: handleActiveInfoItem,
+    handleTimeline: handleTimeline
+  }
+
+  const assets = {
+    logo: logo,
+    logoHover: logoHover,
+    submitBtn: submitBtn,
+    submitBtnPressed: submitBtnPressed
+  }
+
   return (
     <LangContext.Provider value={language}>
-      <main className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout state={state} methods={methods} assets={assets} />} >
+            <Route index element={<Home state={state} methods={methods} assets={assets} />} />
+            <Route path="about">
+              <Route index element={<Myself />} />
+              <Route path="thispage" element={<ThePage />} />
+              <Route path="myself" element={<Myself />} />
+              <Route path="zombiecat" element={<ZombieCat />} />
+            </Route>
+            <Route path="contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
+      {/* <main className="App">
         {
           !initSealIsShrunk &&
           <WelcomeSeal 
@@ -165,7 +223,7 @@ function App() {
               handleHeaderState={handleHeaderState}
               handleSealState={handleSealState}
               /* handleMainComponentsVisibility={handleMainComponentsVisibility} */
-            />
+            /*/>
             <DisplaySection 
               logoSrc={logo}
               logoAlt={"Cartoon-like logo depicting a cat"}
@@ -180,7 +238,7 @@ function App() {
               handleActiveInfoItem={handleActiveInfoItem}
               /* mainComponentsVisibility={mainComponentsVisibility}
               handleMainComponentsVisibility={handleMainComponentsVisibility} */
-            />
+            /*/>
             <RangeSlider 
               min={1}
               max={3} 
@@ -202,7 +260,7 @@ function App() {
             <Footer footerBrandImages={[logo, logoHover]} footerBrandImgAlt={"Cartoon-like logo depicting a cat"} logoSize={100} />
           </div>
         }
-      </main>
+      </main> */}
     </LangContext.Provider>
   );
 }
