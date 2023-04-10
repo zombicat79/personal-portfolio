@@ -51,6 +51,17 @@
                     transform: scale(1.25);
                     color: darkred;
                 }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.5);
+                        color: red;
+                    }
+                }
             }
 
             .true {

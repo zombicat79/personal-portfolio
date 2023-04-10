@@ -1,0 +1,89 @@
+.advancing-border {
+    position: absolute;
+    border: 3px solid black;
+
+    &__pointer {
+        position: absolute;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        background-color: white;
+        transition: opacity .3s;
+
+        &--top {
+            left: -.6rem;
+            top: -.5rem;
+        }
+
+        &--bottom {
+            right: -.6rem;
+            bottom: -.5rem;
+        }
+
+        &--right {
+            right: -.5rem;
+            top: -.6rem;
+        }
+
+        &--left {
+            left: -.5rem;
+            top: -.6rem;
+        }
+
+        &--true {
+            opacity: 1;
+        }
+
+        &--false {
+            opacity: 0;
+        }
+    }
+
+    &--top {
+        top: 0;
+        left: 0;
+    }
+
+    &--right {
+        top: 0;
+        right: 0;
+    }
+
+    &--bottom {
+        bottom: 0;
+        right: 0;
+    }
+
+    &--left {
+        bottom: 0;
+        left: 0;
+    }
+
+    &--invisible {
+        width: 0%;
+    }
+
+    &--completed-horizontal {
+        border: 3px solid red;
+        width: 100%;
+    }
+
+    &--completed-vertical {
+        border: 3px solid red;
+        height: 100%;
+    }
+
+    &--printing-horizontal {
+        border: 3px solid red;
+        animation-name: horizontal-laser-draw;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+    }
+
+    &--printing-vertical {
+        border: 3px solid red;
+        animation-name: vertical-laser-draw;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+    }
+}

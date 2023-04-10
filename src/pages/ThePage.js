@@ -1,8 +1,12 @@
 import React from 'react';
 
+import LaserBox from './../components/layout/LaserBox';
+
 function ThePage() {
     return (
-        <h1>Info about the page</h1>
+        <section className="page-body">
+            <LaserBox />
+        </section>
     )
 }
 

@@ -49,3 +49,12 @@ main {
     background-color: white;
     color: black;
 }
+
+/* Page components */
+
+.page-body {
+    max-width: $max-component-width;
+    min-height: 600px;
+    margin: 150px auto 50px;
+    position: relative;
+}

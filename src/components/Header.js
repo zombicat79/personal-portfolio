@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { LangContext } from './../App';
 
 import headerTexts from './../texts/header_texts';
+import cvEng from './../downloads/WebDev_CV_FULL_ENG_NoPic.pdf';
+import cvEsp from './../downloads/WebDev_CV_FULL_ESP_NoPic.pdf';
 
 function Header(props) {
     const language = useContext(LangContext);
@@ -63,7 +65,14 @@ function Header(props) {
                             className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
                             {headerTexts.nav5[language]}
                         </NavLink>
-                        <li className="header__link">{headerTexts.nav6[language]}</li>
+                        <li className="header__link">
+                            {
+                                language === "eng" ?
+                                    <a href={cvEng} download="ZombieCat_CV.pdf">{headerTexts.nav6[language]}</a>
+                                :
+                                    <a href={cvEsp} download="ZombieCat_CV.pdf">{headerTexts.nav6[language]}</a>
+                            }
+                        </li>
 
                         {/*<li className="header__link">{headerTexts.nav2[language]}</li>
                         <li className="header__link">{headerTexts.nav3[language]}</li>

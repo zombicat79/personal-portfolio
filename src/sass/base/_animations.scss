@@ -44,3 +44,14 @@
     0% {opacity: 0}
     100% {border: 1}
 }
+
+/* LaserBox Component */
+@keyframes horizontal-laser-draw {
+    0% {width: 0%}
+    100% {width: 100%}
+}
+
+@keyframes vertical-laser-draw {
+    0% {height: 0%}
+    100% {height: 100%}
+}
