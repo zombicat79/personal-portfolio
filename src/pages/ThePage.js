@@ -5,7 +5,11 @@ import LaserBox from './../components/layout/LaserBox';
 function ThePage() {
     return (
         <section className="page-body">
-            <LaserBox />
+            <LaserBox>
+                <div>
+                    Hello
+                </div>
+            </LaserBox>
         </section>
     )
 }

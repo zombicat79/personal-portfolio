@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function LaserBox() {
+function LaserBox(props) {
     const [topBorderStatus, setTopBorderStatus] = useState(["invisible"]);
     const [rightBorderStatus, setRightBorderStatus] = useState(["invisible"]);
     const [bottomBorderStatus, setBottomBorderStatus] = useState(["invisible"]);
@@ -21,6 +21,12 @@ function LaserBox() {
                 setPointerStatus([false, false, false, false]);
                 setRightBorderStatus("completed-vertical");
                 setLeftBorderStatus("completed-vertical");
+                setTimeout(() => {
+                    setTopBorderStatus("top-glowing");
+                    setRightBorderStatus("right-glowing");
+                    setBottomBorderStatus("bottom-glowing");
+                    setLeftBorderStatus("left-glowing");
+                }, 500)
             }, 2500)
         }, 2500)
     }
@@ -43,6 +49,8 @@ function LaserBox() {
             <div className={`advancing-border advancing-border--left advancing-border--${leftBorderStatus}`}>
                 <div className={`advancing-border__pointer advancing-border__pointer--top advancing-border__pointer--${pointerStatus[3]}`}></div>
             </div>
+
+            <p>{props.children}</p>
         </section>
     )
 }

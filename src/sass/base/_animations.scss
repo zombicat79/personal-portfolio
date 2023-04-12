@@ -55,3 +55,21 @@
     0% {height: 0%}
     100% {height: 100%}
 }
+
+@keyframes laser-pointer-glow {
+    0% {box-shadow: .5px 0 3px white, -.5px 0 3px white, 0 .5px 3px white, 0 -.5px 3px white}
+    50% {box-shadow: .5rem 0 15px white, -.5rem 0 15px white, 0 .5rem 15px white, 0 -.5rem 15px white}
+    100% {box-shadow: .5px 0 3px white, -.5px 0 3px white, 0 .5px 3px white, 0 -.5px 3px white}
+}
+
+@keyframes vertical-laser-box-glow {
+    0% {box-shadow: 0 -.5px 3px red, 0 .5px 3px red}
+    50% {box-shadow: 0 -.75rem 1rem red, 0 .75rem 1rem red}
+    100% {box-shadow: 0 -.5px 3px red, 0 .5px 3px red}
+}
+
+@keyframes horizontal-laser-box-glow {
+    0% {box-shadow: .5px 0 3px red, -.5px 0 3px red}
+    50% {box-shadow: .75rem 0 1rem red, -.75rem 0 1rem red}
+    100% {box-shadow: .5px 0 3px red, -.5px 0 3px red}
+}
