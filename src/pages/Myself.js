@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import LaserBox from './../components/layout/LaserBox';
+import { LangContext } from "./../App";
 
 function Myself() {
+    const language = useContext(LangContext);
+    
     return (
-        <h1>Info about myself</h1>
+        <section className="page-body">
+            <LaserBox>
+                <div className="content-wrapper">
+               
+                </div>
+            </LaserBox>
+        </section>
     )
 }
 

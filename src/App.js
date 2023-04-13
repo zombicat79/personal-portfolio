@@ -17,18 +17,7 @@ import logoHover from './images/zombiecat-hover-logo.png';
 import submitBtn from './images/icos/cat-paw-hollow-trans.png';
 import submitBtnPressed from './images/icos/cat-paw-full-trans.png';
 
-import WelcomeSeal from './components/WelcomeSeal';
-import VisitorQuestionnaire from './components/VisitorQuestionnaire';
-import Header from './components/Header';
-import FeatureSection from './components/FeatureSection';
-import DisplaySection from './components/DisplaySection';
-import RangeSlider from './components/RangeSlider';
-import Footer from './components/Footer';
-
-import wSealTexts from './texts/welcomeSeal_texts';
 export const LangContext = React.createContext(null);
-
-const viewport = document.getElementById("root");
 
 function App() {
   // *** General state + methods ***
@@ -134,6 +123,16 @@ function App() {
     })
   }
 
+  // *** Common use helper functions ***
+  // Function used to include the visitor's name in selected content paragraphs
+  const personalizeParagraph = (insertInfo, searchTerm, paragraph) => {
+    if (insertInfo === "name") {
+        return paragraph.replace(searchTerm, `${searchTerm}, ${visitorInfo.name}`);
+    } else {
+        return paragraph.replace(searchTerm, `${searchTerm} ${visitorInfo.org}`);
+    }
+  } 
+
   // *** Props packages to be passed down to the different routes ***
   const state = {
     language: language,
@@ -157,7 +156,8 @@ function App() {
     handleActiveSubsection: handleActiveSubsection,
     handleHoverSubsection: handleHoverSubsection,
     handleActiveInfoItem: handleActiveInfoItem,
-    handleTimeline: handleTimeline
+    handleTimeline: handleTimeline,
+    personalizeParagraph: personalizeParagraph
   }
 
   const assets = {
@@ -175,7 +175,7 @@ function App() {
             <Route index element={<Home state={state} methods={methods} assets={assets} />} />
             <Route path="about">
               <Route index element={<Myself />} />
-              <Route path="thispage" element={<ThePage />} />
+              <Route path="thispage" element={<ThePage state={state} methods={methods} />} />
               <Route path="myself" element={<Myself />} />
               <Route path="zombiecat" element={<ZombieCat />} />
             </Route>
@@ -183,84 +183,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-
-      {/* <main className="App">
-        {
-          !initSealIsShrunk &&
-          <WelcomeSeal 
-            logoImages={[logo, logoHover]} 
-            logoAlt={"Cartoon-like logo depicting a cat"} 
-            tradeName={"ZombieCat"}
-            role={wSealTexts.role[language]}
-            actionTexts={wSealTexts.actionTexts[language]}
-            viewport={viewport}
-            initSealIsShrinking={initSealIsShrinking}
-            initSealIsShrunk={initSealIsShrunk}
-            handleSealState={handleSealState}
-            handleLanguage={handleLanguage}
-          />
-        }
-        {
-          initSealIsShrunk &&
-          !hasVisitorInfo &&
-          <VisitorQuestionnaire 
-            btnSubmitIcons={[submitBtn, submitBtnPressed]} 
-            submitBtnAlt={"Cat paw"}
-            setHasVisitorInfo={setHasVisitorInfo}
-            setVisitorInfo={setVisitorInfo}
-          />
-        }
-        
-        {
-          initSealIsShrunk &&
-          hasVisitorInfo &&
-          <div id="main-page">
-            <Header
-              headerIsUnfolded={headerIsUnfolded}
-              headerBrandImages={[logo, logoHover]}
-              headerBrandImgAlt={"Cartoon-like logo depicting a cat"} 
-              logoSize={50}
-              handleHeaderState={handleHeaderState}
-              handleSealState={handleSealState}
-              /* handleMainComponentsVisibility={handleMainComponentsVisibility} */
-            /*/>
-            <DisplaySection 
-              logoSrc={logo}
-              logoAlt={"Cartoon-like logo depicting a cat"}
-              visitorInfo={visitorInfo}
-              moment={moment}
-              activeSubsection={activeSubsection}
-              hoverSubsection={hoverSubsection}
-              activeInfoItem={activeInfoItem}
-              handleActiveSubsection={handleActiveSubsection}
-              handleHoverSubsection={handleHoverSubsection}
-              handleHeaderState={handleHeaderState}
-              handleActiveInfoItem={handleActiveInfoItem}
-              /* mainComponentsVisibility={mainComponentsVisibility}
-              handleMainComponentsVisibility={handleMainComponentsVisibility} */
-            /*/>
-            <RangeSlider 
-              min={1}
-              max={3} 
-              size={"big"}
-              name={"time"} 
-              initialStep={1}
-              activeSubsection={activeSubsection}
-              handleTimeline={handleTimeline}
-              handleActiveInfoItem={handleActiveInfoItem}
-            />
-            { activeSubsection !== "home" &&
-              <FeatureSection
-                moment={moment}
-                activeSubsection={activeSubsection}
-                activeInfoItem={activeInfoItem}
-                handleActiveInfoItem={handleActiveInfoItem}
-              />
-            }
-            <Footer footerBrandImages={[logo, logoHover]} footerBrandImgAlt={"Cartoon-like logo depicting a cat"} logoSize={100} />
-          </div>
-        }
-      </main> */}
     </LangContext.Provider>
   );
 }

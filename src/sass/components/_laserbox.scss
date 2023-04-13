@@ -123,3 +123,62 @@
         animation-timing-function: linear;
     }
 }
+
+.laserbox {
+    &__content-wrapper {
+        padding: 5rem;
+        font-size: 1.8rem;
+        opacity: 0;
+    
+        h2 {
+            font-size: 1.8rem;
+        }
+    
+        &--appearing {
+            animation-name: content-appearing;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+        }
+    
+        &--visible {
+            opacity: 1;
+        }
+    }
+
+    &__chunk > * {
+        display: inline;
+    }
+
+    &__link > * {
+        color: white;
+        text-decoration: none;
+        animation-name: link-blip;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    &__logoBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 3rem auto 0;
+    }
+
+    &__logoItem {
+        width: 10rem;
+
+        &--big {
+            width: 13rem;
+        }
+
+        &--extra-big {
+            width: 20rem;
+        }
+
+        &--huge {
+            width: 30rem;
+        }
+    }
+}

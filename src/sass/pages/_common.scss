@@ -1,0 +1,34 @@
+/* Common classes for Page components */
+
+.page-body {
+    max-width: $max-component-width;
+    min-height: 600px;
+    margin: 100px auto 50px;
+    position: relative;
+}
+
+
+
+.page__logoBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 3rem auto 0;
+
+    .page__logoItem {
+        width: 10rem;
+
+        &--big {
+            width: 13rem;
+        }
+
+        &--extra-big {
+            width: 20rem;
+        }
+
+        &--huge {
+            width: 30rem;
+        }
+    }
+}

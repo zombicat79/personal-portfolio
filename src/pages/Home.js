@@ -23,6 +23,7 @@ function Home(props) {
                 handleHoverSubsection={methods.handleHoverSubsection}
                 handleHeaderState={methods.handleHeaderState}
                 handleActiveInfoItem={methods.handleActiveInfoItem}
+                personalizeParagraph={methods.personalizeParagraph}
                 /* mainComponentsVisibility={mainComponentsVisibility}
                 handleMainComponentsVisibility={handleMainComponentsVisibility} */
             />

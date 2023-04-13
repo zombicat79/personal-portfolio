@@ -42,7 +42,7 @@
 
 @keyframes prompt-blip {
     0% {opacity: 0}
-    100% {border: 1}
+    100% {opacity: 1}
 }
 
 /* LaserBox Component */
@@ -72,4 +72,16 @@
     0% {box-shadow: .5px 0 3px red, -.5px 0 3px red}
     50% {box-shadow: .75rem 0 1rem red, -.75rem 0 1rem red}
     100% {box-shadow: .5px 0 3px red, -.5px 0 3px red}
+}
+
+/* Pages common animations */
+@keyframes content-appearing {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes link-blip {
+    0% {color: white}
+    50% {color: darkred}
+    100% {color: white}
 }

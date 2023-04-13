@@ -47,15 +47,6 @@ function DisplaySection(props) {
         })
     }
 
-    // Function used to include the visitor's name in selected content paragraphs
-    const personalizeParagraph = (insertInfo, searchTerm, paragraph) => {
-        if (insertInfo === "name") {
-            return paragraph.replace(searchTerm, `${searchTerm}, ${props.visitorInfo.name}`);
-        } else {
-            return paragraph.replace(searchTerm, `${searchTerm} ${props.visitorInfo.org}`);
-        }
-    }
-
     // Adds hover event listeners to display menu icons
     useEffect(() => {
         const menuIcons = Array.from(document.querySelectorAll(".menuElement:not(#icon-overview)"));
@@ -186,11 +177,11 @@ function DisplaySection(props) {
                 <div className="display-section__right display-section__half">
                     {props.activeSubsection === "home" && props.moment === "present" && <Overview visitorInfo={props.visitorInfo} hoverSubsection={props.hoverSubsection} />}
                     {props.activeSubsection === "home" && props.moment === "past" && <OverviewPast hoverSubsection={props.hoverSubsection} />}
-                    {props.activeSubsection === "home" && props.moment === "future" && <OverviewFuture personalizeParagraph={personalizeParagraph} hoverSubsection={props.hoverSubsection} />}
-                    {props.activeSubsection === "education" && props.activeInfoItem === "criminology" && <EducationUB personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "home" && props.moment === "future" && <OverviewFuture personalizeParagraph={props.personalizeParagraph} hoverSubsection={props.hoverSubsection} />}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "criminology" && <EducationUB personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "tourism" && <EducationUOC />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}
-                    {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "supermarket" && <WorkDStore />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "lifeguard" && <WorkBeach />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}
@@ -201,8 +192,8 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
-                    {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={personalizeParagraph} />}
-                    {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationWorld personalizeParagraph={personalizeParagraph} />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={props.personalizeParagraph} />}
+                    {props.activeSubsection === "location" && props.activeInfoItem === "world" && <LocationWorld personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "space" && <LocationSpace />}
                 </div>
             </div>
