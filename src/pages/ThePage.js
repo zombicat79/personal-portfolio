@@ -35,13 +35,27 @@ function ThePage(props) {
         }, 6000)
     }, [])
 
+    // Adjust component styling on render (correct styles from WelcomeSeal component)
+    useEffect(() => {
+        const layers = Array.from(document.querySelectorAll("html, body, #root, .App"));
+        layers.forEach((item, index) => {
+            item.style.height = "initial";
+            if (item.nodeName === "HTML") {
+                item.style.padding = "0 2.5rem";
+            }
+            if (item.className === "App") {
+                item.style.overflow = "auto";
+            }
+        })
+    })
+
     return (
         <section className="page-body">
             <LaserBox className="laserbox">
                 <div className={`laserbox__content-wrapper laserbox__content-wrapper--${contentState}`}>
                     <h2 className="laserbox__paragraph">{personalizedAddress}
                         <span className="laserbox__chunk laserbox__link">
-                            <Link to="/">{pageTexts.mainLink[language]}</Link>
+                            <Link to="/?projects">{pageTexts.mainLink[language]}</Link>
                         </span>
                         <span className="laserbox__chunk">
                             <p>{pageTexts.purposeEnd[language]}</p>

@@ -128,7 +128,7 @@
     &__content-wrapper {
         padding: 5rem;
         font-size: 1.8rem;
-        opacity: 0;
+        opacity: 1;
     
         h2 {
             font-size: 1.8rem;
@@ -142,6 +142,13 @@
     
         &--visible {
             opacity: 1;
+        }
+    }
+
+    &__paragraph {
+        &--italic {
+            font-style: italic;
+            font-size: 1.5rem !important;
         }
     }
 
@@ -179,6 +186,35 @@
 
         &--huge {
             width: 30rem;
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        pointer-events: none;
+
+        img {
+            width: 100px;
+            transition: all .5s;
+        }
+        .btn-enabled {
+            pointer-events: initial;
+            animation-name: catbtn-blip;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            &:hover {
+                cursor: pointer;
+                animation: none;
+            }
+        }
+        .btn-pressed {
+            width: 65px;
         }
     }
 }

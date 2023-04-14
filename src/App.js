@@ -176,7 +176,7 @@ function App() {
             <Route path="about">
               <Route index element={<Myself />} />
               <Route path="thispage" element={<ThePage state={state} methods={methods} />} />
-              <Route path="myself" element={<Myself />} />
+              <Route path="myself" element={<Myself assets={assets}/>} />
               <Route path="zombiecat" element={<ZombieCat />} />
             </Route>
             <Route path="contact" element={<Contact />} />

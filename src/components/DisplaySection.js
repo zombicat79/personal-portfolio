@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Overview from './subcomponents/display/Overview';
 import OverviewPast from "./subcomponents/display/OverviewPast";
@@ -22,6 +23,8 @@ import LocationWorld from './subcomponents/display/LocationWorld';
 import LocationSpace from './subcomponents/display/LocationSpace';
 
 function DisplaySection(props) {
+    const location = useLocation();
+
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
     const handleVisibility = (action) => {
         setComponentVisibility(action);
@@ -46,6 +49,14 @@ function DisplaySection(props) {
             return menuStatus;
         })
     }
+
+    // Opens up on projects subsection when specifically directed
+    useEffect(() => {
+        if (location.search.includes("projects")) {
+            handleMenuStatus("projects");
+            props.handleActiveSubsection("projects");
+        }
+    }, [])
 
     // Adds hover event listeners to display menu icons
     useEffect(() => {
