@@ -30,13 +30,27 @@ function LaserBox(props) {
             }, 2500)
         }, 2500)
     }
+
+    const handleMouseEvents = (movement) => {
+        if (props.handleContent) {
+            switch(movement) {
+                case "over":
+                    props.handleContent("text");
+                    break;
+                default:
+                    props.handleContent("images");
+            }
+        } else {
+            return null;
+        }
+    }
     
     useEffect(() => {
         drawLaserbox();
     }, [])
     
     return (
-        <>
+        <div className="laserbox" onMouseOver={() => handleMouseEvents("over")} onMouseOut={() => handleMouseEvents("out")}>
             <div className={`advancing-border advancing-border--top advancing-border--${topBorderStatus}`}>
                 <div className={`advancing-border__pointer advancing-border__pointer--right advancing-border__pointer--${pointerStatus[0]}`}></div>
             </div>
@@ -51,7 +65,7 @@ function LaserBox(props) {
             </div>
 
             {props.children}
-        </>
+        </div>
     )
 }
 

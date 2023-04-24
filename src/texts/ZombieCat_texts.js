@@ -1,4 +1,4 @@
-const myselfTexts = {
+const zombiecatTexts = {
     pitchP1: {
         cat: "Desenvolupador Full Stack",
         esp: "Desarrollador Full Stack",
@@ -24,11 +24,16 @@ const myselfTexts = {
         esp: "Desarrollador Full Stack",
         eng: 'Reliability. Creativity. Flexibility."'
     },
-    pathway: {
+    logoOrigin: {
         cat: "Desenvolupador Full Stack",
         esp: "Desarrollador Full Stack",
-        eng: "That's what my CV says about me. OK, fair enough. But there's more to everyone than a crammed PDF trying to make sense of an entire life can tell..."
+        eng: "The ZombieCat logo was created using the DALL-E AI powered image generation tool, by feeding it with the following prompt:"
+    },
+    logoPrompt: {
+        cat: "Desenvolupador Full Stack",
+        esp: "Desarrollador Full Stack",
+        eng: '"A round logo featuring a cartoon-like brown furry siamese zombie blue-eyed cat."'
     }
 }
 
-export default myselfTexts;
+export default zombiecatTexts;

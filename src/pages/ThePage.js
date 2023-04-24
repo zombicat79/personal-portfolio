@@ -51,7 +51,7 @@ function ThePage(props) {
 
     return (
         <section className="page-body">
-            <LaserBox className="laserbox">
+            <LaserBox>
                 <div className={`laserbox__content-wrapper laserbox__content-wrapper--${contentState}`}>
                     <h2 className="laserbox__paragraph">{personalizedAddress}
                         <span className="laserbox__chunk laserbox__link">

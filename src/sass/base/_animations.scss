@@ -80,6 +80,11 @@
     100% {opacity: 1}
 }
 
+@keyframes content-disappearing {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
 @keyframes link-blip {
     0% {color: white}
     50% {color: darkred}
