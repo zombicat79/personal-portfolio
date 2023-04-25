@@ -146,18 +146,31 @@
         &--visible {
             opacity: 1;
         }
+
+        &--zombiecat {
+            padding: 3rem 5rem;
+        }
     }
 
     &__content-section {
         background-size: cover;
-        background-position: center;
+        background-position: center 40%;
         background-repeat: no-repeat;
         transition: all 2s;
 
         &--cat {
-            background-image: url("./../../images/zombi.jpg");
+            background-image: linear-gradient(to right, black, transparent, black), linear-gradient(to bottom, black, transparent, black 100%), url("./../../images/zombi.jpg");
             height: 100%;
-            background-position-y: -11.5rem;
+        }
+
+        &--cat-stars {
+            background-size: contain;
+            background-image: url("./../../images/zombi-in-the-stars.png");
+            background-position: center;
+            height: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -166,15 +179,33 @@
             font-style: italic;
             font-size: 1.5rem !important;
         }
+
+        &--huge {
+            font-size: 4rem !important;
+        }
+
+        &--shiny {
+            text-shadow: 
+                3rem 1rem 3rem rgba(169, 169, 169, 0.5), 
+                -3rem 1rem 3rem rgba(169, 169, 169, 0.5), 
+                0 -0.25rem 3rem rgba(169, 169, 169, 0.5);
+        }
     }
 
     &__chunk > * {
         display: inline;
     }
 
+    &__mention {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
     &__link > * {
         color: white;
         text-decoration: none;
+        cursor: pointer;
         animation-name: link-blip;
         animation-duration: 2s;
         animation-timing-function: linear;
@@ -192,6 +223,14 @@
     &__logoItem {
         width: 10rem;
 
+        &--tiny {
+            width: 3rem;
+        }
+
+        &--small {
+            width: 5rem;
+        }
+        
         &--big {
             width: 13rem;
         }
