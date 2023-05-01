@@ -212,6 +212,43 @@
         animation-iteration-count: infinite;
     }
 
+    &__link {
+        position: relative;
+
+        .link__text {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+            padding: 5rem 0;
+            transition: opacity 2s;
+
+            &--true {
+                opacity: 1;
+                z-index: 1;
+            }
+            &--false {
+                opacity: 0;
+                z-index: -1;
+            }
+
+            &--whatsapp {
+                width: 300%;
+            }
+            &--linkedin {
+                width: 200%;
+            }
+            &--email {
+                width: 250%;
+            }
+            &--github {
+                width: 290%;
+            }
+        }
+    }
+
     &__logoBox {
         display: flex;
         justify-content: space-around;
@@ -222,6 +259,7 @@
 
     &__logoItem {
         width: 10rem;
+        transition: all 2s;
 
         &--tiny {
             width: 3rem;
@@ -241,6 +279,23 @@
 
         &--huge {
             width: 30rem;
+        }
+
+        &--gone-right {
+            transform: translateX(180%);
+            opacity: 0;
+        }
+        &--returned-right {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        &--gone-left {
+            transform: translateX(-180%);
+            opacity: 0;
+        }
+        &--returned-left {
+            transform: translateX(0%);
+            opacity: 1;
         }
     }
 

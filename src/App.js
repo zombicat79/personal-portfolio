@@ -179,7 +179,7 @@ function App() {
               <Route path="myself" element={<Myself assets={assets}/>} />
               <Route path="zombiecat" element={<ZombieCat />} />
             </Route>
-            <Route path="contact" element={<Contact />} />
+            <Route path="contact" element={<Contact methods={methods} />} />
           </Route>
         </Routes>
       </BrowserRouter>
