@@ -44,6 +44,7 @@ function VisitorQuestionnaire(props) {
     return (
         <div className={`questionnaire ${questionnairePosition} u-viewport-center u-blockElm-h-center`}>
             <h3 className="questionnaire__hint">{questionnaireTexts.hint[language]}</h3>
+            <p className="questionnaire__disclaimer">{questionnaireTexts.disclaimer[language]}</p>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <div className="questionnaire__inputWrapper">
                     <label htmlFor="name-input" className="questionnaire__inputLabel">{questionnaireTexts.name[language]}</label>

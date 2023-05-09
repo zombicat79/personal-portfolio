@@ -5,8 +5,18 @@
     transition: all 1s 1s;
 
     .questionnaire__hint {
-        margin-bottom: 50px;
         font-family: "Source-Bold";
+        margin: 0 auto 10px;
+        text-align: center;
+        max-width: 55rem;
+    }
+
+    .questionnaire__disclaimer {
+        font-family: "Source-Medium";
+        font-size: 1.2rem;
+        margin: 0 auto 50px;
+        text-align: center;
+        max-width: 55rem;
     }
 
     .questionnaire__inputWrapper {
@@ -20,6 +30,8 @@
 
         .questionnaire__input {
             width: 100%;
+            max-width: 40rem;
+            margin: 0 auto;
             background-color: transparent;
             color: white;
             font-size: 14px;

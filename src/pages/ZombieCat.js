@@ -71,7 +71,12 @@ function ZombieCat(props) {
                                         <span className="laserbox__paragraph__chunk laserbox__paragraph--italic laserbox__paragraph--huge laserbox__paragraph--shiny">{zombiecatTexts.explanationP1.secondHalf[language]}</span>
                                     </p>
                                     <br></br>
-                                    <p className="laserbox__paragraph">{zombiecatTexts.explanationP2[language]}</p>
+                                    <p className="laserbox__paragraph">
+                                        <span className="laserbox__paragraph__chunk">{zombiecatTexts.explanationP2[language]}</span>
+                                        <span className="laserbox__paragraph__chunk laserbox__link">
+                                            <a href="https://github.com/zombicat79" target="_blank" rel="noreferrer">{zombiecatTexts.explanationP2link[language]}</a>
+                                        </span>
+                                    </p>
                                     <br></br>
                                     <p className="laserbox__paragraph">{zombiecatTexts.explanationP3[language]}</p>
                                     <br></br>
@@ -80,8 +85,7 @@ function ZombieCat(props) {
                                     <p className="laserbox__link u-margin-bottom-big" onClick={() => handleEasterEgg()}>
                                         <span className="laserbox__paragraph__chunk">{zombiecatTexts.explanationP5[language]}</span>
                                     </p>
-                                    <br></br>
-                                    <p className="laserbox__paragraph">{zombiecatTexts.logoOrigin[language]}</p>
+                                    <p className="laserbox__paragraph laserbox__paragraph--separated">{zombiecatTexts.logoOrigin[language]}</p>
                                     <br></br>
                                     <p className="laserbox__paragraph--italic">{zombiecatTexts.logoPrompt[language]}</p>
                                 </div>
