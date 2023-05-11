@@ -315,11 +315,10 @@
         border: none;
         outline: none;
         pointer-events: none;
-        transition: all 2s;
 
         img {
             width: 100px;
-            transition: all .5s;
+            transition: width .5s;
         }
 
         .btn-enabled {

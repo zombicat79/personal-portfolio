@@ -31,6 +31,11 @@ function LaserBox(props) {
         }, 2500)
     }
 
+    useEffect(() => {
+        drawLaserbox();
+    }, [])
+
+    // Determines what to show within laserbox element, depending on mouse hovering: TEXT or COVER IMAGES
     const handleMouseEvents = (movement) => {
         if (props.handleContent) {
             switch(movement) {
@@ -44,10 +49,6 @@ function LaserBox(props) {
             return null;
         }
     }
-    
-    useEffect(() => {
-        drawLaserbox();
-    }, [])
     
     return (
         <div className="laserbox" onMouseOver={() => handleMouseEvents("over")} onMouseOut={() => handleMouseEvents("out")}>

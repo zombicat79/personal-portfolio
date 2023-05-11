@@ -44,7 +44,7 @@ function Contact(props) {
             personalizedAddress = props.methods.personalizeParagraph("name", "All right", contactTexts.contactIntro[language]);
     }
 
-
+    // Controls content fade-in effect on first render
     const [contentState, setContentState] = useState(null);
     useEffect(() => {
         setTimeout(() => {
@@ -70,7 +70,7 @@ function Contact(props) {
         setContactState(newConfig);
     }
 
-    // Adjust component styling on render (correct styles from WelcomeSeal component)
+    // Adjusts component styling on render (corrects styles trailing from WelcomeSeal component)
     useEffect(() => {
         const layers = Array.from(document.querySelectorAll("html, body, #root, .App"));
         layers.forEach((item, index) => {

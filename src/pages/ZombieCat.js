@@ -10,6 +10,7 @@ import instagramLogo from './../images/logos/instagram-logo.png';
 function ZombieCat(props) {
     const language = useContext(LangContext);
 
+    // Controls content fade-in effect on first render
     const [contentState, setContentState] = useState(null);
     useEffect(() => {
         setTimeout(() => {
@@ -20,6 +21,7 @@ function ZombieCat(props) {
         }, 6000)
     }, [])
 
+    // Determines what to show within laserbox element, depending on mouse hovering: TEXT or COVER IMAGES
     const [content, setContent] = useState({cover: "u-visible", page1: "u-invisible", page2: "u-invisible"})
     const handleContent = (contentType) => {
         if (contentType === "text") {
@@ -36,7 +38,7 @@ function ZombieCat(props) {
         })
     }
 
-    // Adjust component styling on render (correct styles from WelcomeSeal component)
+    // Adjusts component styling on render (corrects styles trailing from WelcomeSeal component)
     useEffect(() => {
         const layers = Array.from(document.querySelectorAll("html, body, #root, .App"));
         layers.forEach((item, index) => {
@@ -99,8 +101,8 @@ function ZombieCat(props) {
                                     <a href="https://www.instagram.com/msudrawings/" target="_blank" rel="noreferrer" class="laserbox__mention">
                                         <p className="laserbox__paragraph--italic">{zombiecatTexts.credits[language]} Marc Solé Giménez</p>
                                         <div className="u-flex">
-                                            <img class="laserbox__logoItem laserbox__logoItem--tiny" src={instagramLogo} alt="Instagram"/>
-                                            <p class="u-margin-left-tiny">@msudrawings</p>
+                                            <img className="laserbox__logoItem laserbox__logoItem--tiny" src={instagramLogo} alt="Instagram"/>
+                                            <p className="u-margin-left-tiny">@msudrawings</p>
                                         </div>
                                     </a>
                                 </div>
