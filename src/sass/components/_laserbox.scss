@@ -150,6 +150,10 @@
         &--zombiecat {
             padding: 3rem 5rem;
         }
+
+        &--myself {
+            padding: 1rem 5rem;
+        }
     }
 
     &__content-section {
@@ -178,6 +182,10 @@
         &--italic {
             font-style: italic;
             font-size: 1.5rem !important;
+        }
+
+        &--small {
+            font-size: 1.3rem !important;
         }
 
         &--huge {
@@ -337,5 +345,10 @@
         .btn-pressed {
             width: 65px;
         }
+    }
+
+    &__bulletList {
+        padding-left: 4rem;
+        line-height: 2.1rem;
     }
 }

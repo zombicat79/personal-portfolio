@@ -22,12 +22,12 @@ function ZombieCat(props) {
     }, [])
 
     // Determines what to show within laserbox element, depending on mouse hovering: TEXT or COVER IMAGES
-    const [content, setContent] = useState({cover: "u-visible", page1: "u-invisible", page2: "u-invisible"})
+    const [content, setContent] = useState({cover: "u-visible--zombiecat", page1: "u-invisible--zombiecat", page2: "u-invisible--zombiecat"})
     const handleContent = (contentType) => {
         if (contentType === "text") {
-            setContent({cover: "u-invisible", page1: "u-visible", page2: "u-visible"});
+            setContent({cover: "u-invisible--zombiecat", page1: "u-visible--zombiecat", page2: "u-visible--zombiecat"});
         } else {
-            setContent({cover: "u-visible", page1: "u-invisible", page2: "u-invisible"});
+            setContent({cover: "u-visible--zombiecat", page1: "u-invisible--zombiecat", page2: "u-invisible--zombiecat"});
         }
     }
 
@@ -58,11 +58,11 @@ function ZombieCat(props) {
         <section className="page-body">
             <LaserBox handleContent={handleContent}>
                 <div className={`laserbox__content-wrapper laserbox__content-wrapper--zombiecat laserbox__content-wrapper--${contentState}`}>
-                    {content.cover === "u-visible" &&
+                    {content.cover === "u-visible--zombiecat" &&
                         <div className={`laserbox__content-section laserbox__content-section--cat ${content.cover}`}></div>
                     }
                     
-                    {content.cover === "u-invisible" &&
+                    {content.cover === "u-invisible--zombiecat" &&
                         <>
                             {!easterEgg &&
                                 <div className={`laserbox__content-section ${content.page1}`}>

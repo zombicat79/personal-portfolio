@@ -47,15 +47,29 @@
 .u-invisible {
     opacity: 0;
     animation-name: content-disappearing;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: linear;
+
+    &--zombiecat {
+        opacity: 0;
+        animation-name: content-disappearing;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
 }
 
 .u-visible {
     opacity: 1;
     animation-name: content-appearing;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: linear;
+
+    &--zombiecat {
+        opacity: 1;
+        animation-name: content-appearing;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
 }
 
 .u-goneAway {

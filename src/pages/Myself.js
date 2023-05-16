@@ -82,7 +82,7 @@ function Myself(props) {
     return (
         <section className="page-body">
             <LaserBox handleContent={handleContent}>
-                <div className={`laserbox__content-wrapper laserbox__content-wrapper--${contentState}`}>
+                <div className={`laserbox__content-wrapper laserbox__content-wrapper--myself laserbox__content-wrapper--${contentState}`}>
                     <div className={`laserbox__content-section ${contentVisibility.cover}`}>
                         <p>Hello</p>
                     </div>
@@ -99,27 +99,67 @@ function Myself(props) {
                             <br></br>
                             <h2 className="laserbox__paragraph--italic u-margin-bottom-big">{myselfTexts.pitchP5[language]}</h2>
                             <br></br>
-                            <p className="laserbox__paragraph--separated">{myselfTexts.pathway[language]}</p>
+                            <p className="laserbox__paragraph--separated u-margin-bottom-regular">{myselfTexts.pathway[language]}</p>
                             <br></br>
+
+                            <button className="laserbox__button">
+                                {!btnState && <img className="btn-enabled" src={props.assets.submitBtn} alt="Cat paw" onClick={() => handleBtnState()} />}
+                                {btnState && <img className="btn-pressed" src={props.assets.submitBtnPressed} alt="Cat paw" onClick={() => handleBtnState()} />}
+                            </button>
                         </div>
                     }
 
                     {contentOnshow === "page2" &&
                         <div className={`laserbox__content-section ${contentVisibility.page2}`}>
                             <h2 className="laserbox__paragraph">{myselfTexts.thingsLiked.intro[language]}</h2>
+                            <ul className="laserbox__bulletList">
+                                <li className="laserbox__paragraph">{myselfTexts.thingsLiked.thing1.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsLiked.thing1.development[language]}</span>
+                                </li>
+                                <li>{myselfTexts.thingsLiked.thing2.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsLiked.thing2.development[language]}</span>
+                                </li>
+                                <li>{myselfTexts.thingsLiked.thing3.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsLiked.thing3.development[language]}</span>
+                                </li>
+                            </ul>
                             <br></br>
                             <h2 className="laserbox__paragraph">{myselfTexts.thingsInterested.intro[language]}</h2>
+                            <ul className="laserbox__bulletList">
+                                <li>{myselfTexts.thingsInterested.thing1.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsInterested.thing1.development[language]}</span>
+                                </li>
+                                <li>{myselfTexts.thingsInterested.thing2.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsInterested.thing2.development[language]}</span>
+                                </li>
+                                <li>{myselfTexts.thingsInterested.thing3.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsInterested.thing3.development[language]}</span>
+                                </li>
+                            </ul>
                             <br></br>
-                            <h2 className="laserbox__paragraph">{myselfTexts.thingsInterested.intro[language]}</h2>
+                            <h2 className="laserbox__paragraph">{myselfTexts.thingsGoodAt.intro[language]}</h2>
+                            <ul className="laserbox__bulletList">
+                                <li>{myselfTexts.thingsGoodAt.thing1.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsGoodAt.thing1.development[language]}</span>
+                                </li>
+                                <li>{myselfTexts.thingsGoodAt.thing2.mention[language]}
+                                    <span className="laserbox__paragraph--small laserbox__paragraph--italic">{myselfTexts.thingsGoodAt.thing2.development[language]}</span>
+                                </li>
+                            </ul>
+                            <br></br>
+                            <p className="laserbox__link" onClick={() => handleBtnState()}>
+                                <span>{"\u2190"} {myselfTexts.backBtn[language]}</span>
+                            </p>
                         </div>
                     }
 
-                    {contentVisibility.cover === "u-invisible" &&
+                    {/* contentVisibility.cover === "u-invisible" && */}
+                    {/*contentOnshow === "page1" &&
                         <button className="laserbox__button">
                             {!btnState && <img className="btn-enabled" src={props.assets.submitBtn} alt="Cat paw" onClick={() => handleBtnState()} />}
                             {btnState && <img className="btn-pressed" src={props.assets.submitBtnPressed} alt="Cat paw" onClick={() => handleBtnState()} />}
                         </button>
-                    }
+                    */}
                 </div>
             </LaserBox>
         </section>
