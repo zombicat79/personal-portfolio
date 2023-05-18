@@ -356,7 +356,7 @@ export const educationIronhack = {
             paragraph2: "It is a long story you can get a glimpse of by moving along the timeline below. But I will spare that for you and sum everything up by saying it had long been a growing interest of mine, born out of the habit of blogging.",
             paragraph3: "As a result, when the circumstances were right (pandemic hit and got me lots of extra time), I enrolled in a Web Development Bootcamp. After 9 weeks of highly demanding intensive and exhausting work I got my reward: I was certified as a 'Full Stack Developer' 🎉 🎉 🎉 🎉",
             paragraph4: "The experience —during which I completed 1 solo and 2 pair-programming full stack projects—, was instrumental in paving my way into a field that was new and quite challenging to me. It allowed me to firmly set foot on it and also gave me the tools to further widen my knowledge and capabilities.",
-            paragraph5: "Among others, I acquired the following development languages, skills and technologies:",
+            paragraph5: "During the bootcamp, among others, I acquired the following key development languages, skills and technologies:",
             discipline1: "Javascript ES6",
             discipline1$1: "DOM Manipulation",
             discipline1$2: "Asyncronous code / JS Promises",
@@ -662,6 +662,36 @@ export const workOCC = {
         cat: "El centre de control d'operacions",
         esp: "El centro de control de operaciones",
         eng: "The Operations Control Center"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
+            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
+            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+        },
+        esp: {
+            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
+            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
+            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+        },
+        eng: {
+            paragraph1: "My last job before entering the world of coding was at the headquarters of an airline, contributing to the daily operation that makes all scheduled flights possible.",
+            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
+            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
+            paragraph4: "Some things I learnt during those experiences:",
+            paragraph5: "Some places where I worked:",
+            learning1: "Responsibility to people is what matters most.",
+            learning2: "Attention to detail: small changes make big differences.",
+            learning3: "Patience is a virtue."
+        }
+    }
+}
+
+export const workATOOM = {
+    workplace: {
+        cat: "La plataforma de joc en línia",
+        esp: "La plataforma de juego en línea",
+        eng: "The Online Gambling Platform"
     }, 
     intro: {
         cat: {

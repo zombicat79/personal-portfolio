@@ -16,13 +16,13 @@ function ThePage(props) {
     let personalizedAddress = "";
     switch(language) {
         case "cat":
-            personalizedAddress = props.methods.personalizeParagraph("name", "Molt bé", pageTexts.purpose[language]);
+            personalizedAddress = props.methods.personalizeParagraph("name", "Veuràs", pageTexts.purpose[language]);
             break;
         case "esp":
-            personalizedAddress = props.methods.personalizeParagraph("name", "Genial", pageTexts.purpose[language]);
+            personalizedAddress = props.methods.personalizeParagraph("name", "Verás", pageTexts.purpose[language]);
             break;
         default:
-            personalizedAddress = props.methods.personalizeParagraph("name", "All right", pageTexts.purpose[language]);
+            personalizedAddress = props.methods.personalizeParagraph("name", "You see", pageTexts.purpose[language]);
     }
 
     // Controls content fade-in effect on first render
@@ -54,14 +54,16 @@ function ThePage(props) {
         <section className="page-body">
             <LaserBox>
                 <div className={`laserbox__content-wrapper laserbox__content-wrapper--${contentState}`}>
-                    <h2 className="laserbox__paragraph">{personalizedAddress}
+                    <h2 className="laserbox__paragraph">{personalizedAddress}</h2>
+                    <br></br>
+                    <div>
                         <span className="laserbox__chunk laserbox__link">
                             <Link to="/?projects">{pageTexts.mainLink[language]}</Link>
                         </span>
                         <span className="laserbox__chunk">
                             <p>{pageTexts.purposeEnd[language]}</p>
                         </span>
-                    </h2>
+                    </div>
                     <br></br>
                     <p>{pageTexts.technicalAspects[language]}</p>
                     <br></br>
@@ -77,9 +79,23 @@ function ThePage(props) {
                         </a>
                     </div>
                     <br></br>
-                    <p>{pageTexts.githubPrompt[language]}</p>
+                    <div>{pageTexts.githubPromptStart[language]}
+                        <span className="laserbox__chunk laserbox__link">
+                            <a href="https://github.com/zombicat79/personal-portfolio" target="_blank" rel="noreferrer">{pageTexts.githubLink[language]}</a>
+                        </span>
+                        <span className="laserbox__chunk">
+                            <p>{pageTexts.githubPromptEnd[language]}</p>
+                        </span>
+                    </div>
                     <br></br>
-                    <p>{pageTexts.assetsPrompt[language]}</p>
+                    <div>
+                        <span className="laserbox__chunk laserbox__link">
+                            <p>{pageTexts.assetsBtn[language]}</p>
+                        </span>
+                        <span className="laserbox__chunk">
+                            <p>{pageTexts.assetsPrompt[language]}</p>
+                        </span>
+                    </div>
                 </div>
             </LaserBox>
         </section>

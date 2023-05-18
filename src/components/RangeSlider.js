@@ -41,6 +41,15 @@ function RangeSlider(props) {
                     props.handleActiveInfoItem("world");
                 }
                 break;
+            case "work":
+                if (value === "1") {
+                    props.handleActiveInfoItem("supermarket");
+                } else if (value === "2") {
+                    props.handleActiveInfoItem("atoom");
+                } else {
+                    props.handleActiveInfoItem("atoom");
+                }
+                break;
             default:
         }
     }

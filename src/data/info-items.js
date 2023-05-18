@@ -11,6 +11,7 @@ import handlingImg from './../../src/images/icos/infoItems/handling.png';
 import callcenterImg from './../../src/images/icos/infoItems/call-center.png';
 import hotelImg from './../../src/images/icos/infoItems/hotel.png';
 import controlImg from './../../src/images/icos/infoItems/control.png';
+import atoomLogo from './../../src/images/logos/atoom.png';
 
 import worldImg from "./../../src/images/icos/infoItems/world.png";
 import saturnImg from "./../../src/images/icos/infoItems/saturn.png";
@@ -22,35 +23,40 @@ const infoItems = {
             moment: "past",
             name: "criminology",
             imgType: "element",
-            src: ubLogo
+            src: ubLogo,
+            size: "regular"
         }, 
         {
             id: "epa2",
             moment: "past",
             name: "tourism",
             imgType: "element",
-            src: uocLogo
+            src: uocLogo,
+            size: "regular"
         },
         {
             id: "epa3",
             moment: "past",
             name: "social-media",
             imgType: "element",
-            src: salleLogo
+            src: salleLogo,
+            size: "regular"
         },
         {
             id: "epr3",
             moment: "present",
             name: "coding",
             imgType: "element",
-            src: ironhackLogo
+            src: ironhackLogo,
+            size: "big"
         },
         {
             id: "efu1",
             moment: "future",
             name: "future-coding",
             imgType: "element",
-            src: ironhackLogo
+            src: ironhackLogo,
+            size: "big"
         }
     ],
     work: [
@@ -59,56 +65,72 @@ const infoItems = {
             moment: "past",
             name: "supermarket",
             imgType: "element",
-            src: storeImg
+            src: storeImg,
+            size: "big"
         }, 
         {
             id: "wpa2",
             moment: "past",
             name: "lifeguard",
             imgType: "element",
-            src: guardImg
+            src: guardImg,
+            size: "big"
         },
         {
             id: "wpa3",
             moment: "past",
             name: "kitchen",
             imgType: "element",
-            src: kitchenImg
+            src: kitchenImg,
+            size: "big"
         },
         {
             id: "wpa4",
             moment: "past",
             name: "waiter",
             imgType: "element",
-            src: waiterImg
+            src: waiterImg,
+            size: "big"
         },
         {
             id: "wpa5",
             moment: "past",
             name: "handling",
             imgType: "element",
-            src: handlingImg
+            src: handlingImg,
+            size: "big"
         },
         {
             id: "wpa6",
             moment: "past",
             name: "call-center",
             imgType: "element",
-            src: callcenterImg
+            src: callcenterImg,
+            size: "big"
         },
         {
             id: "wpa7",
             moment: "past",
             name: "hotel",
             imgType: "element",
-            src: hotelImg
+            src: hotelImg,
+            size: "big"
         },
         {
             id: "wpa8",
             moment: "past",
             name: "control",
             imgType: "element",
-            src: controlImg
+            src: controlImg,
+            size: "big"
+        },
+        {
+            id: "wpr1",
+            moment: "present",
+            name: "atoom",
+            imgType: "element",
+            src: atoomLogo,
+            size: "regular"
         }
     ],
     projects: [],
@@ -118,7 +140,8 @@ const infoItems = {
             moment: "past",
             name: "barcelona",
             imgType: "background",
-            src: ""
+            src: "",
+            size: null
         }, 
         {
             id: "lpa2",
@@ -126,27 +149,31 @@ const infoItems = {
             name: "manchester",
             imgType: "background",
             src: "",
+            size: null
         },
         {
             id: "lpr1",
             moment: "present",
             name: "dubai",
             imgType: "background",
-            src: ""
+            src: "",
+            size: null
         },
         {
             id: "lfu1",
             moment: "future",
             name: "world",
             imgType: "element",
-            src: worldImg
+            src: worldImg,
+            size: null
         },
         {
             id: "lfu2",
             moment: "future",
             name: "space",
             imgType: "element",
-            src: saturnImg
+            src: saturnImg,
+            size: null
         }
     ]
 }

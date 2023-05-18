@@ -16,6 +16,7 @@ import WorkAirport from './subcomponents/display/WorkAirport';
 import WorkCallcenter from './subcomponents/display/WorkCallcenter';
 import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
+import WorkAtoom from './subcomponents/display/WorkAtoom';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -152,7 +153,7 @@ function DisplaySection(props) {
                                     props.handleActiveInfoItem("supermarket");
                                     break;
                                 case "present":
-                                    props.handleActiveInfoItem("supermarket");
+                                    props.handleActiveInfoItem("atoom");
                                     break;
                                 default:
                                     props.handleActiveInfoItem("supermarket");
@@ -201,6 +202,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "call-center" && <WorkCallcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={props.personalizeParagraph} />}

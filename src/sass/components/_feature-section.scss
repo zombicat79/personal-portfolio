@@ -122,8 +122,14 @@
                                 position: relative;
                             }
                         }
+                        
+                        .slider-clickableElement--regular {
+                            img {
+                                height: 5rem;
+                            }
+                        }
 
-                        .slider-clickableElement--work {
+                        .slider-clickableElement--big {
                             img {
                                 height: 8rem;
                             }
