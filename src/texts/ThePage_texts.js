@@ -43,6 +43,93 @@ const pageTexts = {
         cat: "trobaràs els crèdits de totes les imatges d'ús lliure que he agafat prestades per completar-ne el disseny.",
         esp: "encontrarás los créditos de todas las imágenes de uso libre que he tomado prestadas para completar el diseño.",
         eng: "you'll find credit for all the free images I've borrowed to complete the design."
+    },
+    creditImg1: {
+        cat: "Escena del crim",
+        esp: "Escena del crimen",
+        eng: "Crime scene"
+    },
+    creditImg2: {
+        title: {
+            cat: "Moll tropical",
+            esp: "Muelle tropical",
+            eng: "Tropical pier"
+        },
+        author: {
+            cat: "Autor desconegut",
+            esp: "Autor desconocido",
+            eng: "Unknown author"
+        }
+    },
+    creditImg3: {
+        cat: "Apps del telèfon",
+        esp: "Apps del teléfono",
+        eng: "Phone apps"
+    },
+    creditImg4: {
+        cat: "Cascada Matrix",
+        esp: "Cascada Matrix",
+        eng: "Matrix cascade"
+    },
+    creditImg5: {
+        cat: "Prestatgeries de supermercat",
+        esp: "Estantes de supermercado",
+        eng: "Supermarket shelves"
+    },
+    creditImg6: {
+        cat: "Coses de socorrista",
+        esp: "Cosas de socorrista",
+        eng: "Lifeguard stuff"
+    },
+    creditImg7: {
+        cat: "Hamburgueses",
+        esp: "Hamburguesas",
+        eng: "Burgers"
+    },
+    creditImg8: {
+        cat: "Cambrer servint cervesa",
+        esp: "Camarero sirviendo cerveza",
+        eng: "Waiter pouring beer"
+    },
+    creditImg9: {
+        cat: "Avió estacionat",
+        esp: "Avión estacionado",
+        eng: "Stationed airliner"
+    },
+    creditImg10: {
+        cat: "Cotxe de policia",
+        esp: "Coche de policía",
+        eng: "Police car"
+    },
+    creditImg11: {
+        cat: "Recepció d'hotel",
+        esp: "Recepción de hotel",
+        eng: "Reception desk"
+    },
+    creditImg12: {
+        cat: "Passadís d'avió",
+        esp: "Pasillo de avión",
+        eng: "Airliner aisle"
+    },
+    creditImg13: {
+        cat: "Màquina escurabutxaques",
+        esp: "Máquina tragaperras",
+        eng: "Gambling slot machine"
+    },
+    creditImg14: {
+        cat: "Barcelona",
+        esp: "Barcelona",
+        eng: "Barcelona"
+    },
+    creditImg15: {
+        cat: "Dubai",
+        esp: "Dubai",
+        eng: "Dubai"
+    },
+    creditImg16: {
+        cat: "Conquesta de Mart",
+        esp: "Conquista de Marte",
+        eng: "Mars conquer"
     }
 }
 

@@ -8,6 +8,26 @@ import reactLogo from './../images/logos/logo192.png';
 import sassLogo from './../images/logos/sass-logo.png';
 import slickLogo from './../images/logos/slick-logo.png';
 
+import crimeImg from './../images/criminology.jpg';
+import tropicalImg from './../images/tourism.jpg';
+import appsImg from './../images/social-media.jpg';
+import codingImg from './../images/coding.jpg';
+import matrixImg from './../images/future-coding.jpg';
+import storeImg from './../images/supermarket.jpg';
+import lifeguardImg from './../images/lifeguard.jpg';
+import kitchenImg from './../images/kitchen.jpg';
+import waiterImg from './../images/waiter.jpg';
+import airportImg from './../images/handling.jpg';
+import callcenterImg from './../images/call-center.jpg';
+import hotelImg from './../images/hotel.jpg';
+import aisleImg from './../images/control.jpg';
+import gamblingImg from './../images/gambling.jpg';
+import barcelonaImg from './../images/barcelona.jpg';
+import manchesterImg from './../images/manchester.jpg';
+import dubaiImg from './../images/dubai.jpg';
+import worldImg from './../images/world.jpg';
+import marsImg from './../images/mars.jpg';
+
 import pageTexts from './../texts/ThePage_texts';
 
 function ThePage(props) {
@@ -47,6 +67,14 @@ function ThePage(props) {
             return prevState === 0 ? prevState+1 : prevState-1;
         })
         handleContentState(0, 3000);
+    }
+
+    const imgArray = [crimeImg, tropicalImg, appsImg, codingImg, matrixImg, storeImg, lifeguardImg, 
+        kitchenImg, waiterImg, airportImg, callcenterImg, hotelImg, aisleImg, gamblingImg, barcelonaImg, 
+        manchesterImg, dubaiImg, worldImg, marsImg];
+    const [creditImg, setCreditImg] = useState(null);
+    const handleCreditImg = (imgIndex) => {
+        setCreditImg(imgArray[imgIndex]);
     }
 
     // Adjusts component styling on render (corrects styles trailing from WelcomeSeal component)
@@ -123,28 +151,28 @@ function ThePage(props) {
                             <br></br>
                             
                             <div className="laserbox__creditBox">
-                                <div className="laserbox__creditBox--left">
+                                <div className="laserbox__creditBox--left" onMouseOut={() => handleCreditImg(null)}>
                                     <ul className="laserbox__bulletList">
-                                        <li className="laserbox__creditItem">Cottonbro Studio &ndash; www.unsplash.com &ndash; Crime scene</li>
-                                        <li className="laserbox__creditItem"><i>Unkonwn author</i> &ndash; www.pixabay.com &ndash; Tropical pier</li>
-                                        <li className="laserbox__creditItem">Pixelkult &ndash; www.pixabay.com &ndash; Phone apps</li>
-                                        <li className="laserbox__creditItem">Markus Spiske &ndash; www.pixabay.com &ndash; Matrix cascade</li>
-                                        <li className="laserbox__creditItem">Claudio Schwarz &ndash; www.unsplash.com &ndash; Supermarket shelves</li>
-                                        <li className="laserbox__creditItem">Edmar Gonçalves &ndash; www.unsplash.com &ndash; Lifeguard stuff</li>
-                                        <li className="laserbox__creditItem">Vince Fleming &ndash; www.unsplash.com &ndash; Burgers</li>
-                                        <li className="laserbox__creditItem">Ketut Subiyanto &ndash; www.pexels.com &ndash; Waiter pouring beer</li>
-                                        <li className="laserbox__creditItem">Patrick Campanale &ndash; www.unsplash.com &ndash; Stationed airliner</li>
-                                        <li className="laserbox__creditItem">Kenny Eliason &ndash; www.unsplash.com &ndash; Police car</li>
-                                        <li className="laserbox__creditItem">Andrea Piacquadio &ndash; www.pexels.com &ndash; Reception desk</li>
-                                        <li className="laserbox__creditItem">Mohammad Arrahmanur &ndash; www.unsplash.com &ndash; Airliner aisle</li>
-                                        <li className="laserbox__creditItem">Joakim Honkasalo &ndash; www.unsplash.com &ndash; Gambling slot machine</li>
-                                        <li className="laserbox__creditItem">Alexey Komissarov &ndash; www.pexels.com &ndash; Barcelona</li>
-                                        <li className="laserbox__creditItem">Mo Ismail &ndash; www.pexels.com &ndash; Dubai</li>
-                                        <li className="laserbox__creditItem">SpaceX &ndash; www.pexels.com &ndash; Mars conquer</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(0)}>{pageTexts.creditImg1[language]} &ndash; www.unsplash.com &ndash; Cottonbro Studio</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(1)}>{pageTexts.creditImg2.title[language]} &ndash; www.pixabay.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(2)}>{pageTexts.creditImg3[language]} &ndash; www.pixabay.com &ndash; Pixelkult</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(4)}>{pageTexts.creditImg4[language]} &ndash; www.pixabay.com &ndash; Markus Spiske</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(5)}>{pageTexts.creditImg5[language]} &ndash; www.unsplash.com &ndash; Claudio Schwarz</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(6)}>{pageTexts.creditImg6[language]} &ndash; www.unsplash.com &ndash; Edmar Gonçalves</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(7)}>{pageTexts.creditImg7[language]} &ndash; www.unsplash.com &ndash; Vince Fleming</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(8)}>{pageTexts.creditImg8[language]} &ndash; www.pexels.com &ndash; Ketut Subiyanto</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(9)}>{pageTexts.creditImg9[language]} &ndash; www.unsplash.com &ndash; Patrick Campanale</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(10)}>{pageTexts.creditImg10[language]} &ndash; www.unsplash.com &ndash; Kenny Eliason</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(11)}>{pageTexts.creditImg11[language]} &ndash; www.pexels.com &ndash; Andrea Piacquadio</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(12)}>{pageTexts.creditImg12[language]} &ndash; www.unsplash.com &ndash; Mohammad Arrahmanur</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(13)}>{pageTexts.creditImg13[language]} &ndash; www.unsplash.com &ndash; Joakim Honkasalo</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(14)}>{pageTexts.creditImg14[language]} &ndash; www.pexels.com &ndash; Alexey Komissarov</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(16)}>{pageTexts.creditImg15[language]} &ndash; www.pexels.com &ndash; Mo Ismail</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(18)}>{pageTexts.creditImg16[language]} &ndash; www.pexels.com &ndash; SpaceX</li>
                                     </ul>
                                 </div>
                                 <div className="laserbox__creditBox--right">
-                                    <img src={reactLogo} alt="" />
+                                    <img src={creditImg} alt="" />
                                 </div>
                             </div>
 
