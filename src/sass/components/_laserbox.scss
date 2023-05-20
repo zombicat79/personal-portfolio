@@ -147,6 +147,10 @@
             opacity: 1;
         }
 
+        &--invisible {
+            opacity: 0;
+        }
+
         &--zombiecat {
             padding: 3rem 5rem;
         }
@@ -350,5 +354,29 @@
     &__bulletList {
         padding-left: 4rem;
         line-height: 2.1rem;
+    }
+
+    &__creditBox {
+        display: table;
+        width: 100%;
+
+        &--left {
+            display: table-cell;
+            vertical-align: top;
+            width: 70%;
+        }
+
+        &--right {
+            display: table-cell;
+            text-align: center;
+            width: 30%;
+        }
+    }
+
+    &__creditItem {
+        &:hover {
+            cursor: pointer;
+            color: darkred;
+        }
     }
 }
