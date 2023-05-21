@@ -28,6 +28,15 @@ import dubaiImg from './../images/dubai.jpg';
 import worldImg from './../images/world.jpg';
 import marsImg from './../images/mars.jpg';
 
+import storeIcon from './../images/icos/infoItems/supermarket.png';
+import lifeguardIcon from './../images/icos/infoItems/lifeguard.png';
+import kitchenIcon from './../images/icos/infoItems/kitchen.png';
+import waiterIcon from './../images/icos/infoItems/waiter.png';
+import handlingIcon from './../images/icos/infoItems/handling.png';
+import callcenterIcon from './../images/icos/infoItems/call-center.png';
+import hotelIcon from './../images/icos/infoItems/hotel.png';
+import controlIcon from './../images/icos/infoItems/control.png';
+
 import pageTexts from './../texts/ThePage_texts';
 
 function ThePage(props) {
@@ -62,19 +71,34 @@ function ThePage(props) {
     // Controls laserbox content change and fade-in effect of new content
     const [activeContent, setActiveContent] = useState(0);
     const handleActiveContent = () => {
-        // setContentState("invisible");
+        setContentState("invisible");
         setActiveContent((prevState) => {
             return prevState === 0 ? prevState+1 : prevState-1;
         })
         handleContentState(0, 3000);
     }
 
-    const imgArray = [crimeImg, tropicalImg, appsImg, codingImg, matrixImg, storeImg, lifeguardImg, 
+    const picArray = [crimeImg, tropicalImg, appsImg, codingImg, matrixImg, storeImg, lifeguardImg, 
         kitchenImg, waiterImg, airportImg, callcenterImg, hotelImg, aisleImg, gamblingImg, barcelonaImg, 
         manchesterImg, dubaiImg, worldImg, marsImg];
+    const iconArray = [storeIcon, lifeguardIcon, kitchenIcon, waiterIcon, handlingIcon, callcenterIcon, 
+        hotelIcon, controlIcon];
     const [creditImg, setCreditImg] = useState(null);
-    const handleCreditImg = (imgIndex) => {
-        setCreditImg(imgArray[imgIndex]);
+    const handleCreditImg = (imgIndex, imgType) => {
+        if (imgType === "pic") {
+            setCreditImg(picArray[imgIndex]);
+        } else {
+            setCreditImg(iconArray[imgIndex]);
+        }
+    }
+
+    const [creditVisibility, setCreditVisibility] = useState({pictures: "show", icons: "hide"});
+    const handleCreditVisibility = (activeBtn) => {
+        if (activeBtn === "pictures") {
+            setCreditVisibility({pictures: "show", icons: "hide"});
+        } else {
+            setCreditVisibility({pictures: "hide", icons: "show"});
+        }
     }
 
     // Adjusts component styling on render (corrects styles trailing from WelcomeSeal component)
@@ -152,32 +176,45 @@ function ThePage(props) {
                             
                             <div className="laserbox__creditBox">
                                 <div className="laserbox__creditBox--left" onMouseOut={() => handleCreditImg(null)}>
-                                    <ul className="laserbox__bulletList">
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(0)}>{pageTexts.creditImg1[language]} &ndash; www.unsplash.com &ndash; Cottonbro Studio</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(1)}>{pageTexts.creditImg2.title[language]} &ndash; www.pixabay.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(2)}>{pageTexts.creditImg3[language]} &ndash; www.pixabay.com &ndash; Pixelkult</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(4)}>{pageTexts.creditImg4[language]} &ndash; www.pixabay.com &ndash; Markus Spiske</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(5)}>{pageTexts.creditImg5[language]} &ndash; www.unsplash.com &ndash; Claudio Schwarz</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(6)}>{pageTexts.creditImg6[language]} &ndash; www.unsplash.com &ndash; Edmar Gonçalves</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(7)}>{pageTexts.creditImg7[language]} &ndash; www.unsplash.com &ndash; Vince Fleming</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(8)}>{pageTexts.creditImg8[language]} &ndash; www.pexels.com &ndash; Ketut Subiyanto</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(9)}>{pageTexts.creditImg9[language]} &ndash; www.unsplash.com &ndash; Patrick Campanale</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(10)}>{pageTexts.creditImg10[language]} &ndash; www.unsplash.com &ndash; Kenny Eliason</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(11)}>{pageTexts.creditImg11[language]} &ndash; www.pexels.com &ndash; Andrea Piacquadio</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(12)}>{pageTexts.creditImg12[language]} &ndash; www.unsplash.com &ndash; Mohammad Arrahmanur</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(13)}>{pageTexts.creditImg13[language]} &ndash; www.unsplash.com &ndash; Joakim Honkasalo</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(14)}>{pageTexts.creditImg14[language]} &ndash; www.pexels.com &ndash; Alexey Komissarov</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(16)}>{pageTexts.creditImg15[language]} &ndash; www.pexels.com &ndash; Mo Ismail</li>
-                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(18)}>{pageTexts.creditImg16[language]} &ndash; www.pexels.com &ndash; SpaceX</li>
+                                    <ul className={`laserbox__bulletList laserbox__bulletList--${creditVisibility.pictures}`}>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(0, "pic")}><i>{pageTexts.creditImg1[language]}</i> &ndash; www.unsplash.com &ndash; Cottonbro Studio</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(1, "pic")}><i>{pageTexts.creditImg2.title[language]}</i> &ndash; www.pixabay.com &ndash; <i><i></i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(2, "pic")}><i>{pageTexts.creditImg3[language]}</i> &ndash; www.pixabay.com &ndash; Pixelkult</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(4, "pic")}><i>{pageTexts.creditImg4[language]}</i> &ndash; www.pixabay.com &ndash; Markus Spiske</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(5, "pic")}><i>{pageTexts.creditImg5[language]}</i> &ndash; www.unsplash.com &ndash; Claudio Schwarz</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(6, "pic")}><i>{pageTexts.creditImg6[language]}</i> &ndash; www.unsplash.com &ndash; Edmar Gonçalves</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(7, "pic")}><i>{pageTexts.creditImg7[language]}</i> &ndash; www.unsplash.com &ndash; Vince Fleming</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(8, "pic")}><i>{pageTexts.creditImg8[language]}</i> &ndash; www.pexels.com &ndash; Ketut Subiyanto</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(9, "pic")}><i>{pageTexts.creditImg9[language]}</i> &ndash; www.unsplash.com &ndash; Patrick Campanale</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(10, "pic")}><i>{pageTexts.creditImg10[language]}</i> &ndash; www.unsplash.com &ndash; Kenny Eliason</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(11, "pic")}><i>{pageTexts.creditImg11[language]}</i> &ndash; www.pexels.com &ndash; Andrea Piacquadio</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(12, "pic")}><i>{pageTexts.creditImg12[language]}</i> &ndash; www.unsplash.com &ndash; Mohammad Arrahmanur</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(13, "pic")}><i>{pageTexts.creditImg13[language]}</i> &ndash; www.unsplash.com &ndash; Joakim Honkasalo</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(14, "pic")}><i>{pageTexts.creditImg14[language]}</i> &ndash; www.pexels.com &ndash; Alexey Komissarov</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(16, "pic")}><i>{pageTexts.creditImg15[language]}</i> &ndash; www.pexels.com &ndash; Mo Ismail</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(18, "pic")}><i>{pageTexts.creditImg16[language]}</i> &ndash; www.pexels.com &ndash; SpaceX</li>
+                                    </ul>
+                                    <ul className={`laserbox__bulletList laserbox__bulletList--${creditVisibility.icons}`}>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(0, "icon")}><i>{pageTexts.creditIcon1[language]}</i> &ndash; www.thenounproject.com &ndash; Adrien Coquet</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(1, "icon")}><i>{pageTexts.creditIcon2[language]}</i> &ndash; www.thenounproject.com &ndash; Gan Khoon Lay</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(2, "icon")}><i>{pageTexts.creditIcon3[language]}</i> &ndash; www.thenounproject.com &ndash; Gan Khoon Lay</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(3, "icon")}><i>{pageTexts.creditIcon4[language]}</i> &ndash; www.thenounproject.com &ndash; ProSymbols</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(4, "icon")}><i>{pageTexts.creditIcon5[language]}</i> &ndash; www.thenounproject.com &ndash; Andrejs Kirma</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(5, "icon")}><i>{pageTexts.creditIcon6[language]}</i> &ndash; www.thenounproject.com &ndash; ImageCatalog</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(6, "icon")}><i>{pageTexts.creditIcon7[language]}</i> &ndash; www.thenounproject.com &ndash; Adrien Coquet</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(7, "icon")}><i>{pageTexts.creditIcon8[language]}</i> &ndash; www.thenounproject.com &ndash; Gan Khoon Lay</li>
                                     </ul>
                                 </div>
                                 <div className="laserbox__creditBox--right">
-                                    <img src={creditImg} alt="" />
+                                    <img src={creditImg} alt="" className={`laserbox__creditImg laserbox__creditImg--pic laserbox__creditImg--${creditVisibility.pictures}`}/>
+                                    <img src={creditImg} alt="" className={`laserbox__creditImg laserbox__creditImg--${creditVisibility.icons}`}/>
                                 </div>
                             </div>
 
-                            <br></br>
-                            <p>Images</p>
+                            <div className="laserbox__btnWrapper">
+                                <button className={`laserbox__btn laserbox__btn--${creditVisibility.pictures}`} onClick={() => handleCreditVisibility("pictures")}>{pageTexts.creditBtn1[language]}</button>
+                                <button className={`laserbox__btn laserbox__btn--${creditVisibility.icons}`} onClick={() => handleCreditVisibility("icons")}>{pageTexts.creditBtn2[language]}</button>
+                            </div>
                         </div>
                     }
                 </div>
