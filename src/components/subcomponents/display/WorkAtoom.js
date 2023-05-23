@@ -3,8 +3,7 @@ import React, { useContext } from 'react';
 import { LangContext } from "../../../App";
 import { workATOOM } from "../../../texts/displaySection_texts";
 
-import mcdonaldsLogo from "./../../../images/logos/mcdonalds.png";
-import nandosLogo from "./../../../images/logos/nandos.png";
+import bplayLogo from "./../../../images/logos/bplay.png";
 
 function WorkAtoom(props) {
     const language = useContext(LangContext)
@@ -13,7 +12,11 @@ function WorkAtoom(props) {
         <div className="display-section__textBox">
             <p className="display-section__title">{workATOOM.workplace[language]}</p>
             <br></br>
-            <p>{workATOOM.intro[language].paragraph1}</p>
+            <p>
+                <span>{workATOOM.intro[language].paragraph1.start}</span>
+                <span><a className="display-section__link" href="https://atoomstudio.com/" target="_blank" rel="noreferrer">{workATOOM.intro[language].paragraph1.link}</a></span>
+                <span>{workATOOM.intro[language].paragraph1.end}</span>
+            </p>
             <br></br>
             <p>{workATOOM.intro[language].paragraph2}</p>
             <br></br>
@@ -21,35 +24,26 @@ function WorkAtoom(props) {
             <br></br>
             <p>{workATOOM.intro[language].paragraph4}</p>
             <br></br>
+            <p>{workATOOM.intro[language].paragraph5}</p>
+            <br></br>
+            <p>{workATOOM.intro[language].paragraph6}</p>
+            <br></br>
             <ul className="display-section__bulletList">
-                <li>{workATOOM.intro[language].learning1}</li>
-                <li>{workATOOM.intro[language].learning2}</li>
-                <li>{workATOOM.intro[language].learning3}</li>
+                <li>{workATOOM.intro[language].technology1}</li>
+                <li>{workATOOM.intro[language].technology2}</li>
+                <li>{workATOOM.intro[language].technology3}</li>
+                <li>{workATOOM.intro[language].technology4}</li>
+                <li>{workATOOM.intro[language].technology5}</li>
+                <li>{workATOOM.intro[language].technology6}</li>
+                <li>{workATOOM.intro[language].technology7}</li>
             </ul>
             <br></br>
-            <p>{workATOOM.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.mcdonalds.com/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
-                    </a>
-                    <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
-                        <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://mcdonalds.es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
-                    </a>
-                    <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
-                        <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
-                    </a>
-                </div>
-            }
+            <p>{workATOOM.intro[language].paragraph7}</p>
+            <div className="display-section__logoBox">
+                <a href="https://santafe.bplay.bet.ar/" target="_blank" rel="noreferrer"> 
+                    <img className="display-section__logoItem display-section__logoItem--big display-section__logoItem--rounded" src={bplayLogo} alt="Bplay online gambling"/>
+                </a>
+            </div>  
         </div>
     )
 }

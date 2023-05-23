@@ -695,24 +695,64 @@ export const workATOOM = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: {
+                start: "Actualment treballo a ",
+                link: "Atoom Studio",
+                end: ", una agència de serveis web ubicada a Barcelona. Entre d'altres, l'empresa ofereix solucions en Branding; Disseny, implementació i manteniment web; Optimització SEO/SEM i Màrqueting Digital."
+            },
+            paragraph2: "Porto des de l'estiu del 2021 assignat a l'ambiciós projecte d'un client molt important de l'Argentina, el qual té l'objectiu de desplegar una sèrie de plataformes de joc online al llarg de les províncies més destacades del país.",
+            paragraph3: "En col·laboració permanent amb el Product Owner i un equip de Dissenyadors Gràfics i Especialistes en UX/UI, he dut a terme la renovació, personalització i manteniment dels llocs d'apostes i casino online del client.",
+            paragraph4: "Amb aquesta finalitat, he treballat en el marc d'Alira, un CMS especialitzat en el sector del joc que fa servir Velocity (un llenguatge de renderització des de servidor basat en JAVA), per tal d'injectar contingut dinàmic provinent d'una base de dades en el front end.",
+            paragraph5: "Emprant majoritàriament CSS i Vanilla JS, he estat desenvolupant i implementant un munt de nous elements, funcionalitats i widgets, com per exemple: formularis de login i registre d'usuaris, seccions de perfil d'usuari, menús desplegables, eines de recerca i filtratge, carrusels d'imatges, etc.",
+            paragraph6: "Algunes de les tecnologies i habilitats que he estat aplicant al llarg d'aquest projecte:",
+            paragraph7: "Fes un cop d'ull a l'estat de la feina que estic desenvolupant:",
+            technology1: "Vanilla JavaScript",
+            technology2: "Promeses de JS - JS Asíncron",
+            technology3: "Velocity",
+            technology4: "JQuery",
+            technology5: "Regex",
+            technology6: "CSS avançat - Transicions i animacions, CSS Flexbox, CSS Grid",
+            technology7: "Disseny web responsiu"
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: {
+                start: "Actualmente trabajo en ",
+                link: "Atoom Studio",
+                end: ", una agencia de servicios web ubicada en Barcelona. Entre otras, la empresa ofrece soluciones en Branding; Diseño, implementación y mantenimiento web; Optimización SEO/SEM y Marketing Digital."
+            },
+            paragraph2: "Llevo desde el verano de 2021 asignado al ambicioso proyecto de un cliente muy importante de Argentina, cuyo objetivo es desplegar una serie de plataformas de juego online a lo largo de las provincias más destacadas del país.",
+            paragraph3: "En colaboración permanente con el Product Owner y un equipo de Diseñadores Gráficos y Especialistas en UX/UI, he llevado a cabo la renovación, personalización y mantenimiento de los sitios de apuestas y casino online del cliente.",
+            paragraph4: "Con esta finalidad, he trabajado en el marco de Alira, un CMS especializado en el sector del juego que se sirve de Velocity (un lenguaje de renderización desde servidor basado en JAVA), para inyectar contenido dinámico proveniente de una base de datos en el front end.",
+            paragraph5: "Empleando mayoritariamente CSS y Vanilla JS, he estado desarrollando e implementando un montón de nuevos elementos, funcionalidades y widgets, como por ejemplo: formularios de login y registro de usuarios, secciones de perfil de usuario, menús desplegables, herramientas de búsqueda y filtraje, carruseles de imágenes, etc.",
+            paragraph6: "Algunas de las tecnologías y habilidades que he ido aplicando a lo largo de este proyecto:",
+            paragraph7: "Echa un vistazo al estado del trabajo que estoy desarrollando:",
+            technology1: "Vanilla JavaScript",
+            technology2: "Promesas de JS - JS Asíncrono",
+            technology3: "Velocity",
+            technology4: "JQuery",
+            technology5: "Regex",
+            technology6: "CSS avanzado - Transiciones y animaciones, CSS Flexbox, CSS Grid",
+            technology7: "Diseño web responsivo"
         },
         eng: {
-            paragraph1: "My last job before entering the world of coding was at the headquarters of an airline, contributing to the daily operation that makes all scheduled flights possible.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
-            paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            paragraph1: {
+                start: "I currently work at ",
+                link: "Atoom Studio",
+                end: ", which is a web services agency based in Barcelona, Spain. Among others, the company provides solutions in Branding; Web design, implementation & and maintenance; SEO/SEM optimization and Digital Marketing."
+            },
+            paragraph2: "Since the summer of 2021 I've been assigned to the ambitious project of a major client in Argentina, which aims to deploy a series of online gambling platforms across the country's main provinces.",
+            paragraph3: "In permanent collaboration with the Product Owner and a team of Graphic Designers and UX/UI Specialists, I've conducted the front end revamp, customization and maintenance of the client's gambling sites.",
+            paragraph4: "To that end, I've worked within the framework of Alira, a CMS specialized in the gambling sector that uses JAVA-based server side rendering language Velocity to inject database fed dynamic content into the front end.",
+            paragraph5: "Using mostly CSS and Vanilla JS, I've been developing and implementing lots of new signature features and widgets, such as: user login and user register forms, user profile sections, unfolding menus, search & filter tools, image carousels, etc.",
+            paragraph6: "Some technologies and skills I've been applying during this assignment:",
+            paragraph7: "Take a look at the result of my ongoing work:",
+            technology1: "Vanilla JavaScript",
+            technology2: "JS Promises - Asynchronous JS",
+            technology3: "Velocity",
+            technology4: "JQuery",
+            technology5: "Regular expressions",
+            technology6: "Advanced CSS - Transitions & animations, CSS Flexbox, CSS Grid",
+            technology7: "Responsive web design"
         }
     }
 }
