@@ -47,7 +47,16 @@ function RangeSlider(props) {
                 } else if (value === "2") {
                     props.handleActiveInfoItem("atoom");
                 } else {
-                    props.handleActiveInfoItem("atoom");
+                    props.handleActiveInfoItem("");
+                }
+                break;
+            case "projects":
+                if (value === "1") {
+                    props.handleActiveInfoItem("dreambig");
+                } else if (value === "2") {
+                    props.handleActiveInfoItem("covid");
+                } else {
+                    props.handleActiveInfoItem("");
                 }
                 break;
             default:

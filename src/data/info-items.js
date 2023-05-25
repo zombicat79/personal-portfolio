@@ -12,6 +12,11 @@ import callcenterImg from './../../src/images/icos/infoItems/call-center.png';
 import hotelImg from './../../src/images/icos/infoItems/hotel.png';
 import controlImg from './../../src/images/icos/infoItems/control.png';
 import atoomLogo from './../../src/images/logos/atoom.png';
+import dreambigLogo from './../../src/images/icos/infoItems/dreambig-white.png';
+import invaders from './../../src/images/icos/infoItems/invaders.png';
+import nokiaPhone from './../../src/images/icos/infoItems/nokia.png';
+import calculator from './../../src/images/icos/infoItems/calculator.png';
+import memoryGame from './../../src/images/icos/infoItems/memory.png';
 
 import worldImg from "./../../src/images/icos/infoItems/world.png";
 import saturnImg from "./../../src/images/icos/infoItems/saturn.png";
@@ -133,7 +138,48 @@ const infoItems = {
             size: "regular"
         }
     ],
-    projects: [],
+    projects: [
+        {
+            id: "ppa2",
+            moment: "past",
+            name: "dreambig",
+            imgType: "element",
+            src: dreambigLogo,
+            size: "big"
+        },
+        {
+            id: "ppr1",
+            moment: "present",
+            name: "covid",
+            imgType: "element",
+            src: invaders,
+            size: "big"
+        },
+        {
+            id: "ppr2",
+            moment: "present",
+            name: "phone",
+            imgType: "element",
+            src: nokiaPhone,
+            size: "big"
+        },
+        {
+            id: "ppr3",
+            moment: "present",
+            name: "calculator",
+            imgType: "element",
+            src: calculator,
+            size: "big"
+        }
+        /* {
+            id: "ppr4",
+            moment: "present",
+            name: "memory",
+            imgType: "element",
+            src: memoryGame,
+            size: "big"
+        } */
+    ],
     location: [
         {
             id: "lpa1",

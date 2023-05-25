@@ -17,6 +17,7 @@ import WorkCallcenter from './subcomponents/display/WorkCallcenter';
 import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import WorkAtoom from './subcomponents/display/WorkAtoom';
+import ProjectsDreambig from './subcomponents/display/ProjectsDreambig';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -156,14 +157,27 @@ function DisplaySection(props) {
                                     props.handleActiveInfoItem("atoom");
                                     break;
                                 default:
-                                    props.handleActiveInfoItem("supermarket");
+                                    props.handleActiveInfoItem("");
                             }
                         }}> 
                     </i>
                     <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} onClick={(e) => props.handleHeaderState()} />
                     <i 
                         id="icon-projects" className={`menuElement icon-basic-lightbulb ${menuStatus.projects}`} 
-                        onClick={(e) => {handleMenuStatus("projects"); props.handleActiveSubsection("projects")}}> 
+                        onClick={(e) => {
+                            handleMenuStatus("projects"); 
+                            props.handleActiveSubsection("projects")
+                            switch(props.moment) {
+                                case "past":
+                                    props.handleActiveInfoItem("dreambig");
+                                    break;
+                                case "present":
+                                    props.handleActiveInfoItem("covid");
+                                    break;
+                                default:
+                                    props.handleActiveInfoItem("");
+                            }
+                        }}> 
                     </i>
                     <i 
                         id="icon-location" className={`menuElement icon-basic-geolocalize-01 ${menuStatus.location}`} 
@@ -203,6 +217,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={props.personalizeParagraph} />}

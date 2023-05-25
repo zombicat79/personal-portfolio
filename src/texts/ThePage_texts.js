@@ -67,66 +67,81 @@ const pageTexts = {
         eng: '"Phone apps"'
     },
     creditImg4: {
+        cat: '"Codi React"',
+        esp: '"Código React"',
+        eng: '"React code"'
+    },
+    creditImg5: {
         cat: '"Cascada Matrix"',
         esp: '"Cascada Matrix"',
         eng: '"Matrix cascade"'
     },
-    creditImg5: {
+    creditImg6: {
         cat: '"Prestatgeries de supermercat"',
         esp: '"Estantes de supermercado"',
         eng: '"Supermarket shelves"'
     },
-    creditImg6: {
+    creditImg7: {
         cat: '"Coses de socorrista"',
         esp: '"Cosas de socorrista"',
         eng: '"Lifeguard stuff"'
     },
-    creditImg7: {
+    creditImg8: {
         cat: '"Hamburgueses"',
         esp: '"Hamburguesas"',
         eng: '"Burgers"'
     },
-    creditImg8: {
+    creditImg9: {
         cat: '"Cambrer servint cervesa"',
         esp: '"Camarero sirviendo cerveza"',
         eng: '"Waiter pouring beer"'
     },
-    creditImg9: {
+    creditImg10: {
         cat: '"Avió estacionat"',
         esp: '"Avión estacionado"',
         eng: '"Stationed airliner"'
     },
-    creditImg10: {
+    creditImg11: {
         cat: '"Cotxe de policia"',
         esp: '"Coche de policía"',
         eng: '"Police car"'
     },
-    creditImg11: {
+    creditImg12: {
         cat: `"Recepció d'hotel"`,
         esp: '"Recepción de hotel"',
         eng: '"Reception desk"'
     },
-    creditImg12: {
+    creditImg13: {
         cat: `"Passadís d'avió"`,
         esp: '"Pasillo de avión"',
         eng: '"Airliner aisle"'
     },
-    creditImg13: {
+    creditImg14: {
         cat: '"Màquina escurabutxaques"',
         esp: '"Máquina tragaperras"',
         eng: '"Gambling slot machine"'
     },
-    creditImg14: {
+    creditImg15: {
         cat: '"Barcelona"',
         esp: '"Barcelona"',
         eng: '"Barcelona"'
     },
-    creditImg15: {
+    creditImg16: {
+        cat: '"Manchester"',
+        esp: '"Manchester"',
+        eng: '"Manchester"'
+    },
+    creditImg17: {
         cat: '"Dubai"',
         esp: '"Dubai"',
         eng: '"Dubai"'
     },
-    creditImg16: {
+    creditImg18: {
+        cat: '"El món de nit"',
+        esp: '"El mundo de noche"',
+        eng: '"Night world map"'
+    },
+    creditImg19: {
         cat: '"Conquesta de Mart"',
         esp: '"Conquista de Marte"',
         eng: '"Mars conquer"'
@@ -170,6 +185,21 @@ const pageTexts = {
         cat: '"Sala de control"',
         esp: '"Sala de control"',
         eng: '"Control room"'
+    },
+    creditIcon9: {
+        cat: '"Invasor alienígena"',
+        esp: '"Invasor alienígena"',
+        eng: '"Alien invader"'
+    },
+    creditIcon10: {
+        cat: '"Telèfon Nokia"',
+        esp: '"Teléfono Nokia"',
+        eng: '"Nokia phone"'
+    },
+    creditIcon11: {
+        cat: '"Calculadora"',
+        esp: '"Calculadora"',
+        eng: '"Calculator"'
     },
     creditBtn1: {
         cat: "Fotos",
