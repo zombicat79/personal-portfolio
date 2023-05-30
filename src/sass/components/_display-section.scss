@@ -195,6 +195,21 @@
                 background-image: url("./../../images/gambling.jpg");
             }
 
+            &--projects--dreambig {
+                background-image: url("./../../images/cambodia.jpg");
+            }
+
+            &--projects--covid {
+                background-image: url("./../../images/covid-invaders.jpg");
+                background-position-y: 0;
+            }
+
+            &--projects--calculator {
+                background-color: black;
+                background-image: url("./../../images/calculator.jpg");
+                background-position-x: -5rem;
+            }
+
             &--location--barcelona {
                 background-image: url("./../../images/barcelona.jpg");
             }

@@ -5,6 +5,7 @@ import WelcomeSeal from "./../WelcomeSeal";
 import VisitorQuestionnaire from "./../VisitorQuestionnaire";
 import Header from './../Header';
 import Footer from './../Footer';
+import ViewportAlert from './../ViewportAlert';
 
 import wSealTexts from './../../texts/welcomeSeal_texts';
 
@@ -18,7 +19,8 @@ function Layout(props) {
     return(
         <main className="App">
             {
-                !state.initSealIsShrunk &&
+                !state.initSealIsShrunk && 
+                state.viewportType === "desktop" &&
                 <WelcomeSeal 
                     logoImages={[assets.logo, assets.logoHover]} 
                     logoAlt={"Cartoon-like logo depicting a cat"} 
@@ -35,6 +37,7 @@ function Layout(props) {
             {
                 state.initSealIsShrunk &&
                 !state.hasVisitorInfo &&
+                state.viewportType === "desktop" &&
                 <VisitorQuestionnaire 
                     btnSubmitIcons={[assets.submitBtn, assets.submitBtnPressed]} 
                     submitBtnAlt={"Cat paw"}
@@ -45,6 +48,7 @@ function Layout(props) {
             {
                 state.initSealIsShrunk &&
                 state.hasVisitorInfo &&
+                state.viewportType === "desktop" &&
                 <div id="main-page">
                     <Header
                         headerIsUnfolded={state.headerIsUnfolded}
@@ -62,6 +66,16 @@ function Layout(props) {
                         logoSize={100}
                         handleHeaderState={methods.handleHeaderState}
                      />
+                </div>
+            }
+            {
+                state.viewportType === "mobile" &&
+                <div>
+                    <ViewportAlert 
+                        footerBrandImage={assets.logo} 
+                        footerBrandImgAlt={"Cartoon-like logo depicting a cat"} 
+                        logoSize={100}
+                    />
                 </div>
             }
         </main>

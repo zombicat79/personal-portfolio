@@ -18,6 +18,7 @@ import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import WorkAtoom from './subcomponents/display/WorkAtoom';
 import ProjectsDreambig from './subcomponents/display/ProjectsDreambig';
+import ProjectsCalculator from './subcomponents/display/ProjectsCalculator';
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -218,6 +219,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "calculator" && <ProjectsCalculator />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={props.personalizeParagraph} />}

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.scss';
@@ -123,6 +123,20 @@ function App() {
     })
   }
 
+  // Determines whether the page is being displayed on a desktop device or not
+  const [viewportType, setViewportType] = useState('desktop');
+  const handleViewportType = () => {
+    if (window.innerWidth < 1300) {
+      setViewportType('mobile');
+    } else {
+      setViewportType('desktop');
+    }
+  }
+
+  useEffect(() => {
+    handleViewportType();
+  })
+
   // *** Common use helper functions ***
   // Function used to include the visitor's name in selected content paragraphs
   const personalizeParagraph = (insertInfo, searchTerm, paragraph) => {
@@ -144,7 +158,8 @@ function App() {
     activeSubsection: activeSubsection,
     hoverSubsection: hoverSubsection,
     activeInfoItem: activeInfoItem,
-    headerIsUnfolded: headerIsUnfolded
+    headerIsUnfolded: headerIsUnfolded,
+    viewportType: viewportType
   }
 
   const methods = {

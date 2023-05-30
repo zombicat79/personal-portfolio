@@ -147,59 +147,89 @@ const pageTexts = {
         eng: '"Mars conquer"'
     },
     creditIcon1: {
+        cat: '"Petja de gat"',
+        esp: '"Huella de gato"',
+        eng: '"Cat paw"'
+    },
+    creditIcon2: {
         cat: '"Supermercat"',
         esp: '"Supermercado"',
         eng: '"Supermarket"'
     },
-    creditIcon2: {
+    creditIcon3: {
         cat: '"Socorrista"',
         esp: '"Socorrista"',
         eng: '"Lifeguard"'
     },
-    creditIcon3: {
+    creditIcon4: {
         cat: '"Cuiner"',
         esp: '"Cocinero"',
         eng: '"Cook"'
     },
-    creditIcon4: {
+    creditIcon5: {
         cat: '"Cambrer"',
         esp: '"Camarero"',
         eng: '"Waiter"'
     },
-    creditIcon5: {
+    creditIcon6: {
         cat: '"Escala mòbil"',
         esp: '"Escalera móvil"',
         eng: '"Flight stairs"'
     },
-    creditIcon6: {
+    creditIcon7: {
         cat: '"Operador de centraleta"',
         esp: '"Operador de centralita"',
         eng: '"Call-center agent"'
     },
-    creditIcon7: {
+    creditIcon8: {
         cat: '"Hotel"',
         esp: '"Hotel"',
         eng: '"Hotel"'
     },
-    creditIcon8: {
+    creditIcon9: {
         cat: '"Sala de control"',
         esp: '"Sala de control"',
         eng: '"Control room"'
     },
-    creditIcon9: {
+    creditIcon10: {
         cat: '"Invasor alienígena"',
         esp: '"Invasor alienígena"',
         eng: '"Alien invader"'
     },
-    creditIcon10: {
+    creditIcon11: {
         cat: '"Telèfon Nokia"',
         esp: '"Teléfono Nokia"',
         eng: '"Nokia phone"'
     },
-    creditIcon11: {
+    creditIcon12: {
         cat: '"Calculadora"',
         esp: '"Calculadora"',
         eng: '"Calculator"'
+    },
+    creditIcon13: {
+        cat: '"Silueta de Barcelona"',
+        esp: '"Silueta de Barcelona"',
+        eng: '"Barcelona skyline"'
+    },
+    creditIcon14: {
+        cat: '"Silueta de Manchester"',
+        esp: '"Silueta de Manchester"',
+        eng: '"Manchester skyline"'
+    },
+    creditIcon15: {
+        cat: '"Silueta de Dubai"',
+        esp: '"Silueta de Dubai"',
+        eng: '"Dubai skyline"'
+    },
+    creditIcon16: {
+        cat: '"Planeta Terra"',
+        esp: '"Planeta Tierra"',
+        eng: '"Planet Earth"'
+    },
+    creditIcon17: {
+        cat: '"Planeta Saturn"',
+        esp: '"Planeta Saturno"',
+        eng: '"Planet Saturn"'
     },
     creditBtn1: {
         cat: "Fotos",
