@@ -350,6 +350,45 @@
                         &--rounded {
                             border-radius: 2.5rem;
                         }
+
+                        &--code {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .display-section__snapshot {
+                        text-decoration: none;
+                        display: block;
+                        
+                        & img {
+                            border-radius: 20px;
+                        }
+
+                        &:link,
+                        &:visited {
+                            color: black;
+                        }
+
+                        &:hover,
+                        &:active {
+                            color: red;
+                            text-shadow: 0 1rem 2rem darkred;
+                        }
+
+                        &:hover > img {
+                            animation-name: catbtn-blip;
+                            animation-duration: 3.5s;
+                            animation-timing-function: linear;
+                            animation-iteration-count: infinite;
+                        }
+
+                        .try-prompt {
+                            text-align: center;
+                            margin-top: 1rem;
+                            font-size: 2rem;
+                            transition: all .5s;
+                        }
                     }
                 }
             }

@@ -817,6 +817,128 @@ export const projectsBig = {
     }
 }
 
+export const projectsPanicdemic = {
+    projectName: {
+        cat: "Covid Panicdemic",
+        esp: "Covid Panicdemic",
+        eng: "Covid Panicdemic"
+    },
+    projectScope: {
+        cat: 'Un joc arcade tipus "Space Invaders"',
+        esp: 'Un juego arcade tipo "Space Invaders"',
+        eng: 'A sort of "Space Invaders" arcade game'
+    },
+    intro: {
+        cat: {
+            paragraph1: {
+                start: "Aquest joc representa el primer gran projecte que vaig emprendre en la meva carrera com a programador. Vaig desenvolupar-lo al llarg d'una setmana d'intenssísimes sessions de programació des de la matinada fins al capvespre, com un dels desafiaments a què vaig haver-me d'enfrontar durant el meu ",
+                link: "bootcamp de Desenvolupament Web a Ironhack.",
+                end: " Tot i que roman inacabat i mancat de poliment, si més no és jugable i marca una fita molt important en la meva trajectòria."
+            },
+            paragraph2: `El joc s'inspira en el concepte del clàssic "Space Invaders", i pren la seva temàtica particular del primeríssim i gairebé únic problema existent en el moment històric en què va ser concebut: la pandèmia de la COVID-19.`,
+            paragraph3: "Contràriament al seu avantpassat conceptual, en aquest joc no hi ha trets de cap mena (almenys per part del jugador principal). Aquí els jugadors humans prenen el rol del virus de la COVID-19, i el seu objectiu és infectar tants edificis com els sigui possible, mentre esquiven els atacs del gel desinfectant i d'altres artefactes mèdics.",
+            paragraph4: `Pel que fa als aspectes tècnics, "Covid Panicdemic" va ser escrit en JavaScript simple (Vanilla JS), amb un ús intensiu del sistema de classes i d'extensions de classe a l'hora de definir les entitats principals que interactuen contínuament per donar vida al programa. La gestió del so i dels gràfics van ser dos temes novedosos en el moment, i en conseqüència un repte destacable per a mi. En especial el segon, que vaig resoldre mitjançant l'element d'HTML especial <canvas> i la seva API relacionada.`,
+            paragraph5: "Tecnologies rellevants aplicades:",
+            technology1: "HTML / CSS / JavaScript",
+            technology2: "Canvas API",
+        },
+        esp: {
+            paragraph1: {
+                start: "Este juego representa el primer gran proyecto que emprendí en mi carrera como programador. Lo desarrollé a lo largo de una semana de intensísimas sesiones de programación desde el amanecer hasta el anochecer, como uno de los desafíos a los que tuve que enfrentarme durante mi ",
+                link: "bootcamp de Desarrollo Web en Ironhack.",
+                end: " A pesar de que permanece inacabado y falto de pulimento, al menos es jugable y marca un hito muy importante en mi trayectoria."
+            },
+            paragraph2: `El juego se inspira en el concepto del clásico "Space Invaders", y toma su temática particular del primerísimo y casi único problema existente en el momento histórico en el que fue concebido: la pandemia de la COVID-19.`,
+            paragraph3: "Contrariamente a su antepasado conceptual, en este juego no hay disparos de ninguna clase (al menos por parte del jugador principal). Aquí los jugadores humanos adquieren el rol del virus de la COVID-19, y su objetivo es infectar tantos edificios como les sea posible, mientras esquivan los ataques del gel desinfectante y de otros artefactos médicos.",
+            paragraph4: `Por lo que atañe a los aspectos técnicos, "Covid Panicdemic" fue escrito en JavaScript simple (Vanilla JS), con un uso intensivo del sistema de clases y de extensiones de clase orientado a definir las entidades principales que interactúan continuamente para dar vida al programa. La gestión del sonido y de los gráficos fueron dos temas novedosos en el momento, y en consecuencia un reto destacable para mi. En especial el segundo, que pude resolver mediante el elemento de HTML especial <canvas> y su API relacionada.`,
+            paragraph5: "Tecnologías relevantes aplicadas:",
+            technology1: "HTML / CSS / JavaScript",
+            technology2: "Canvas API",
+        },
+        eng: {
+            paragraph1: {
+                start: "This game represents the first major project I took on in my programming career. I developed it in 1 week of intense dawn-to-dusk coding sessions, as one of the challenges I was confronted with during my ",
+                link: "Web Development bootcamp at Ironhack.",
+                end: " Although it remains unfinished and unpolished, it is nonetheless playable and marks a very important milestone in my trajectory."
+            },
+            paragraph2: 'The game builds on the concept of classic arcade game "Space Invaders" and takes its particular theme from the one and only issue shadowing the historic moment during which it was conceived: the COVID-19 pandemic.',
+            paragraph3: "Contrary to its conceptual ancestor, in this game there's no shooting at all (at least on the part of the main player). Here human players take the role of the COVID-19 virus, and their goal is to infect as many buildings as possible, while avoiding attacks from sanitizers and other medical stuff.",
+            paragraph4: 'Regarding the technical aspects, "Covid Panicdemic" was built in plain Vanilla JS, with extensive usage of classes and class extension to define the main entities that continuously interact to run the program. Sound and graphic management were first-time topics at the moment, and thus quite challenging to me. Especially the latter, which was sorted out by means of the <canvas> special HTML element and the Canvas API',
+            paragraph5: "Relevant technologies applied:",
+            technology1: "HTML / CSS / JavaScript",
+            technology2: "Canvas API",
+        },
+    },
+    tryPrompt: {
+        cat: "Prova'l!",
+        esp: '¡Pruébalo!',
+        eng: 'Give it a shot!'
+    },
+    codePrompt: {
+        cat: 'Tafaneja el codi font!',
+        esp: '¡Chafardea el código fuente!',
+        eng: 'See the source code!'
+    }
+}
+
+export const projectsCalculotron = {
+    projectName: {
+        cat: "Calculotron 5000",
+        esp: "Calculotron 5000",
+        eng: "Calculotron 5000"
+    },
+    projectScope: {
+        cat: 'La teva calculadora estàndard, però una mica més guai',
+        esp: 'Tu calculadora estándar, pero un poco más guay',
+        eng: 'Your standard calculator, but a bit cooler'
+    },
+    intro: {
+        cat: {
+            paragraph1: "Mentre feia la meva primera feina com a programador vaig decidir programar aquesta petita aplicació com a projecte secundari, de manera que no em quedés massa rovellat pel que fa a una sèrie de paradigmes i estructures de programació que no estava fent servir gaire en aquell moment.",
+            paragraph2: 'Simple com podia semblar en el seu propòsit, vaig trobar força entretingut programar una calculadora des de zero. Fins i tot assumint que tot seria bastant clar i directe des del començament (ja saps... 2 més 2 són 4, no?), vaig ensopegar amb alguns reptes no previstos a meitat de camí. Tractar amb números és un assumpte inclinat a que es produeixin errors, especialment pel que té a veure amb decimals i números molt grans, així que vaig haver de tenir-ho en compte.',
+            paragraph3: "En el costat més glamurós de les coses, no volia empescar-me una altra calculadora avorrida, així que vaig provar de posar-hi una mica de màgia i purpurina arrodonint-ho amb un apartat gràfic i sonor d'inspiració clàssica vuitantera. Se'm va ocórrer que potser les teves matemàtiques o els teus comptes casolans podrien resultar més divertits si podia aconseguir que el beneït aparell es veiés i se sentís com un videojoc primitiu.",
+            paragraph4: 'Així doncs què et sembla... li donaràs una oportunitat?',
+            paragraph5: "Tecnologies i llibreries rellevants aplicades:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "Canvas API",
+            technology3: "Canvas API"
+        },
+        esp: {
+            paragraph1: {
+                start: "Este juego representa el primer gran proyecto que emprendí en mi carrera como programador. Lo desarrollé a lo largo de una semana de intensísimas sesiones de programación desde el amanecer hasta el anochecer, como uno de los desafíos a los que tuve que enfrentarme durante mi ",
+                link: "bootcamp de Desarrollo Web en Ironhack.",
+                end: " A pesar de que permanece inacabado y falto de pulimento, al menos es jugable y marca un hito muy importante en mi trayectoria."
+            },
+            paragraph2: `El juego se inspira en el concepto del clásico "Space Invaders", y toma su temática particular del primerísimo y casi único problema existente en el momento histórico en el que fue concebido: la pandemia de la COVID-19.`,
+            paragraph3: "Contrariamente a su antepasado conceptual, en este juego no hay disparos de ninguna clase (al menos por parte del jugador principal). Aquí los jugadores humanos adquieren el rol del virus de la COVID-19, y su objetivo es infectar tantos edificios como les sea posible, mientras esquivan los ataques del gel desinfectante y de otros artefactos médicos.",
+            paragraph4: `Por lo que atañe a los aspectos técnicos, "Covid Panicdemic" fue escrito en JavaScript simple (Vanilla JS), con un uso intensivo del sistema de clases y de extensiones de clase orientado a definir las entidades principales que interactúan continuamente para dar vida al programa. La gestión del sonido y de los gráficos fueron dos temas novedosos en el momento, y en consecuencia un reto destacable para mi. En especial el segundo, que pude resolver mediante el elemento de HTML especial <canvas> y su API relacionada.`,
+            paragraph5: "Tecnologías relevantes aplicadas:",
+            technology1: "HTML / CSS / JavaScript",
+            technology2: "Canvas API",
+        },
+        eng: {
+            paragraph1: "While on my first job as a developer I decided to code this little gadget as a side project, so I didn't get rusty with a series of coding paradigms and structures I wasn't using much at the moment.",
+            paragraph2: `Simple as it might be in its scope, I found coding a calculator from scratch quite entertaining. Even if everything seemed pretty straightforward from the start (you know... 2 plus 2 equals 4, right?), I came across some unforeseen challenges on the way. Dealing with numbers is a business that's somehow prone to errors, especially regarding decimals and huge numbers, so I had to account for that.`,
+            paragraph3: "On the fancy side of things, I didn't want to come up with yet another boring calculator, so I tried to spice it up a little bit with some classic 80's graphic and sound inspiration. I thought maybe your maths or your household finances could get funnier if I could make the blessed contraption look and sound like some primitive videogame.",
+            paragraph4: 'So what do you think... are you gonna give it a try?',
+            paragraph5: "Relevant technologies and libraries applied:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "Canvas API",
+            technology3: "Canvas API"
+        },
+    },
+    tryPrompt: {
+        cat: "Prova-la!",
+        esp: '¡Pruébala!',
+        eng: 'Give it a shot!'
+    },
+    codePrompt: {
+        cat: 'Tafaneja el codi font!',
+        esp: '¡Chafardea el código fuente!',
+        eng: 'See the source code!'
+    }
+}
+
 export const locationBCN = {
     cityCountry: {
         cat: "Barcelona",
