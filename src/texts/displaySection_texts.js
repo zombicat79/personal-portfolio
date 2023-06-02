@@ -894,37 +894,31 @@ export const projectsCalculotron = {
     },
     intro: {
         cat: {
-            paragraph1: "Mentre feia la meva primera feina com a programador vaig decidir programar aquesta petita aplicació com a projecte secundari, de manera que no em quedés massa rovellat pel que fa a una sèrie de paradigmes i estructures de programació que no estava fent servir gaire en aquell moment.",
-            paragraph2: 'Simple com podia semblar en el seu propòsit, vaig trobar força entretingut programar una calculadora des de zero. Fins i tot assumint que tot seria bastant clar i directe des del començament (ja saps... 2 més 2 són 4, no?), vaig ensopegar amb alguns reptes no previstos a meitat de camí. Tractar amb números és un assumpte inclinat a que es produeixin errors, especialment pel que té a veure amb decimals i números molt grans, així que vaig haver de tenir-ho en compte.',
-            paragraph3: "En el costat més glamurós de les coses, no volia empescar-me una altra calculadora avorrida, així que vaig provar de posar-hi una mica de màgia i purpurina arrodonint-ho amb un apartat gràfic i sonor d'inspiració clàssica vuitantera. Se'm va ocórrer que potser les teves matemàtiques o els teus comptes casolans podrien resultar més divertits si podia aconseguir que el beneït aparell es veiés i se sentís com un videojoc primitiu.",
-            paragraph4: 'Així doncs què et sembla... li donaràs una oportunitat?',
+            paragraph1: "En el temps lliure que vaig aconseguir raspar durant la meva primera feina com a programador, vaig decidir empescar-me aquesta petita aplicació com a projecte paral·lel, de manera que no em quedés massa rovellat pel que fa a una sèrie de paradigmes i estructures de programació que no estava fent servir gaire en aquell moment.",
+            paragraph2: 'Simple com podia semblar en el seu propòsit, la veritat és que vaig trobar força entretingut programar una calculadora des de zero. Fins i tot assumint que tot havia de ser bastant clar i directe des del començament (ja se sap... 2 més 2 són 4, no?), vaig ensopegar amb alguns reptes no previstos a meitat de camí. Tractar amb números és un assumpte espinós i inclinat a que es produeixin errors, especialment pel que té a veure amb decimals i números molt grans, així que vaig haver de tenir molt en compte aquest aspecte.',
+            paragraph3: "En el costat més glamurós de les coses, no volia portar al món una altra calculadora avorrida de més, així que vaig provar de donar-li un toc màgic i personal arrodonint-la amb un apartat gràfic i sonor d'inspiració clàssica vuitantera. Se'm va ocórrer que potser les teves matemàtiques o els teus comptes casolans podrien resultar més divertits si podia aconseguir que el beneït aparell es veiés i se sentís una mica com un videojoc primitiu.",
+            paragraph4: 'Així doncs, què et sembla...? Et desfaràs de la teva app de càlcul habitual i li donaràs una oportunitat a aquesta joia?',
             paragraph5: "Tecnologies i llibreries rellevants aplicades:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "Canvas API",
-            technology3: "Canvas API"
+            technology2: "big.js"
         },
         esp: {
-            paragraph1: {
-                start: "Este juego representa el primer gran proyecto que emprendí en mi carrera como programador. Lo desarrollé a lo largo de una semana de intensísimas sesiones de programación desde el amanecer hasta el anochecer, como uno de los desafíos a los que tuve que enfrentarme durante mi ",
-                link: "bootcamp de Desarrollo Web en Ironhack.",
-                end: " A pesar de que permanece inacabado y falto de pulimento, al menos es jugable y marca un hito muy importante en mi trayectoria."
-            },
-            paragraph2: `El juego se inspira en el concepto del clásico "Space Invaders", y toma su temática particular del primerísimo y casi único problema existente en el momento histórico en el que fue concebido: la pandemia de la COVID-19.`,
-            paragraph3: "Contrariamente a su antepasado conceptual, en este juego no hay disparos de ninguna clase (al menos por parte del jugador principal). Aquí los jugadores humanos adquieren el rol del virus de la COVID-19, y su objetivo es infectar tantos edificios como les sea posible, mientras esquivan los ataques del gel desinfectante y de otros artefactos médicos.",
-            paragraph4: `Por lo que atañe a los aspectos técnicos, "Covid Panicdemic" fue escrito en JavaScript simple (Vanilla JS), con un uso intensivo del sistema de clases y de extensiones de clase orientado a definir las entidades principales que interactúan continuamente para dar vida al programa. La gestión del sonido y de los gráficos fueron dos temas novedosos en el momento, y en consecuencia un reto destacable para mi. En especial el segundo, que pude resolver mediante el elemento de HTML especial <canvas> y su API relacionada.`,
-            paragraph5: "Tecnologías relevantes aplicadas:",
-            technology1: "HTML / CSS / JavaScript",
-            technology2: "Canvas API",
+            paragraph1: "En el tiempo libre que conseguí rascar durante mi primer trabajo como programador, decidí ingeniarme esta pequeña aplicación como proyecto paralelo, de modo que no me quedara demasiado oxidado en relación a una serie de paradigmas y estructuras de programación que no estaba usando mucho en aquel momento.",
+            paragraph2: 'Simple como podía parecer en su propósito, la verdad es que encontré bastante entretenido el hecho de programar una calculadora desde cero. Incluso asumiendo que todo debía ser bastante claro y directo desde el principio (ya se sabe... 2 más 2 son 4, no?), tropecé con algunos retos no previstos a mitad del camino. Tratar con números es un asunto espinoso e inclinado a que se produzcan errores, especialmente por lo que respecta a decimales y números muy grandes, así que tuve que tener muy en cuenta este aspecto.',
+            paragraph3: "En el lado más glamuroso de las cosas, no quería traer al mundo todavía otra calculadora aburrida más, así que intenté darle un toque mágico y personal redondeándola con un apartado gráfico y sonoro de inspiración clásica ochentera. Se me ocurrió que tal vez tus matemáticas o tus cuentas del hogar podrían resultar más divertidas si podía lograr que el bendito artilugio se viera y se sintiera un poco como un videojuego primitivo.",
+            paragraph4: 'Así pues, ¿qué te parece...? ¿Vas a deshacerte de tu app de cálculo habitual y le vas a dar una oportunidad a esta joya?',
+            paragraph5: "Tecnologías y librerías relevantes aplicadas:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "big.js"
         },
         eng: {
-            paragraph1: "While on my first job as a developer I decided to code this little gadget as a side project, so I didn't get rusty with a series of coding paradigms and structures I wasn't using much at the moment.",
-            paragraph2: `Simple as it might be in its scope, I found coding a calculator from scratch quite entertaining. Even if everything seemed pretty straightforward from the start (you know... 2 plus 2 equals 4, right?), I came across some unforeseen challenges on the way. Dealing with numbers is a business that's somehow prone to errors, especially regarding decimals and huge numbers, so I had to account for that.`,
+            paragraph1: "In the spare time I got while on my first job as a developer I decided to code this little gadget as a side project, so I didn't get rusty with a series of coding paradigms and structures I wasn't using much at the moment.",
+            paragraph2: `Simple as it might be in its scope, I found coding a calculator from scratch quite entertaining. Even if everything seemed pretty straightforward from the start (you know... 2 plus 2 equals 4, right?), I came across some unforeseen challenges on the way. Dealing with numbers is a tricky business that's prone to errors, especially regarding decimals and huge numbers, so I had to account for that.`,
             paragraph3: "On the fancy side of things, I didn't want to come up with yet another boring calculator, so I tried to spice it up a little bit with some classic 80's graphic and sound inspiration. I thought maybe your maths or your household finances could get funnier if I could make the blessed contraption look and sound like some primitive videogame.",
-            paragraph4: 'So what do you think... are you gonna give it a try?',
+            paragraph4: 'So what do you think... are you gonna ditch your regular calculator app and use this baby instead?',
             paragraph5: "Relevant technologies and libraries applied:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "Canvas API",
-            technology3: "Canvas API"
+            technology2: "big.js"
         },
     },
     tryPrompt: {

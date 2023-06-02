@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { LangContext } from "../../../App";
 import { projectsCalculotron } from "../../../texts/displaySection_texts";
 
-import dreambigLogo from './../../../images/logos/dreambig.png';
+import calculatorButtons from './../../../images/calc-buttons.png';
 import githubLogo from './../../../images/logos/github-logo-black.png';
 
 function ProjectsCalculator(props) {
@@ -38,12 +38,14 @@ function ProjectsCalculator(props) {
             <br></br>
             <ul className="display-section__bulletList">
                 <li>{projectsCalculotron.intro[language].technology1}</li>
-                <li>{projectsCalculotron.intro[language].technology2}</li>
+                <li>
+                    <a className="display-section__link" href="https://www.npmjs.com/package/big.js" target="_blank" rel="noreferrer">{projectsCalculotron.intro[language].technology2}</a>
+                </li>
             </ul>
             <br></br>
             <div className="display-section__logoBox">
                 <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Covid Panicdemic cover screen" />
+                    <img className="display-section__logoItem display-section__logoItem--huge" src={calculatorButtons} alt="Math operations button set" />
                     <p className="try-prompt">{projectsCalculotron.tryPrompt[language]}</p>
                 </a>
             </div>
