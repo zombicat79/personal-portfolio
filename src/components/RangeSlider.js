@@ -56,7 +56,7 @@ function RangeSlider(props) {
                 } else if (value === "2") {
                     props.handleActiveInfoItem("covid");
                 } else {
-                    props.handleActiveInfoItem("");
+                    props.handleActiveInfoItem("spaceline");
                 }
                 break;
             default:

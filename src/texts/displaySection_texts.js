@@ -933,6 +933,198 @@ export const projectsCalculotron = {
     }
 }
 
+export const projectsPhone = {
+    projectName: {
+        cat: "KiwiPhone",
+        esp: "KiwiPhone",
+        eng: "KiwiPhone"
+    },
+    projectScope: {
+        cat: 'El telèfon que et llegeix la ment!',
+        esp: '¡El teléfono que te lee la mente!',
+        eng: 'Here comes the phone that reads your mind!'
+    },
+    intro: {
+        cat: {
+            paragraph1: "Vaig desenvolupar aquesta petita aplicació a partir d'una prova a la qual em vaig veure sotmès durant un procés de selecció. El requeriment principal de l'exercici que se'm va proposar em demanava empescar-me algun tipus de programa que fos capaç de predir text.",
+            paragraph2: `Immediatament em van venir al cap els vells telèfons mòbils estil Nokia. Te'n recordes, d'aquells panells de botons en què un munt de lletres diferents quedaven apilotades dins d'una sola tecla? Els models més moderns i més capaços venien amb aquesta funcionalitat integrada que et suggeria paraules potencials a mesura que pitjaves.`,
+            paragraph3: "Doncs bé... aquesta és la paorosa història sobre com de cop i volta em vaig trobar tot sol, davant la tasca imponent de crear un algoritme que d'alguna manera endevinés la paraula que t'estava rondant la ment.",
+            paragraph4: "Vaig escollir dissenyar l'aplicació al voltant d'una arquitectura client-servidor. La idea era presentar una interfície d'escriptura a l'usuari, que traslladés el seu input fins a un servidor postís. Allí, les dades introduïdes serien processades degudament pel meu flamant algoritme d'autor. Després de calcular totes les possibles combinacions de lletres i comparar-les amb les entrades d'un diccionari real, l'algoritme finalment retornaria la paraula que tingués més probabilitats de coincidir amb la que hi hagués al cap de l'usuari, tenint en compte la seqüència de botons que aquest havia pitjat.",
+            paragraph5: "Completar aquesta tasca aclaparadora en només una setmana em va xuclar gairebé totes les energies. Però en qualsevol cas no podia deixar l'aplicació tal com era: una trista caixa per a introduir text sense cap més element afegit. De manera que vaig inspirar-me en aquells telèfons d'anys enrere per polir-la amb un polsim de maquillatge CSS. He de dir que en general el procés és ineficient i de vegades els resultats que se n'obtenen són irregulars, però també que el programa acompleix amb allò que se li demana. I això fa que n'estigui molt orgullós 😎",
+            paragraph6: "Tecnologies, frameworks i llibreries rellevants aplicades:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+        esp: {
+            paragraph1: "Desarrollé esta pequeña aplicación a partir de una prueba a la cual me vi sometido durante un proceso de selección. El requisito principal del ejercicio que se me propuso me pedía ingeniar algún tipo de programa que fuera capaz de predecir texto.",
+            paragraph2: `Inmediatamente me acudieron a la cabeza los viejos teléfonos móviles estilo Nokia. ¿Te acuerdas de aquellos paneles de botones en los que había un montón de letras diferentes apelotonadas dentro de una sola tecla? Los modelos más chulos y más modernos venían con esta funcionalidad integrada que te sugería palabras potenciales a medida que tecleabas.`,
+            paragraph3: "Pues bueno... esta es la espeluznante historia sobre cómo de repente me vi solo ante el peligro, con la imponente tarea de crear un algoritmo que de alguna manera adivinara la palabra que te estaba rondando la mente.",
+            paragraph4: "Escogí diseñar la aplicación alrededor de una arquitectura cliente-servidor. La idea era presentarle una interfície de escritura al usuario, que trasladara su input hasta un servidor postizo. Allí, los datos introducidos serían procesados debidamente por mi flamante algoritmo de autor. Después de calcular todas las posibles combinaciones de letras y compararlas con las entradas de un diccionario real, el algoritmo finalmente retornaría la palabra que tuviera más probabilidades de coincidir con la que hubiera en la cabeza del usuario, teniendo en cuenta la secuencia de botones que este había tecleado.",
+            paragraph5: "Completar esta tarea apabullante en solo una semana me chupó casi todas las energías. Pero en cualquier caso no podía dejar la aplicación tal cual era: una triste caja para introducir texto sin ningún otro elemento añadido. De modo que me inspiré en aquellos teléfonos de años atrás para pulirla con un toque de maquillaje CSS. Debo decir que en general el proceso es ineficiente y a veces los resultados que devuelve son irregulares, pero también que el programa cumple con aquello que se le pide. Y eso hace que me sienta muy orgulloso 😎",
+            paragraph6: "Tecnologías, frameworks y librerías relevantes aplicadas:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+        eng: {
+            paragraph1: "I coded this little app as a challenge I was confronted with during a recruitment process. The main requirement of the assignment I was given demanded me to come up with some piece of programming capable of predicting text.",
+            paragraph2: `Immediately old Nokia-style cellphones sprang into my mind. Remember those keypads where a bunch of different letters were tightly packed into a single button? The coolest and latest models shipped off with this built-in function where potential words got suggested in real time as you typed.`,
+            paragraph3: "Well... so this is the scary story of how I was left alone with the towering task of crafting an algorithm that could somehow guess the word you were aiming for.",
+            paragraph4: "I chose to design the app around a client-server architecture. The idea was to present the user with some writing interface, then take their input to a mock server, where it would get duly processed through my shiny brand new signature algorithm. After working out all possible letter combinations and comparing them to actual dictionary entries, the algorithm would finally produce the most probable word in the user's mind, given the button sequence they had initially punched in.",
+            paragraph5: "Completing this daunting task in just 1 week drained most of my energies. But anyway, I couldn't just leave the app as it was: a horrible-looking bare input box without any added elements. So I draw inspiration from those phones of old to polish it with some retro-looking CSS make-up. I have to say that in general the end result is somewhat patchy and inefficient, but it still does the job. And that makes me so proud 😎",
+            paragraph6: "Relevant technologies, frameworks and libraries applied:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+    },
+    tryPrompt: {
+        cat: "Prova-la!",
+        esp: '¡Pruébala!',
+        eng: 'Give it a shot!'
+    },
+    codePrompt: {
+        cat: 'Tafaneja el codi font!',
+        esp: '¡Chafardea el código fuente!',
+        eng: 'See the source code!'
+    }
+}
+
+export const projectsMemory = {
+    projectName: {
+        cat: "KiwiPhone",
+        esp: "KiwiPhone",
+        eng: "Memory Pop"
+    },
+    projectScope: {
+        cat: 'El telèfon que et llegeix la ment!',
+        esp: '¡El teléfono que te lee la mente!',
+        eng: 'Here comes the phone that reads your mind!'
+    },
+    intro: {
+        cat: {
+            paragraph1: "Vaig desenvolupar aquesta petita aplicació a partir d'una prova a la qual em vaig veure sotmès durant un procés de selecció. El requeriment principal de l'exercici que se'm va proposar em demanava empescar-me algun tipus de programa que fos capaç de predir text.",
+            paragraph2: `Immediatament em van venir al cap els vells telèfons mòbils estil Nokia. Te'n recordes, d'aquells panells de botons en què un munt de lletres diferents quedaven apilotades dins d'una sola tecla? Els models més moderns i més capaços venien amb aquesta funcionalitat integrada que et suggeria paraules potencials a mesura que pitjaves.`,
+            paragraph3: "Doncs bé... aquesta és la paorosa història sobre com de cop i volta em vaig trobar tot sol, davant la tasca imponent de crear un algoritme que d'alguna manera endevinés la paraula que t'estava rondant la ment.",
+            paragraph4: "Vaig escollir dissenyar l'aplicació al voltant d'una arquitectura client-servidor. La idea era presentar una interfície d'escriptura a l'usuari, que traslladés el seu input fins a un servidor postís. Allí, les dades introduïdes serien processades degudament pel meu flamant algoritme d'autor. Després de calcular totes les possibles combinacions de lletres i comparar-les amb les entrades d'un diccionari real, l'algoritme finalment retornaria la paraula que tingués més probabilitats de coincidir amb la que hi hagués al cap de l'usuari, tenint en compte la seqüència de botons que aquest havia pitjat.",
+            paragraph5: "Completar aquesta tasca aclaparadora en només una setmana em va xuclar gairebé totes les energies. Però en qualsevol cas no podia deixar l'aplicació tal com era: una trista caixa per a introduir text sense cap més element afegit. De manera que vaig inspirar-me en aquells telèfons d'anys enrere per polir-la amb un polsim de maquillatge CSS. He de dir que en general el procés és ineficient i de vegades els resultats que se n'obtenen són irregulars, però també que el programa acompleix amb allò que se li demana. I això fa que n'estigui molt orgullós 😎",
+            paragraph6: "Tecnologies, frameworks i llibreries rellevants aplicades:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+        esp: {
+            paragraph1: "Desarrollé esta pequeña aplicación a partir de una prueba a la cual me vi sometido durante un proceso de selección. El requisito principal del ejercicio que se me propuso me pedía ingeniar algún tipo de programa que fuera capaz de predecir texto.",
+            paragraph2: `Inmediatamente me acudieron a la cabeza los viejos teléfonos móviles estilo Nokia. ¿Te acuerdas de aquellos paneles de botones en los que había un montón de letras diferentes apelotonadas dentro de una sola tecla? Los modelos más chulos y más modernos venían con esta funcionalidad integrada que te sugería palabras potenciales a medida que tecleabas.`,
+            paragraph3: "Pues bueno... esta es la espeluznante historia sobre cómo de repente me vi solo ante el peligro, con la imponente tarea de crear un algoritmo que de alguna manera adivinara la palabra que te estaba rondando la mente.",
+            paragraph4: "Escogí diseñar la aplicación alrededor de una arquitectura cliente-servidor. La idea era presentarle una interfície de escritura al usuario, que trasladara su input hasta un servidor postizo. Allí, los datos introducidos serían procesados debidamente por mi flamante algoritmo de autor. Después de calcular todas las posibles combinaciones de letras y compararlas con las entradas de un diccionario real, el algoritmo finalmente retornaría la palabra que tuviera más probabilidades de coincidir con la que hubiera en la cabeza del usuario, teniendo en cuenta la secuencia de botones que este había tecleado.",
+            paragraph5: "Completar esta tarea apabullante en solo una semana me chupó casi todas las energías. Pero en cualquier caso no podía dejar la aplicación tal cual era: una triste caja para introducir texto sin ningún otro elemento añadido. De modo que me inspiré en aquellos teléfonos de años atrás para pulirla con un toque de maquillaje CSS. Debo decir que en general el proceso es ineficiente y a veces los resultados que devuelve son irregulares, pero también que el programa cumple con aquello que se le pide. Y eso hace que me sienta muy orgulloso 😎",
+            paragraph6: "Tecnologías, frameworks y librerías relevantes aplicadas:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+        eng: {
+            paragraph1: "I coded this little app as a challenge I was confronted with during a recruitment process. The main requirement of the assignment I was given demanded me to come up with some piece of programming capable of predicting text.",
+            paragraph2: `Immediately old Nokia-style cellphones sprang into my mind. Remember those keypads where a bunch of different letters were tightly packed into a single button? The coolest and latest models shipped off with this built-in function where potential words got suggested in real time as you typed.`,
+            paragraph3: "Well... so this is the scary story of how I was left alone with the towering task of crafting an algorithm that could somehow guess the word you were aiming for.",
+            paragraph4: "I chose to design the app around a client-server architecture. The idea was to present the user with some writing interface, then take their input to a mock server, where it would get duly processed through my shiny brand new signature algorithm. After working out all possible letter combinations and comparing them to actual dictionary entries, the algorithm would finally produce the most probable word in the user's mind, given the button sequence they had initially punched in.",
+            paragraph5: "Completing this daunting task in just 1 week drained most of my energies. But anyway, I couldn't just leave the app as it was: a horrible-looking bare input box without any added elements. So I draw inspiration from those phones of old to polish it with some retro-looking CSS make-up. I have to say that in general the end result is somewhat patchy and inefficient, but it still does the job. And that makes me so proud 😎",
+            paragraph6: "Relevant technologies, frameworks and libraries applied:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "React",
+            technology3: "Node.js",
+            technology4: "Axios",
+            technology5: "Free Dictionary API",
+        },
+    },
+    tryPrompt: {
+        cat: "Prova-la!",
+        esp: '¡Pruébala!',
+        eng: 'Give it a shot!'
+    },
+    codePrompt: {
+        cat: 'Tafaneja el codi font!',
+        esp: '¡Chafardea el código fuente!',
+        eng: 'See the source code!'
+    }
+}
+
+export const projectsSpaceline = {
+    projectName: {
+        cat: "Comet Spaceways",
+        esp: "Comet Spaceways",
+        eng: "Comet Spaceways"
+    },
+    projectScope: {
+        cat: 'La línia de transport imaginària que et portarà espai enllà',
+        esp: 'La espaciolínea imaginaria que te llevará más allá del sistema solar',
+        eng: "A fantasy space carrier company that'll take you far and beyond"
+    },
+    intro: {
+        cat: {
+            paragraph1: "A més dels projectes que ja he acabat o dels que m'ocupen en el moment actual, m'agrada I like to think ahead and have some basics plotted about the projects I'm going to take on next.",
+            paragraph2: `Una cosa que m'agradaria fer, tan sols pel gust de l'aprenentatge i l'experimentació, és crear una rèplica d'una pàgina web d'aerolínia estàndard, sencera amb tots els seus procediments i seccions habituals, i fins i tot incloguent la possibilitat de reservar un vol (el qual evidentment mai s'enlairaria en el món real).`,
+            paragraph3: "Per fer-ho més divertit, he pensat d'atorgar al projecte una temàtica de tipus espacial, donant-li l'aspecte d'una hipotètica espailínia comercial del futur que oferís transport dins i fora del sistema solar.",
+            paragraph4: `Wrapping up the whole thing, I'd also like to code a native app minimized version of the thing only for mobile devices.`,
+            paragraph5: "Initially these are the tecnologies I would employ:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "SASS",
+            technology3: "React",
+            technology4: "Node.js",
+            technology5: "Mongo DB",
+            technology6: "React Native",
+            paragraph6: "What do you think? Will I be able to finish it before actual commercial spaceflight takes place?",
+            paragraph7: "Wish me luck!"
+        },
+        esp: {
+            paragraph1: "En el tiempo libre que conseguí rascar durante mi primer trabajo como programador, decidí ingeniarme esta pequeña aplicación como proyecto paralelo, de modo que no me quedara demasiado oxidado en relación a una serie de paradigmas y estructuras de programación que no estaba usando mucho en aquel momento.",
+            paragraph2: 'Simple como podía parecer en su propósito, la verdad es que encontré bastante entretenido el hecho de programar una calculadora desde cero. Incluso asumiendo que todo debía ser bastante claro y directo desde el principio (ya se sabe... 2 más 2 son 4, no?), tropecé con algunos retos no previstos a mitad del camino. Tratar con números es un asunto espinoso e inclinado a que se produzcan errores, especialmente por lo que respecta a decimales y números muy grandes, así que tuve que tener muy en cuenta este aspecto.',
+            paragraph3: "En el lado más glamuroso de las cosas, no quería traer al mundo todavía otra calculadora aburrida más, así que intenté darle un toque mágico y personal redondeándola con un apartado gráfico y sonoro de inspiración clásica ochentera. Se me ocurrió que tal vez tus matemáticas o tus cuentas del hogar podrían resultar más divertidas si podía lograr que el bendito artilugio se viera y se sintiera un poco como un videojuego primitivo.",
+            paragraph4: 'Así pues, ¿qué te parece...? ¿Vas a deshacerte de tu app de cálculo habitual y le vas a dar una oportunidad a esta joya?',
+            paragraph5: "Tecnologías y librerías relevantes aplicadas:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "big.js"
+        },
+        eng: {
+            paragraph1: "Further to the projects I've already finished or I'm currently working on, I like to think ahead and have some basics plotted about the projects I'm going to take on next.",
+            paragraph2: `One thing I'd like to do, just for the sake of experimentation and training purposes, is to create a replica of a standard airline webpage, complete with all its common processes and sections and including the possibility of actually booking a flight (which of course would never take off in the real world).`,
+            paragraph3: "To make it more fun, I've thought to give it a space related theme, styling it into some hypothetical commercial spaceline of the future offering travel between planets within and beyond the solar system.",
+            paragraph4: `Wrapping up the whole thing, I'd also like to code a native app minimized version of the thing only for mobile devices.`,
+            paragraph5: "Initially these are the tecnologies I would employ:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology2: "SASS",
+            technology3: "React",
+            technology4: "Node.js",
+            technology5: "Mongo DB",
+            technology6: "React Native",
+            paragraph6: "What do you think? Will I be able to finish it before actual commercial spaceflight takes place?",
+            paragraph7: "Wish me luck!"
+        },
+    },
+    tryPrompt: {
+        cat: "Prova-la!",
+        esp: '¡Pruébala!',
+        eng: 'Give it a shot!'
+    },
+    codePrompt: {
+        cat: 'Tafaneja el codi font!',
+        esp: '¡Chafardea el código fuente!',
+        eng: 'See the source code!'
+    }
+}
+
 export const locationBCN = {
     cityCountry: {
         cat: "Barcelona",

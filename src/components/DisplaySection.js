@@ -4,10 +4,12 @@ import { useLocation } from 'react-router-dom';
 import Overview from './subcomponents/display/Overview';
 import OverviewPast from "./subcomponents/display/OverviewPast";
 import OverviewFuture from './subcomponents/display/OverviewFuture';
+
 import EducationUB from './subcomponents/display/EducationUB';
 import EducationUOC from './subcomponents/display/EducationUOC';
 import EducationSalle from './subcomponents/display/EducationSalle';
 import EducationIronhack from './subcomponents/display/EducationIronhack';
+
 import WorkDStore from './subcomponents/display/WorkDStore';
 import WorkBeach from './subcomponents/display/WorkBeach';
 import WorkKitchen from './subcomponents/display/WorkKitchen';
@@ -17,9 +19,14 @@ import WorkCallcenter from './subcomponents/display/WorkCallcenter';
 import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import WorkAtoom from './subcomponents/display/WorkAtoom';
+
 import ProjectsDreambig from './subcomponents/display/ProjectsDreambig';
 import ProjectsPanicdemic from './subcomponents/display/ProjectsPanicdemic';
+import ProjectsPhone from './subcomponents/display/ProjectsPhone';
 import ProjectsCalculator from './subcomponents/display/ProjectsCalculator';
+import ProjectsMemory from './subcomponents/display/ProjectsMemory';
+import ProjectsSpaceline from './subcomponents/display/ProjectsSpaceline';
+
 import LocationBarcelona from './subcomponents/display/LocationBarcelona';
 import LocationManchester from './subcomponents/display/LocationManchester';
 import LocationDubai from './subcomponents/display/LocationDubai';
@@ -177,7 +184,7 @@ function DisplaySection(props) {
                                     props.handleActiveInfoItem("covid");
                                     break;
                                 default:
-                                    props.handleActiveInfoItem("");
+                                    props.handleActiveInfoItem("spaceline");
                             }
                         }}> 
                     </i>
@@ -221,7 +228,10 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "covid" && <ProjectsPanicdemic handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "phone" && <ProjectsPhone personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "calculator" && <ProjectsCalculator personalizeParagraph={props.personalizeParagraph} />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "memory" && <ProjectsMemory />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "spaceline" && <ProjectsSpaceline personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "barcelona" && <LocationBarcelona />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "manchester" && <LocationManchester />}
                     {props.activeSubsection === "location" && props.activeInfoItem === "dubai" && <LocationDubai personalizeParagraph={props.personalizeParagraph} />}

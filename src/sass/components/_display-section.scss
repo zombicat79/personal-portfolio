@@ -204,10 +204,24 @@
                 background-position-y: 0;
             }
 
+            &--projects--phone {
+                background-image: url("./../../images/kiwi-phone.jpg");
+                background-position-x: 0;
+            }
+
             &--projects--calculator {
                 background-color: black;
                 background-image: url("./../../images/calculator.jpg");
                 background-position-x: -5rem;
+            }
+
+            &--projects--memory {
+                background-image: url("./../../images/dragonball.jpg");
+                background-position-x: -34rem;
+            }
+
+            &--projects--spaceline {
+                background-image: url("./../../images/spaceline.jpg");
             }
 
             &--location--barcelona {
@@ -361,7 +375,7 @@
                         text-decoration: none;
                         display: block;
                         
-                        & img {
+                        & img:not(.square) {
                             border-radius: 20px;
                         }
 

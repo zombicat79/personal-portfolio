@@ -17,6 +17,7 @@ import invaders from './../../src/images/icos/infoItems/invaders.png';
 import nokiaPhone from './../../src/images/icos/infoItems/nokia.png';
 import calculator from './../../src/images/icos/infoItems/calculator.png';
 import memoryGame from './../../src/images/icos/infoItems/memory.png';
+import galacticRocket from './../../src/images/icos/infoItems/rocket.png';
 
 import worldImg from "./../../src/images/icos/infoItems/world.png";
 import saturnImg from "./../../src/images/icos/infoItems/saturn.png";
@@ -170,15 +171,23 @@ const infoItems = {
             imgType: "element",
             src: calculator,
             size: "big"
-        }
-        /* {
+        },
+        {
             id: "ppr4",
             moment: "present",
             name: "memory",
             imgType: "element",
             src: memoryGame,
             size: "big"
-        } */
+        },
+        {
+            id: "pfu1",
+            moment: "future",
+            name: "spaceline",
+            imgType: "element",
+            src: galacticRocket,
+            size: "big"
+        }
     ],
     location: [
         {
