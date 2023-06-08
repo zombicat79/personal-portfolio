@@ -52,7 +52,7 @@ function RangeSlider(props) {
                 break;
             case "projects":
                 if (value === "1") {
-                    props.handleActiveInfoItem("dreambig");
+                    props.handleActiveInfoItem("appventure");
                 } else if (value === "2") {
                     props.handleActiveInfoItem("covid");
                 } else {

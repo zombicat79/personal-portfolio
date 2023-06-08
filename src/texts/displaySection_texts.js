@@ -757,6 +757,71 @@ export const workATOOM = {
     }
 }
 
+export const projectsAppventure = {
+    projectName: {
+        cat: "The Secrets of Barcino",
+        esp: "The Secrets of Barcino",
+        eng: "The Secrets of Barcino"
+    },
+    projectScope: {
+        cat: "Un web gratuït per a una ONG meravellosa",
+        esp: "Un web gratuito para una ONG maravillosa",
+        eng: "A free web for an amazing NGO"
+    },
+    intro: {
+        cat: {
+            paragraph1: "Ara podrà semblar estrany (d'acord, també aleshores), però aquest va ser el primer grau universitari que vaig emprendre després d'acabar l'institut.",
+            paragraph2: "He de confessar que no tenia gaire idea de què fer en aquell moment, així que vaig triar la primera cosa que em va sonar interessant i amb flaire d'aventura (una altra opció era arqueologia), sense donar la pensada més mínima al seu futur potencial en el mercat laboral. Talment com un 'Magnum, P.I.' de pa sucat amb oli, vaig pensar que resoldre crims en camisa hawaiana tot conduint un Ferrari podria ser un estil de vida bastant guai.",
+            paragraph3: "Si us plau, no em jutgis amb massa duresa. Tenia menys de 20 anys.",
+            paragraph4: "En qualsevol cas, després de 4 anys de picar pedra a la universitat, vaig obtenir el meu grau: 'Criminologia i Política Criminal' 🎉",
+            paragraph5: "Per descomptat, mai vaig aconseguir una feina en el sector (les opcions eren bastant horribles i molt allunyades del glamour que es pintava a les pel·lícules), però les moltes coses interessants que vaig aprendre durant aquell temps em van fer créixer com a persona i entendre millor com funcionen la societat i el seu 'sistema' que tot ho controla.",
+            paragraph6: "Entre d'altres, vaig tocar les disciplines següents:",
+            discipline1: "Dret",
+            discipline2: "Ciència Política",
+            discipline3: "Sociologia",
+            discipline4: "Antropologia",
+            discipline5: "Psicologia",
+            discipline6: "Medicina Forense",
+            discipline7: "Estadística"
+        },
+        esp: {
+            paragraph1: "Ahora puede que parezca raro (vale, también en aquel entonces), pero este fue el primer grado universitario que emprendí después de terminar el instituto.",
+            paragraph2: "Tengo que confesar que no tenía mucha idea sobre qué hacer en aquel momento, así que escogí la primera cosa que me sonó interesante y con aires de aventura (otra opción era arqueología), sin pensar lo más mínimo en su potencial futuro en el mercado laboral. Como si fuera un 'Magnum, P.I.' de pacotilla, pensé que resolver crímenes en camisa hawaiana yendo de un lado a otro en un Ferrari podría ser un estilo de vida bastante guay.",
+            paragraph3: "Por favor, no me juzgues con demasiada dureza. Tenía menos de 20 años.",
+            paragraph4: "En cualquier caso, después de 4 años picando piedra en la universidad, obtuve mi grado: 'Criminología y Política Criminal' 🎉",
+            paragraph5: "Por supuesto, jamás conseguí un trabajo en el sector (las opciones eran bastante horribles y muy alejadas del glamour que se pintaba en las películas), pero las muchas cosas interesantes que aprendí durante aquel tiempo me hicieron crecer como persona y entender mejor cómo funcionan la sociedad y su 'sistema' que todo lo controla.",
+            paragraph6: "Entre algunas otras, toqué las disciplinas siguientes:",
+            discipline1: "Derecho",
+            discipline2: "Ciencia Política",
+            discipline3: "Sociología",
+            discipline4: "Antropología",
+            discipline5: "Psicología",
+            discipline6: "Medicina Forense",
+            discipline7: "Estadística"
+        },
+        eng: {
+            paragraph1: "It may now seem weird (ok, also back then), but this was the first university degree I took after finishing school.",
+            paragraph2: "I must confess I didn't have much idea as to what to do at the moment, so I settled with the first thing that sounded appealing and adventurous to me (another option was archeology), without any regard whatsoever to future employability. Just as some copycat 'Magnum, P.I.', I thought solving crimes while wearing Hawaiian shirts and driving around in a Ferrari could be a cool way of life.",
+            paragraph3: "Please, don't judge me too hard. I was under 20.",
+            paragraph4: "Anyway, after 4 years of hard work at the university I got my degree: 'Criminology & Crime Politics' 🎉",
+            paragraph5: "Of course, I never got a job in the field (options were dire and far from the glamour depicted in movies), but the many interesting things I learned during that time made me grow as a person and better understand how society and its all-encompassing 'system' work.",
+            paragraph6: "Among others, I was exposed to the following disciplines:",
+            discipline1: "Law",
+            discipline2: "Politics",
+            discipline3: "Sociology",
+            discipline4: "Anthropology",
+            discipline5: "Psychology",
+            discipline6: "Forensics",
+            discipline7: "Statistics"
+        }
+    },
+    visitPrompt: {
+        cat: "Prova'l!",
+        esp: '¡Pruébalo!',
+        eng: 'Visit website!'
+    }
+}
+
 export const projectsBig = {
     projectName: {
         cat: "Associació Dream Big",
@@ -814,6 +879,11 @@ export const projectsBig = {
             discipline6: "Forensics",
             discipline7: "Statistics"
         }
+    },
+    visitPrompt: {
+        cat: "Prova'l!",
+        esp: '¡Pruébalo!',
+        eng: 'Visit website!'
     }
 }
 
@@ -999,14 +1069,14 @@ export const projectsPhone = {
 
 export const projectsMemory = {
     projectName: {
-        cat: "KiwiPhone",
-        esp: "KiwiPhone",
+        cat: "Memory Pop",
+        esp: "Memory Pop",
         eng: "Memory Pop"
     },
     projectScope: {
         cat: 'El telèfon que et llegeix la ment!',
         esp: '¡El teléfono que te lee la mente!',
-        eng: 'Here comes the phone that reads your mind!'
+        eng: 'Have some fun and test your capacity to remind random stuff'
     },
     intro: {
         cat: {
@@ -1036,17 +1106,13 @@ export const projectsMemory = {
             technology5: "Free Dictionary API",
         },
         eng: {
-            paragraph1: "I coded this little app as a challenge I was confronted with during a recruitment process. The main requirement of the assignment I was given demanded me to come up with some piece of programming capable of predicting text.",
-            paragraph2: `Immediately old Nokia-style cellphones sprang into my mind. Remember those keypads where a bunch of different letters were tightly packed into a single button? The coolest and latest models shipped off with this built-in function where potential words got suggested in real time as you typed.`,
-            paragraph3: "Well... so this is the scary story of how I was left alone with the towering task of crafting an algorithm that could somehow guess the word you were aiming for.",
-            paragraph4: "I chose to design the app around a client-server architecture. The idea was to present the user with some writing interface, then take their input to a mock server, where it would get duly processed through my shiny brand new signature algorithm. After working out all possible letter combinations and comparing them to actual dictionary entries, the algorithm would finally produce the most probable word in the user's mind, given the button sequence they had initially punched in.",
-            paragraph5: "Completing this daunting task in just 1 week drained most of my energies. But anyway, I couldn't just leave the app as it was: a horrible-looking bare input box without any added elements. So I draw inspiration from those phones of old to polish it with some retro-looking CSS make-up. I have to say that in general the end result is somewhat patchy and inefficient, but it still does the job. And that makes me so proud 😎",
-            paragraph6: "Relevant technologies, frameworks and libraries applied:",
+            paragraph1: `This is yet another little project I'm putting together in my spare time. At the end of the day, it is nothing else than my personal version of the "Memory" classic boardgame, where players get challenged to match pairs of flipped cards by remembering their positions and contents.`,
+            paragraph2: `There are two special things about this one.`,
+            paragraph3: "First off: being its base concept as simple as it is, I'm focusing very much in bringing it alive. I'm attempting to do that by trying to convey some cool vibes into it: sound and graphics more akin to those of an arcade game; popular culture at the center of everything.",
+            paragraph4: "Second one: I've been putting quite a bit of thought into making the whole thing scalable. That means, in practice, making the code flexible to enable the possibility of adding more of the 4 card decks and themes that are already in place.",
+            paragraph5: "You will find no fancy coding in here (no complicated frameworks, no third-party libraries). This is just another exercise to put my bare Vanilla JS skills to the test. Lots of class construction, method usage and DOM manipulation.",
+            paragraph6: "Relevant technologies applied:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "React",
-            technology3: "Node.js",
-            technology4: "Axios",
-            technology5: "Free Dictionary API",
         },
     },
     tryPrompt: {
@@ -1068,40 +1134,46 @@ export const projectsSpaceline = {
         eng: "Comet Spaceways"
     },
     projectScope: {
-        cat: 'La línia de transport imaginària que et portarà espai enllà',
-        esp: 'La espaciolínea imaginaria que te llevará más allá del sistema solar',
-        eng: "A fantasy space carrier company that'll take you far and beyond"
+        cat: `La línia de transport imaginària que et portarà fins les estrelles`,
+        esp: 'La espaciolínea imaginaria que te llevará hasta las estrellas',
+        eng: "A fantasy space carrier company that will take you among the stars"
     },
     intro: {
         cat: {
-            paragraph1: "A més dels projectes que ja he acabat o dels que m'ocupen en el moment actual, m'agrada I like to think ahead and have some basics plotted about the projects I'm going to take on next.",
-            paragraph2: `Una cosa que m'agradaria fer, tan sols pel gust de l'aprenentatge i l'experimentació, és crear una rèplica d'una pàgina web d'aerolínia estàndard, sencera amb tots els seus procediments i seccions habituals, i fins i tot incloguent la possibilitat de reservar un vol (el qual evidentment mai s'enlairaria en el món real).`,
-            paragraph3: "Per fer-ho més divertit, he pensat d'atorgar al projecte una temàtica de tipus espacial, donant-li l'aspecte d'una hipotètica espailínia comercial del futur que oferís transport dins i fora del sistema solar.",
-            paragraph4: `Wrapping up the whole thing, I'd also like to code a native app minimized version of the thing only for mobile devices.`,
-            paragraph5: "Initially these are the tecnologies I would employ:",
+            paragraph1: "A més dels projectes que ja he acabat o dels que m'ocupen en el moment actual, m'agrada pensar unes passes per endavant i tenir esbossats els quatre fonaments bàsics dels projectes que tinc la intenció d'emprendre en el futur.",
+            paragraph2: `Una cosa que m'agradaria fer, tan sols pel gust de l'aprenentatge i l'experimentació, és crear una rèplica d'una pàgina web d'aerolínia estàndard, tota sencera amb els seus procediments i seccions habituals, i que fins i tot contemplés la possibilitat de reservar un vol (el qual evidentment mai s'enlairaria en la vida real).`,
+            paragraph3: "Amb l'objectiu de fer-ho més divertit, he pensat en disfressar el projecte amb una temàtica de tipus espacial, atorgant-li l'aspecte d'una hipotètica línia de transport espacial del futur, que oferís mobilitat dins i fora del sistema solar.",
+            paragraph4: `Per tal d'arrodonir-ho, també m'agradaria complementar el web amb una aplicació nadiua per a dispositius mòbils, que contingués una versió minimitzada del motor de recerca i reserva de vols espacials.`,
+            paragraph5: "En principi aquestes són les tecnologies que faria servir:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
             technology2: "SASS",
             technology3: "React",
             technology4: "Node.js",
             technology5: "Mongo DB",
             technology6: "React Native",
-            paragraph6: "What do you think? Will I be able to finish it before actual commercial spaceflight takes place?",
-            paragraph7: "Wish me luck!"
+            paragraph6: "Què en penses? Seré capaç d'acabar abans que els vols espacials comercials de veritat siguin una realitat?",
+            paragraph7: "Desitja'm sort! 🌈"
         },
         esp: {
-            paragraph1: "En el tiempo libre que conseguí rascar durante mi primer trabajo como programador, decidí ingeniarme esta pequeña aplicación como proyecto paralelo, de modo que no me quedara demasiado oxidado en relación a una serie de paradigmas y estructuras de programación que no estaba usando mucho en aquel momento.",
-            paragraph2: 'Simple como podía parecer en su propósito, la verdad es que encontré bastante entretenido el hecho de programar una calculadora desde cero. Incluso asumiendo que todo debía ser bastante claro y directo desde el principio (ya se sabe... 2 más 2 son 4, no?), tropecé con algunos retos no previstos a mitad del camino. Tratar con números es un asunto espinoso e inclinado a que se produzcan errores, especialmente por lo que respecta a decimales y números muy grandes, así que tuve que tener muy en cuenta este aspecto.',
-            paragraph3: "En el lado más glamuroso de las cosas, no quería traer al mundo todavía otra calculadora aburrida más, así que intenté darle un toque mágico y personal redondeándola con un apartado gráfico y sonoro de inspiración clásica ochentera. Se me ocurrió que tal vez tus matemáticas o tus cuentas del hogar podrían resultar más divertidas si podía lograr que el bendito artilugio se viera y se sintiera un poco como un videojuego primitivo.",
-            paragraph4: 'Así pues, ¿qué te parece...? ¿Vas a deshacerte de tu app de cálculo habitual y le vas a dar una oportunidad a esta joya?',
-            paragraph5: "Tecnologías y librerías relevantes aplicadas:",
+            paragraph1: "Además de los proyectos que ya he terminado o de los que me ocupan en el momento actual, me gusta pensar unos pasos por delante y tener esbozados los cuatro fundamentos básicos de los proyectos que tengo la intención de emprender en el futuro.",
+            paragraph2: `Una cosa que me gustaría hacer, únicamente por el gusto del aprendizaje y la experimentación, es crear una réplica de una página web de aerolínea estándar, completa con todos sus procedimientos y secciones habituales, y que incluso contemplara la posibilidad de reservar un vuelo (que por supuesto jamás despegaría en la vida real).`,
+            paragraph3: "Con el fin de hacerlo más divertido, he pensado en disfrazar el proyecto con una temática de tipo espacial, otorgándole el aspecto de una hipotética línea de transporte espacial del futuro, que ofreciera movilidad dentro y fuera del sistema solar.",
+            paragraph4: `Para redondear la jugada, también me gustaría complementar el web con una aplicación nativa para dispositivos móviles, que incluyera una versión minimizada del motor de búsqueda y reserva de vuelos espaciales.`,
+            paragraph5: "En principio estas son las tecnologías que emplearía:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "big.js"
+            technology2: "SASS",
+            technology3: "React",
+            technology4: "Node.js",
+            technology5: "Mongo DB",
+            technology6: "React Native",
+            paragraph6: "Qué te parece? Seré capaz de terminar antes de que los vuelos espaciales comerciales de verdad sean una realidad?",
+            paragraph7: "¡Deséame suerte! 🌈"
         },
         eng: {
             paragraph1: "Further to the projects I've already finished or I'm currently working on, I like to think ahead and have some basics plotted about the projects I'm going to take on next.",
-            paragraph2: `One thing I'd like to do, just for the sake of experimentation and training purposes, is to create a replica of a standard airline webpage, complete with all its common processes and sections and including the possibility of actually booking a flight (which of course would never take off in the real world).`,
-            paragraph3: "To make it more fun, I've thought to give it a space related theme, styling it into some hypothetical commercial spaceline of the future offering travel between planets within and beyond the solar system.",
-            paragraph4: `Wrapping up the whole thing, I'd also like to code a native app minimized version of the thing only for mobile devices.`,
+            paragraph2: `One thing I'd like to do, just for the sake of experimentation and training, is to create a replica of a standard airline webpage, complete with all its common processes and sections and including the possibility of actually booking a flight (which of course would never take off in the real world).`,
+            paragraph3: "To make it more fun, the idea is to disguise the project in a space related theme, styling it into some hypothetical commercial spaceline of the future offering travel between planets within and beyond the solar system.",
+            paragraph4: `Wrapping up the whole thing, I'd also like to complement the project with a native app for mobile devices, holding a minimized version of the spaceflight search and booking engine.`,
             paragraph5: "Initially these are the tecnologies I would employ:",
             technology1: "HTML / CSS (Flex & Grid) / JavaScript",
             technology2: "SASS",
@@ -1109,19 +1181,9 @@ export const projectsSpaceline = {
             technology4: "Node.js",
             technology5: "Mongo DB",
             technology6: "React Native",
-            paragraph6: "What do you think? Will I be able to finish it before actual commercial spaceflight takes place?",
-            paragraph7: "Wish me luck!"
+            paragraph6: "So what do you think? Will I be able to finish it before actual commercial spaceflight takes place?",
+            paragraph7: "Wish me luck! 🌈"
         },
-    },
-    tryPrompt: {
-        cat: "Prova-la!",
-        esp: '¡Pruébala!',
-        eng: 'Give it a shot!'
-    },
-    codePrompt: {
-        cat: 'Tafaneja el codi font!',
-        esp: '¡Chafardea el código fuente!',
-        eng: 'See the source code!'
     }
 }
 

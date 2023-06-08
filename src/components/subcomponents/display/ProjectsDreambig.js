@@ -47,20 +47,24 @@ function ProjectsDreambig(props) {
             </ul>
             <br></br>
             <p>{projectsBig.intro[language].paragraph6}</p>
+            <br></br>
             <div className="display-section__logoBox">
                 {language === "eng" &&
-                    <a href="https://www.wedreambig.org/en/" target="_blank" rel="noreferrer">
+                    <a className="display-section__snapshot" href="https://www.wedreambig.org/en/" target="_blank" rel="noreferrer">
                         <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
                     </a>
                 }
                 {language === "esp" &&
-                    <a href="https://www.wedreambig.org/es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Asociación Dream Big" />
+                    <a className="display-section__snapshot" href="https://www.wedreambig.org/es/" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
                     </a>
                 }
                 {language === "cat" &&
-                    <a href="https://www.wedreambig.org/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Associació Dream Big" />
+                    <a className="display-section__snapshot" href="https://www.wedreambig.org/" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
                     </a>
                 }
             </div>

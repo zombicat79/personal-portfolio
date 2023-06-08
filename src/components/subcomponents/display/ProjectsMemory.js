@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { LangContext } from "../../../App";
 import { projectsMemory } from "../../../texts/displaySection_texts";
 
-import calculatorButtons from './../../../images/calc-buttons.png';
 import githubLogo from './../../../images/logos/github-logo-black.png';
 
 function ProjectsMemory(props) {
@@ -32,15 +31,14 @@ function ProjectsMemory(props) {
             <br></br>
             <p>{projectsMemory.intro[language].paragraph3}</p>
             <br></br>
-            <p>VOID</p>
+            <p>{projectsMemory.intro[language].paragraph4}</p>
             <br></br>
             <p>{projectsMemory.intro[language].paragraph5}</p>
             <br></br>
+            <p>{projectsMemory.intro[language].paragraph6}</p>
+            <br></br>
             <ul className="display-section__bulletList">
                 <li>{projectsMemory.intro[language].technology1}</li>
-                <li>
-                    <a className="display-section__link" href="https://www.npmjs.com/package/big.js" target="_blank" rel="noreferrer">{projectsMemory.intro[language].technology2}</a>
-                </li>
             </ul>
             <br></br>
             { /* <div className="display-section__logoBox">
@@ -50,7 +48,7 @@ function ProjectsMemory(props) {
                 </a>
             </div> */ }
             <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://github.com/zombicat79/calculotron" target="_blank" rel="noreferrer">
+                <a className="display-section__snapshot" href="https://github.com/zombicat79/pairs-game" target="_blank" rel="noreferrer">
                     <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
                     <p className="try-prompt">{projectsMemory.codePrompt[language]}</p>
                 </a>

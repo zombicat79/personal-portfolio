@@ -12,6 +12,7 @@ import callcenterImg from './../../src/images/icos/infoItems/call-center.png';
 import hotelImg from './../../src/images/icos/infoItems/hotel.png';
 import controlImg from './../../src/images/icos/infoItems/control.png';
 import atoomLogo from './../../src/images/logos/atoom.png';
+import appventureLogo from './../../src/images/icos/infoItems/appventure.png';
 import dreambigLogo from './../../src/images/icos/infoItems/dreambig-white.png';
 import invaders from './../../src/images/icos/infoItems/invaders.png';
 import nokiaPhone from './../../src/images/icos/infoItems/nokia.png';
@@ -140,6 +141,14 @@ const infoItems = {
         }
     ],
     projects: [
+        {
+            id: "ppa1",
+            moment: "past",
+            name: "appventure",
+            imgType: "element",
+            src: appventureLogo,
+            size: "big"
+        },
         {
             id: "ppa2",
             moment: "past",

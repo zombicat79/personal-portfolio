@@ -9,7 +9,7 @@ function ProjectsSpaceline(props) {
     let personalizedP6 = "";
     switch(language) {
         case "cat":
-            personalizedP6 = props.personalizeParagraph("name", "sembla", projectsSpaceline.intro[language].paragraph6);
+            personalizedP6 = props.personalizeParagraph("name", "penses", projectsSpaceline.intro[language].paragraph6);
             break;
         case "esp":
             personalizedP6 = props.personalizeParagraph("name", "parece", projectsSpaceline.intro[language].paragraph6);

@@ -20,6 +20,7 @@ import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import WorkAtoom from './subcomponents/display/WorkAtoom';
 
+import ProjectsAppventure from './subcomponents/display/ProjectsAppventure';
 import ProjectsDreambig from './subcomponents/display/ProjectsDreambig';
 import ProjectsPanicdemic from './subcomponents/display/ProjectsPanicdemic';
 import ProjectsPhone from './subcomponents/display/ProjectsPhone';
@@ -178,7 +179,7 @@ function DisplaySection(props) {
                             props.handleActiveSubsection("projects")
                             switch(props.moment) {
                                 case "past":
-                                    props.handleActiveInfoItem("dreambig");
+                                    props.handleActiveInfoItem("appventure");
                                     break;
                                 case "present":
                                     props.handleActiveInfoItem("covid");
@@ -226,6 +227,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
+                    {props.activeSubsection === "projects" && props.activeInfoItem === "appventure" && <ProjectsAppventure />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "covid" && <ProjectsPanicdemic handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "phone" && <ProjectsPhone personalizeParagraph={props.personalizeParagraph} />}
