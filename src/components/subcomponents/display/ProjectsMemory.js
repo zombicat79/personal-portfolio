@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { LangContext } from "../../../App";
 import { projectsMemory } from "../../../texts/displaySection_texts";
 
+import progressImg from './../../../images/icos/work-progress.png';
 import githubLogo from './../../../images/logos/github-logo-black.png';
 
 function ProjectsMemory(props) {
@@ -24,10 +25,14 @@ function ProjectsMemory(props) {
         <div className="display-section__textBox">
             <p className="display-section__title">{projectsMemory.projectName[language]}</p>
             <p className="display-section__subtitle">{projectsMemory.projectScope[language]}</p>
+            <div className="display-section__logoBox">
+                <img className="display-section__logoItem display-section__logoItem--big" src={progressImg} alt="Work in progress" />
+            </div>
+            <p className="alert">{projectsMemory.progressAlert[language]}</p>
             <br></br>
             <p>{projectsMemory.intro[language].paragraph1}</p>
             <br></br>
-            <p>{projectsMemory.intro[language].paragraph2}</p>
+            <p><strong>{projectsMemory.intro[language].paragraph2}</strong></p>
             <br></br>
             <p>{projectsMemory.intro[language].paragraph3}</p>
             <br></br>

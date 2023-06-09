@@ -411,6 +411,18 @@
                         }
                     }
                 }
+
+                .alert {
+                    font-size: 2rem;
+                    text-align: center;
+                    color: darkred;
+                    text-transform: uppercase;
+                    animation-name: prompt-blip;
+                    animation-duration: 1.5s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    margin-bottom: 1.5rem;
+                }
             }
         }
     }

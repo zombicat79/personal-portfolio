@@ -1074,45 +1074,42 @@ export const projectsMemory = {
         eng: "Memory Pop"
     },
     projectScope: {
-        cat: 'El telèfon que et llegeix la ment!',
-        esp: '¡El teléfono que te lee la mente!',
+        cat: `Passa-t'ho bé mentre poses a prova la teva capacitat de retenció`,
+        esp: 'Diviértete mientras pones a prueba tu capacidad de retención',
         eng: 'Have some fun and test your capacity to remind random stuff'
+    },
+    progressAlert: {
+        cat: 'En desenvolupament',
+        esp: 'En desarrollo',
+        eng: 'Under development'
     },
     intro: {
         cat: {
-            paragraph1: "Vaig desenvolupar aquesta petita aplicació a partir d'una prova a la qual em vaig veure sotmès durant un procés de selecció. El requeriment principal de l'exercici que se'm va proposar em demanava empescar-me algun tipus de programa que fos capaç de predir text.",
-            paragraph2: `Immediatament em van venir al cap els vells telèfons mòbils estil Nokia. Te'n recordes, d'aquells panells de botons en què un munt de lletres diferents quedaven apilotades dins d'una sola tecla? Els models més moderns i més capaços venien amb aquesta funcionalitat integrada que et suggeria paraules potencials a mesura que pitjaves.`,
-            paragraph3: "Doncs bé... aquesta és la paorosa història sobre com de cop i volta em vaig trobar tot sol, davant la tasca imponent de crear un algoritme que d'alguna manera endevinés la paraula que t'estava rondant la ment.",
-            paragraph4: "Vaig escollir dissenyar l'aplicació al voltant d'una arquitectura client-servidor. La idea era presentar una interfície d'escriptura a l'usuari, que traslladés el seu input fins a un servidor postís. Allí, les dades introduïdes serien processades degudament pel meu flamant algoritme d'autor. Després de calcular totes les possibles combinacions de lletres i comparar-les amb les entrades d'un diccionari real, l'algoritme finalment retornaria la paraula que tingués més probabilitats de coincidir amb la que hi hagués al cap de l'usuari, tenint en compte la seqüència de botons que aquest havia pitjat.",
-            paragraph5: "Completar aquesta tasca aclaparadora en només una setmana em va xuclar gairebé totes les energies. Però en qualsevol cas no podia deixar l'aplicació tal com era: una trista caixa per a introduir text sense cap més element afegit. De manera que vaig inspirar-me en aquells telèfons d'anys enrere per polir-la amb un polsim de maquillatge CSS. He de dir que en general el procés és ineficient i de vegades els resultats que se n'obtenen són irregulars, però també que el programa acompleix amb allò que se li demana. I això fa que n'estigui molt orgullós 😎",
-            paragraph6: "Tecnologies, frameworks i llibreries rellevants aplicades:",
-            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "React",
-            technology3: "Node.js",
-            technology4: "Axios",
-            technology5: "Free Dictionary API",
+            paragraph1: `Aquest és un altre petit projecte en el qual estic treballant durant les meves estones lliures. Al capdavall no és altra cosa que la meva versió personal del joc de taula clàssic "Memory", en què els jugadors es veuen reptats a emparellar cartes o fitxes ocultes a base de recordar els seus continguts i posicions.`,
+            paragraph2: `Hi ha dues coses especials sobre aquest desenvolupament.`,
+            paragraph3: "En primer lloc: essent el seu concepte base tan simple com és, m'estic centrant molt en insuflar-li vida. Per tal d'aconseguir-ho, el que estic intentant fer és transmetre-hi molt de dinamisme i un aire desenfadat i proper: gràfics i so més semblants als d'un joc tipus arcade; la cultura popular al centre de tot.",
+            paragraph4: "Segona cosa: he estat donant bastantes voltes a la necessitat de fer-lo ampliable. Això vol dir, a la pràctica, escriure codi prou flexible per possibilitar la suma de noves temàtiques i baralles de cartes a les 4 inicials que ja hi són.",
+            paragraph5: "No hi trobaràs cap mena de programació sofisticada, en aquest cas (ni frameworks complicats ni llibreries de tercers). Aquest és simplement un altre exercici per mantenir i posar a prova la meva habilitat amb el JavaScript més elemental (Vanilla JS). Un munt de construcció de classes, ús de mètodes i manipulació del DOM.",
+            paragraph6: "Tecnologies rellevants aplicades:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript"
         },
         esp: {
-            paragraph1: "Desarrollé esta pequeña aplicación a partir de una prueba a la cual me vi sometido durante un proceso de selección. El requisito principal del ejercicio que se me propuso me pedía ingeniar algún tipo de programa que fuera capaz de predecir texto.",
-            paragraph2: `Inmediatamente me acudieron a la cabeza los viejos teléfonos móviles estilo Nokia. ¿Te acuerdas de aquellos paneles de botones en los que había un montón de letras diferentes apelotonadas dentro de una sola tecla? Los modelos más chulos y más modernos venían con esta funcionalidad integrada que te sugería palabras potenciales a medida que tecleabas.`,
-            paragraph3: "Pues bueno... esta es la espeluznante historia sobre cómo de repente me vi solo ante el peligro, con la imponente tarea de crear un algoritmo que de alguna manera adivinara la palabra que te estaba rondando la mente.",
-            paragraph4: "Escogí diseñar la aplicación alrededor de una arquitectura cliente-servidor. La idea era presentarle una interfície de escritura al usuario, que trasladara su input hasta un servidor postizo. Allí, los datos introducidos serían procesados debidamente por mi flamante algoritmo de autor. Después de calcular todas las posibles combinaciones de letras y compararlas con las entradas de un diccionario real, el algoritmo finalmente retornaría la palabra que tuviera más probabilidades de coincidir con la que hubiera en la cabeza del usuario, teniendo en cuenta la secuencia de botones que este había tecleado.",
-            paragraph5: "Completar esta tarea apabullante en solo una semana me chupó casi todas las energías. Pero en cualquier caso no podía dejar la aplicación tal cual era: una triste caja para introducir texto sin ningún otro elemento añadido. De modo que me inspiré en aquellos teléfonos de años atrás para pulirla con un toque de maquillaje CSS. Debo decir que en general el proceso es ineficiente y a veces los resultados que devuelve son irregulares, pero también que el programa cumple con aquello que se le pide. Y eso hace que me sienta muy orgulloso 😎",
-            paragraph6: "Tecnologías, frameworks y librerías relevantes aplicadas:",
-            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
-            technology2: "React",
-            technology3: "Node.js",
-            technology4: "Axios",
-            technology5: "Free Dictionary API",
+            paragraph1: `Este es otro pequeño proyecto en el cual estoy trabajando durante mis ratos libres. Al fin y al cabo no es otra cosa que mi versión personal del clásico juego de mesa "Memory", en el que los jugadores se ven desafiados a emparejar cartas o fichas ocultas a base de recordar sus contenidos y posiciones.`,
+            paragraph2: `Hay dos cosas especiales en relación a este desarrollo.`,
+            paragraph3: "En primer lugar: siendo su concepto base tan simple como es, me estoy centrando mucho en insuflarle vida. Para lograrlo, lo que estoy intentando hacer es transmitirle mucho dinamismo y un aire desenfadado y cercano: gráficos y sonido más parecidos a los de un juego tipo arcade; la cultura popular en el centro de todo.",
+            paragraph4: "Segunda cosa: le he estado dando bastantes vueltas a la necesidad de hacerlo escalable. Esto significa, en la práctica, escribir código lo suficientemente flexible como para posibilitar la suma de nuevas temáticas y barajas de cartas a las 4 iniciales ya existentes.",
+            paragraph5: "No encontrarás ningún tipo de programación sofisticada, en este caso (ni frameworks complicados ni librerías de terceros). Este es simplemente otro ejercicio para mantener y poner a prueba mi habilidad con el JavaScript más elemental (Vanilla JS). Un montón de construcción de clases, uso de métodos y manipulación del DOM.",
+            paragraph6: "Tecnologías relevantes aplicadas:",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript"
         },
         eng: {
             paragraph1: `This is yet another little project I'm putting together in my spare time. At the end of the day, it is nothing else than my personal version of the "Memory" classic boardgame, where players get challenged to match pairs of flipped cards by remembering their positions and contents.`,
             paragraph2: `There are two special things about this one.`,
             paragraph3: "First off: being its base concept as simple as it is, I'm focusing very much in bringing it alive. I'm attempting to do that by trying to convey some cool vibes into it: sound and graphics more akin to those of an arcade game; popular culture at the center of everything.",
-            paragraph4: "Second one: I've been putting quite a bit of thought into making the whole thing scalable. That means, in practice, making the code flexible to enable the possibility of adding more of the 4 card decks and themes that are already in place.",
+            paragraph4: "Second one: I've been putting quite a bit of thought into making the whole thing scalable. That means, in practice, making the code flexible to enable the possibility of adding more themes and card decks to the initial 4 that are already in place.",
             paragraph5: "You will find no fancy coding in here (no complicated frameworks, no third-party libraries). This is just another exercise to put my bare Vanilla JS skills to the test. Lots of class construction, method usage and DOM manipulation.",
             paragraph6: "Relevant technologies applied:",
-            technology1: "HTML / CSS (Flex & Grid) / JavaScript",
+            technology1: "HTML / CSS (Flex & Grid) / JavaScript"
         },
     },
     tryPrompt: {
