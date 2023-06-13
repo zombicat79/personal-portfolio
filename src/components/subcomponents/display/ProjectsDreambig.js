@@ -8,18 +8,6 @@ import dreambigLogo from './../../../images/logos/dreambig.png';
 function ProjectsDreambig(props) {
     const language = useContext(LangContext)
 
-    /* let personalizedP3 = "";
-    switch(language) {
-        case "cat":
-            personalizedP3 = props.personalizeParagraph("name", "Si us plau", projectsBig.intro[language].paragraph3);
-            break;
-        case "esp":
-            personalizedP3 = props.personalizeParagraph("name", "Por favor", projectsBig.intro[language].paragraph3);
-            break;
-        default:
-            personalizedP3 = props.personalizeParagraph("name", "Please", projectsBig.intro[language].paragraph3);
-    } */
-
     return (
         <div className="display-section__textBox">
             <p className="display-section__title">{projectsBig.projectName[language]}</p>
@@ -29,6 +17,7 @@ function ProjectsDreambig(props) {
             <br></br>
             <p>{projectsBig.intro[language].paragraph2}</p>
             <br></br>
+            <p>{projectsBig.intro[language].paragraph3}</p>
             <br></br>
             <p>{projectsBig.intro[language].paragraph4}</p>
             <br></br>
@@ -41,12 +30,7 @@ function ProjectsDreambig(props) {
                 <li>{projectsBig.intro[language].discipline2}</li>
                 <li>{projectsBig.intro[language].discipline3}</li>
                 <li>{projectsBig.intro[language].discipline4}</li>
-                <li>{projectsBig.intro[language].discipline5}</li>
-                <li>{projectsBig.intro[language].discipline6}</li>
-                <li>{projectsBig.intro[language].discipline7}</li>
             </ul>
-            <br></br>
-            <p>{projectsBig.intro[language].paragraph6}</p>
             <br></br>
             <div className="display-section__logoBox">
                 {language === "eng" &&

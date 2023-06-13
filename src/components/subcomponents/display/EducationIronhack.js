@@ -6,16 +6,16 @@ import { educationIronhack } from "../../../texts/displaySection_texts";
 function EducationIronhack(props) {
     const language = useContext(LangContext)
 
-    let personalizedP1 = "";
+    let personalizedP2 = "";
     switch(language) {
         case "cat":
-            personalizedP1 = props.personalizeParagraph("name", "t'interessa", educationIronhack.intro[language].paragraph1);
+            personalizedP2 = props.personalizeParagraph("name", "no pateixis", educationIronhack.intro[language].paragraph2);
             break;
         case "esp":
-            personalizedP1 = props.personalizeParagraph("name", "te interesa", educationIronhack.intro[language].paragraph1);
+            personalizedP2 = props.personalizeParagraph("name", "no te preocupes", educationIronhack.intro[language].paragraph2);
             break;
         default:
-            personalizedP1 = props.personalizeParagraph("name", "interested in", educationIronhack.intro[language].paragraph1);
+            personalizedP2 = props.personalizeParagraph("name", "no worries", educationIronhack.intro[language].paragraph2);
     }
 
     return (
@@ -26,7 +26,7 @@ function EducationIronhack(props) {
             <br></br>
             <p>{educationIronhack.intro[language].paragraph1}</p>
             <br></br>
-            <p>{educationIronhack.intro[language].paragraph2}</p>
+            <p>{personalizedP2}</p>
             <br></br>
             <p>{educationIronhack.intro[language].paragraph3}</p>
             <br></br>
