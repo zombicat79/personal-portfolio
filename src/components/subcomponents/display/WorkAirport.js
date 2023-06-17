@@ -30,22 +30,24 @@ function WorkAirport(props) {
             </ul>
             <br></br>
             <p>{workAIR.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--extra-big" src={airportLogo} alt="Barcelona Airport" />
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.aena.es/es/josep-tarradellas-barcelona-el-prat.html" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--extra-big" src={airportLogo} alt="Barcelona Airport" />
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "eng" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.aena.es/en/josep-tarradellas-barcelona-el-prat.html" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--extra-big" src={airportLogo} alt="Barcelona Airport" />
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "cat" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.aena.es/es/josep-tarradellas-barcelona-el-prat.html" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--extra-big" src={airportLogo} alt="Barcelona Airport" />
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

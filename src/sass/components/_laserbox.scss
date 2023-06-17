@@ -127,12 +127,17 @@
 .laserbox {
     min-height: 60rem;
 
+    ::selection {
+        background-color: darkred;
+        color: white;
+    }
+
     &__content-wrapper {
         padding: 5rem;
         font-size: 1.8rem;
         opacity: 0;
         height: 60rem;
-    
+
         h2 {
             font-size: 1.8rem;
         }

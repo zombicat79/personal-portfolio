@@ -2,6 +2,8 @@ import ubLogo from "./../../src/images/icos/infoItems/ub.png";
 import uocLogo from "./../../src/images/icos/infoItems/uoc.png";
 import salleLogo from "./../../src/images/icos/infoItems/salle.png";
 import ironhackLogo from "./../../src/images/icos/infoItems/ironhack.png";
+import wwwImg from './../../src/images/icos/infoItems/www.png';
+import cyberImg from './../../src/images/icos/infoItems/cybersecurity.png';
 
 import storeImg from './../../src/images/icos/infoItems/supermarket.png';
 import guardImg from './../../src/images/icos/infoItems/lifeguard.png';
@@ -50,7 +52,7 @@ const infoItems = {
             size: "regular"
         },
         {
-            id: "epr3",
+            id: "epr1",
             moment: "present",
             name: "coding",
             imgType: "element",
@@ -58,11 +60,19 @@ const infoItems = {
             size: "big"
         },
         {
+            id: "epr2",
+            moment: "present",
+            name: "webcourses",
+            imgType: "element",
+            src: wwwImg,
+            size: "big"
+        },
+        {
             id: "efu1",
             moment: "future",
             name: "future-coding",
             imgType: "element",
-            src: ironhackLogo,
+            src: cyberImg,
             size: "big"
         }
     ],

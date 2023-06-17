@@ -32,25 +32,27 @@ function ProjectsDreambig(props) {
                 <li>{projectsBig.intro[language].discipline4}</li>
             </ul>
             <br></br>
-            <div className="display-section__logoBox">
-                {language === "eng" &&
-                    <a className="display-section__snapshot" href="https://www.wedreambig.org/en/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
-                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
-                    </a>
-                }
-                {language === "esp" &&
-                    <a className="display-section__snapshot" href="https://www.wedreambig.org/es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
-                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
-                    </a>
-                }
-                {language === "cat" &&
-                    <a className="display-section__snapshot" href="https://www.wedreambig.org/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
-                        <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
-                    </a>
-                }
+            <div>
+                <div className="display-section__logoBox">
+                    {language === "eng" &&
+                        <a className="display-section__snapshot" href="https://www.wedreambig.org/en/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                            <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
+                        </a>
+                    }
+                    {language === "esp" &&
+                        <a className="display-section__snapshot" href="https://www.wedreambig.org/es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                            <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
+                        </a>
+                    }
+                    {language === "cat" &&
+                        <a className="display-section__snapshot" href="https://www.wedreambig.org/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--huge" src={dreambigLogo} alt="Dream Big Association" />
+                            <p className="try-prompt">{projectsBig.visitPrompt[language]}</p>
+                        </a>
+                    }
+                </div>
             </div>
         </div>
     )

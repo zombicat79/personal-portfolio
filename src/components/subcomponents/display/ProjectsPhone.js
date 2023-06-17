@@ -50,17 +50,21 @@ function ProjectsPhone(props) {
                 </li>
             </ul>
             <br></br>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--huge square" src={phoneScreen} alt="Cellphone monochrome screen" />
-                    <p className="try-prompt">{projectsPhone.tryPrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--huge square" src={phoneScreen} alt="Cellphone monochrome screen" />
+                        <p className="try-prompt">{projectsPhone.tryPrompt[language]}</p>
+                    </a>
+                </div>
             </div>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://github.com/zombicat79/kiwi_client" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
-                    <p className="try-prompt">{projectsPhone.codePrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="https://github.com/zombicat79/kiwi_client" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
+                        <p className="try-prompt">{projectsPhone.codePrompt[language]}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

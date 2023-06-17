@@ -43,17 +43,21 @@ function ProjectsCalculator(props) {
                 </li>
             </ul>
             <br></br>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--huge" src={calculatorButtons} alt="Math operations button set" />
-                    <p className="try-prompt">{projectsCalculotron.tryPrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--huge" src={calculatorButtons} alt="Math operations button set" />
+                        <p className="try-prompt">{projectsCalculotron.tryPrompt[language]}</p>
+                    </a>
+                </div>
             </div>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://github.com/zombicat79/calculotron" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
-                    <p className="try-prompt">{projectsCalculotron.codePrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="https://github.com/zombicat79/calculotron" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
+                        <p className="try-prompt">{projectsCalculotron.codePrompt[language]}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

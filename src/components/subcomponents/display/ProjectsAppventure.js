@@ -47,11 +47,13 @@ function ProjectsAppventure(props) {
             </ul>
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph6}</p>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://thesecretsofbarcino.com/thesecretsofbarcino-english/" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--extra-big" src={compassImg} alt="Secrets of Barcino game" />
-                    <p className="try-prompt">{projectsAppventure.visitPrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="https://thesecretsofbarcino.com/thesecretsofbarcino-english/" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--extra-big" src={compassImg} alt="Secrets of Barcino game" />
+                        <p className="try-prompt">{projectsAppventure.visitPrompt[language]}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

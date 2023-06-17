@@ -43,17 +43,21 @@ function ProjectsPanicdemic(props) {
                 <li>{projectsPanicdemic.intro[language].technology2}</li>
             </ul>
             <br></br>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--huge" src={panicdemicStart} alt="Covid Panicdemic cover screen" />
-                    <p className="try-prompt">{projectsPanicdemic.tryPrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--huge" src={panicdemicStart} alt="Covid Panicdemic cover screen" />
+                        <p className="try-prompt">{projectsPanicdemic.tryPrompt[language]}</p>
+                    </a>
+                </div>
             </div>
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://github.com/zombicat79/Covid-Panicdemic" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
-                    <p className="try-prompt">{projectsPanicdemic.codePrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="https://github.com/zombicat79/Covid-Panicdemic" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
+                        <p className="try-prompt">{projectsPanicdemic.codePrompt[language]}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

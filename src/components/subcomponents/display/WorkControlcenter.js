@@ -27,22 +27,24 @@ function WorkControlcenter(props) {
             </ul>
             <br></br>
             <p>{workOCC.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.vueling.com/en/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={vuelingLogo} alt="Vueling Airlines" />
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.vueling.com/es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={vuelingLogo} alt="Vueling Airlines" />
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "eng" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.vueling.com/en/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={vuelingLogo} alt="Vueling Airlines" />
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "cat" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.vueling.com/es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={vuelingLogo} alt="Vueling Airlines" />
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

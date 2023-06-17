@@ -12,7 +12,7 @@ import crimeImg from './../images/criminology.jpg';
 import tropicalImg from './../images/tourism.jpg';
 import appsImg from './../images/social-media.jpg';
 import codingImg from './../images/coding.jpg';
-import matrixImg from './../images/future-coding.jpg';
+import matrixImg from './../images/more-coding.jpg';
 import storeImg from './../images/supermarket.jpg';
 import lifeguardImg from './../images/lifeguard.jpg';
 import kitchenImg from './../images/kitchen.jpg';

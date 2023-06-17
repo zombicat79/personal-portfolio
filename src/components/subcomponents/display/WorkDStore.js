@@ -28,28 +28,30 @@ function WorkDStore(props) {
             </ul>
             <br></br>
             <p>{workDPS.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.carrefour.com/en" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={carrefourLogo} alt="Carrefour" />
-                    </a>
-                    <a href="https://www.bauhaus.eu/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={bauhausLogo} alt="Bauhaus"/>
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.carrefour.es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={carrefourLogo} alt="Carrefour" />
-                    </a>
-                    <a href="https://www.bauhaus.es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={bauhausLogo} alt="Bauhaus"/>
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "eng" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.carrefour.com/en" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={carrefourLogo} alt="Carrefour" />
+                        </a>
+                        <a href="https://www.bauhaus.eu/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--big" src={bauhausLogo} alt="Bauhaus"/>
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "cat" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.carrefour.es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={carrefourLogo} alt="Carrefour" />
+                        </a>
+                        <a href="https://www.bauhaus.es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--big" src={bauhausLogo} alt="Bauhaus"/>
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

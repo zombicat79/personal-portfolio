@@ -13,16 +13,18 @@ function FeatureSection(props) {
         }, 3000);
     })
 
-    return (
-        <section className={`feature-section feature-section--${props.moment} feature-section--${componentVisibility}`}>
-            <MilestoneSlider
-                moment={props.moment}
-                activeSubsection={props.activeSubsection}
-                activeInfoItem={props.activeInfoItem} 
-                handleActiveInfoItem={props.handleActiveInfoItem}
-            />
-        </section>
-    )
+    if (props.activeSubsection) {
+        return (
+            <section className={`feature-section feature-section--${props.moment} feature-section--${componentVisibility}`}>
+                <MilestoneSlider
+                    moment={props.moment}
+                    activeSubsection={props.activeSubsection}
+                    activeInfoItem={props.activeInfoItem} 
+                    handleActiveInfoItem={props.handleActiveInfoItem}
+                />
+            </section>
+        )
+    }
 }
 
 export default FeatureSection;

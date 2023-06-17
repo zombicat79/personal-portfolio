@@ -27,19 +27,21 @@ function WorkBeach(props) {
             </ul>
             <br></br>
             <p>{workLFG.intro[language].paragraph5}</p>
-            <div className="display-section__logoBox">
-                {
-                    language === "eng" &&
-                    <a href="https://www.icrc.org/en" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={redcrossLogo} alt="Red Cross" />
-                    </a>
-                }
-                {
-                    (language === "cat" || language === "esp") &&
-                    <a href="https://www2.cruzroja.es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={redcrossLogo} alt="Red Cross" />
-                    </a>
-                }
+            <div>
+                <div className="display-section__logoBox">
+                    {
+                        language === "eng" &&
+                        <a href="https://www.icrc.org/en" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={redcrossLogo} alt="Red Cross" />
+                        </a>
+                    }
+                    {
+                        (language === "cat" || language === "esp") &&
+                        <a href="https://www2.cruzroja.es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={redcrossLogo} alt="Red Cross" />
+                        </a>
+                    }
+                </div>
             </div>
         </div>
     )

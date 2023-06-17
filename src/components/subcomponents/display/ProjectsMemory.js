@@ -25,8 +25,10 @@ function ProjectsMemory(props) {
         <div className="display-section__textBox">
             <p className="display-section__title">{projectsMemory.projectName[language]}</p>
             <p className="display-section__subtitle">{projectsMemory.projectScope[language]}</p>
-            <div className="display-section__logoBox">
-                <img className="display-section__logoItem display-section__logoItem--big" src={progressImg} alt="Work in progress" />
+            <div>
+                <div className="display-section__logoBox">
+                    <img className="display-section__logoItem display-section__logoItem--big" src={progressImg} alt="Work in progress" />
+                </div>
             </div>
             <p className="alert">{projectsMemory.progressAlert[language]}</p>
             <br></br>
@@ -52,11 +54,13 @@ function ProjectsMemory(props) {
                     <p className="try-prompt">{projectsMemory.tryPrompt[language]}</p>
                 </a>
             </div> */ }
-            <div className="display-section__logoBox">
-                <a className="display-section__snapshot" href="https://github.com/zombicat79/pairs-game" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
-                    <p className="try-prompt">{projectsMemory.codePrompt[language]}</p>
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a className="display-section__snapshot" href="https://github.com/zombicat79/pairs-game" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--code" src={githubLogo} alt="GitHub logo" />
+                        <p className="try-prompt">{projectsMemory.codePrompt[language]}</p>
+                    </a>
+                </div>
             </div>
         </div>
     )

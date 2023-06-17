@@ -1,10 +1,12 @@
 import React, { useEffect, useState, useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { LangContext } from './../App';
 import rangesliderTexts from './../texts/rangeSlider_texts';
 
 function RangeSlider(props) {
     const language = useContext(LangContext);
+    const location = useLocation();
 
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
     const handleVisibility = (action) => {
@@ -62,6 +64,23 @@ function RangeSlider(props) {
             default:
         }
     }
+
+    useEffect(() => {
+        if (location.search.includes("projects")) {
+            setInputValue("2");
+        } else {
+            switch(props.moment) {
+                case "past":
+                    setInputValue("1");
+                    break;
+                case "present":
+                    setInputValue("2");
+                    break;
+                default:
+                    setInputValue("3");
+            }
+        }
+    }, [])
     
     return (
         <section className={`slider-section slider-section--${componentVisibility}`}>

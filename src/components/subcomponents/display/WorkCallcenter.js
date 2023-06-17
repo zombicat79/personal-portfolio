@@ -27,22 +27,24 @@ function WorkCallcenter(props) {
             </ul>
             <br></br>
             <p>{workCCR.intro[language].paragraph5}</p>
-            {
-                language === "cat" &&
-                <div className="display-section__logoBox">
-                    <a href="https://112.gencat.cat/ca/inici/index.html" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={_112Logo} alt="112 Emergency number" />
-                    </a>
-                </div>
-            }
-            {
-                (language === "eng" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://112.gencat.cat/es/inici/index.html" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem" src={_112Logo} alt="112 Emergency number" />
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "cat" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://112.gencat.cat/ca/inici/index.html" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={_112Logo} alt="112 Emergency number" />
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "eng" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://112.gencat.cat/es/inici/index.html" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem" src={_112Logo} alt="112 Emergency number" />
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

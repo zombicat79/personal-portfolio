@@ -27,22 +27,24 @@ function WorkHotel(props) {
             </ul>
             <br></br>
             <p>{workHTL.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.ericvokel.com/en" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={ericvokelLogo} alt="Eric Vökel Apartments" />
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.ericvokel.com/es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--huge" src={ericvokelLogo} alt="Eric Vökel Apartments" />
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "eng" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.ericvokel.com/en" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--huge" src={ericvokelLogo} alt="Eric Vökel Apartments" />
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "cat" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.ericvokel.com/es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--huge" src={ericvokelLogo} alt="Eric Vökel Apartments" />
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }

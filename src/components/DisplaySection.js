@@ -9,6 +9,7 @@ import EducationUB from './subcomponents/display/EducationUB';
 import EducationUOC from './subcomponents/display/EducationUOC';
 import EducationSalle from './subcomponents/display/EducationSalle';
 import EducationIronhack from './subcomponents/display/EducationIronhack';
+import EducationWWW from './subcomponents/display/EducationWWW';
 
 import WorkDStore from './subcomponents/display/WorkDStore';
 import WorkBeach from './subcomponents/display/WorkBeach';
@@ -43,7 +44,7 @@ function DisplaySection(props) {
     }
 
     const [menuStatus, setMenuStatus] = useState({
-        overview: "active",
+        overview: "",
         education: "",
         work: "",
         projects: "",
@@ -61,14 +62,6 @@ function DisplaySection(props) {
             return menuStatus;
         })
     }
-
-    // Opens up on projects subsection when specifically directed
-    useEffect(() => {
-        if (location.search.includes("projects")) {
-            handleMenuStatus("projects");
-            props.handleActiveSubsection("projects");
-        }
-    }, [])
 
     // Adds hover event listeners to display menu icons
     useEffect(() => {
@@ -116,7 +109,35 @@ function DisplaySection(props) {
 
     // Assign default component content on first render
     useEffect(() => {
-        props.handleActiveInfoItem("home");
+        if (!props.activeSubsection) {
+            props.handleActiveSubsection("home");
+            props.handleActiveInfoItem("home");
+            handleMenuStatus("overview");
+        // Opens up on projects subsection when specifically directed
+        } else if (location.search.includes("projects")) {
+            props.handleTimeLine("2");
+            props.handleActiveSubsection("projects");
+            props.handleActiveInfoItem("covid");
+            handleMenuStatus("projects");
+            window.history.pushState({}, "", "/");
+        } else {
+            switch(props.activeSubsection) {
+                case "education":
+                    handleMenuStatus("education");
+                    break;
+                case "work":
+                    handleMenuStatus("work");
+                    break;
+                case "projects":
+                    handleMenuStatus("projects");
+                    break;
+                case "location":
+                    handleMenuStatus("location");
+                    break;
+                default:
+                    handleMenuStatus("overview");
+            }
+        }
     }, [])
 
     // Scroll displayed text to the top on moment, subsection or infoitem change
@@ -218,6 +239,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "education" && props.activeInfoItem === "tourism" && <EducationUOC />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={props.personalizeParagraph} />}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "webcourses" && <EducationWWW personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "supermarket" && <WorkDStore />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "lifeguard" && <WorkBeach />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}

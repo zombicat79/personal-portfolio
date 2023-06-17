@@ -384,6 +384,79 @@ export const educationIronhack = {
     }
 }
 
+export const educationWWW = {
+    degreeName: {
+        cat: "Més programació...",
+        esp: "Más programación...",
+        eng: "More coding..."
+    },
+    institution: {
+        cat: "La universitat de la xarxa de xarxes",
+        esp: "La universidad de la red de redes",
+        eng: "The plentiful university of the world wide web"
+    },
+    intro: {
+        cat: {
+            paragraph1: "Yeah, we both know the way of never ends",
+            paragraph2: "Aquesta és una llarga història de la qual podràs obtenir un tastet si et mous al llarg de la línia del temps que trobaràs just a sota. Però no pateixis, t'estalviaré el tràngol i ho resumiré tot només dient que des de feia temps havia estat un interès creixent meu, nascut a partir de l'hàbit de gestionar blogs.",
+            paragraph3: "En conseqüència, un cop les circumstàncies van ser les correctes (la pandèmia va esclatar i de sobte em vaig trobar amb un munt de temps extra), em vaig matricular en un Bootcamp de Desenvolupament Web. Després de 9 setmanes de feina intenssísima, extenuant i molt exigent vaig aconseguir la meva recompensa: la certificació com a 'Desenvolupador Full Stack' 🎉 🎉 🎉 🎉",
+            paragraph4: "L'experiència —durant la qual vaig completar 1 projecte front end en solitari i 2 projectes full stack programant en parella—, va ser decisiva per tal d'aplanar el meu camí dins d'un camp que era nou i força desafiador per a mi. Em va permetre assentar-hi fermament les primeres passes, i també em va donar les eines necessàries per seguir ampliant el meu coneixement i les meves habilitats.",
+            paragraph5: "Durant el bootcamp, entre d'altres, vaig adquirir els següents llenguatges, habilitats i tecnologies crucials de desenvolupament:",
+            discipline1: "Javascript ES6",
+            discipline1$1: "Manipulació del DOM",
+            discipline1$2: "Codi asíncron / Promeses de JS",
+            discipline2: "HTML5",
+            discipline2$1: "Canvas API",
+            discipline3: "CSS3",
+            discipline3$1: "CSS Flex",
+            discipline3$2: "Transicions i animacions",
+            discipline4: "Node.js",
+            discipline5: "MongoDB",
+            discipline6: "REST API",
+            discipline7: "React",
+            discipline8: "Git / Github"
+        },
+        esp: {
+            paragraph1: "¿Y cómo es que acabé programando?",
+            paragraph2: "Esta es una larga historia sobre la cual te podrás hacer una idea si te mueves a lo largo de la línea temporal que encontrarás justo debajo. Pero no te preocupes, te ahorraré las molestias y te lo resumiré todo simplemente diciendo que desde hacía tiempo había sido un interés creciente mío, nacido a partir del hábito de gestionar blogs.",
+            paragraph3: "En consecuencia, una vez se dieron las circunstancias correctas (la pandemia estalló y de repente me encontré con un montón de tiempo extra), me matriculé en un Bootcamp de Desarrollo Web. Después de 9 semanas de trabajo intensísimo, extenuante y muy exigente logré mi recompensa: la certificación como 'Desarrollador Full Stack' 🎉 🎉 🎉 🎉",
+            paragraph4: "La experiencia —durante la cual completé 1 proyecto front end en solitario y 2 proyectos full stack programando en pareja—, fue decisiva para allanar mi camino dentro de un campo que era nuevo y bastante desafiante para mí. Me permitió asentar firmemente mis primeros pasos en el sector, y también me dio las herramientas necesarias para seguir ampliando mi conocimiento y mis habilidades.",
+            paragraph5: "Durante el bootcamp, entre otros, adquirí los siguientes lenguajes, habilidades y tecnologías cruciales de desarrollo:",
+            discipline1: "Javascript ES6",
+            discipline1$1: "Manipulación del DOM",
+            discipline1$2: "Código asíncrono / Promesas de JS",
+            discipline2: "HTML5",
+            discipline2$1: "Canvas API",
+            discipline3: "CSS3",
+            discipline3$1: "CSS Flex",
+            discipline3$2: "Transiciones y animaciones",
+            discipline4: "Node.js",
+            discipline5: "MongoDB",
+            discipline6: "REST API",
+            discipline7: "React",
+            discipline8: "Git / Github"
+        },
+        eng: {
+            paragraph1: "So yeah... we both know the way of the code warrior never ends.",
+            paragraph2: "Looking now in hindsight at that exciting moment when I finished my Web Development Bootcamp, I can only regard it as some sort of birth: my coming into a totally new wild world with the sole capacities of breathing and crying for help. The steep path of continuous learning and improvement that lied ahead of me had just begun.",
+            paragraph3: "Given the dynamism of, one has to accept it is only natural for every developer to constantly recycle and learn new stuff (adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification and determination are the keys to success.",
+            paragraph4: "The experience —during which I completed 1 solo front end and 2 pair-programming full stack projects—, was instrumental in paving my way into a field that was new and quite challenging to me. It allowed me to firmly set foot on it and also gave me the necessary tools to further widen my knowledge and capabilities.",
+            paragraph5: "These are some of skills and technologies I've made me conversant with since my departure:",
+            paragraph6: "These are some of skills and technologies I've made me conversant with since my departure:",
+            discipline1: "TypeScript",
+            discipline2: "Python",
+            discipline3: "CSS Grid",
+            discipline4: "CSS Architecture",
+            discipline4$1: "BEM",
+            discipline4$2: "OOCSS",
+            discipline4$3: "SMACSS",
+            discipline5: "SASS",
+            discipline6: "React Native",
+            discipline7: "Regex"
+        }
+    }
+}
+
 export const workDPS = {
     workplace: {
         cat: "Els grans magatzems",

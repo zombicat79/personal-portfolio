@@ -39,11 +39,13 @@ function WorkAtoom(props) {
             </ul>
             <br></br>
             <p>{workATOOM.intro[language].paragraph7}</p>
-            <div className="display-section__logoBox">
-                <a href="https://santafe.bplay.bet.ar/" target="_blank" rel="noreferrer"> 
-                    <img className="display-section__logoItem display-section__logoItem--big display-section__logoItem--rounded" src={bplayLogo} alt="Bplay online gambling"/>
-                </a>
-            </div>  
+            <div>
+                <div className="display-section__logoBox">
+                    <a href="https://santafe.bplay.bet.ar/" target="_blank" rel="noreferrer"> 
+                        <img className="display-section__logoItem display-section__logoItem--big display-section__logoItem--rounded" src={bplayLogo} alt="Bplay online gambling"/>
+                    </a>
+                </div>  
+            </div>
         </div>
     )
 }

@@ -23,6 +23,7 @@ function Home(props) {
                 handleHoverSubsection={methods.handleHoverSubsection}
                 handleHeaderState={methods.handleHeaderState}
                 handleActiveInfoItem={methods.handleActiveInfoItem}
+                handleTimeLine={methods.handleTimeline}
                 personalizeParagraph={methods.personalizeParagraph}
                 /* mainComponentsVisibility={mainComponentsVisibility}
                 handleMainComponentsVisibility={handleMainComponentsVisibility} */
@@ -36,6 +37,7 @@ function Home(props) {
                 activeSubsection={state.activeSubsection}
                 handleTimeline={methods.handleTimeline}
                 handleActiveInfoItem={methods.handleActiveInfoItem}
+                moment={state.moment}
             />
             { state.activeSubsection !== "home" &&
               <FeatureSection

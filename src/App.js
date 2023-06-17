@@ -71,7 +71,7 @@ function App() {
     }
   }
 
-  const [activeSubsection, setActiveSubsection] = useState("home");
+  const [activeSubsection, setActiveSubsection] = useState(null);
   const handleActiveSubsection = (section) => {
     setActiveSubsection(section);
   }

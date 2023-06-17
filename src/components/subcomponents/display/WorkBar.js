@@ -27,10 +27,12 @@ function WorkBar(props) {
             </ul>
             <br></br>
             <p>{workBAR.intro[language].paragraph5}</p>
-            <div className="display-section__logoBox">
-                <a href="https://pestorestaurants.co.uk/" target="_blank" rel="noreferrer">
-                    <img className="display-section__logoItem display-section__logoItem--big" src={pestoLogo} alt="Pesto restaurants" />
-                </a>
+            <div>
+                <div className="display-section__logoBox">
+                    <a href="https://pestorestaurants.co.uk/" target="_blank" rel="noreferrer">
+                        <img className="display-section__logoItem display-section__logoItem--big" src={pestoLogo} alt="Pesto restaurants" />
+                    </a>
+                </div>
             </div>
         </div>
     )

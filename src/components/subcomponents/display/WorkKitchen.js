@@ -28,28 +28,30 @@ function WorkKitchen(props) {
             </ul>
             <br></br>
             <p>{workFFD.intro[language].paragraph5}</p>
-            {
-                language === "eng" &&
-                <div className="display-section__logoBox">
-                    <a href="https://www.mcdonalds.com/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
-                    </a>
-                    <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
-                        <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
-                    </a>
-                </div>
-            }
-            {
-                (language === "cat" || language === "esp") &&
-                <div className="display-section__logoBox">
-                    <a href="https://mcdonalds.es/" target="_blank" rel="noreferrer">
-                        <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
-                    </a>
-                    <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
-                        <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
-                    </a>
-                </div>
-            }
+            <div>
+                {
+                    language === "eng" &&
+                    <div className="display-section__logoBox">
+                        <a href="https://www.mcdonalds.com/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
+                        </a>
+                        <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
+                            <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
+                        </a>
+                    </div>
+                }
+                {
+                    (language === "cat" || language === "esp") &&
+                    <div className="display-section__logoBox">
+                        <a href="https://mcdonalds.es/" target="_blank" rel="noreferrer">
+                            <img className="display-section__logoItem display-section__logoItem--big" src={mcdonaldsLogo} alt="McDonald's" />
+                        </a>
+                        <a href="https://www.nandos.co.uk/" target="_blank" rel="noreferrer"> 
+                            <img className="display-section__logoItem display-section__logoItem--big" src={nandosLogo} alt="Nando's restaurant"/>
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     )
 }
