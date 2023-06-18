@@ -154,20 +154,26 @@ function WelcomeSeal(props) {
                                 onClick={(e) => handleTouchpoint(0)}
                                 onMouseOver={(e) => handleLogo(1)}
                                 onMouseLeave={(e) => handleLogo(0)}
-                            ></div>
+                            >
+                                <div className="touchPointCore touchPointCore--p1"></div>
+                            </div>
                         }
                         <div 
                             className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p2" 
                             onClick={(e) => handleTouchpoint(2)}
                             onMouseOver={(e) => handleLogo(1)}
                             onMouseLeave={(e) => handleLogo(0)}
-                        ></div>
+                        >
+                            <div className="touchPointCore touchPointCore--p2"></div>
+                        </div>
                         <div 
                             className="welcomeSeal__touchPoint welcomeSeal__touchPoint--p3"
                             onClick={(e) => handleTouchpoint(3)}
                             onMouseOver={(e) => handleLogo(1)}
                             onMouseLeave={(e) => handleLogo(0)}
-                        ></div>
+                        >
+                            <div className="touchPointCore touchPointCore--p3"></div>
+                        </div>
                     </div>
                 }
             </div>

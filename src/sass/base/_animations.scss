@@ -22,6 +22,24 @@
     100% {box-shadow: none}
 }
 
+@keyframes touchPoint-shine {
+    0% {background-color: transparent; box-shadow: none}
+    50% {background-color: white; box-shadow: 5px 0 1.5rem rgb(245, 245, 127), -5px 0 1.5rem rgb(245, 245, 127);}
+    100% {background-color: transparent; box-shadow: none}
+}
+
+@keyframes touchPoint-tongue-roll {
+    0% {height: 25%}
+    50% {height: 60%}
+    100% {height: 25%}
+}
+
+@keyframes touchPoint-tongue-roll-smallerScreen {
+    0% {height: 40%}
+    50% {height: 65%}
+    100% {height: 40%}
+}
+
 /* VisitorQuestionnaire Component */
 @keyframes catbtn-blip {
     0% {opacity: 1}

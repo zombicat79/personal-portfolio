@@ -40,6 +40,38 @@
         &:hover {
             cursor: pointer;
         }
+
+        .touchPointCore {
+            height: 35%;
+            width: 25%;
+            top: 50%;
+            position: relative;
+            left: 50%;
+            transform: translate(-35%, 0);
+            border-radius: 50%;
+            border-top-left-radius: 30%;
+            border-top-right-radius: 30%;
+            animation-name: touchPoint-shine;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .touchPointCore--p1 {
+            transform: translate(60%, 0);
+        }
+        .touchPointCore--p3 {
+            transform: translate(-35%, -20%);
+            animation-name: touchPoint-tongue-roll;
+            background: linear-gradient(to bottom, rgb(241, 46, 78), rgb(240, 105, 128), rgb(234, 168, 179));
+            width: 40%;
+            height: 25%;
+
+            @media only screen and (max-width: 1750px) {
+                animation-name: touchPoint-tongue-roll-smallerScreen;
+                height: 40%;
+                transform: translate(-35%, -40%);
+            }
+        }
     }
 
     .welcomeSeal__subtitle {
