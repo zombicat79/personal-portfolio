@@ -8,7 +8,7 @@ function Overview(props) {
 
     return (
         <div className="display-section__textBox">
-            <p className="display-section__title">{overview.salute[language]} {props.visitorInfo.name},</p>
+            <p className="display-section__title">{overview.salute[language]} {props.visitorInfo.name.toUpperCase()},</p>
             <br></br>
             <p>{overview.intro[language].paragraph1}</p>
             <br></br>

@@ -92,9 +92,9 @@ function WelcomeSeal(props) {
         }
     }
 
-    const [fullScreen, setFullScreen] = useState(true);
+    const [fullScreen, setFullScreen] = useState(false);
     const handleView = () => {
-        if (fullScreen && props.viewport.requestFullscreen) {
+        if (!fullScreen && props.viewport.requestFullscreen) {
             props.viewport.requestFullscreen();
         } else {
             document.exitFullscreen();
@@ -136,6 +136,15 @@ function WelcomeSeal(props) {
             }
         })
     })
+
+    // Ensures the correct screen view mode CTA message is shown at all times
+    useEffect(() => {
+        if (document.fullscreenElement) {
+            setFullScreen(true);
+        } else {
+            setFullScreen(false);
+        }
+    }, [actionText])
 
     return (
         <section className={`welcomeSeal u-absolute-center ${shrinkModifier.sealParent}`}>
@@ -181,8 +190,8 @@ function WelcomeSeal(props) {
                 <h2>{props.role}</h2>
             </div>
             <div className={`welcomeSeal__cta u-blockElm-h-center ${ctaPosition} ${shrinkModifier.sealCta}`}>
-                {actionText === props.actionTexts[0] && fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{actionText}</button>}
-                {actionText === props.actionTexts[0] && !fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{availableTexts[1]}</button>}
+                {actionText === props.actionTexts[0] && !fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{actionText}</button>}
+                {actionText === props.actionTexts[0] && fullScreen && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => handleView()}>{availableTexts[1]}</button>}
                 {actionText === props.actionTexts[2] && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => props.handleSealState("shrinking")}>{actionText}</button>}
                 {actionText === props.actionTexts[3] && <button className={`btn-primary ${ctaBrightnessClass}`} onClick={(e) => {handleCtaPosition("disappear"); handleLangPosition("appear")}}>{actionText}</button>}
             </div>

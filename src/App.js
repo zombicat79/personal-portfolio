@@ -141,9 +141,9 @@ function App() {
   // Function used to include the visitor's name in selected content paragraphs
   const personalizeParagraph = (insertInfo, searchTerm, paragraph) => {
     if (insertInfo === "name") {
-        return paragraph.replace(searchTerm, `${searchTerm}, ${visitorInfo.name}`);
+        return paragraph.replace(searchTerm, `${searchTerm}, ${visitorInfo.name.toUpperCase()}`);
     } else {
-        return paragraph.replace(searchTerm, `${searchTerm} ${visitorInfo.org}`);
+        return paragraph.replace(searchTerm, `${searchTerm} ${visitorInfo.org.toUpperCase()}`);
     }
   } 
 

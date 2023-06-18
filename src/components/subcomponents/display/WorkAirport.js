@@ -24,8 +24,8 @@ function WorkAirport(props) {
                 <li>{workAIR.intro[language].learning1}</li>
                 <li>{workAIR.intro[language].learning2}</li>
                 <ul className="display-section__bulletList--proscons">
-                    <li class="bullet-point--green bullet-point--none">{workAIR.intro[language].pros}</li>
-                    <li class="bullet-point--red bullet-point--none">{workAIR.intro[language].cons}</li>
+                    <li className="bullet-point--green bullet-point--none">{workAIR.intro[language].pros}</li>
+                    <li className="bullet-point--red bullet-point--none">{workAIR.intro[language].cons}</li>
                 </ul>
             </ul>
             <br></br>

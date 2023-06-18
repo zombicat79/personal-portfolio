@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import infoItems from './../../../data/info-items';
+import infoItems from '../../../data/info-items';
 
-function milestoneSlider(props) {
+function MilestoneSlider(props) {
+    const sliderRef = useRef()
     const settings = {
         appendArrows: document.querySelector(".feature-section"),
         dots: true,
@@ -15,9 +16,13 @@ function milestoneSlider(props) {
         slidesToShow: 4,
         slidesToScroll: 1
     }
+
+    useEffect(() => {
+        sliderRef.current.slickGoTo(0);
+    }, [props.moment, props.activeSubsection])
     
     return (
-        <Slider {...settings}>
+        <Slider ref={sliderRef} {...settings}>
             {
                 infoItems[props.activeSubsection].map((el) => {
                     if (el.moment === props.moment) {
@@ -51,4 +56,4 @@ function milestoneSlider(props) {
     )
 }
 
-export default milestoneSlider;
+export default MilestoneSlider;

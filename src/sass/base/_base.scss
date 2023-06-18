@@ -26,6 +26,10 @@ html, body, #root, .App {
     }
 }
 
+#root {
+    overflow: auto;
+}
+
 main {
     font-family: "Source-Bold";
 }

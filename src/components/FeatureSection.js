@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import MilestoneSlider from './subcomponents/feature/milestoneSlider';
+import MilestoneSlider from './subcomponents/feature/MilestoneSlider';
 
 function FeatureSection(props) {
     const [componentVisibility, setComponentVisibility] = useState("disappearing");
@@ -10,7 +10,7 @@ function FeatureSection(props) {
     useEffect(() => {
         setTimeout(() => {
             handleVisibility("appearing");
-        }, 3000);
+        }, 500);
     })
 
     if (props.activeSubsection) {
