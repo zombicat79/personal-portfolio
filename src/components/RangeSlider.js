@@ -49,7 +49,7 @@ function RangeSlider(props) {
                 } else if (value === "2") {
                     props.handleActiveInfoItem("atoom");
                 } else {
-                    props.handleActiveInfoItem("");
+                    props.handleActiveInfoItem("next-job");
                 }
                 break;
             case "projects":

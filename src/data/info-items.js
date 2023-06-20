@@ -14,6 +14,8 @@ import callcenterImg from './../../src/images/icos/infoItems/call-center.png';
 import hotelImg from './../../src/images/icos/infoItems/hotel.png';
 import controlImg from './../../src/images/icos/infoItems/control.png';
 import atoomLogo from './../../src/images/logos/atoom.png';
+import shinyStars from './../../src/images/icos/infoItems/shiny-stars.png';
+
 import appventureLogo from './../../src/images/icos/infoItems/appventure.png';
 import dreambigLogo from './../../src/images/icos/infoItems/dreambig-white.png';
 import invaders from './../../src/images/icos/infoItems/invaders.png';
@@ -148,6 +150,14 @@ const infoItems = {
             imgType: "element",
             src: atoomLogo,
             size: "regular"
+        },
+        {
+            id: "wfu1",
+            moment: "future",
+            name: "next-job",
+            imgType: "element",
+            src: shinyStars,
+            size: "extra-big"
         }
     ],
     projects: [

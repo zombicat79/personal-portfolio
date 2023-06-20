@@ -840,6 +840,72 @@ export const workATOOM = {
     }
 }
 
+export const workNext = {
+    workplace: {
+        cat: "La plataforma de joc en línia",
+        esp: "La plataforma de juego en línea",
+        eng: "ZombieCat's dream job"
+    }, 
+    intro: {
+        cat: {
+            paragraph1: {
+                start: "Actualment treballo a ",
+                link: "Atoom Studio",
+                end: ", una agència de serveis web ubicada a Barcelona. Entre d'altres, l'empresa ofereix solucions en Branding; Disseny, implementació i manteniment web; Optimització SEO/SEM i Màrqueting Digital."
+            },
+            paragraph2: "Porto des de l'estiu del 2021 assignat a l'ambiciós projecte d'un client molt important de l'Argentina, el qual té l'objectiu de desplegar una sèrie de plataformes de joc online al llarg de les províncies més destacades del país.",
+            paragraph3: "En col·laboració permanent amb el Product Owner i un equip de Dissenyadors Gràfics i Especialistes en UX/UI, he dut a terme la renovació, personalització i manteniment dels llocs d'apostes i casino online del client.",
+            paragraph4: "Amb aquesta finalitat, he treballat en el marc d'Alira, un CMS especialitzat en el sector del joc que fa servir Velocity (un llenguatge de renderització des de servidor basat en JAVA), per tal d'injectar contingut dinàmic provinent d'una base de dades en el front end.",
+            paragraph5: "Emprant majoritàriament CSS i Vanilla JS, he estat desenvolupant i implementant un munt de nous elements, funcionalitats i widgets, com per exemple: formularis de login i registre d'usuaris, seccions de perfil d'usuari, menús desplegables, eines de recerca i filtratge, carrusels d'imatges, etc.",
+            paragraph6: "Algunes de les tecnologies i habilitats que he estat aplicant al llarg d'aquest projecte:",
+            paragraph7: "Fes un cop d'ull a l'estat de la feina que estic desenvolupant:",
+            technology1: "Vanilla JavaScript",
+            technology2: "Promeses de JS - JS Asíncron",
+            technology3: "Velocity",
+            technology4: "JQuery",
+            technology5: "Regex",
+            technology6: "CSS avançat - Transicions i animacions, CSS Flexbox, CSS Grid",
+            technology7: "Disseny web responsiu"
+        },
+        esp: {
+            paragraph1: {
+                start: "Actualmente trabajo en ",
+                link: "Atoom Studio",
+                end: ", una agencia de servicios web ubicada en Barcelona. Entre otras, la empresa ofrece soluciones en Branding; Diseño, implementación y mantenimiento web; Optimización SEO/SEM y Marketing Digital."
+            },
+            paragraph2: "Llevo desde el verano de 2021 asignado al ambicioso proyecto de un cliente muy importante de Argentina, cuyo objetivo es desplegar una serie de plataformas de juego online a lo largo de las provincias más destacadas del país.",
+            paragraph3: "En colaboración permanente con el Product Owner y un equipo de Diseñadores Gráficos y Especialistas en UX/UI, he llevado a cabo la renovación, personalización y mantenimiento de los sitios de apuestas y casino online del cliente.",
+            paragraph4: "Con esta finalidad, he trabajado en el marco de Alira, un CMS especializado en el sector del juego que se sirve de Velocity (un lenguaje de renderización desde servidor basado en JAVA), para inyectar contenido dinámico proveniente de una base de datos en el front end.",
+            paragraph5: "Empleando mayoritariamente CSS y Vanilla JS, he estado desarrollando e implementando un montón de nuevos elementos, funcionalidades y widgets, como por ejemplo: formularios de login y registro de usuarios, secciones de perfil de usuario, menús desplegables, herramientas de búsqueda y filtraje, carruseles de imágenes, etc.",
+            paragraph6: "Algunas de las tecnologías y habilidades que he ido aplicando a lo largo de este proyecto:",
+            paragraph7: "Echa un vistazo al estado del trabajo que estoy desarrollando:",
+            technology1: "Vanilla JavaScript",
+            technology2: "Promesas de JS - JS Asíncrono",
+            technology3: "Velocity",
+            technology4: "JQuery",
+            technology5: "Regex",
+            technology6: "CSS avanzado - Transiciones y animaciones, CSS Flexbox, CSS Grid",
+            technology7: "Diseño web responsivo"
+        },
+        eng: {
+            paragraph1: "Exactly that is what I would hope to get in my next career move. But what does that mean? What does it entail?",
+            paragraph2: "Well, in this peek vision of the future ZombieCat looks exhilarated because he's obtained a job where:",
+            paragraph3: "TECHNICALLY SPEAKING",
+            paragraph4: "BROADLY SPEAKING",
+            paragraph5: "BROADLY SPEAKING",
+            paragraph6: "Some technologies and skills I've been applying during this assignment:",
+            paragraph7: "Take a look at the result of my ongoing work:",
+            wish1: "Work-life balance is respected and revered",
+            wish2: "Salary is fair and competitive",
+            wish3: "Velocity",
+            wish4: "JQuery",
+            wish5: "Regular expressions",
+            wish6: "Advanced CSS - Transitions & animations, CSS Flexbox, CSS Grid",
+            wish7: "Responsive web design"
+        }
+    }
+}
+
 export const projectsAppventure = {
     projectName: {
         cat: "The Secrets of Barcino",

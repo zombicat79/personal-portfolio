@@ -20,6 +20,7 @@ import WorkCallcenter from './subcomponents/display/WorkCallcenter';
 import WorkHotel from './subcomponents/display/WorkHotel';
 import WorkControlcenter from './subcomponents/display/WorkControlcenter';
 import WorkAtoom from './subcomponents/display/WorkAtoom';
+import WorkNext from './subcomponents/display/WorkNext';
 
 import ProjectsAppventure from './subcomponents/display/ProjectsAppventure';
 import ProjectsDreambig from './subcomponents/display/ProjectsDreambig';
@@ -188,7 +189,7 @@ function DisplaySection(props) {
                                     props.handleActiveInfoItem("atoom");
                                     break;
                                 default:
-                                    props.handleActiveInfoItem("");
+                                    props.handleActiveInfoItem("next-job");
                             }
                         }}> 
                     </i>
@@ -249,6 +250,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "next-job" && <WorkNext />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "appventure" && <ProjectsAppventure />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "covid" && <ProjectsPanicdemic handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}
