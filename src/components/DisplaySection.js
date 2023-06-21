@@ -250,7 +250,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "work" && props.activeInfoItem === "hotel" && <WorkHotel />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "control" && <WorkControlcenter />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "atoom" && <WorkAtoom />}
-                    {props.activeSubsection === "work" && props.activeInfoItem === "next-job" && <WorkNext />}
+                    {props.activeSubsection === "work" && props.activeInfoItem === "next-job" && <WorkNext visitorInfo={props.visitorInfo} />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "appventure" && <ProjectsAppventure />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "dreambig" && <ProjectsDreambig />}
                     {props.activeSubsection === "projects" && props.activeInfoItem === "covid" && <ProjectsPanicdemic handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}

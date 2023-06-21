@@ -894,7 +894,7 @@ export const workNext = {
             paragraph4: "BROADLY SPEAKING",
             paragraph5: "BROADLY SPEAKING",
             paragraph6: "Some technologies and skills I've been applying during this assignment:",
-            paragraph7: "Take a look at the result of my ongoing work:",
+            paragraph7: "So, what might that job actually look like? Well... just drag away the dreamy cloud below and you may find it out.",
             wish1: "Work-life balance is respected and revered",
             wish2: "Salary is fair and competitive",
             wish3: "Velocity",

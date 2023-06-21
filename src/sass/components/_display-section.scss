@@ -363,10 +363,16 @@
                     justify-content: space-around;
                     align-items: center;
                     width: 100%;
-                    // margin: 3rem auto 0;
+                    word-break: break-word;
+                    position: relative;
 
                     &:first-child {
                         margin: 3rem auto 0;
+                    }
+
+                    &.org-name-wrapper {
+                        height: 20rem;
+                        margin: 6rem auto 0;
                     }
 
                     .display-section__logoItem {
@@ -425,6 +431,43 @@
                             margin-top: 1rem;
                             font-size: 2rem;
                             transition: all .5s;
+                        }
+                    }
+
+                    .beating-title {
+                        font-size: 4rem;
+                        color: darkred;
+                        text-align: center;
+                        z-index: -1;
+                        position: absolute;
+                        animation-name: title-beat;
+                        animation-duration: 2s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        transition: transform 2s;
+
+                        &--hiding {
+                            transform: translateY(10rem);
+                        }
+
+                        &--showing {
+                            transform: translateY(-10rem);
+                        }
+                    }
+
+                    .cover-img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -60%);
+                        width: 60%;
+                        
+                        &--sun {
+                            z-index: -2;
+                        }
+
+                        &:hover {
+                            cursor: grab;
                         }
                     }
                 }
