@@ -70,7 +70,6 @@ function WorkNext(props) {
         setImgOpacities({
             cloud: {opacity: 1 - formattedOpacityRatio},
             sun: {opacity: 0 + formattedOpacityRatio},
-            // orgText: {opacity: initialOpacities.orgText},
             orgText: {opacity: 0 + formattedOpacityRatio}
         })
     }
@@ -78,7 +77,8 @@ function WorkNext(props) {
     // Recalculate image composition opacities every time the cloud gets dragged
     useEffect(calculateDragOpacities, [dragPosition])
 
-    const [textPosition, setTextPosition] = useState("hiding");
+    // Determine organization title position depending on dragging
+    const [textPosition, setTextPosition] = useState(null);
     const handleTextPosition = (mode) => {
         setTextPosition(mode)
     }
@@ -94,28 +94,25 @@ function WorkNext(props) {
             <p>{workNext.intro[language].paragraph3}</p>
             <br></br>
             <ul className="display-section__bulletList">
-                <li>{workNext.intro[language].technology1}</li>
-                <li>{workNext.intro[language].technology2}</li>
-                <li>{workNext.intro[language].technology3}</li>
-                <li>{workNext.intro[language].technology4}</li>
-                <li>{workNext.intro[language].technology5}</li>
-                <li>{workNext.intro[language].technology6}</li>
-                <li>{workNext.intro[language].technology7}</li>
+                <li>{workNext.intro[language].wish1}</li>
+                <li>{workNext.intro[language].wish2}</li>
+                <li>{workNext.intro[language].wish3}</li>
+                <li>{workNext.intro[language].wish4}</li>
+                <li>{workNext.intro[language].wish5}</li>
             </ul>
             <br></br>
             <p>{workNext.intro[language].paragraph4}</p>
             <br></br>
             <ul className="display-section__bulletList">
-                <li>{workNext.intro[language].wish1}</li>
-                <li>{workNext.intro[language].technology2}</li>
-                <li>{workNext.intro[language].technology3}</li>
-                <li>{workNext.intro[language].technology4}</li>
-                <li>{workNext.intro[language].technology5}</li>
-                <li>{workNext.intro[language].technology6}</li>
-                <li>{workNext.intro[language].technology7}</li>
+                <li>{workNext.intro[language].wish6}</li>
+                <li>{workNext.intro[language].wish7}</li>
+                <li>{workNext.intro[language].wish8}</li>
+                <li>{workNext.intro[language].wish9}</li>
+                <li>{workNext.intro[language].wish10}</li>
+                <li>{workNext.intro[language].wish11}</li>
             </ul>
             <br></br>
-            <p>{workNext.intro[language].paragraph7}</p>
+            <p>{workNext.intro[language].paragraph5}</p>
             <br></br>
             <div>
                 <div className="display-section__logoBox org-name-wrapper">
