@@ -509,7 +509,7 @@ export const workLFG = {
             paragraph2: "La meva tasca (per sort) consistia en romandre alerta i vigilar que ningú prengués mal. De vegades, però, això era inevitable i en més d'una ocasió vaig haver de practicar cures lleus i fins i tot participar en alguna operació de rescat.",
             paragraph3: "La platja va ser el meu lloc de treball durant 3 temporades d'estiu senceres. Després d'això també vaig treballar en un seguit de piscines públiques.",
             paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
-            paragraph5: "Alguns dels llocs on vaig treballar:",
+            paragraph5: "Un dels llocs on vaig treballar:",
             learning1: "La responsabilitat cap a les persones és el més important.",
             learning2: "Atenció als detalls: els petits canvis provoquen grans diferències.",
             learning3: "La paciència és una virtut."
@@ -519,7 +519,7 @@ export const workLFG = {
             paragraph2: "Mi tarea (por suerte) consistía en permanecer alerta y vigilar que nadie se pusiera en peligro. Sin embargo, a veces eso era inevitable y en más de una ocasión tuve que practicar curas leves e incluso participar en alguna operación de rescate.",
             paragraph3: "La playa fue mi lugar de trabajo durante 3 temporadas de verano enteras. Después de eso también trabajé en varias piscinas públicas.",
             paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
-            paragraph5: "Algunos de los lugares donde trabajé:",
+            paragraph5: "Uno de los lugares donde trabajé:",
             learning1: "La responsabilidad hacia las personas es lo más importante.",
             learning2: "Atención a los detalles: los pequeños cambios provocan grandes diferencias.",
             learning3: "La paciencia es una virtud."
@@ -529,7 +529,7 @@ export const workLFG = {
             paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
             paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
             paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
+            paragraph5: "Some place where I worked:",
             learning1: "Responsibility to people is what matters most.",
             learning2: "Attention to detail: small changes make big differences.",
             learning3: "Patience is a virtue."
@@ -589,7 +589,7 @@ export const workBAR = {
             paragraph2: "En la majoria d'aquestes ocasions ho he fet com una feina extra, alhora que perseguia objectius més elevats, com per exemple acabar uns estudis o complementar alguna altra feina a temps complet entre setmana. Això sovint implicava haver de treballar els caps de setmana, moltes vegades fins i tot de nit.",
             paragraph3: "Encara que la restauració pugui ser un sector estressant durant les hores punta i exigent a nivell físic, he trobat que les feines com a cambrer poden arribar a ser força agradoses, especialment si et sents a gust relacionant-te amb la gent i/o observar-la al natural.",
             paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
-            paragraph5: "Alguns dels llocs on vaig treballar:",
+            paragraph5: "Un dels llocs on vaig treballar:",
             learning1: "És prou fàcil fer contents els clients només donant-los una miqueta més del que esperen.",
             learning2: "Cal complaure i interactuar únicament amb aquells que ho mereixen: no es pot cedir de cap manera davant de clients maleducats, poc curosos o buscaraons. En el benefici general de la societat, cal que aquest tipus de consumidors siguin educats a través d'un servei pla, aspre i fins i tot antipàtic.",
             learning3: "Es necessita un xic de resiliència mental per veure els altres gaudir mentre a tu et toca treballar."
@@ -599,7 +599,7 @@ export const workBAR = {
             paragraph2: "En la mayoría de esas ocasiones lo he hecho como un trabajo extra, mientras perseguía objetivos más elevados, como por ejemplo finalizar mis estudios o complementar algún otro trabajo a tiempo completo entre semana. Muchas veces esto implicaba tener que trabajar en fines de semana, incluso de noche.",
             paragraph3: "Aunque la restauración pueda ser un sector estresante durante las horas punta y exigente a nivel físico, he llegado a la conclusión de que los trabajos como camarero pueden llegar a ser bastante disfrutables, especialmente si te gusta relacionarte con la gente y/o observarla al natural.",
             paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
-            paragraph5: "Algunos de los lugares donde trabajé:",
+            paragraph5: "Uno de los lugares donde trabajé:",
             learning1: "Resulta fácil contentar a los clientes solo con darles un poquito más de lo que esperan.",
             learning2: "Únicamente hay que complacer e interactuar con aquellos que se lo merecen: no se debe ceder de ninguna manera ante clientes maleducados, poco cuidadosos o deliberadamente problemáticos. En el beneficio general de la sociedad, es imperativo que este tipo de consumidores sean educados a través de un servicio plano, áspero e incluso antipático.",
             learning3: "Se necesita algo de resiliencia mental para ver a los demás disfrutar mientras a ti te toca trabajar."
@@ -609,7 +609,7 @@ export const workBAR = {
             paragraph2: "On the majority of those occasions I've done it as a side job, while I was pursuing higher objectives, such as some degree or some other full-time daily job. This implied having to work on weekends and even on weekend nights.",
             paragraph3: "Though stressful during peak hours and physically demanding, I've found this kind of jobs to be quite enjoyable, especially if you like to liaise with people and/or observe them in the wild.",
             paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
+            paragraph5: "Some place where I worked:",
             learning1: "It is easy to make customers happy by giving them a little bit more than expected.",
             learning2: "Only interact with and indulge those that deserve it: do not yield in any way to messy, rude or rowdy customers. For the general benefit of society, those must be educated through plain dull even unsympathetic service.",
             learning3: "It takes some sort of mental resilience to watch others enjoy while you toil."
@@ -628,8 +628,8 @@ export const workAIR = {
             paragraph1: "Probablement perquè el meu esperit sempre s'ha sentit inclinat cap als viatges i l'aventura, una de les feines que vaig gaudir més va ser la que vaig tenir a l'aeroport, en una proximitat molt estreta amb els avions que s'hi enlairaven i els passatgers que marxaven en direcció a indrets llunyans.",
             paragraph2: "La meva tasca aleshores consistia en assistir els avions durant la seva escala a l'aeroport, ja fos descarregant les seves bodegues o carregant-les de nou amb l'equipatge dels passatgers que partien.",
             paragraph3: "Mentre portava a terme les meves obligacions vaig tenir l'oportunitat de rondar lliurement per la plataforma aeroportuària (l'àrea restringida per on es mouen els avions i s'esdevé tot allò interessant), i també d'operar maquinària molt especialitzada com ara escales mòbils o carregadors de contenidors (una espècie d'enormes muntacàrregues mòbils emprats per carregar contenidors de maletes dins de l'avió).",
-            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
-            paragraph5: "Alguns dels llocs on vaig treballar:",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquesta experiència:",
+            paragraph5: "El lloc on vaig treballar:",
             learning1: "Fer una feina que té un propòsit clar i simple és quelcom d'allò més positiu. T'atorga una tranquil·litat mental incomparable.",
             learning2: "Treballar en una companyia gegantina que ni tan sols sap el teu nom té els seus beneficis i també els seus desavantatges:",
             pros: "+ No passa res si la cagues amb alguna cosa (tret que la caguis molt fort).",
@@ -639,8 +639,8 @@ export const workAIR = {
             paragraph1: "Probablemente debido a que mi espíritu siempre se ha sentido inclinado hacia los viajes y la aventura, uno de los trabajos que más disfruté fue el que tuve en el aeropuerto, en una proximidad muy estrecha con los aviones que despegaban y los pasajeros que partían en dirección a destinos lejanos.",
             paragraph2: "Mis labores en aquel entonces consistían en asistir a los aviones durante su escala en el aeropuerto, ya fuera descargando sus bodegas o cargándolas de nuevo con el equipaje de los pasajeros en vuelos de salida.",
             paragraph3: "Mientras llevaba a cabo mis obligaciones tuve la oportunidad de deambular libremente por la plataforma aeroportuaria (la zona restringida por donde se mueven los aviones y ocurre todo lo interesante), y también de operar maquinaria muy especializada como por ejemplo escaleras móviles o cargadores de contenedores (una especie de enormes montacargas móviles empleados para subir contenedores de maletas al avión).",
-            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
-            paragraph5: "Algunos de los lugares donde trabajé:",
+            paragraph4: "Algunas de las cosas que aprendí durante esta experiencia:",
+            paragraph5: "El lugar donde trabajé:",
             learning1: "Desempeñar un trabajo que tiene un propósito claro y simple es algo sumamente positivo. Te ofrece una tranquilidad mental incomparable.",
             learning2: "Trabajar en una empresa gigantesca que ni siquiera conoce tu nombre tiene sus beneficios y también sus desventajas:",
             pros: "+ No pasa nada si la cagas con algo (excepto si la cagada es muy fuerte).",
@@ -650,8 +650,8 @@ export const workAIR = {
             paragraph1: "Probably because my spirit has always been bent on travel and adventure, one of the jobs I enjoyed the most was the one I got at the airport, in close proximity with the airplanes taking off from there and all their passengers going places far away.",
             paragraph2: "My designated task back then was to assist airliners during their stopover at the airport, be it by unloading their cargo holds or by loading them back with the luggage of departing passengers.",
             paragraph3: "While accomplishing such chores I got to freely roam the airport platform (restricted area where all the aircraft move around and all action takes place) and operate very specialized equipment such as flight ladders and ULD loaders (a huge machine used to load bulk containers onto the plane).",
-            paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
+            paragraph4: "Some things I learnt during this experience:",
+            paragraph5: "The place where I worked:",
             learning1: "It is good to carry out a job that has a clear and simple purpose. It provides you with uncomparable peace of mind.",
             learning2: "Working in a huge company that doesn't even know your name has its pros and cons:",
             pros: "+ Nothing happens if you screw something up (unless you do it in style).",
@@ -711,8 +711,8 @@ export const workHTL = {
             paragraph1: "Tal com correspondria a algú que ha estudiat Turisme (entre un grapat de coses més), també vaig tenir una feina a la recepció d'un edifici d'apartaments turístics de luxe situat al cor de Barcelona.",
             paragraph2: "El tipus de tasques que comportava la posició no hauria de sorprendre ningú: gestionar les reserves dels hostes, donar-los la benvinguda i acomiadar-los en el moment de marxar, assegurar que la seva estada era sempre plaent i que cadascuna de les seves necessitats es veia coberta. La responsabilitat de que aquests objectius s'assolissin diàriament era meva, i per això la meva tasca més important era coordinar la resta de l'equip.",
             paragraph3: "El fet de ser el primer i l'últim punt de contacte amb què podien comptar els clients em va agradar de manera especial. Aquest atribut, combinat amb la grata funció de donar-los consell i guiatge sobre les necessitats pràctiques que els sorgien i les diferents opcions d'oci a la ciutat, em va permetre construir relacions efímeres però molt agradables amb la majoria dels hostes.",
-            paragraph4: "Algunes de les coses que vaig aprendre durant aquestes experiències:",
-            paragraph5: "Alguns dels llocs on vaig treballar:",
+            paragraph4: "Algunes de les coses que vaig aprendre durant aquesta experiència:",
+            paragraph5: "El lloc on vaig treballar:",
             learning1: "Coordinar un grup humà amb la finalitat de produir una experiència memorable per al client que paga no és sempre fàcil. La qualitat de l'equip que t'envolta és fonamental per marcar la diferència.",
             learning2: "En el sector del turisme un client content equival a una propina generosa.",
             learning3: "Haver de vestir sempre elegant per treballar és una mica emprenyador. Les feines que no contemplen normes de vestimenta són or."
@@ -721,8 +721,8 @@ export const workHTL = {
             paragraph1: "Tal y como le correspondería a alguien que ha estudiado Turismo (entre un puñado de cosas más), también tuve un trabajo en la recepción de un edificio de apartamentos turísticos de lujo situado en el corazón de Barcelona.",
             paragraph2: "El tipo de labores que conllevaba la posición no debería de sorprender a nadie: gestionar las reservas de los huéspedes, darles la bienvenida y despedirlos cuando se iban, asegurar que su estancia era placentera en todo momento y que todas y cada una de sus necesidades se veían cubiertas. La responsabilidad de que estos objetivos se lograran diariamente era mía, y por eso mi tarea más importante era coordinar al resto del equipo.",
             paragraph3: "El hecho de ser el primero y el último punto de contacto con el que podían contar los clientes me gustó de manera especial. Este atributo, combinado con la grata tarea de ofrecerles consejo sobre las necesidades prácticas que les surgían y las diferentes opciones de ocio en la ciudad, me permitió construir relaciones efímeras pero muy agradables con la mayoría de los huéspedes.",
-            paragraph4: "Algunas de las cosas que aprendí durante estas experiencias:",
-            paragraph5: "Algunos de los lugares donde trabajé:",
+            paragraph4: "Algunas de las cosas que aprendí durante esta experiencia:",
+            paragraph5: "El lugar donde trabajé:",
             learning1: "Coordinar un grupo humano con la finalidad de producir una experiencia memorable para el cliente que paga no es siempre fácil. La calidad del equipo que te rodea es fundamental para marcar la diferencia.",
             learning2: "En el sector del turismo un cliente contento equivale a una propina generosa.",
             learning3: "Tener que vestir siempre elegante para trabajar es un poco engorroso. Los trabajos que no contemplan normas de vestimenta son oro."
@@ -731,8 +731,8 @@ export const workHTL = {
             paragraph1: "As it seems fit for someone who studied Tourism (among quite a bunch of things), I also had a job at the reception desk of a luxury apartment building located in the very heart of Barcelona (widely known as one of the most visited cities in the world).",
             paragraph2: "The kind of chores assigned to the role shouldn't come in as surprising: managing guests reservations, checking them in and out, making sure their stay was always pleasant and their every need was promptly satisfied. The responsibility of those goals being achieved in a daily basis was all mine, so my most important task was to coordinate the rest of the team.",
             paragraph3: "I especially liked the fact of being the first and last point of contact for all customers. This attribute, combined with the agreeable task of giving them advice about their practical needs and leisure options while in the city, allowed me to build short-lived but nice rapports with the majority of visiting guests.",
-            paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
+            paragraph4: "Some things I learnt during this experience:",
+            paragraph5: "The place where I worked:",
             learning1: "Coordinating a human group to produce a memorable experience for the paying customer isn't always a simple thing. The quality of the team is fundamental in making a difference.",
             learning2: "In the tourism business happy customers reward with generous tips.",
             learning3: "Having to dress smart to work is a bit of a pain in the ass. Jobs without a dress code are gold."
@@ -748,24 +748,34 @@ export const workOCC = {
     }, 
     intro: {
         cat: {
-            paragraph1: "Aaaah, Barcelona... l'indret de la Terra on vaig néixer, he passat gran part de la meva vida i on sempre espero tornar. Això inclou la comarca del Maresme, on vaig créixer, i altres ciutats catalanes com Girona, Reus o Tarragona.",
-            paragraph2: "Aquí és on vaig cursar els meus estudis, i on vaig obtenir la gran majoria de les meves qualificacions, talents i experiències vitals. També és el lloc on, fins al moment, s'ha desenvolupat la pràctica totalitat de la meva carrera professional.",
-            paragraph3: "Entre moltes altres habilitats, la vida a la ciutat m'ha dotat amb el domini dels meus 2 idiomes nadius:"
+            paragraph1: "La meva darrera feina abans d'endinsar-me en el món de la programació va ser a la seu central d'una línia aèria, contribuint a l'operació diària que feia possible l'enlairament de tots els vols programats. Es tractava d'un rol més aviat administratiu.",
+            paragraph2: "Ubicat al cor mateix de la companyia, el meu departament s'ocupava de tot allò relacionat amb els passatgers, entesos com aquell component primordial que d'entrada fa que operar un vol tingui algun sentit. Les tasques habituals anaven des de mitigar els inconvenients causats per les disrupcions del servei (subministrament d'informació, assistència, canvi de reserva i/o de ruta) fins a assegurar el compliment de tots els passatgers amb els requeriments i les regulacions de vol.",
+            paragraph3: "Després de més de 5 anys en el meu lloc de treball, la pandèmia de la COVID-19 va esclatar provocant un desgavell enorme en tot el sector del transport. D'alguna manera, aquest esdeveniment tan significatiu em va presentar una gran oportunitat per continuar progressant. Així que vaig decidir canviar totalment de rumb i emprendre el camí que em duria a desenvolupar professionalment llocs web com el que ara mateix estàs visitant.",
+            paragraph4: "Algunes coses que vaig aprendre durant aquesta experiència:",
+            paragraph5: "El lloc on vaig treballar:",
+            learning1: "Les normes i els protocols generals són necessaris i estan bé, però tenir una mica de marge de maniobra per aplicar solucions a discreció millora en gran mesura l'experiència general dels clients.",
+            learning2: "Les empreses grans poden estalviar/llençar a la brossa quantitats increïbles de diners en base a una única decisió encertada/equivocada.",
+            learning3: "Treballar en una companyia aèria comporta alguns avantatges força interessants (vols gratuïts!)"
         },
         esp: {
-            paragraph1: "Aaaah, Barcelona... el lugar de la Tierra donde nací, he pasado gran parte de mi vida y donde siempre espero volver. Esto incluye la comarca del Maresme, donde crecí, y otras ciudades catalanas como Girona, Reus o Tarragona.",
-            paragraph2: "Aquí es donde cursé mis estudios, y donde obtuve la gran mayoría de mis calificaciones, talentos y experiencias vitales. También es el sitio donde, hasta el momento, se ha desarrollado la práctica totalidad de mi carrera profesional.",
-            paragraph3: "Entre muchas otras habilidades, la vida en la ciudad me ha dotado con el dominio de mis 2 idiomas nativos:"
+            paragraph1: "Mi último trabajo antes de adentrarme en el mundo de la programación fue en la sede central de una aerolínea, contribuyendo a la operación diaria que hacía posible el despegue de todos los vuelos programados. Se trataba de un rol más bien administrativo.",
+            paragraph2: "Ubicado en el corazón mismo de la compañía, mi departamento se encargaba de todo lo relacionado con los pasajeros, entendidos como aquel componente primordial que para empezar hace que operar un vuelo tenga algún sentido. Las tareas habituales iban desde mitigar los inconvenientes causados por las disrupciones del servicio (suministro de información, asistencia, cambio de reserva y/o de ruta) hasta asegurar el cumplimiento de los requisitos y las regulaciones de vuelo por parte de todos los pasajeros.",
+            paragraph3: "Después de más de 5 años en mi lugar de trabajo, la pandemia de la COVID-19 estalló provocando un enorme desbarajuste en todo el sector del transporte. De alguna manera, este evento tan significativo me presentó una gran oportunidad para continuar progresando. Así que decidí cambiar totalmente de rumbo y emprender el camino que me llevaría a desarrollar profesionalmente sitios web como el que ahora mismo estás visitando.",
+            paragraph4: "Algunas cosas que aprendí durante esta experiencia:",
+            paragraph5: "El lugar donde trabajé:",
+            learning1: "Las normas y los protocolos generales son necesarios y están bien, pero disponer de un poco de margen de maniobra para aplicar soluciones a discreción mejora en gran medida la experiencia general de los clientes.",
+            learning2: "Las empresas grandes pueden ahorrar/tirar a la basura cantidades increíbles de dinero en base a una sola decisión acertada/equivocada.",
+            learning3: "Trabajar en una aerolínea conlleva algunas ventajas muy interesantes (¡vuelos gratuitos!)"
         },
         eng: {
-            paragraph1: "My last job before entering the world of coding was at the headquarters of an airline, contributing to the daily operation that makes all scheduled flights possible.",
-            paragraph2: "My main task (thankfully so) was to remain on the watch and make sure nobody got in trouble. Sometimes that was inevitable, though, and more than once I had to perform minor cures and even participate in some rescue operation.",
-            paragraph3: "The beach was my workplace for 3 entire summer seasons. Thereafter, I also worked in a series of public swimming pools.",
-            paragraph4: "Some things I learnt during those experiences:",
-            paragraph5: "Some places where I worked:",
-            learning1: "Responsibility to people is what matters most.",
-            learning2: "Attention to detail: small changes make big differences.",
-            learning3: "Patience is a virtue."
+            paragraph1: "My last job before entering the world of coding was at the headquarters of an airline, contributing to the daily operation that made all scheduled flights possible. It was a rather administrative role.",
+            paragraph2: "Sitting at the very core of the company, my department was tasked with all things related to passengers, understanding these as the prime component that makes operating a flight meaningful in the first place. Daily chores ranged from mitigating inconvenience in the face of flight disruptions (provision of information, assistance, rebooking or rerouting) to assuring every passengers' compliance with travel requirements and regulations.",
+            paragraph3: "After 5+ years in the job the COVID-19 pandemic hit to an enormous disarray in the world's entire travel sector. In a way, this much significant event signalled a great opportunity for me to move on. So I decided to veer off and take the path that put me on course to professionally develop websites such as the one you're visiting now.",
+            paragraph4: "Some things I learnt during this experience:",
+            paragraph5: "The place where I worked:",
+            learning1: "General rules and protocols are necessary and OK, but having some room for discretion greatly improves the overall customers' experience.",
+            learning2: "Big companies can save/waste astonishing amounts of money based on single right/wrong decisions.",
+            learning3: "Working at an airline comes with some nice perks (free flights!)"
         }
     }
 }

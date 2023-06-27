@@ -231,6 +231,31 @@ const pageTexts = {
         esp: '"Planeta Saturno"',
         eng: '"Planet Saturn"'
     },
+    creditIcon18: {
+        cat: '"Coet comercial"',
+        esp: '"Cohete comercial"',
+        eng: '"Commercial rocket"'
+    },
+    creditIcon19: {
+        cat: '"Treballant-hi..."',
+        esp: '"Trabajando..."',
+        eng: '"Work in progress"'
+    },
+    creditIcon20: {
+        cat: '"World Wide Web"',
+        esp: '"World Wide Web"',
+        eng: '"World Wide Web"'
+    },
+    creditIcon21: {
+        cat: '"Guspires"',
+        esp: '"Centelleo"',
+        eng: '"Twinkle"'
+    },
+    creditIcon22: {
+        cat: '"Joc de memòria"',
+        esp: '"Juego de memoria"',
+        eng: '"Memory game"'
+    },
     creditBtn1: {
         cat: "Fotos",
         esp: "Fotos",

@@ -45,6 +45,11 @@ import ManIcon from './../images/icos/infoItems/manchester.png';
 import DubIcon from './../images/icos/infoItems/dubai.png';
 import worldIcon from './../images/icos/infoItems/world.png';
 import planetIcon from './../images/icos/infoItems/saturn.png';
+import rocketIcon from './../images/icos/infoItems/rocket.png';
+import workingIcon from './../images/icos/work-progress.png';
+import wwwIcon from './../images/icos/infoItems/www.png';
+import twinkleIcon from './../images/icos/infoItems/shiny-stars.png';
+import memoryIcon from './../images/icos/infoItems/memory.png';
 
 import pageTexts from './../texts/ThePage_texts';
 
@@ -92,7 +97,7 @@ function ThePage(props) {
         manchesterImg, dubaiImg, worldImg, marsImg];
     const iconArray = [catpawIcon, storeIcon, lifeguardIcon, kitchenIcon, waiterIcon, handlingIcon, callcenterIcon, 
         hotelIcon, controlIcon, invadersIcon, phoneIcon, calculatorIcon, BcnIcon, ManIcon, DubIcon, 
-        worldIcon, planetIcon];
+        worldIcon, planetIcon, rocketIcon, workingIcon, wwwIcon, twinkleIcon, memoryIcon];
     const [creditImg, setCreditImg] = useState(null);
     const handleCreditImg = (imgIndex, imgType) => {
         if (imgType === "pic") {
@@ -178,7 +183,7 @@ function ThePage(props) {
                     }
                     {
                         activeContent === 1 &&
-                        <div>
+                        <div className="laserbox__content-subwrapper">
                             <p className="laserbox__link" onClick={() => handleActiveContent()}>
                                 <span>{"\u2190"} Go back</span>
                             </p>
@@ -225,6 +230,11 @@ function ThePage(props) {
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(14, "icon")}><i>{pageTexts.creditIcon15[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(15, "icon")}><i>{pageTexts.creditIcon16[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(16, "icon")}><i>{pageTexts.creditIcon17[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(17, "icon")}><i>{pageTexts.creditIcon18[language]}</i> &ndash; www.thenounproject.com &ndash; Miguel C. Balandrano</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(18, "icon")}><i>{pageTexts.creditIcon19[language]}</i> &ndash; www.thenounproject.com &ndash; Marius Edel</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(19, "icon")}><i>{pageTexts.creditIcon20[language]}</i> &ndash; www.thenounproject.com &ndash; Vectors Point</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(20, "icon")}><i>{pageTexts.creditIcon21[language]}</i> &ndash; www.thenounproject.com &ndash; Uswa KDT</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(21, "icon")}><i>{pageTexts.creditIcon22[language]}</i> &ndash; www.thenounproject.com &ndash; Eliricon</li>
                                     </ul>
                                 </div>
                                 <div className="laserbox__creditBox--right">
