@@ -29,12 +29,11 @@ function ProjectsAppventure(props) {
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph2}</p>
             <br></br>
+            <p>{projectsAppventure.intro[language].paragraph3}</p>
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph4}</p>
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph5}</p>
-            <br></br>
-            <p>{projectsAppventure.intro[language].paragraph6}</p>
             <br></br>
             <ul className="display-section__bulletList">
                 <li>{projectsAppventure.intro[language].discipline1}</li>
@@ -46,7 +45,6 @@ function ProjectsAppventure(props) {
                 <li>{projectsAppventure.intro[language].discipline7}</li>
             </ul>
             <br></br>
-            <p>{projectsAppventure.intro[language].paragraph6}</p>
             <div>
                 <div className="display-section__logoBox">
                     <a className="display-section__snapshot" href="https://thesecretsofbarcino.com/thesecretsofbarcino-english/" target="_blank" rel="noreferrer">

@@ -27,6 +27,8 @@ import manchesterImg from './../images/manchester.jpg';
 import dubaiImg from './../images/dubai.jpg';
 import worldImg from './../images/world.jpg';
 import marsImg from './../images/mars.jpg';
+import spacetourImg from './../images/spaceline.jpg';
+import zombieworkImg from './../images/working-cat.jpg';
 
 import catpawIcon from './../images/icos/cat-paw-hollow-trans.png';
 import storeIcon from './../images/icos/infoItems/supermarket.png';
@@ -50,6 +52,10 @@ import workingIcon from './../images/icos/work-progress.png';
 import wwwIcon from './../images/icos/infoItems/www.png';
 import twinkleIcon from './../images/icos/infoItems/shiny-stars.png';
 import memoryIcon from './../images/icos/infoItems/memory.png';
+import appventureLogo from './../images/icos/infoItems/appventure.png';
+import compassIcon from './../images/compass.png';
+import dreambigLogo1 from './../images/icos/infoItems/dreambig-white.png';
+import dreambigLogo2 from './../images/logos/dreambig.png';
 
 import pageTexts from './../texts/ThePage_texts';
 
@@ -94,10 +100,11 @@ function ThePage(props) {
 
     const picArray = [crimeImg, tropicalImg, appsImg, codingImg, matrixImg, storeImg, lifeguardImg, 
         kitchenImg, waiterImg, airportImg, callcenterImg, hotelImg, aisleImg, gamblingImg, barcelonaImg, 
-        manchesterImg, dubaiImg, worldImg, marsImg];
+        manchesterImg, dubaiImg, worldImg, marsImg, zombieworkImg, spacetourImg];
     const iconArray = [catpawIcon, storeIcon, lifeguardIcon, kitchenIcon, waiterIcon, handlingIcon, callcenterIcon, 
         hotelIcon, controlIcon, invadersIcon, phoneIcon, calculatorIcon, BcnIcon, ManIcon, DubIcon, 
-        worldIcon, planetIcon, rocketIcon, workingIcon, wwwIcon, twinkleIcon, memoryIcon];
+        worldIcon, planetIcon, rocketIcon, workingIcon, wwwIcon, twinkleIcon, memoryIcon, appventureLogo, compassIcon, 
+        dreambigLogo1, dreambigLogo2];
     const [creditImg, setCreditImg] = useState(null);
     const handleCreditImg = (imgIndex, imgType) => {
         if (imgType === "pic") {
@@ -211,6 +218,8 @@ function ThePage(props) {
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(16, "pic")}><i>{pageTexts.creditImg17[language]}</i> &ndash; www.pexels.com &ndash; Mo Ismail</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(17, "pic")}><i>{pageTexts.creditImg18[language]}</i> &ndash; www.pixabay.com &ndash; WikiImages</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(18, "pic")}><i>{pageTexts.creditImg19[language]}</i> &ndash; www.pexels.com &ndash; SpaceX</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(19, "pic")}><i>{pageTexts.creditImg20.description[language]}</i> &ndash; {pageTexts.creditImg20.source[language]} &ndash; {pageTexts.creditImg20.author.intro[language]} <i>{pageTexts.creditImg20.author.prompt[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(20, "pic")}><i>{pageTexts.creditImg21[language]}</i> &ndash; NASA &ndash; Jet Propulsion Laboratory</li>
                                     </ul>
                                     <ul className={`laserbox__bulletList laserbox__bulletList--${creditVisibility.icons}`}>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(0, "icon")}><i>{pageTexts.creditIcon1[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
@@ -235,6 +244,10 @@ function ThePage(props) {
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(19, "icon")}><i>{pageTexts.creditIcon20[language]}</i> &ndash; www.thenounproject.com &ndash; Vectors Point</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(20, "icon")}><i>{pageTexts.creditIcon21[language]}</i> &ndash; www.thenounproject.com &ndash; Uswa KDT</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(21, "icon")}><i>{pageTexts.creditIcon22[language]}</i> &ndash; www.thenounproject.com &ndash; Eliricon</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(22, "icon")}><i>{pageTexts.creditIcon23[language]}</i> &ndash; Appventure Games &ndash; Guillem Espías</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(23, "icon")}><i>{pageTexts.creditIcon24[language]}</i> &ndash; Appventure Games &ndash; Guillem Espías</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(24, "icon")}><i>{pageTexts.creditIcon25[language]}</i> &ndash; Dream Big Association &ndash; Guillem Espías</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(25, "icon")}><i>{pageTexts.creditIcon26[language]}</i> &ndash; Dream Big Association &ndash; Guillem Espías</li>
                                     </ul>
                                 </div>
                                 <div className="laserbox__creditBox--right">

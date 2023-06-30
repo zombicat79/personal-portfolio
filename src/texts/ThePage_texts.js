@@ -146,6 +146,35 @@ const pageTexts = {
         esp: '"Conquista de Marte"',
         eng: '"Mars conquer"'
     },
+    creditImg20: {
+        description: {
+            cat: '"En ZombieCat a la feina"',
+            esp: '"ZombieCat en el trabajo"',
+            eng: '"ZombieCat at work"'
+        },
+        source: {
+            cat: `DALL-E, d'Open AI`,
+            esp: 'DALL-E, de Open IA',
+            eng: `Open AI's DALL-E`
+        },
+        author: {
+            intro: {
+                cat: 'De la comanda: ',
+                esp: 'Del pedido: ',
+                eng: 'From prompt: '
+            }, 
+            prompt: {
+                cat: `"Un gat siamès marró i somrient treballant davant d'un ordinador, segons l'estil d'en Salvador Dalí"`,
+                esp: '"Un gato siamés marrón y sonriente trabajando delante de un ordenador, en el estilo de Salvador Dalí"',
+                eng: '"Siamese smiling brown cat working before a computer in the style of Salvador Dalí"'
+            }
+        }
+    },
+    creditImg21: {
+        cat: '"El gran tour"',
+        esp: '"El gran tour"',
+        eng: '"The Grand Tour"'
+    },
     creditIcon1: {
         cat: '"Petja de gat"',
         esp: '"Huella de gato"',
@@ -255,6 +284,26 @@ const pageTexts = {
         cat: '"Joc de memòria"',
         esp: '"Juego de memoria"',
         eng: '"Memory game"'
+    },
+    creditIcon23: {
+        cat: '"Logo Appventure"',
+        esp: '"Logo Appventure"',
+        eng: '"Appventure logo"'
+    },
+    creditIcon24: {
+        cat: '"Brúixola de Neptú"',
+        esp: '"Brújula de Neptuno"',
+        eng: `"Neptune's compass"`
+    },
+    creditIcon25: {
+        cat: '"Logo Dream Big compacte"',
+        esp: '"Logo Dream Big compacto"',
+        eng: '"Dream Big compact logo"'
+    },
+    creditIcon26: {
+        cat: '"Logo Dream Big allargat"',
+        esp: '"Logo Dream Big alargado"',
+        eng: '"Dream Big horizontal logo"'
     },
     creditBtn1: {
         cat: "Fotos",
