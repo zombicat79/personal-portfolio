@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 
 import { LangContext } from "../../../App";
 import { projectsAppventure } from "../../../texts/displaySection_texts";
@@ -8,28 +8,39 @@ import compassImg from './../../../images/compass.png';
 function ProjectsAppventure(props) {
     const language = useContext(LangContext)
 
-    /* let personalizedP3 = "";
-    switch(language) {
-        case "cat":
-            personalizedP3 = props.personalizeParagraph("name", "Si us plau", projectsBig.intro[language].paragraph3);
-            break;
-        case "esp":
-            personalizedP3 = props.personalizeParagraph("name", "Por favor", projectsBig.intro[language].paragraph3);
-            break;
-        default:
-            personalizedP3 = props.personalizeParagraph("name", "Please", projectsBig.intro[language].paragraph3);
-    } */
+    const [mentionState, setMentionState] = useState({
+        p1: projectsAppventure.intro[language].paragraph1.mention.generic,
+        p3: projectsAppventure.intro[language].paragraph3.mention.generic,
+        style: "laserbox__link",
+        link: ""
+    })
+    const handleMention = () => {
+        setMentionState({
+            p1: projectsAppventure.intro[language].paragraph1.mention.specific,
+            p3: projectsAppventure.intro[language].paragraph3.mention.specific,
+            style: "display-section__title display-section__title--smaller display-section__title--red",
+            link: "https://www.linkedin.com/in/guillemespias/"
+        })
+    }
 
     return (
         <div className="display-section__textBox">
             <p className="display-section__title">{projectsAppventure.projectName[language]}</p>
             <p className="display-section__subtitle">{projectsAppventure.projectScope[language]}</p>
             <br></br>
-            <p>{projectsAppventure.intro[language].paragraph1}</p>
+            <p>
+                {projectsAppventure.intro[language].paragraph1.start} 
+                <span className={`laserbox__chunk ${mentionState.style}`}><a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention()}>{mentionState.p1}</a></span> 
+                {projectsAppventure.intro[language].paragraph1.end}
+            </p>
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph2}</p>
             <br></br>
-            <p>{projectsAppventure.intro[language].paragraph3}</p>
+            <p>
+                {projectsAppventure.intro[language].paragraph3.start} 
+                <span className={`laserbox__chunk ${mentionState.style}`}><a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention()}>{mentionState.p3}</a></span> 
+                {projectsAppventure.intro[language].paragraph3.end}
+            </p>
             <br></br>
             <p>{projectsAppventure.intro[language].paragraph4}</p>
             <br></br>

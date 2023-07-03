@@ -957,11 +957,25 @@ export const projectsAppventure = {
             discipline7: "Estadística"
         },
         eng: {
-            paragraph1: "Some time back in 2016 a friend of mine and I decided we wanted to make a game. It couldn't be any type of game, though. Rather, it had to be a game that would take advantage of the wonders and build upon Barcelona's cityscape to create and adventure halfway between the realms of the digital and those of reality.",
+            paragraph1: {
+                start: "Some time back in 2016",
+                mention: {
+                    generic: " a friend of mine ",
+                    specific: " Guillem Espías ",
+                },
+                end: "and I decided we wanted to make a game. It wasn't going to be any type of game, though. Rather, we were planning it to be a game that would take advantage of the wonders of mobile technology and build upon Barcelona's cityscape, to create and adventure halfway between the realms of the digital and those of reality.",
+            },
             paragraph2: "The objective was to come up with a product capable of simultaneously entertain, educate and take people on a stroll.",
-            paragraph3: "Neither of us had much idea about coding at the time, so we teamed up with a couple of software engineers that would be left in charge of developing the actual mobile app. Guillem and I would instead focus on game design, project management and business development.",
-            paragraph4: "We made it quite far, actually. Even though we got to launch a fully playable version and managed to deploy it on major marketplaces such as Google Play and Apple's App Store, things didn't play out as planned. Internal discrepancies with some other team members ended up tearing the project apart. But it was fun, and we learned a lot ",
-            paragraph5: "Among others, I was exposed to the following disciplines:",
+            paragraph3: {
+                start: "Neither of us had much idea about coding at the time, so we teamed up with a couple of software engineers that would be in charge of developing the actual mobile app.",
+                mention: {
+                    generic: " My friend ",
+                    specific: " Guillem "
+                },
+                end: "and I would instead focus on game design, project management and business development."
+            },
+            paragraph4: "We made it quite far, actually. Even though we got to launch a fully playable version and managed to deploy it on major marketplaces such as Google Play and Apple's App Store, things didn't play out as planned. Internal discrepancies with some of the team members ended up tearing the project apart. But it was fun, and we learned a lot.",
+            paragraph5: "Among others, during the development of this project I was exposed to the following disciplines:",
             discipline1: "Law",
             discipline2: "Politics",
             discipline3: "Sociology",

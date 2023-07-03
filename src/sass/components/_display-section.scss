@@ -290,6 +290,19 @@
                 
                 .display-section__title {
                     font-size: 2.5rem;
+                    transition: all 2s;
+
+                    &--smaller {
+                        font-size: 2rem;
+                    }
+
+                    &--red a:link, 
+                    &--red a:visited, 
+                    &--red a:hover, 
+                    &--red a:active {
+                        text-decoration: none;
+                        color: red;
+                    }
                 }
 
                 .display-section__subtitle {
