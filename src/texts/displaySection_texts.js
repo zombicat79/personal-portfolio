@@ -927,34 +927,62 @@ export const projectsAppventure = {
     },
     intro: {
         cat: {
-            paragraph1: "Ara podrà semblar estrany (d'acord, també aleshores), però aquest va ser el primer grau universitari que vaig emprendre després d'acabar l'institut.",
-            paragraph2: "He de confessar que no tenia gaire idea de què fer en aquell moment, així que vaig triar la primera cosa que em va sonar interessant i amb flaire d'aventura (una altra opció era arqueologia), sense donar la pensada més mínima al seu futur potencial en el mercat laboral. Talment com un 'Magnum, P.I.' de pa sucat amb oli, vaig pensar que resoldre crims en camisa hawaiana tot conduint un Ferrari podria ser un estil de vida bastant guai.",
-            paragraph3: "Si us plau, no em jutgis amb massa duresa. Tenia menys de 20 anys.",
-            paragraph4: "En qualsevol cas, després de 4 anys de picar pedra a la universitat, vaig obtenir el meu grau: 'Criminologia i Política Criminal' 🎉",
-            paragraph5: "Per descomptat, mai vaig aconseguir una feina en el sector (les opcions eren bastant horribles i molt allunyades del glamour que es pintava a les pel·lícules), però les moltes coses interessants que vaig aprendre durant aquell temps em van fer créixer com a persona i entendre millor com funcionen la societat i el seu 'sistema' que tot ho controla.",
-            paragraph6: "Entre d'altres, vaig tocar les disciplines següents:",
-            discipline1: "Dret",
-            discipline2: "Ciència Política",
-            discipline3: "Sociologia",
-            discipline4: "Antropologia",
-            discipline5: "Psicologia",
-            discipline6: "Medicina Forense",
-            discipline7: "Estadística"
+            paragraph1: {
+                start: "Fa ja un temps, cap allà el 2016,",
+                mention: {
+                    generic: " un amic meu ",
+                    specific: " Guillem Espías ",
+                },
+                end: "i jo vam decidir que havíem de fer un joc. No volíem que fos un joc qualsevol, però. En lloc d'això, ens l'havíem imaginat com una aventura de resolució d'enigmes, que aprofitaria les meravelles de la tecnologia mòbil i de l'entramat urbà de Barcelona per crear una experiència a mig camí entre el regne digital i la realitat.",
+            },
+            paragraph2: "L'objectiu era construir un producte capaç d'entretenir, ensenyar alguna cosa útil i portar la gent de passeig, tot al mateix temps.",
+            paragraph3: {
+                start: "Cap de nosaltres tenia gaire idea de programació aleshores, de manera que vam unir forces amb un parell d'enginyers de software, que van quedar a càrrec de desenvolupar l'aplicació mòbil.",
+                mention: {
+                    generic: " El meu amic ",
+                    specific: " En Guillem "
+                },
+                end: "i jo, en canvi, ens centraríem en el disseny del producte, la gestió general del projecte i el desenvolupament del model de negoci."
+            },
+            paragraph4: "La veritat és que vam arribar força lluny. Vam aconseguir llençar al mercat una versió completa i perfectament jugable de l'aplicació, i fins i tot vam estar presents en algunes de les plataformes de distribució més importants, com Google Play o l'App Store d'Apple. Malgrat tot, les coses no van acabar de sortir com havíem planejat. Discrepàncies internes amb algun dels membres de l'equip van acabar fent que el projecte descarrilés. Però va ser divertit mentre va durar, i vam aprendre un munt.",
+            paragraph5: "Entre d'altres, durant el desenvolupament d'aquest projecte vaig estar involucrat en les àrees següents:",
+            discipline1: "Disseny de producte",
+            discipline1$1: "Confecció de la trama i escriptura de guions",
+            discipline1$2: "Gamificació",
+            discipline1$3: "Traducció de textos",
+            discipline2: "Estratègia de negoci",
+            discipline3: "Brànding",
+            discipline4: "Màrqueting",
+            discipline5: "Community management"
         },
         esp: {
-            paragraph1: "Ahora puede que parezca raro (vale, también en aquel entonces), pero este fue el primer grado universitario que emprendí después de terminar el instituto.",
-            paragraph2: "Tengo que confesar que no tenía mucha idea sobre qué hacer en aquel momento, así que escogí la primera cosa que me sonó interesante y con aires de aventura (otra opción era arqueología), sin pensar lo más mínimo en su potencial futuro en el mercado laboral. Como si fuera un 'Magnum, P.I.' de pacotilla, pensé que resolver crímenes en camisa hawaiana yendo de un lado a otro en un Ferrari podría ser un estilo de vida bastante guay.",
-            paragraph3: "Por favor, no me juzgues con demasiada dureza. Tenía menos de 20 años.",
-            paragraph4: "En cualquier caso, después de 4 años picando piedra en la universidad, obtuve mi grado: 'Criminología y Política Criminal' 🎉",
-            paragraph5: "Por supuesto, jamás conseguí un trabajo en el sector (las opciones eran bastante horribles y muy alejadas del glamour que se pintaba en las películas), pero las muchas cosas interesantes que aprendí durante aquel tiempo me hicieron crecer como persona y entender mejor cómo funcionan la sociedad y su 'sistema' que todo lo controla.",
-            paragraph6: "Entre algunas otras, toqué las disciplinas siguientes:",
-            discipline1: "Derecho",
-            discipline2: "Ciencia Política",
-            discipline3: "Sociología",
-            discipline4: "Antropología",
-            discipline5: "Psicología",
-            discipline6: "Medicina Forense",
-            discipline7: "Estadística"
+            paragraph1: {
+                start: "Hace ya un tiempo, por ahí el año 2016,",
+                mention: {
+                    generic: " un amigo mío ",
+                    specific: " Guillem Espías ",
+                },
+                end: "y yo decidimos que teníamos que hacer un juego. No obstante, no queríamos que fuera un juego cualquiera. En vez de eso, nos lo habíamos imaginado como una aventura de resolución de enigmas, que aprovecharía las maravillas de la tecnología móvil y del entramado urbano de Barcelona para crear una experiencia a medio camino entre el reino digital y la realidad.",
+            },
+            paragraph2: "El objetivo era construir un producto capaz de entretener, enseñar algo útil y llevar a la gente de paseo, todo al mismo tiempo.",
+            paragraph3: {
+                start: "Ninguno de nosotros tenía mucha idea de programación en aquel entonces, de modo que unimos fuerzas con un par de ingenieros de software, que quedarían a cargo de desarrollar la aplicación móvil.",
+                mention: {
+                    generic: " Mi amigo ",
+                    specific: " Guillem "
+                },
+                end: "y yo, mientras tanto, nos centraríamos en el diseño del producto, la gestión general del proyecto y el desarrollo del modelo de negocio."
+            },
+            paragraph4: "La verdad es que llegamos bastante lejos. Conseguimos lanzar al mercado una versión completa y perfectamente jugable de la aplicación, e incluso estuvimos presentes en algunas de las plataformas de distribución más importantes, como Google Play o la App Store de Apple. A pesar de todo, las cosas no acabaron de salir como habíamos planeado. Discrepancias internas con alguno de los miembros del equipo acabaron por hacer que el proyecto descarrilara. Pero fue divertido mientras duró, y aprendimos un montón.",
+            paragraph5: "Entre otras, durante el desarrollo de este proyecto estuve involucrado en las áreas siguientes:",
+            discipline1: "Diseño de producto",
+            discipline1$1: "Confección de la trama y escritura de guiones",
+            discipline1$2: "Gamificación",
+            discipline1$3: "Traducción de textos",
+            discipline2: "Estrategia de negocio",
+            discipline3: "Branding",
+            discipline4: "Marketing",
+            discipline5: "Community management"
         },
         eng: {
             paragraph1: {
@@ -963,26 +991,27 @@ export const projectsAppventure = {
                     generic: " a friend of mine ",
                     specific: " Guillem Espías ",
                 },
-                end: "and I decided we wanted to make a game. It wasn't going to be any type of game, though. Rather, we were planning it to be a game that would take advantage of the wonders of mobile technology and build upon Barcelona's cityscape, to create and adventure halfway between the realms of the digital and those of reality.",
+                end: "and I decided we wanted to make a game. It wasn't going to be the regular kind of game, though. Rather, we were picturing it as a puzzle-solving adventure that would take advantage of the wonders of mobile technology and build upon Barcelona's cityscape, to create an experience halfway between the realms of the digital and those of reality.",
             },
             paragraph2: "The objective was to come up with a product capable of simultaneously entertain, educate and take people on a stroll.",
             paragraph3: {
-                start: "Neither of us had much idea about coding at the time, so we teamed up with a couple of software engineers that would be in charge of developing the actual mobile app.",
+                start: "Neither of us had much idea about coding at the time, so we teamed up with a couple of software engineers that were left in charge of developing the actual mobile app.",
                 mention: {
                     generic: " My friend ",
                     specific: " Guillem "
                 },
                 end: "and I would instead focus on game design, project management and business development."
             },
-            paragraph4: "We made it quite far, actually. Even though we got to launch a fully playable version and managed to deploy it on major marketplaces such as Google Play and Apple's App Store, things didn't play out as planned. Internal discrepancies with some of the team members ended up tearing the project apart. But it was fun, and we learned a lot.",
-            paragraph5: "Among others, during the development of this project I was exposed to the following disciplines:",
-            discipline1: "Law",
-            discipline2: "Politics",
-            discipline3: "Sociology",
-            discipline4: "Anthropology",
-            discipline5: "Psychology",
-            discipline6: "Forensics",
-            discipline7: "Statistics"
+            paragraph4: "We made it quite far, actually. We got to launch a fully playable version and managed to deploy it on major marketplaces such as Google Play and Apple's App Store. Nonetheless, things didn't play out as planned. Internal discrepancies with some of the team members ended up tearing the project apart. But it was fun, and we learned a lot.",
+            paragraph5: "Among others, during the development of this project I was invested in the following areas:",
+            discipline1: "Product design",
+            discipline1$1: "Story plotting & scriptwriting",
+            discipline1$2: "Gamification",
+            discipline1$3: "Text translation",
+            discipline2: "Business strategy",
+            discipline3: "Branding",
+            discipline4: "Marketing",
+            discipline5: "Community management"
         }
     },
     visitPrompt: {

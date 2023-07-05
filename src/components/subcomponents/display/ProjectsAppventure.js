@@ -8,19 +8,24 @@ import compassImg from './../../../images/compass.png';
 function ProjectsAppventure(props) {
     const language = useContext(LangContext)
 
-    const [mentionState, setMentionState] = useState({
+    const initialMentionState = {
         p1: projectsAppventure.intro[language].paragraph1.mention.generic,
         p3: projectsAppventure.intro[language].paragraph3.mention.generic,
         style: "laserbox__link",
         link: ""
-    })
-    const handleMention = () => {
-        setMentionState({
-            p1: projectsAppventure.intro[language].paragraph1.mention.specific,
-            p3: projectsAppventure.intro[language].paragraph3.mention.specific,
-            style: "display-section__title display-section__title--smaller display-section__title--red",
-            link: "https://www.linkedin.com/in/guillemespias/"
-        })
+    }
+    const [mentionState, setMentionState] = useState(initialMentionState)
+    const handleMention = (mentionType) => {
+        if (mentionType === "specific") {
+            setMentionState({
+                p1: projectsAppventure.intro[language].paragraph1.mention.specific,
+                p3: projectsAppventure.intro[language].paragraph3.mention.specific,
+                style: "display-section__title display-section__title--smaller display-section__title--red",
+                link: "https://www.linkedin.com/in/guillemespias/"
+            })
+        } else {
+            setMentionState(initialMentionState)
+        }
     }
 
     return (
@@ -30,7 +35,9 @@ function ProjectsAppventure(props) {
             <br></br>
             <p>
                 {projectsAppventure.intro[language].paragraph1.start} 
-                <span className={`laserbox__chunk ${mentionState.style}`}><a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention()}>{mentionState.p1}</a></span> 
+                <span className={`laserbox__chunk ${mentionState.style}`}>
+                    <a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention("specific")} onMouseLeave={() => handleMention("generic")}>{mentionState.p1}</a>
+                </span> 
                 {projectsAppventure.intro[language].paragraph1.end}
             </p>
             <br></br>
@@ -38,7 +45,9 @@ function ProjectsAppventure(props) {
             <br></br>
             <p>
                 {projectsAppventure.intro[language].paragraph3.start} 
-                <span className={`laserbox__chunk ${mentionState.style}`}><a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention()}>{mentionState.p3}</a></span> 
+                <span className={`laserbox__chunk ${mentionState.style}`}>
+                    <a href={mentionState.link} target="_blank" rel="noreferrer" onMouseOver={() => handleMention("specific")} onMouseLeave={() => handleMention("generic")}>{mentionState.p3}</a>
+                </span> 
                 {projectsAppventure.intro[language].paragraph3.end}
             </p>
             <br></br>
@@ -48,12 +57,15 @@ function ProjectsAppventure(props) {
             <br></br>
             <ul className="display-section__bulletList">
                 <li>{projectsAppventure.intro[language].discipline1}</li>
+                <ul className="display-section__bulletList">
+                    <li>{projectsAppventure.intro[language].discipline1$1}</li>
+                    <li>{projectsAppventure.intro[language].discipline1$2}</li>
+                    <li>{projectsAppventure.intro[language].discipline1$3}</li>
+                </ul>
                 <li>{projectsAppventure.intro[language].discipline2}</li>
                 <li>{projectsAppventure.intro[language].discipline3}</li>
                 <li>{projectsAppventure.intro[language].discipline4}</li>
                 <li>{projectsAppventure.intro[language].discipline5}</li>
-                <li>{projectsAppventure.intro[language].discipline6}</li>
-                <li>{projectsAppventure.intro[language].discipline7}</li>
             </ul>
             <br></br>
             <div>
