@@ -437,12 +437,15 @@ export const educationWWW = {
             discipline8: "Git / Github"
         },
         eng: {
-            paragraph1: "So yeah... we both know the way of the code warrior never ends.",
-            paragraph2: "Looking now in hindsight at that exciting moment when I finished my Web Development Bootcamp, I can only regard it as some sort of birth: my coming into a totally new wild world with the sole capacities of breathing and crying for help. The steep path of continuous learning and improvement that lied ahead of me had just begun.",
-            paragraph3: "Given the dynamism of, one has to accept it is only natural for every developer to constantly recycle and learn new stuff (adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification and determination are the keys to success.",
-            paragraph4: "The experience —during which I completed 1 solo front end and 2 pair-programming full stack projects—, was instrumental in paving my way into a field that was new and quite challenging to me. It allowed me to firmly set foot on it and also gave me the necessary tools to further widen my knowledge and capabilities.",
-            paragraph5: "These are some of skills and technologies I've made me conversant with since my departure:",
-            paragraph6: "These are some of skills and technologies I've made me conversant with since my departure:",
+            paragraph1: "So yeah... we both know that the way of the code warrior never ends.",
+            paragraph2: {
+                start: "Looking now in hindsight at that exciting moment when I finished my ",
+                link: "Web Development Bootcamp, ",
+                end: "I can only regard it as some sort of birth: my arrival into a totally new wild world with the sole capacities of breathing and crying for help. The steep path of continuous learning and improvement that lay ahead of me had just begun."
+            },
+            paragraph3: "Given the dynamism of the coding trade, one has to accept it is only natural for every developer to constantly recycle themselves and learn new stuff (to adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification \u2014getting yourself a roadmap so you don't get lost\u2014 and determination \u2014finding the time and inner will to keep studying and practicing\u2014 are the two fundamental keys to success.",
+            paragraph4: "Out of the deluge of resources available, these are some of the learning platforms I use the most:",
+            paragraph5: "And these are some of the skills and technologies I've made myself conversant with throught the self-learning method:",
             discipline1: "TypeScript",
             discipline2: "Python",
             discipline3: "CSS Grid",

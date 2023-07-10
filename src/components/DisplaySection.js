@@ -240,7 +240,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "education" && props.activeInfoItem === "tourism" && <EducationUOC />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={props.personalizeParagraph} />}
-                    {props.activeSubsection === "education" && props.activeInfoItem === "webcourses" && <EducationWWW personalizeParagraph={props.personalizeParagraph} />}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "webcourses" && <EducationWWW personalizeParagraph={props.personalizeParagraph} handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "supermarket" && <WorkDStore />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "lifeguard" && <WorkBeach />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}

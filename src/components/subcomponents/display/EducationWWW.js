@@ -24,6 +24,12 @@ function EducationWWW(props) {
             personalizedP1 = props.personalizeParagraph("name", "So yeah", educationWWW.intro[language].paragraph1);
     }
 
+    const showIronhack = () => {
+        props.handleActiveSubsection("education");
+        props.handleMenuStatus("education");
+        props.handleActiveInfoItem("coding");
+    }
+
     return (
         <div className="display-section__textBox">
             <p className="display-section__title">{educationWWW.degreeName[language]}</p>
@@ -31,13 +37,17 @@ function EducationWWW(props) {
             <br></br>
             <p>{personalizedP1}</p>
             <br></br>
-            <p>{educationWWW.intro[language].paragraph2}</p>
+            <div>
+                <span>{educationWWW.intro[language].paragraph2.start}</span>
+                <span className="laserbox__chunk laserbox__link">
+                    <p onClick={() => showIronhack()}>{educationWWW.intro[language].paragraph2.link}</p>
+                </span>
+                <span>{educationWWW.intro[language].paragraph2.end}</span>
+            </div>
             <br></br>
             <p>{educationWWW.intro[language].paragraph3}</p>
             <br></br>
             <p>{educationWWW.intro[language].paragraph4}</p>
-            <br></br>
-            <p>{educationWWW.intro[language].paragraph5}</p>
             <div>
                 <div className="display-section__logoBox">
                     {
@@ -75,7 +85,7 @@ function EducationWWW(props) {
                     </a>
                 </div>
             </div>
-            <p>{educationWWW.intro[language].paragraph6}</p>
+            <p>{educationWWW.intro[language].paragraph5}</p>
             <br></br>
             <ul className="display-section__bulletList">
                 <li>{educationWWW.intro[language].discipline1}</li>
