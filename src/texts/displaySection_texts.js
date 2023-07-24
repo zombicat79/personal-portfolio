@@ -397,7 +397,81 @@ export const educationWWW = {
     },
     intro: {
         cat: {
-            paragraph1: "Yeah, we both know the way of never ends",
+            paragraph1: "Doncs sí... tots dos sabem que el camí del guerrer-hacker no té final.",
+            paragraph2: {
+                start: "Si torno la mirada enrere cap a aquell moment decisiu en què vaig acabar el meu ",
+                link: "Bootcamp de Desenvolupament Web, ",
+                end: "només puc contemplar-ho com una mena de renaixement: la meva arribada a un món totalment nou i salvatge amb l'única capacitat de respirar i cridar demanant ajuda. El llarg viatge de l'aprenentage i la millora contínues que tenia per davant tot just havia començat."
+            },
+            paragraph3: "Tenint en compte el dinamisme de l'ofici de la programació, qualsevol desenvolupador ha d'acceptar com a natural la necessitat de reciclar-se i aprendre coses noves constantment (adaptar-se o morir). Per sort, internet és ple de recursos gratuïts (o bé de pagament, si cal) que t'ensenyaran tot el que necessites per millorar en la teva feina. La planificació \u2014disposar d'un full de ruta per tal de no perdre't\u2014 i la determinació \u2014trobar el temps i la voluntat per continuar estudiant i practicant\u2014 són les dues claus fonamentals de l'èxit.",
+            paragraph4: "De tot l'allau de recursos disponibles, aquestes són algunes de les plataformes d'aprenentatge que més utilitzo:",
+            paragraph5: "I aquestes són algunes de les habilitats i les tecnologies amb què m'he familiaritzat a través del mètode de l'autoaprenentatge:",
+            discipline1: "TypeScript",
+            discipline2: "Python",
+            discipline3: "CSS Grid",
+            discipline4: "Arquitectura CSS",
+            discipline4$1: "BEM",
+            discipline4$2: "OOCSS",
+            discipline4$3: "SMACSS",
+            discipline5: "SASS",
+            discipline6: "React Native",
+            discipline7: "Regex"
+        },
+        esp: {
+            paragraph1: "Pues sí... ambos sabemos que el camino del hacker-guerrero no tiene final.",
+            paragraph2: {
+                start: "Si vuelvo la mirada atrás hacia aquel momento decisivo en el que acabé mi ",
+                link: "Bootcamp de Desarrollo Web, ",
+                end: "solo puedo contemplarlo como una especie de renacimiento: mi llegada a un mundo totalment nuevo y salvaje con la única capacidad de respirar y gritar pidiendo ayuda. La larga travesía del aprendizaje y la mejora continuas que tenía por delante justo había empezado."
+            },
+            paragraph3: "Teniendo en cuenta el dinamismo del oficio de la programación, cualquier desarrollador debe aceptar como natural la necesidad de reciclarse y aprender cosas nuevas constantemente (adaptarse o morir). Por suerte, internet está lleno de recursos gratuitos (o bien de pago, si hiciera falta) que te enseñarán todo lo que necesitas para mejorar en tu trabajo. La planificación \u2014disponer de una hoja de ruta para no perderte\u2014 y la determinación \u2014encontrar el tiempo y la voluntad para seguir estudiando y practicando\u2014 son las dos claves fundamentales del éxito.",
+            paragraph4: "De toda la avalancha de recursos disponibles, estas son algunas de las plataformas de aprendizaje que más utilizo:",
+            paragraph5: "Y estas son algunas de las habilidades y las tecnologías con las que me he familiarizado a través del método del autoaprendizaje:",
+            discipline1: "TypeScript",
+            discipline2: "Python",
+            discipline3: "CSS Grid",
+            discipline4: "Arquitectura CSS",
+            discipline4$1: "BEM",
+            discipline4$2: "OOCSS",
+            discipline4$3: "SMACSS",
+            discipline5: "SASS",
+            discipline6: "React Native",
+            discipline7: "Regex"
+        },
+        eng: {
+            paragraph1: "So yeah... we both know that the way of the code warrior never ends.",
+            paragraph2: {
+                start: "Looking now in hindsight at that exciting moment when I finished my ",
+                link: "Web Development Bootcamp, ",
+                end: "I can only regard it as some sort of rebirth: my arrival into a totally new wild world with the sole capacities of breathing and crying for help. The steep path of continuous learning and improvement that lay ahead of me had just begun."
+            },
+            paragraph3: "Given the dynamism of the coding trade, one has to accept it is only natural for every developer to constantly recycle themselves and learn new stuff (to adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification \u2014getting yourself a roadmap so you don't get lost\u2014 and determination \u2014finding the time and inner will to keep studying and practicing\u2014 are the two fundamental keys to success.",
+            paragraph4: "Out of the deluge of resources available, these are some of the learning platforms I use the most:",
+            paragraph5: "And these are some of the skills and technologies I've made myself conversant with throught the self-learning method:",
+            discipline1: "TypeScript",
+            discipline2: "Python",
+            discipline3: "CSS Grid",
+            discipline4: "CSS Architecture",
+            discipline4$1: "BEM",
+            discipline4$2: "OOCSS",
+            discipline4$3: "SMACSS",
+            discipline5: "SASS",
+            discipline6: "React Native",
+            discipline7: "Regex"
+        }
+    }
+}
+
+export const educationRobotics = {
+    degreeName: {
+        cat: "Robòtica",
+        esp: "Robótica",
+        eng: "Robotics"
+    },
+    institution: "Ironhack Barcelona",
+    intro: {
+        cat: {
+            paragraph1: "I com és que vaig acabar programant?",
             paragraph2: "Aquesta és una llarga història de la qual podràs obtenir un tastet si et mous al llarg de la línia del temps que trobaràs just a sota. Però no pateixis, t'estalviaré el tràngol i ho resumiré tot només dient que des de feia temps havia estat un interès creixent meu, nascut a partir de l'hàbit de gestionar blogs.",
             paragraph3: "En conseqüència, un cop les circumstàncies van ser les correctes (la pandèmia va esclatar i de sobte em vaig trobar amb un munt de temps extra), em vaig matricular en un Bootcamp de Desenvolupament Web. Després de 9 setmanes de feina intenssísima, extenuant i molt exigent vaig aconseguir la meva recompensa: la certificació com a 'Desenvolupador Full Stack' 🎉 🎉 🎉 🎉",
             paragraph4: "L'experiència —durant la qual vaig completar 1 projecte front end en solitari i 2 projectes full stack programant en parella—, va ser decisiva per tal d'aplanar el meu camí dins d'un camp que era nou i força desafiador per a mi. Em va permetre assentar-hi fermament les primeres passes, i també em va donar les eines necessàries per seguir ampliant el meu coneixement i les meves habilitats.",
@@ -437,25 +511,11 @@ export const educationWWW = {
             discipline8: "Git / Github"
         },
         eng: {
-            paragraph1: "So yeah... we both know that the way of the code warrior never ends.",
-            paragraph2: {
-                start: "Looking now in hindsight at that exciting moment when I finished my ",
-                link: "Web Development Bootcamp, ",
-                end: "I can only regard it as some sort of birth: my arrival into a totally new wild world with the sole capacities of breathing and crying for help. The steep path of continuous learning and improvement that lay ahead of me had just begun."
-            },
-            paragraph3: "Given the dynamism of the coding trade, one has to accept it is only natural for every developer to constantly recycle themselves and learn new stuff (to adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification \u2014getting yourself a roadmap so you don't get lost\u2014 and determination \u2014finding the time and inner will to keep studying and practicing\u2014 are the two fundamental keys to success.",
-            paragraph4: "Out of the deluge of resources available, these are some of the learning platforms I use the most:",
-            paragraph5: "And these are some of the skills and technologies I've made myself conversant with throught the self-learning method:",
-            discipline1: "TypeScript",
-            discipline2: "Python",
-            discipline3: "CSS Grid",
-            discipline4: "CSS Architecture",
-            discipline4$1: "BEM",
-            discipline4$2: "OOCSS",
-            discipline4$3: "SMACSS",
-            discipline5: "SASS",
-            discipline6: "React Native",
-            discipline7: "Regex"
+            paragraph1: "And why not?",
+            paragraph2: "I still have a long (rather infinite) way to go in what regards web development, and I reckon it will remain my professional field for most of the foreseeable future, but I've always wanted to go physical.",
+            paragraph3: "I mean... tweaking some code and seeing how things change and react on the screen is nice and all, but I would really love to see how actual contraptions perform on my code out on the physical world.",
+            paragraph4: "Drones, industrial robotic arms:",
+            paragraph5: "During the bootcamp, among others, I acquired the following key development languages, skills and technologies:",
         }
     }
 }

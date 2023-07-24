@@ -10,6 +10,7 @@ import EducationUOC from './subcomponents/display/EducationUOC';
 import EducationSalle from './subcomponents/display/EducationSalle';
 import EducationIronhack from './subcomponents/display/EducationIronhack';
 import EducationWWW from './subcomponents/display/EducationWWW';
+import EducationRobotics from './subcomponents/display/EducationRobotics';
 
 import WorkDStore from './subcomponents/display/WorkDStore';
 import WorkBeach from './subcomponents/display/WorkBeach';
@@ -241,6 +242,7 @@ function DisplaySection(props) {
                     {props.activeSubsection === "education" && props.activeInfoItem === "social-media" && <EducationSalle />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "coding" && <EducationIronhack personalizeParagraph={props.personalizeParagraph} />}
                     {props.activeSubsection === "education" && props.activeInfoItem === "webcourses" && <EducationWWW personalizeParagraph={props.personalizeParagraph} handleActiveSubsection={props.handleActiveSubsection} handleActiveInfoItem={props.handleActiveInfoItem} handleMenuStatus={handleMenuStatus} />}
+                    {props.activeSubsection === "education" && props.activeInfoItem === "future-coding" && <EducationRobotics />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "supermarket" && <WorkDStore />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "lifeguard" && <WorkBeach />}
                     {props.activeSubsection === "work" && props.activeInfoItem === "kitchen" && <WorkKitchen />}

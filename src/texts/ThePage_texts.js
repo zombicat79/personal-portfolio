@@ -175,6 +175,11 @@ const pageTexts = {
         esp: '"El gran tour"',
         eng: '"The Grand Tour"'
     },
+    creditImg22: {
+        cat: '"Placa base"',
+        esp: '"Placa base"',
+        eng: '"Motherboard"'
+    },
     creditIcon1: {
         cat: '"Petja de gat"',
         esp: '"Huella de gato"',
@@ -304,6 +309,11 @@ const pageTexts = {
         cat: '"Logo Dream Big allargat"',
         esp: '"Logo Dream Big alargado"',
         eng: '"Dream Big horizontal logo"'
+    },
+    creditIcon27: {
+        cat: '"Braç robòtic"',
+        esp: '"Brazo robótico"',
+        eng: '"Robot arm"'
     },
     creditBtn1: {
         cat: "Fotos",

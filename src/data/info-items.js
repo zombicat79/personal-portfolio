@@ -3,7 +3,7 @@ import uocLogo from "./../../src/images/icos/infoItems/uoc.png";
 import salleLogo from "./../../src/images/icos/infoItems/salle.png";
 import ironhackLogo from "./../../src/images/icos/infoItems/ironhack.png";
 import wwwImg from './../../src/images/icos/infoItems/www.png';
-import cyberImg from './../../src/images/icos/infoItems/cybersecurity.png';
+import roboarmImg from './../../src/images/icos/infoItems/robot-arm.png';
 
 import storeImg from './../../src/images/icos/infoItems/supermarket.png';
 import guardImg from './../../src/images/icos/infoItems/lifeguard.png';
@@ -74,7 +74,7 @@ const infoItems = {
             moment: "future",
             name: "future-coding",
             imgType: "element",
-            src: cyberImg,
+            src: roboarmImg,
             size: "big"
         }
     ],
