@@ -58,6 +58,11 @@ import compassIcon from './../images/compass.png';
 import dreambigLogo1 from './../images/icos/infoItems/dreambig-white.png';
 import dreambigLogo2 from './../images/logos/dreambig.png';
 import robotarmIcon from './../images/icos/infoItems/robot-arm.png';
+import cloudIcon from './../images/icos/cloud.png';
+import sunIcon from './../images/icos/smiling-sun.png';
+import droneIcon from './../images/icos/drone.png';
+import industrialarmIcon from './../images/icos/industrial-arm.png';
+import houserobotIcon from './../images/icos/cleaning-robot.png';
 
 import pageTexts from './../texts/ThePage_texts';
 
@@ -106,7 +111,7 @@ function ThePage(props) {
     const iconArray = [catpawIcon, storeIcon, lifeguardIcon, kitchenIcon, waiterIcon, handlingIcon, callcenterIcon, 
         hotelIcon, controlIcon, invadersIcon, phoneIcon, calculatorIcon, BcnIcon, ManIcon, DubIcon, 
         worldIcon, planetIcon, rocketIcon, workingIcon, wwwIcon, twinkleIcon, memoryIcon, appventureLogo, compassIcon, 
-        dreambigLogo1, dreambigLogo2, robotarmIcon];
+        dreambigLogo1, dreambigLogo2, robotarmIcon, cloudIcon, sunIcon, droneIcon, industrialarmIcon, houserobotIcon];
     const [creditImg, setCreditImg] = useState(null);
     const handleCreditImg = (imgIndex, imgType) => {
         if (imgType === "pic") {
@@ -252,6 +257,11 @@ function ThePage(props) {
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(24, "icon")}><i>{pageTexts.creditIcon25[language]}</i> &ndash; Dream Big Association &ndash; Guillem Espías</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(25, "icon")}><i>{pageTexts.creditIcon26[language]}</i> &ndash; Dream Big Association &ndash; Guillem Espías</li>
                                         <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(26, "icon")}><i>{pageTexts.creditIcon27[language]}</i> &ndash; www.thenounproject.com &ndash; Vectorstall</li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(27, "icon")}><i>{pageTexts.creditIcon28[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(28, "icon")}><i>{pageTexts.creditIcon29[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(29, "icon")}><i>{pageTexts.creditIcon30[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(30, "icon")}><i>{pageTexts.creditIcon31[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
+                                        <li className="laserbox__creditItem" onMouseOver={() => handleCreditImg(31, "icon")}><i>{pageTexts.creditIcon32[language]}</i> &ndash; www.pngegg.com &ndash; <i>{pageTexts.creditImg2.author[language]}</i></li>
                                     </ul>
                                 </div>
                                 <div className="laserbox__creditBox--right">

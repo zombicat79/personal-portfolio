@@ -468,54 +468,32 @@ export const educationRobotics = {
         esp: "Robótica",
         eng: "Robotics"
     },
-    institution: "Ironhack Barcelona",
+    institution: {
+        cat: "Encara un altre grau albirant-se en el futur?",
+        esp: "¿Todavía otro grado más vislumbrándose en el futuro?",
+        eng: "Yet another degree looming in the future?"
+    },
     intro: {
         cat: {
-            paragraph1: "I com és que vaig acabar programant?",
-            paragraph2: "Aquesta és una llarga història de la qual podràs obtenir un tastet si et mous al llarg de la línia del temps que trobaràs just a sota. Però no pateixis, t'estalviaré el tràngol i ho resumiré tot només dient que des de feia temps havia estat un interès creixent meu, nascut a partir de l'hàbit de gestionar blogs.",
-            paragraph3: "En conseqüència, un cop les circumstàncies van ser les correctes (la pandèmia va esclatar i de sobte em vaig trobar amb un munt de temps extra), em vaig matricular en un Bootcamp de Desenvolupament Web. Després de 9 setmanes de feina intenssísima, extenuant i molt exigent vaig aconseguir la meva recompensa: la certificació com a 'Desenvolupador Full Stack' 🎉 🎉 🎉 🎉",
-            paragraph4: "L'experiència —durant la qual vaig completar 1 projecte front end en solitari i 2 projectes full stack programant en parella—, va ser decisiva per tal d'aplanar el meu camí dins d'un camp que era nou i força desafiador per a mi. Em va permetre assentar-hi fermament les primeres passes, i també em va donar les eines necessàries per seguir ampliant el meu coneixement i les meves habilitats.",
-            paragraph5: "Durant el bootcamp, entre d'altres, vaig adquirir els següents llenguatges, habilitats i tecnologies crucials de desenvolupament:",
-            discipline1: "Javascript ES6",
-            discipline1$1: "Manipulació del DOM",
-            discipline1$2: "Codi asíncron / Promeses de JS",
-            discipline2: "HTML5",
-            discipline2$1: "Canvas API",
-            discipline3: "CSS3",
-            discipline3$1: "CSS Flex",
-            discipline3$2: "Transicions i animacions",
-            discipline4: "Node.js",
-            discipline5: "MongoDB",
-            discipline6: "REST API",
-            discipline7: "React",
-            discipline8: "Git / Github"
+            paragraph1: "Bé... i per què no?",
+            paragraph2: "La veritat és que encara em queda un llarg camí (més aviat infinit) pel que fa al desenvolupament web, i em fa l'efecte que aquest camp romandrà com el meu sector professional durant la major part del futur previsible. Però sempre he sentit curiositat pel vessant més físic del món de la programació.",
+            paragraph3: "Vull dir... modificar un tros de codi i comprovar com les coses canvien i reaccionen a la pantalla està prou bé, però realment m'encantaria veure com artilugis de debò, instruïts i dirigits pel meu codi, es comporten en el medi real.",
+            paragraph4: "Drons, braços robot industrials, electrodomèstics intel·ligents... el que sigui:",
+            paragraph5: "Sincerament no sé si mai tindré l'oportunitat de fer-ne una feina, d'això. Però el que sí sé segur és que tinc la intenció de provar-ho com a hobby!"
         },
         esp: {
-            paragraph1: "¿Y cómo es que acabé programando?",
-            paragraph2: "Esta es una larga historia sobre la cual te podrás hacer una idea si te mueves a lo largo de la línea temporal que encontrarás justo debajo. Pero no te preocupes, te ahorraré las molestias y te lo resumiré todo simplemente diciendo que desde hacía tiempo había sido un interés creciente mío, nacido a partir del hábito de gestionar blogs.",
-            paragraph3: "En consecuencia, una vez se dieron las circunstancias correctas (la pandemia estalló y de repente me encontré con un montón de tiempo extra), me matriculé en un Bootcamp de Desarrollo Web. Después de 9 semanas de trabajo intensísimo, extenuante y muy exigente logré mi recompensa: la certificación como 'Desarrollador Full Stack' 🎉 🎉 🎉 🎉",
-            paragraph4: "La experiencia —durante la cual completé 1 proyecto front end en solitario y 2 proyectos full stack programando en pareja—, fue decisiva para allanar mi camino dentro de un campo que era nuevo y bastante desafiante para mí. Me permitió asentar firmemente mis primeros pasos en el sector, y también me dio las herramientas necesarias para seguir ampliando mi conocimiento y mis habilidades.",
-            paragraph5: "Durante el bootcamp, entre otros, adquirí los siguientes lenguajes, habilidades y tecnologías cruciales de desarrollo:",
-            discipline1: "Javascript ES6",
-            discipline1$1: "Manipulación del DOM",
-            discipline1$2: "Código asíncrono / Promesas de JS",
-            discipline2: "HTML5",
-            discipline2$1: "Canvas API",
-            discipline3: "CSS3",
-            discipline3$1: "CSS Flex",
-            discipline3$2: "Transiciones y animaciones",
-            discipline4: "Node.js",
-            discipline5: "MongoDB",
-            discipline6: "REST API",
-            discipline7: "React",
-            discipline8: "Git / Github"
+            paragraph1: "Bueno... ¿y por qué no?",
+            paragraph2: "La verdad es que todavía me queda un largo camino (más bien infinito) por lo que respecta al desarollo web, y me da la impresión que este campo seguirá siendo mi sector profesional durante la mayor part de mi futuro previsible. Pero siempre he sentido curiosidad por la vertiente más física del mundo de la programación.",
+            paragraph3: "Me refiero... modificar un pedazo de código y comprobar cómo las cosas cambian y reaccionan en la pantalla está bien y eso, pero realmente me encantaría ver cómo artilugios de verdad, instruidos y dirigidos por mi código, se comportan en el medio real.",
+            paragraph4: "Drones, brazos robot industriales, electrodomésticos inteligentes... lo que sea:",
+            paragraph5: "Sinceramente no sé si alguna vez tendré la oportunidad de fer-ne una feina, d'això. ¡Pero lo que sí sé seguro es que tengo la intención de probarlo como hobby!"
         },
         eng: {
-            paragraph1: "And why not?",
-            paragraph2: "I still have a long (rather infinite) way to go in what regards web development, and I reckon it will remain my professional field for most of the foreseeable future, but I've always wanted to go physical.",
-            paragraph3: "I mean... tweaking some code and seeing how things change and react on the screen is nice and all, but I would really love to see how actual contraptions perform on my code out on the physical world.",
-            paragraph4: "Drones, industrial robotic arms:",
-            paragraph5: "During the bootcamp, among others, I acquired the following key development languages, skills and technologies:",
+            paragraph1: "Well... and why not?",
+            paragraph2: "The truth is I still have a long (rather infinite) way to go in what regards web development, and I reckon it will remain my professional field for most of my foreseeable future. But I've always felt curious about getting physical with my programming.",
+            paragraph3: "I mean... tweaking some code and seeing how things change and react on the screen is nice and all, but I would really love to see how actual contraptions running on my code perform out in the wild.",
+            paragraph4: "Drones, industrial robotic arms, smart house appliances... you name it:",
+            paragraph5: "I really don't know if I'll ever get the chance to make a job of this during my present lifetime, but I definitely intend to have a go at it as a hobby!"
         }
     }
 }

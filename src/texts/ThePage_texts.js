@@ -311,9 +311,34 @@ const pageTexts = {
         eng: '"Dream Big horizontal logo"'
     },
     creditIcon27: {
-        cat: '"Braç robòtic"',
-        esp: '"Brazo robótico"',
-        eng: '"Robot arm"'
+        cat: '"Braç robòtic conceptual"',
+        esp: '"Brazo robótico conceptual"',
+        eng: '"Conceptual robot arm"'
+    },
+    creditIcon28: {
+        cat: '"Núvol del cel"',
+        esp: '"Nube en el cielo"',
+        eng: '"Cloud in the sky"'
+    },
+    creditIcon29: {
+        cat: '"Sol somrient"',
+        esp: '"Sol sonriente"',
+        eng: '"Smiling sun"'
+    },
+    creditIcon30: {
+        cat: '"Dron"',
+        esp: '"Dron"',
+        eng: '"Drone"'
+    },
+    creditIcon31: {
+        cat: '"Braç robot industrial"',
+        esp: '"Brazo robot industrial"',
+        eng: '"Industrial robot arm"'
+    },
+    creditIcon32: {
+        cat: '"Robot de neteja"',
+        esp: '"Robot de limpieza"',
+        eng: '"Cleaning robot"'
     },
     creditBtn1: {
         cat: "Fotos",
