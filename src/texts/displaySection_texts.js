@@ -391,19 +391,19 @@ export const educationWWW = {
         eng: "More coding..."
     },
     institution: {
-        cat: "La universitat de la xarxa de xarxes",
-        esp: "La universidad de la red de redes",
+        cat: "La generosíssima universitat de la xarxa de xarxes",
+        esp: "La generosísima universidad de la red de redes",
         eng: "The plentiful university of the world wide web"
     },
     intro: {
         cat: {
             paragraph1: "Doncs sí... tots dos sabem que el camí del guerrer-hacker no té final.",
             paragraph2: {
-                start: "Si torno la mirada enrere cap a aquell moment decisiu en què vaig acabar el meu ",
+                start: "Si torno la mirada enrere cap a aquell moment determinant en què vaig acabar el meu ",
                 link: "Bootcamp de Desenvolupament Web, ",
-                end: "només puc contemplar-ho com una mena de renaixement: la meva arribada a un món totalment nou i salvatge amb l'única capacitat de respirar i cridar demanant ajuda. El llarg viatge de l'aprenentage i la millora contínues que tenia per davant tot just havia començat."
+                end: "només puc contemplar-ho com una mena de renaixement: la meva arribada a un món totalment nou i salvatge amb les úniques capacitats de respirar i cridar demanant ajuda. El llarg viatge de l'aprenentage i la millora contínues que tenia per davant tot just havia començat."
             },
-            paragraph3: "Tenint en compte el dinamisme de l'ofici de la programació, qualsevol desenvolupador ha d'acceptar com a natural la necessitat de reciclar-se i aprendre coses noves constantment (adaptar-se o morir). Per sort, internet és ple de recursos gratuïts (o bé de pagament, si cal) que t'ensenyaran tot el que necessites per millorar en la teva feina. La planificació \u2014disposar d'un full de ruta per tal de no perdre't\u2014 i la determinació \u2014trobar el temps i la voluntat per continuar estudiant i practicant\u2014 són les dues claus fonamentals de l'èxit.",
+            paragraph3: "Tenint en compte el dinamisme de l'ofici de la programació, qualsevol desenvolupador ha d'acceptar com a natural la necessitat de reciclar-se i aprendre coses noves constantment (adaptar-se o morir). Per sort, internet és ple de recursos gratuïts (o bé de pagament, si cal) que t'ensenyaran tot el que necessitis per millorar en la teva feina. La planificació \u2014disposar d'un full de ruta per tal de no perdre't\u2014 i la determinació \u2014trobar el temps i la voluntat per continuar estudiant i practicant\u2014 són les dues claus fonamentals de l'èxit.",
             paragraph4: "De tot l'allau de recursos disponibles, aquestes són algunes de les plataformes d'aprenentatge que més utilitzo:",
             paragraph5: "I aquestes són algunes de les habilitats i les tecnologies amb què m'he familiaritzat a través del mètode de l'autoaprenentatge:",
             discipline1: "TypeScript",
@@ -420,11 +420,11 @@ export const educationWWW = {
         esp: {
             paragraph1: "Pues sí... ambos sabemos que el camino del hacker-guerrero no tiene final.",
             paragraph2: {
-                start: "Si vuelvo la mirada atrás hacia aquel momento decisivo en el que acabé mi ",
+                start: "Si vuelvo la mirada atrás hacia aquel momento determinante en el que acabé mi ",
                 link: "Bootcamp de Desarrollo Web, ",
-                end: "solo puedo contemplarlo como una especie de renacimiento: mi llegada a un mundo totalment nuevo y salvaje con la única capacidad de respirar y gritar pidiendo ayuda. La larga travesía del aprendizaje y la mejora continuas que tenía por delante justo había empezado."
+                end: "solo puedo contemplarlo como una especie de renacimiento: mi llegada a un mundo totalmente nuevo y salvaje con las únicas capacidades de respirar y gritar pidiendo ayuda. La larga travesía del aprendizaje y la mejora continuas que tenía por delante justo había empezado."
             },
-            paragraph3: "Teniendo en cuenta el dinamismo del oficio de la programación, cualquier desarrollador debe aceptar como natural la necesidad de reciclarse y aprender cosas nuevas constantemente (adaptarse o morir). Por suerte, internet está lleno de recursos gratuitos (o bien de pago, si hiciera falta) que te enseñarán todo lo que necesitas para mejorar en tu trabajo. La planificación \u2014disponer de una hoja de ruta para no perderte\u2014 y la determinación \u2014encontrar el tiempo y la voluntad para seguir estudiando y practicando\u2014 son las dos claves fundamentales del éxito.",
+            paragraph3: "Teniendo en cuenta el dinamismo del oficio de programador, cualquier desarrollador debe aceptar como natural la necesidad de reciclarse y aprender cosas nuevas constantemente (adaptarse o morir). Por suerte, internet está lleno de recursos gratuitos (o bien de pago, si hiciera falta) que te enseñarán todo lo que necesites para mejorar en tu trabajo. La planificación \u2014disponer de una hoja de ruta para no perderte\u2014 y la determinación \u2014encontrar el tiempo y la voluntad para seguir estudiando y practicando\u2014 son las dos claves fundamentales del éxito.",
             paragraph4: "De toda la avalancha de recursos disponibles, estas son algunas de las plataformas de aprendizaje que más utilizo:",
             paragraph5: "Y estas son algunas de las habilidades y las tecnologías con las que me he familiarizado a través del método del autoaprendizaje:",
             discipline1: "TypeScript",
@@ -447,7 +447,7 @@ export const educationWWW = {
             },
             paragraph3: "Given the dynamism of the coding trade, one has to accept it is only natural for every developer to constantly recycle themselves and learn new stuff (to adapt or die). Thankfully, the internet is teeming with free (or paid, if need be) resources that will teach you everything you need to know to get better at your job. Planification \u2014getting yourself a roadmap so you don't get lost\u2014 and determination \u2014finding the time and inner will to keep studying and practicing\u2014 are the two fundamental keys to success.",
             paragraph4: "Out of the deluge of resources available, these are some of the learning platforms I use the most:",
-            paragraph5: "And these are some of the skills and technologies I've made myself conversant with throught the self-learning method:",
+            paragraph5: "And these are some of the skills and technologies I've made myself conversant with through the self-learning method:",
             discipline1: "TypeScript",
             discipline2: "Python",
             discipline3: "CSS Grid",
@@ -469,31 +469,31 @@ export const educationRobotics = {
         eng: "Robotics"
     },
     institution: {
-        cat: "Encara un altre grau albirant-se en el futur?",
-        esp: "¿Todavía otro grado más vislumbrándose en el futuro?",
+        cat: "Encara un altre grau més, albirant-se en el futur?",
+        esp: "¿Todavía otro grado más, vislumbrándose en el futuro?",
         eng: "Yet another degree looming in the future?"
     },
     intro: {
         cat: {
             paragraph1: "Bé... i per què no?",
-            paragraph2: "La veritat és que encara em queda un llarg camí (més aviat infinit) pel que fa al desenvolupament web, i em fa l'efecte que aquest camp romandrà com el meu sector professional durant la major part del futur previsible. Però sempre he sentit curiositat pel vessant més físic del món de la programació.",
-            paragraph3: "Vull dir... modificar un tros de codi i comprovar com les coses canvien i reaccionen a la pantalla està prou bé, però realment m'encantaria veure com artilugis de debò, instruïts i dirigits pel meu codi, es comporten en el medi real.",
+            paragraph2: "La veritat és que encara em queda un llarg camí per recórrer (més aviat infinit) amb tot el que té a veure amb el desenvolupament web, i em fa la impressió que aquest camp romandrà com el sector professional on em mouré durant la major part del meu futur previsible. Però sempre he sentit curiositat per la intersecció que existeix entre el món de la programació i el món físic de les coses tangibles.",
+            paragraph3: "Vull dir... modificar un tros de codi i veure com les coses canvien i reaccionen a la pantalla està prou bé, però realment m'encantaria comprovar com un giny o artefacte de debò, instruït i guiat pel meu codi, podria arribar a comportar-se en el medi real.",
             paragraph4: "Drons, braços robot industrials, electrodomèstics intel·ligents... el que sigui:",
-            paragraph5: "Sincerament no sé si mai tindré l'oportunitat de fer-ne una feina, d'això. Però el que sí sé segur és que tinc la intenció de provar-ho com a hobby!"
+            paragraph5: "Sincerament no sé si mai tindré l'oportunitat de fer-me un raconet en aquest sector professional, si més no en aquesta vida. Però el que sí sé segur és que tinc la intenció de dedicar-hi temps com a hobby!"
         },
         esp: {
             paragraph1: "Bueno... ¿y por qué no?",
-            paragraph2: "La verdad es que todavía me queda un largo camino (más bien infinito) por lo que respecta al desarollo web, y me da la impresión que este campo seguirá siendo mi sector profesional durante la mayor part de mi futuro previsible. Pero siempre he sentido curiosidad por la vertiente más física del mundo de la programación.",
-            paragraph3: "Me refiero... modificar un pedazo de código y comprobar cómo las cosas cambian y reaccionan en la pantalla está bien y eso, pero realmente me encantaría ver cómo artilugios de verdad, instruidos y dirigidos por mi código, se comportan en el medio real.",
+            paragraph2: "La verdad es que todavía me queda un largo camino por recorrer (más bien infinito) por cuanto respecta al desarollo web, y me da la impresión de que este campo seguirá siendo el sector profesional donde me moveré durante la mayor parte de mi futuro previsible. Pero siempre he sentido curiosidad por la intersección que existe entre el mundo de la programación y el mundo físico de las cosas tangibles.",
+            paragraph3: "Me refiero... modificar un pedazo de código y ver cómo las cosas cambian y reaccionan en pantalla está bien y eso, pero realmente me encantaría comprobar cómo un artilugio o una máquina de verdad, instruida y guiada por mi código, podría llegar a comportarse en el medio real.",
             paragraph4: "Drones, brazos robot industriales, electrodomésticos inteligentes... lo que sea:",
-            paragraph5: "Sinceramente no sé si alguna vez tendré la oportunidad de fer-ne una feina, d'això. ¡Pero lo que sí sé seguro es que tengo la intención de probarlo como hobby!"
+            paragraph5: "Sinceramente no sé si alguna vez tendré la oportunidad de hacerme un hueco en este sector profesional, por lo menos en esta vida. ¡Pero lo que sí sé seguro es que tengo la intención de meterme en él y dedicarle tiempo como hobby!"
         },
         eng: {
             paragraph1: "Well... and why not?",
-            paragraph2: "The truth is I still have a long (rather infinite) way to go in what regards web development, and I reckon it will remain my professional field for most of my foreseeable future. But I've always felt curious about getting physical with my programming.",
-            paragraph3: "I mean... tweaking some code and seeing how things change and react on the screen is nice and all, but I would really love to see how actual contraptions running on my code perform out in the wild.",
+            paragraph2: "The truth is I still have a long (rather infinite) way to go in what regards web development, and I reckon this will remain the professional field in which I'll thrive for most of my foreseeable future. But I've always felt curious about the intersection existing between programming and the physical realm of tangible things.",
+            paragraph3: "I mean... tweaking some code and seeing how things change and react on the screen is nice and all, but I would really love to see how actual contraptions running on my code would perform out in the wild.",
             paragraph4: "Drones, industrial robotic arms, smart house appliances... you name it:",
-            paragraph5: "I really don't know if I'll ever get the chance to make a job of this during my present lifetime, but I definitely intend to have a go at it as a hobby!"
+            paragraph5: "I really don't know if I'll ever get the chance to set foot on this particular professional sector during my present lifetime, but I definitely intend to have a go at it as a hobby!"
         }
     }
 }
