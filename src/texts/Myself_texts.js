@@ -43,7 +43,7 @@ const myselfTexts = {
             }, 
             development: {
                 cat: "La natura en general, per ser més exacte. Des que era un nen he tingut gairebé tots els tipus de bestioles possibles a casa, i difícilment puc concebre la meva vida sense un amic no-humà. M'aporten tanta felicitat!",
-                esp: "La naturaleza en general, para ser más exacto. Desde que era un niño he tenido casi todos los tipos de bichos posibles en casa, y difícilmente puedo concebir mi vida sin amigos no-humanos. Me aportan tanta felicidad!",
+                esp: "La naturaleza en general, para ser más exacto. Desde que era un niño he tenido casi todos los tipos de bichos posibles en casa, y difícilmente puedo concebir mi vida sin amigos no-humanos. ¡Me aportan tanta felicidad!",
                 eng: "Nature in general, actually. Since I was a kid I've had almost every pet possible and can hardly conceive my life without a non-human companion. They bring me so much joy!"
             }
         },

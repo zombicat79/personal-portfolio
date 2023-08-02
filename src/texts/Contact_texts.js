@@ -30,9 +30,9 @@ const contactTexts = {
         eng: "Take a look into my code!"
     },
     emphaticClosure: {
-        cat: "Som-hi! Endavant! Podem fer grans coses junts 🚀",
-        esp: "¡Venga, vamos! Podemos hacer grandes cosas juntos 🚀",
-        eng: "Come on! Let's rock it together 🚀"
+        cat: "Som-hi! No siguis tímid! Podem fer grans coses junts! 🚀",
+        esp: "¡Venga, no seas tímido! ¡Podemos hacer grandes cosas juntos! 🚀",
+        eng: "Come on! Don't be shy! Let's rock it together! 🚀"
     }
 }
 
