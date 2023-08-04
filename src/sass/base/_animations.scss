@@ -5,6 +5,11 @@
     100% {left: 0}
 }
 
+@keyframes lightbar-freeze {
+    0% {left: 0}
+    100% {left: 600px}
+}
+
 @keyframes lightbar-fluctuation {
     0% {background: linear-gradient(black, darkred, black); width: 60%}
     15% {background: linear-gradient(black, darkred, black); width: 100%}

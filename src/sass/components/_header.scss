@@ -73,24 +73,107 @@
 
     .header__lower {
 
-        .header__movingBar {
+        .header__bar {
             height: .4rem;
             width: 10rem;
             background: black;
             position: relative;
-            animation-name: lightbar-move;
-            animation-duration: 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
             text-align: center;
 
-            .header__fluctuatingLight {
-                width: 100%;
-                height: 100%;
-                animation-name: lightbar-fluctuation;
-                animation-duration: 2s;
+            &--moving {
+                animation-name: lightbar-move;
+                animation-duration: 4s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;
+            }
+
+            &--still {
+                left: 600px;
+            }
+
+            .bar__contents {
+                min-height: 23rem;
+                margin-top: 5px;
+                padding: 1rem;
+
+                &--moving {
+                    width: 0;
+                    opacity: 0;
+                    background-color: transparent;
+                    border: 0 solid darkred;
+                    transition: all .5s;
+                }
+
+                &--still {
+                    width: 300%;
+                    opacity: 1;
+                    background-color: darkred;
+                    border: 3px solid red;
+                    transition: all 1s;
+                }
+
+                .bar__linklist {
+                    font-size: 2rem;
+                    color: black;
+                    text-decoration: none;
+                    text-align: left;
+                    list-style-type: none;
+
+                    .linklist__category {
+                        text-decoration: underline;
+                        text-decoration-thickness: .5rem;
+                        text-transform: uppercase;
+
+                        &:not(.linklist__category:first-child) {
+                            margin-top: 1.5rem;
+                        }
+                    }
+
+                    .bar__link {
+                        font-style: italic;
+                        transition: all 1s;
+
+                        &--first {
+                            margin-top: .5rem;
+                        }
+
+                        a:link, 
+                        a:visited, 
+                        a:active {
+                            color: black;
+                            text-decoration: none;
+                            text-align: left;
+                            list-style-type: none;
+                        }
+
+                        a:hover {
+                            cursor: pointer;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .bar__light {
+                width: 100%;
+                height: 100%;
+
+                &--fluctuating {
+                    animation-name: lightbar-fluctuation;
+                    animation-duration: 2s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+
+                &--still {
+                    animation-name: none;
+                    background: red;
+                }
+
+                &--off {
+                    animation-name: none;
+                    background: transparent;
+                }
             }
         }
     }

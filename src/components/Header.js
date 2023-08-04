@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import { LangContext } from './../App';
@@ -22,6 +22,28 @@ function Header(props) {
             return !prevState;
         })
     }
+
+    const [barState, setBarState] = useState({bar: "moving", light: "fluctuating", contents: "moving", dropdownUnfolded: false});
+    const handleBarState = () => {
+        if (barState.bar === "moving") {
+            setBarState({bar: "still", light: "still", contents: "still", dropdownUnfolded: false});
+            setTimeout(() => {
+                setBarState({bar: "still", light: "still", contents: "still", dropdownUnfolded: true});
+            }, 1000)
+        } else {
+            setBarState({bar: "still", light: "off", contents: "moving", dropdownUnfolded: false});
+            setTimeout(() => {
+                setBarState({bar: "moving", light: "fluctuating", contents: "moving", dropdownUnfolded: false});
+            }, 500)
+        }
+    }
+    
+    // Gets the header bar moving upon header folding/unfolding
+    useEffect(() => {
+        if (barState.bar === "still") {
+            setBarState({bar: "moving", light: "fluctuating"});
+        }
+    }, [props.headerIsUnfolded])
 
     return (
         <section className={`header header--${props.headerIsUnfolded}`}>            
@@ -60,32 +82,57 @@ function Header(props) {
                             className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
                             {headerTexts.nav4[language]}
                         </NavLink>
+                        <li className="header__link" onClick={() => handleBarState()}>{headerTexts.nav5[language]}</li>
                         <NavLink 
                             to="/contact" 
                             className={(obj) => obj.isActive ? "header__link header__link--active" : "header__link"}>
-                            {headerTexts.nav5[language]}
+                            {headerTexts.nav6[language]}
                         </NavLink>
                         <li className="header__link">
                             {
                                 language === "eng" ?
-                                    <a href={cvEng} download="ZombieCat_CV.pdf">{headerTexts.nav6[language]}</a>
+                                    <a href={cvEng} download="ZombieCat_CV.pdf">{headerTexts.nav7[language]}</a>
                                 :
-                                    <a href={cvEsp} download="ZombieCat_CV.pdf">{headerTexts.nav6[language]}</a>
+                                    <a href={cvEsp} download="ZombieCat_CV.pdf">{headerTexts.nav7[language]}</a>
                             }
                         </li>
-
-                        {/*<li className="header__link">{headerTexts.nav2[language]}</li>
-                        <li className="header__link">{headerTexts.nav3[language]}</li>
-                        <li className="header__link">{headerTexts.nav4[language]}</li>
-                        <li className="header__link">{headerTexts.nav5[language]}</li>
-                        <li className="header__link">{headerTexts.nav6[language]}</li> */}
                     </ul>
                 </nav>
             </div>
 
             <div className="header__lower">
-                <div className="header__movingBar">
-                    <div className="header__fluctuatingLight"></div>
+                <div className={`header__bar header__bar--${barState.bar}`}>
+                    <div className={`bar__light bar__light--${barState.light}`}></div>
+                    <div className={`bar__contents bar__contents--${barState.contents}`}>
+                        {barState.dropdownUnfolded &&
+                            <ul className="bar__linklist">
+                                <p className="linklist__category">{headerTexts.dropdown.corporateCategory[language]}</p>
+                                <li className="bar__link bar__link--first">
+                                    <a href="https://santafe.bplay.bet.ar/" target="_blank" rel="noreferrer">bplay</a>
+                                </li>
+                                <li className="bar__link bar__link--first">
+                                    <a 
+                                        className="" 
+                                        href={language === "cat" ? "https://www.wedreambig.org/" : language === "eng" ? "https://www.wedreambig.org/en/" : "https://www.wedreambig.org/es/"} 
+                                        target="_blank" 
+                                        rel="noreferrer">
+                                        Dream Big
+                                    </a>
+                                </li>
+                                
+                                <p className="linklist__category">{headerTexts.dropdown.personalCategory[language]}</p>
+                                <li className="bar__link bar__link--first">
+                                    <a href="/projects/covid-panidemic/index.html" target="_blank">Covid Panicdemic</a>
+                                </li>
+                                <li className="bar__link">
+                                <a href="/projects/kiwiphone/index.html" target="_blank">Kiwiphone</a>
+                                </li>
+                                <li className="bar__link">
+                                <a href="/projects/calculotron/index.html" target="_blank">Calculotron</a>
+                                </li>
+                            </ul>
+                        }
+                    </div>
                 </div>
             </div>
         </section>
