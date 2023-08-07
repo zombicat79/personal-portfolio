@@ -45,7 +45,7 @@ function ProjectsPanicdemic(props) {
             <br></br>
             <div>
                 <div className="display-section__logoBox">
-                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                    <a className="display-section__snapshot" href="/projects/covid-panicdemic/" target="_blank">
                         <img className="display-section__logoItem display-section__logoItem--huge" src={panicdemicStart} alt="Covid Panicdemic cover screen" />
                         <p className="try-prompt">{projectsPanicdemic.tryPrompt[language]}</p>
                     </a>

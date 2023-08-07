@@ -52,7 +52,7 @@ function ProjectsPhone(props) {
             <br></br>
             <div>
                 <div className="display-section__logoBox">
-                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                    <a className="display-section__snapshot" href="/projects/kiwiphone/" target="_blank">
                         <img className="display-section__logoItem display-section__logoItem--huge square" src={phoneScreen} alt="Cellphone monochrome screen" />
                         <p className="try-prompt">{projectsPhone.tryPrompt[language]}</p>
                     </a>

@@ -45,7 +45,7 @@ function ProjectsCalculator(props) {
             <br></br>
             <div>
                 <div className="display-section__logoBox">
-                    <a className="display-section__snapshot" href="#" target="_blank" rel="noreferrer">
+                    <a className="display-section__snapshot" href="/projects/calculotron/" target="_blank">
                         <img className="display-section__logoItem display-section__logoItem--huge" src={calculatorButtons} alt="Math operations button set" />
                         <p className="try-prompt">{projectsCalculotron.tryPrompt[language]}</p>
                     </a>

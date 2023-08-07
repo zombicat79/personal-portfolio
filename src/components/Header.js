@@ -111,8 +111,7 @@ function Header(props) {
                                     <a href="https://santafe.bplay.bet.ar/" target="_blank" rel="noreferrer">bplay</a>
                                 </li>
                                 <li className="bar__link bar__link--first">
-                                    <a 
-                                        className="" 
+                                    <a  
                                         href={language === "cat" ? "https://www.wedreambig.org/" : language === "eng" ? "https://www.wedreambig.org/en/" : "https://www.wedreambig.org/es/"} 
                                         target="_blank" 
                                         rel="noreferrer">
@@ -122,13 +121,13 @@ function Header(props) {
                                 
                                 <p className="linklist__category">{headerTexts.dropdown.personalCategory[language]}</p>
                                 <li className="bar__link bar__link--first">
-                                    <a href="/projects/covid-panidemic/index.html" target="_blank">Covid Panicdemic</a>
+                                    <a href="/projects/covid-panidemic/" target="_blank">Covid Panicdemic</a>
                                 </li>
                                 <li className="bar__link">
-                                <a href="/projects/kiwiphone/index.html" target="_blank">Kiwiphone</a>
+                                    <a href="/projects/kiwiphone/" target="_blank">Kiwiphone</a>
                                 </li>
                                 <li className="bar__link">
-                                <a href="/projects/calculotron/index.html" target="_blank">Calculotron</a>
+                                    <a href="/projects/calculotron/" target="_blank">Calculotron</a>
                                 </li>
                             </ul>
                         }

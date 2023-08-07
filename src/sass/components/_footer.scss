@@ -1,4 +1,38 @@
 .footer {
+    overflow: hidden;
+
+    &__nav {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .footer__link {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        transition: all 1s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            color: red;
+        }
+
+        &:not(.footer__link:last-child) {
+            margin-bottom: .5rem;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.5);
+                color: red;
+            }
+        }
+    }
 
     img {
         margin-top: .5rem;

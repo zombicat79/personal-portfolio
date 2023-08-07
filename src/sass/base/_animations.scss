@@ -74,6 +74,14 @@
     100% {text-shadow: .5px 0 3px red, -.5px 0 3px red}
 }
 
+@keyframes lightbulb-blip {
+    0% {background: linear-gradient(to bottom right, black, skyblue); background-clip: text; box-shadow: 0 0 0 transparent}
+    25% {background: linear-gradient(to bottom right, red, darkorange); background-clip: text; box-shadow: -1px -1px 10px darkorange}
+    50% {background: linear-gradient(to bottom right, black, skyblue); background-clip: text; box-shadow: 0 0 0 transparent}
+    75% {background: linear-gradient(to bottom right, red, darkorange); background-clip: text; box-shadow: -1px -1px 10px darkorange}
+    100% {background: linear-gradient(to bottom right, black, skyblue); background-clip: text; box-shadow: 0 0 0 transparent}
+}
+
 /* LaserBox Component */
 @keyframes horizontal-laser-draw {
     0% {width: 0%}

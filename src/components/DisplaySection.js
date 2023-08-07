@@ -196,7 +196,7 @@ function DisplaySection(props) {
                     </i>
                     <img id="icon-home" className="menuElement" src={props.logoSrc} alt={props.logoAlt} onClick={(e) => props.handleHeaderState()} />
                     <i 
-                        id="icon-projects" className={`menuElement icon-basic-lightbulb ${menuStatus.projects}`} 
+                        id="icon-projects" className={`menuElement icon-basic-lightbulb blinking ${menuStatus.projects}`} 
                         onClick={(e) => {
                             handleMenuStatus("projects"); 
                             props.handleActiveSubsection("projects")
