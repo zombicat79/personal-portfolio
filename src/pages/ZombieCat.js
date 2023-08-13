@@ -52,8 +52,6 @@ function ZombieCat(props) {
         })
     })
 
-    console.log(easterEgg)
-
     return (
         <section className="page-body">
             <LaserBox handleContent={handleContent}>

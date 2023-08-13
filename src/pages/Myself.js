@@ -5,6 +5,8 @@ import { LangContext } from "./../App";
 
 import myselfTexts from './../texts/Myself_texts';
 
+import myselfMain from './../images/myself.png';
+
 function Myself(props) {
     const language = useContext(LangContext);
 
@@ -83,11 +85,17 @@ function Myself(props) {
         <section className="page-body">
             <LaserBox handleContent={handleContent}>
                 <div className={`laserbox__content-wrapper laserbox__content-wrapper--myself laserbox__content-wrapper--${contentState}`}>
-                    <div className={`laserbox__content-section ${contentVisibility.cover}`}>
-                        <p>Hello</p>
-                    </div>
+                    {contentVisibility.cover === "u-visible" &&
+                        <div className={`laserbox__content-section ${contentVisibility.cover}`}>
+                            <img className="collage__img collage__img--center" src={myselfMain} alt="David Castejón Ferrer" />
+                            <div className="collage__div collage__div--1"></div>
+                            <div className="collage__div collage__div--2"></div>
+                            <div className="collage__div collage__div--3"></div>
+                            <div className="collage__div collage__div--4"></div>
+                        </div>
+                    }
                     
-                    {contentOnshow === "page1" &&
+                    {contentVisibility.page1 === "u-visible" && contentOnshow === "page1" &&
                         <div className={`laserbox__content-section ${contentVisibility.page1}`}>
                             <h2 className="laserbox__paragraph--italic">{myselfTexts.pitchP1[language]}</h2>
                             <br></br>
@@ -109,7 +117,7 @@ function Myself(props) {
                         </div>
                     }
 
-                    {contentOnshow === "page2" &&
+                    {contentVisibility.page2 === "u-visible" && contentOnshow === "page2" &&
                         <div className={`laserbox__content-section ${contentVisibility.page2}`}>
                             <h2 className="laserbox__paragraph">{myselfTexts.thingsLiked.intro[language]}</h2>
                             <ul className="laserbox__bulletList">
