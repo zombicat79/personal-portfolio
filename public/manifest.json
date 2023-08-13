@@ -3,7 +3,7 @@
   "name": "ZombieCat Professional Portfolio",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "zombiecat.ico",
       "sizes": "128x128 76x76 64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
