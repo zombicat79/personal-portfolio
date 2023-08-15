@@ -121,7 +121,7 @@ function Header(props) {
                                 
                                 <p className="linklist__category">{headerTexts.dropdown.personalCategory[language]}</p>
                                 <li className="bar__link bar__link--first">
-                                    <a href="/projects/covid-panidemic/" target="_blank">Covid Panicdemic</a>
+                                    <a href="/projects/covid-panicdemic/" target="_blank">Covid Panicdemic</a>
                                 </li>
                                 <li className="bar__link">
                                     <a href="/projects/kiwiphone/" target="_blank">Kiwiphone</a>

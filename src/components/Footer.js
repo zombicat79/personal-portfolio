@@ -38,7 +38,7 @@ function Footer(props) {
                         </a>
                     </li>
                     <li className="footer__link">
-                        <a href="/projects/covid-panidemic/" target="_blank">Covid Panicdemic</a>
+                        <a href="/projects/covid-panicdemic/" target="_blank">Covid Panicdemic</a>
                     </li>
                     <li className="footer__link">
                         <a href="/projects/kiwiphone/" target="_blank">Kiwiphone</a>
