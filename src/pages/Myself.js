@@ -62,7 +62,7 @@ function Myself(props) {
     }, [btnState])
 
     // Checks whether cat-button is changing because it's actually being pressed or because it is retreating into initial position
-    const [btnReturned, setBtnReturned] = useState(false);
+    const [btnReturned, setBtnReturned] = useState("unset");
     const handleBtnReturn = (booleanValue) => {
         setBtnReturned(booleanValue);
     }
