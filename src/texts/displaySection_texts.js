@@ -152,7 +152,11 @@ export const educationUB = {
     intro: {
         cat: {
             paragraph1: "Ara podrà semblar estrany (d'acord, també aleshores), però aquest va ser el primer grau universitari que vaig emprendre després d'acabar l'institut.",
-            paragraph2: "He de confessar que no tenia gaire idea de què fer en aquell moment, així que vaig triar la primera cosa que em va sonar interessant i amb flaire d'aventura (una altra opció era arqueologia), sense donar la pensada més mínima al seu futur potencial en el mercat laboral. Talment com un 'Magnum, P.I.' de pa sucat amb oli, vaig pensar que resoldre crims en camisa hawaiana tot conduint un Ferrari podria ser un estil de vida bastant guai.",
+            paragraph2: {
+                start: "He de confessar que no tenia gaire idea de què fer en aquell moment, així que vaig triar la primera cosa que em va sonar interessant i amb flaire d'aventura (una altra opció que vaig considerar va ser Arqueologia), sense donar la pensada més mínima al seu futur potencial en el mercat laboral. Talment com un ",
+                link: "'Magnum, P.I.'",
+                end: " de pa sucat amb oli, vaig pensar que resoldre crims en camisa hawaiana tot conduint un Ferrari podria ser un estil de vida bastant guai."
+            },
             paragraph3: "Si us plau, no em jutgis amb massa duresa. Tenia menys de 20 anys.",
             paragraph4: "En qualsevol cas, després de 4 anys de picar pedra a la universitat, vaig obtenir el meu grau: 'Criminologia i Política Criminal' 🎉",
             paragraph5: "Per descomptat, mai vaig aconseguir una feina en el sector (les opcions eren bastant horribles i molt allunyades del glamour que es pintava a les pel·lícules), però les moltes coses interessants que vaig aprendre durant aquell temps em van fer créixer com a persona i entendre millor com funcionen la societat i el seu 'sistema' que tot ho controla.",
@@ -167,7 +171,11 @@ export const educationUB = {
         },
         esp: {
             paragraph1: "Ahora puede que parezca raro (vale, también en aquel entonces), pero este fue el primer grado universitario que emprendí después de terminar el instituto.",
-            paragraph2: "Tengo que confesar que no tenía mucha idea sobre qué hacer en aquel momento, así que escogí la primera cosa que me sonó interesante y con aires de aventura (otra opción era arqueología), sin pensar lo más mínimo en su potencial futuro en el mercado laboral. Como si fuera un 'Magnum, P.I.' de pacotilla, pensé que resolver crímenes en camisa hawaiana yendo de un lado a otro en un Ferrari podría ser un estilo de vida bastante guay.",
+            paragraph2: {
+                start: "Tengo que confesar que no tenía mucha idea sobre qué hacer en aquel momento, así que escogí la primera cosa que me sonó interesante y con aires de aventura (otra opción que consideré fue Arqueología), sin pensar lo más mínimo en su potencial futuro en el mercado laboral. Como si fuera un ",
+                link: "'Magnum, P.I.'",
+                end: " de pacotilla, pensé que resolver crímenes en camisa hawaiana yendo de un lado a otro en un Ferrari podría ser un estilo de vida bastante guay."
+            },
             paragraph3: "Por favor, no me juzgues con demasiada dureza. Tenía menos de 20 años.",
             paragraph4: "En cualquier caso, después de 4 años picando piedra en la universidad, obtuve mi grado: 'Criminología y Política Criminal' 🎉",
             paragraph5: "Por supuesto, jamás conseguí un trabajo en el sector (las opciones eran bastante horribles y muy alejadas del glamour que se pintaba en las películas), pero las muchas cosas interesantes que aprendí durante aquel tiempo me hicieron crecer como persona y entender mejor cómo funcionan la sociedad y su 'sistema' que todo lo controla.",
@@ -182,7 +190,11 @@ export const educationUB = {
         },
         eng: {
             paragraph1: "It may now seem weird (ok, also back then), but this was the first university degree I took after finishing school.",
-            paragraph2: "I must confess I didn't have much idea as to what to do at the moment, so I settled with the first thing that sounded appealing and adventurous to me (another option was archeology), without any regard whatsoever to future employability. Just as some copycat 'Magnum, P.I.', I thought solving crimes while wearing Hawaiian shirts and driving around in a Ferrari could be a cool way of life.",
+            paragraph2: {
+                start: "I must confess I didn't have much idea as to what to do at the moment, so I settled with the first thing that sounded appealing and adventurous to me (another option I considered was Archaeology), without any regard whatsoever to future employability. Just as some copycat ",
+                link: "'Magnum, P.I.'",
+                end: ", I thought solving crimes while wearing Hawaiian shirts and driving around in a Ferrari could be a cool way of life."
+            },
             paragraph3: "Please, don't judge me too hard. I was under 20.",
             paragraph4: "Anyway, after 4 years of hard work at the university I got my degree: 'Criminology & Crime Politics' 🎉",
             paragraph5: "Of course, I never got a job in the field (options were dire and far from the glamour depicted in movies), but the many interesting things I learned during that time made me grow as a person and better understand how society and its all-encompassing 'system' work.",
@@ -1503,24 +1515,30 @@ export const locationWLD = {
     intro: {
         cat: {
             paragraph1: "El futur pot ser incert, però una cosa és segura: no vull autolimitar-me. En el cas que aparegués una oportunitat destacada a qualsevol lloc del planeta, sempre seria obert a considerar-la.",
-            paragraph2: "Encara que estic especialment interessat en tot allò que impliqui treball en remot, la meva mobilitat física es manté alta. En aquest moment valoraria de manera especial posicions a les localitats següents:",
-            location1: "Estocolm, Suècia",
-            location2: "Sud-est asiàtic",
-            paragraph3: "Qui sap? Potser la nova oportunitat que m'està esperant es trobi a."
+            paragraph2: "Encara que estic especialment interessat en tot allò que impliqui treball en remot, la meva mobilitat física es manté alta. Pensant en els anys immediats que venen, valoraria de manera especial posicions a les localitats següents:",
+            location1: "Escandinàvia",
+            location2: "Irlanda",
+            location3: "Europa meridional (Mediterrània)",
+            location4: "Sud-est asiàtic",
+            paragraph3: "Qui sap? Potser la nova oportunitat que m'està esperant es trobi a"
         },
         esp: {
             paragraph1: "El futuro puede ser incierto, pero una cosa es segura: no quiero autolimitarme. En caso de que apareciera una oportunidad destacada en cualquier lugar del planeta, siempre estaría abierto a considerarla.",
-            paragraph2: "Aunque estoy especialmente interesado en todo aquello que implique trabajo en remoto, mi movilidad física se mantiene alta. En este momento valoraría de manera especial posiciones en las siguientes localidades:",
-            location1: "Estocolmo, Suecia",
-            location2: "Sudeste asiático",
-            paragraph3: "¿Quién sabe? Quizá esa nueva oportunidad que me está esperando se encuentre en."
+            paragraph2: "Aunque estoy especialmente interesado en todo aquello que implique trabajo en remoto, mi movilidad física se mantiene alta. Pensando en los años inmediatos que vienen, valoraría de manera especial posiciones en las siguientes localidades:",
+            location1: "Escandinavia",
+            location2: "Irlanda",
+            location3: "Europa meridional (Mediterráneo)",
+            location4: "Sureste asiático",
+            paragraph3: "¿Quién sabe? Quizá esa nueva oportunidad que me está esperando se encuentre en"
         },
         eng: {
             paragraph1: "Future may be uncertain, but one thing is for sure: I do not want to limit myself. Should an interesting opportunity arise anywhere on the planet, I would always be open to consider it.",
-            paragraph2: "Though I'm permanently keen on all things remote, my physical mobility remains high. At the moment, I would especially consider positions on the following locations:",
-            location1: "Stockholm, SWE",
-            location2: "Southeast Asia",
-            paragraph3: "Who knows? Perhaps that next opportunity on the wait lies within."
+            paragraph2: "Though I'm permanently keen on all things remote, my physical mobility remains high. Looking into the immediately upcoming years, I would especially consider positions on the following locations:",
+            location1: "Scandinavia",
+            location2: "Ireland",
+            location3: "Southern Europe (The Mediterranean)",
+            location4: "Southeast Asia",
+            paragraph3: "Who knows? Perhaps that next opportunity on the wait lies within"
         }
     }
 }

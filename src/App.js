@@ -86,36 +86,6 @@ function App() {
     setActiveInfoItem(item);
   }
 
-
-  /* const [mainComponentsVisibility, setMainComponentsVisibilty] = useState({
-    display: "disappearing",
-    slider: "disappearing",
-    feature: "disappearing"
-  });
-  const handleMainComponentsVisibility = (component) => {
-    if (mainComponentsVisibility[component] === "disappearing") {
-      setMainComponentsVisibilty(() => {
-        for (let mainComponent in mainComponentsVisibility) {
-          if (mainComponent === component) {
-            mainComponentsVisibility[mainComponent] = "appearing";
-          }
-        }
-        return mainComponentsVisibility;
-      })
-    }
-
-    if (mainComponentsVisibility[component] === "appearing") {
-      setMainComponentsVisibilty(() => {
-        for (let mainComponent in mainComponentsVisibility) {
-          if (mainComponent === component) {
-            mainComponentsVisibility[mainComponent] = "disappearing";
-          }
-        }
-        return mainComponentsVisibility;
-      })
-    }
-  } */
-
   const [headerIsUnfolded, setHeaderIsUnfolded] = useState(false);
   const handleHeaderState = () => {
     setHeaderIsUnfolded((prevState) => {

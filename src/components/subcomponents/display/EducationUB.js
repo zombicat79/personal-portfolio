@@ -25,7 +25,13 @@ function EducationUB(props) {
             <br></br>
             <p>{educationUB.intro[language].paragraph1}</p>
             <br></br>
-            <p>{educationUB.intro[language].paragraph2}</p>
+            <div>
+                <span>{educationUB.intro[language].paragraph2.start}</span>
+                <span className="laserbox__chunk laserbox__link">
+                    <a href="https://www.youtube.com/watch?v=LBIgXhiOpeQ" target="_blank" rel="noreferrer">{educationUB.intro[language].paragraph2.link}</a>
+                </span>
+                <span>{educationUB.intro[language].paragraph2.end}</span>
+            </div>
             <br></br>
             <p>{personalizedP3}</p>
             <br></br>

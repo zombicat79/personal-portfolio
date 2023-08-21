@@ -15,7 +15,7 @@ function LocationWorld(props) {
             personalizedP3 = props.personalizeParagraph("org", "se encuentre en", locationWLD.intro[language].paragraph3);
             break;
         default:
-            personalizedP3 = props.personalizeParagraph("org", "within", locationWLD.intro[language].paragraph3);
+            personalizedP3 = props.personalizeParagraph("org", "within", locationWLD.intro[language].paragraph3 + "!");
     }
 
     return (
@@ -29,6 +29,8 @@ function LocationWorld(props) {
             <ul className="display-section__bulletList">
                 <li>{locationWLD.intro[language].location1}</li>
                 <li>{locationWLD.intro[language].location2}</li>
+                <li>{locationWLD.intro[language].location3}</li>
+                <li>{locationWLD.intro[language].location4}</li>
             </ul>
             <br></br>
             <p>{personalizedP3}</p>
