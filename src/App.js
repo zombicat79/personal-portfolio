@@ -24,6 +24,9 @@ function App() {
   const [language, setLanguage] = useState("eng");
   const handleLanguage = (lang) => {
     setLanguage(lang);
+    setTimeout(() => {
+      handleSealState("shrinking");
+    }, 2500);
   }
   
   const [initSealIsShrinking, setInitSealIsShrinking] = useState(false);
